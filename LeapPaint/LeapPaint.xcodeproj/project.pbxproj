@@ -208,6 +208,7 @@
 				239B35061739EDEE00CB0EC6 /* Frameworks */,
 				239B35071739EDEE00CB0EC6 /* Resources */,
 				95F2C79DD4AC432BBC5E9257 /* Copy Pods Resources */,
+				23F836181739F8950012E52F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -313,6 +314,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# print some debug information\necho TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\necho TARGET_NAME=${TARGET_NAME}\ncd ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS\nls -la\n# then remap the loader path\ninstall_name_tool -change @loader_path/libLeap.dylib @executable_path/../Resources/libLeap.dylib ${TARGET_NAME}\n";
+		};
+		23F836181739F8950012E52F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# print some debug information\necho TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\necho TARGET_NAME=${TARGET_NAME}\ncd ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS\nls -la\n# then remap the loader path\ninstall_name_tool -change @loader_path/libLeap.dylib @executable_path/../Resources/libLeap.dylib ${TARGET_NAME}\n\n";
 		};
 		95F2C79DD4AC432BBC5E9257 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
