@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Quartz2DPaint' target in the 'Quartz2DPaint' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
