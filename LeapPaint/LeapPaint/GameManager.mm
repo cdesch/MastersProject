@@ -11,7 +11,6 @@
 @implementation GameManager
 
 @synthesize hudLayer;
-
 @synthesize textureScene;
 @synthesize backgroundLayer;
 @synthesize controlsLayer;
@@ -19,7 +18,7 @@
 @synthesize leapScreen;
 
 
-// on "init" you need to initialize your instance
+// On "init" you need to initialize your instance
 -(id) init
 {
 	// always call "super" init
@@ -56,16 +55,33 @@
 }
 
 #pragma mark - SampleDelegate Callbacks
+
+/**
+ LeapMotion SDK Delegate Callback
+ Init's a LeapMotion instance to initiate connection and tracking with the LeapMotion and assigns the delegate or listener for the controller
+ */
 - (void)run
 {
     controller = [[LeapController alloc] init];
     [controller addListener:self];
     
 }
+/**
+ LeapMotion SDK Delegate Callback
+ Initialize
+ Verifies the LeapMotion has been initialized and any additional steps for setup can continue. 
+ */
 
 - (void)onInit:(NSNotification *)notification{
     NSLog(@"Leap: Initialized");
 }
+/**
+ LeapMotion SDK Delegate Callback
+ Connect
+ Verifies the LeapMotion is connected and additional steps for setup can continue.
+ 
+ Sets up the screens to be track intersecting vectors from pointables.
+ */
 
 - (void)onConnect:(NSNotification *)notification;
 {
@@ -88,15 +104,28 @@
     NSLog(@"running");
 
 }
-
+/**
+ LeapMotion SDK Delegate Callback 
+ Disconnect
+ Notifies the application that the LeapMotion has been disconnected and hold or release any processes in regard to the LeapMotion
+ */
 
 - (void)onDisconnect:(NSNotification *)notification{
     NSLog(@"Leap: Disconnected");
 }
 
+/**
+ LeapMotion SDK Delegate Callback
+ Exits
+ Releases memory and sets object instances to nil (null)
+ */
 - (void)onExit:(NSNotification *)notification{
     NSLog(@"Leap: Exited");
 }
+/**
+ LeapMotion SDK Delegate Callback
+ OnFrame Event notifies the application that an incoming frame has been processed and the data can be used to control the application
+ */
 
 - (void)onFrame:(NSNotification *)notification{
     ///NSLog(@"OnFrame");
@@ -225,14 +254,20 @@
     }
 }
 
-/** Begin drawing to the canvas */
+/** Begin drawing to the canvas 
+ @param point is the current coordinate the LeapPointable is interescting with the screen
+ @param pointable is a reference to the pointable currently drawing
+ */
 
 - (void)beginLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable{
     
     [self.textureScene beginDraw:point withZ:pointable.tipPosition.z];
     currentPoint = point;
 }
-/** Update drawing with a moved image on the canvas */
+/** Update drawing with a moved image on the canvas 
+  @param point is the current coordinate the LeapPointable is interescting with the screen
+  @param pointable is a reference to the pointable currently drawing
+ */
 - (void)moveLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable{
     
     [self.textureScene updateDraw:point withZ:pointable.tipPosition.z];
@@ -240,11 +275,13 @@
     
 }
 
-/** End the drawing */
+/** End the drawing 
+  @param point is the current coordinate the LeapPointable is interescting with the screen
+  @param pointable is a reference to the pointable currently drawing
+ */
 - (void)endLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable{
     [self.textureScene endDraw:point];
     currentPointable = nil;
-    
 }
 
 #pragma mark - Keyboard Events
@@ -253,12 +290,16 @@
 - (void)changeMode:(InputMode)mode{
     //NSLog(@"Changemode");
     inputMode = mode;
+    gameSettings.inputMode = mode;
 }
 
 
-/** Change Paiting state */
+/** Change Paiting state
+ @param paintState changes the painting sate
+ */
 - (void)painting:(BOOL)paintingState{
     painting = paintingState;
+    gameSettings.painting = paintingState;
 }
 
 
@@ -266,7 +307,7 @@
 
 /** Change the color of the brush
  Updates the HUD Layer and the Texture Layer
- 
+  @param color is the color to be changed
  */
 
 - (void)changeColorControl:(ccColor3B)color{
@@ -277,7 +318,7 @@
 }
 /** Change the thickness of the brush
  Updates the HUD Layer and the Texture Layer
- 
+ @param value is the thinkness(width) value 
  */
 - (void)changeThicknessControl:(float)value{
     
@@ -286,7 +327,7 @@
 }
 /** Change the brush type
  Updates the HUD Layer and the Texture Layer
- 
+ @param brushname is the name of the brush to be changed
  */
 - (void)changeBrushControl:(NSString *)brushname{
     
@@ -295,7 +336,7 @@
 }
 /** Change the opacity of the brush
  Updates the HUD Layer and the Texture Layer
- 
+ @param value is the opacity value
  */
 - (void)changeOpacityControl:(float)value{
     [self.textureScene changeOpacity:value];
@@ -315,6 +356,7 @@
 }
 /** Update the eraser mode
  Updates the HUD Layer and the Texture Layer
+ @param mode is the current state of the eraser
  */
 - (void)eraserMode:(bool)mode{
     
@@ -324,7 +366,6 @@
 }
 
 /** Return the Opacity value based on Z position */
-
 - (float)opacityPercentage:(float)value{
     //NSLog(@"value %0.0f", value);
     if (value < kOpMinRange){
@@ -345,21 +386,20 @@
 }
 
 
-/* Find the percentage between two numbers */
-
+/** Find the percentage between two numbers */
 - (float)findPecentageDifference:(float)max withMin:(float)min withValue:(float)value{
-    
     return (value - min)/(max - min)*100;
-
 }
 
 
-//Using all the pointables, gets the closest one to the screen
+/**
+ Using all the pointables, gets the closest one to the screen
+ @param pointables is an array of pointables currently observered by the LeapMotion
+ @return pointable that is closest by the screen
+ */
 - (LeapPointable*)pointableClosestToScreen:(NSArray*)pointables{
     
-
     LeapPointable* closestPointable;
-    
     for (LeapPointable*pointable in pointables){
         
         //Check for the first iteration that the closest is not equal to nil
@@ -378,7 +418,12 @@
     return closestPointable;
 }
 
-/** Returns LeapPointable closest to a leapVector */
+/** 
+ Find the closest LeapPointable to the current last vector
+ @param leapVector is the position of the last pointbale
+ @param pointables is an array of pointables currently observered by the LeapMotion
+ @return LeapPointable closest to a leapVector
+ */
 - (LeapPointable*)pointableClosestToVector:(LeapVector*)leapVector withPointables:(NSArray*)pointables{
     
     

@@ -10,9 +10,11 @@
 #import "GameManager.h"
 #import "GameSettings.h"
 /**
- * Tests the SimplePoint object
+ * Tests the GameManager object
  */
 @interface GameManagerTests : SenTestCase {
+    
+    NSString* testName; /**< testName is the name of the test */
     GameManager* node; /**< gameManager instance  */
 }
 

@@ -7,7 +7,12 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-
-@interface GameSceneTests : SenTestCase
+/**
+ * Tests the GameScene object
+ */
+@interface GameSceneTests : SenTestCase{
+    
+    NSString* testName; /**< testName is the name of the test */
+}
 
 @end
