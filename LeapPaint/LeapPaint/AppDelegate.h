@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  LeapPaint
 //
-//  Created by cj on 5/7/13.
-//  Copyright __MyCompanyName__ 2013. All rights reserved.
+//  Created by Christopher Desch on 5/7/13.
+//  Copyright Christopher Desch 2013. All rights reserved. Refer to license file. 
 //
 
 #import "cocos2d.h"

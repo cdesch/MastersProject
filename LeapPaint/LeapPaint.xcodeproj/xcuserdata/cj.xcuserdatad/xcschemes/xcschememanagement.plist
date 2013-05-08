@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LeapPaintTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>232CD8F11739DC4E00894758</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>239B326F1739E81000CB0EC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
