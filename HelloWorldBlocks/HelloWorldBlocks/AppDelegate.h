@@ -3,20 +3,13 @@
 //  HelloWorldBlocks
 //
 //  Created by cj on 5/7/13.
-//  Copyright __MyCompanyName__ 2013. All rights reserved.
+//  Copyright (c) 2013 cjdesch. All rights reserved.
 //
 
-#import "cocos2d.h"
+#import <Cocoa/Cocoa.h>
+#import "LeapObjectiveC.h"
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@interface HelloWorldBlocksAppDelegate : NSObject <NSApplicationDelegate>
-{
-	NSWindow	*window_;
-	CCGLView	*glView_;
-}
-
-@property (assign) IBOutlet NSWindow	*window;
-@property (assign) IBOutlet CCGLView	*glView;
-
-- (IBAction)toggleFullScreen:(id)sender;
+@property (assign) IBOutlet NSWindow *window;
 
 @end

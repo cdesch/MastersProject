@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "232CDA861739DC9B00894758"
+               BlueprintIdentifier = "23F836611739F92B0012E52F"
                BuildableName = "BreakOut.app"
                BlueprintName = "BreakOut"
                ReferencedContainer = "container:BreakOut.xcodeproj">
@@ -28,11 +28,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "23F836811739F92D0012E52F"
+               BuildableName = "BreakOutTests.octest"
+               BlueprintName = "BreakOutTests"
+               ReferencedContainer = "container:BreakOut.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "232CDA861739DC9B00894758"
+            BlueprintIdentifier = "23F836611739F92B0012E52F"
             BuildableName = "BreakOut.app"
             BlueprintName = "BreakOut"
             ReferencedContainer = "container:BreakOut.xcodeproj">
@@ -51,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "232CDA861739DC9B00894758"
+            BlueprintIdentifier = "23F836611739F92B0012E52F"
             BuildableName = "BreakOut.app"
             BlueprintName = "BreakOut"
             ReferencedContainer = "container:BreakOut.xcodeproj">
@@ -69,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "232CDA861739DC9B00894758"
+            BlueprintIdentifier = "23F836611739F92B0012E52F"
             BuildableName = "BreakOut.app"
             BlueprintName = "BreakOut"
             ReferencedContainer = "container:BreakOut.xcodeproj">

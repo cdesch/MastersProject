@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "239B2FE21739E07700CB0EC6"
+               BlueprintIdentifier = "23F836211739F8F80012E52F"
                BuildableName = "HelloWorldBlocks.app"
                BlueprintName = "HelloWorldBlocks"
                ReferencedContainer = "container:HelloWorldBlocks.xcodeproj">
@@ -28,11 +28,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "23F836411739F8FA0012E52F"
+               BuildableName = "HelloWorldBlocksTests.octest"
+               BlueprintName = "HelloWorldBlocksTests"
+               ReferencedContainer = "container:HelloWorldBlocks.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "239B2FE21739E07700CB0EC6"
+            BlueprintIdentifier = "23F836211739F8F80012E52F"
             BuildableName = "HelloWorldBlocks.app"
             BlueprintName = "HelloWorldBlocks"
             ReferencedContainer = "container:HelloWorldBlocks.xcodeproj">
@@ -51,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "239B2FE21739E07700CB0EC6"
+            BlueprintIdentifier = "23F836211739F8F80012E52F"
             BuildableName = "HelloWorldBlocks.app"
             BlueprintName = "HelloWorldBlocks"
             ReferencedContainer = "container:HelloWorldBlocks.xcodeproj">
@@ -69,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "239B2FE21739E07700CB0EC6"
+            BlueprintIdentifier = "23F836211739F8F80012E52F"
             BuildableName = "HelloWorldBlocks.app"
             BlueprintName = "HelloWorldBlocks"
             ReferencedContainer = "container:HelloWorldBlocks.xcodeproj">
