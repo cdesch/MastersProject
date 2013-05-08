@@ -1,0 +1,34 @@
+\hypertarget{_simple_point_8h}{\section{Simple\-Point.\-h}
+\label{d8/d65/_simple_point_8h}\index{Leap\-Paint/\-Simple\-Point.\-h@{Leap\-Paint/\-Simple\-Point.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SimplePoint.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/19/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 
+00012 
+\hypertarget{_simple_point_8h_source_l00018}{}\hyperlink{interface_simple_point}{00018} \textcolor{keyword}{@interface }\hyperlink{interface_simple_point}{SimplePoint} : NSObject \{
+00019 
+00020 
+00021 \}
+00022 
+\hypertarget{_simple_point_8h_source_l00023}{}\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{00023} \textcolor{keyword}{@property} (nonatomic, readwrite) \textcolor{keywordtype}{float} x; 
+\hypertarget{_simple_point_8h_source_l00024}{}\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{00024} \textcolor{keyword}{@property} (nonatomic, readwrite) \textcolor{keywordtype}{float} y; 
+\hypertarget{_simple_point_8h_source_l00025}{}\hyperlink{interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}{00025} \textcolor{keyword}{@property} (nonatomic, readwrite) \textcolor{keywordtype}{float} z; 
+\hypertarget{_simple_point_8h_source_l00026}{}\hyperlink{interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}{00026} \textcolor{keyword}{@property} (nonatomic, readwrite) BOOL is3d; 
+00034 - (id)initWithPosition:(CGPoint)p;
+00041 - (id)initWithX:(\textcolor{keywordtype}{float})xVal withY:(\textcolor{keywordtype}{float})yVal;
+00048 - (id)initWithPosition:(CGPoint)p withZ:(\textcolor{keywordtype}{float})zVal;
+00056 - (id)initWithX:(\textcolor{keywordtype}{float})xVal withY:(\textcolor{keywordtype}{float})yVal withZ:(\textcolor{keywordtype}{float})zVal;
+00057 
+00062 - (CGPoint)point;
+00063 \textcolor{keyword}{@end}
+\end{DoxyCode}

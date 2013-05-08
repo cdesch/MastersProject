@@ -1,0 +1,156 @@
+\hypertarget{_draw_scene_8mm}{\section{Draw\-Scene.\-mm}
+\label{df/d41/_draw_scene_8mm}\index{Leap\-Paint/\-Draw\-Scene.\-mm@{Leap\-Paint/\-Draw\-Scene.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  DrawScene.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/20/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "DrawScene.h"}
+00010 \textcolor{preprocessor}{#import "SimplePointObject.h"}
+00011 
+00012 \textcolor{preprocessor}{#define PTM\_RATIO 32}
+00013 \textcolor{preprocessor}{}
+00014 \textcolor{keyword}{enum} \{
+00015     kTagParentNode = 1,
+00016 \};
+00017 \textcolor{keyword}{@implementation }\hyperlink{interface_draw_scene}{DrawScene}
+00018 
+00019 -(id) init
+00020 \{
+00021     \textcolor{keywordflow}{if}( (\textcolor{keyword}{self}=[super init])) \{
+00022         
+00023         \textcolor{comment}{// enable events}
+00024         
+00025 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00026 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isTouchEnabled = YES;
+00027         \textcolor{keyword}{self}.isAccelerometerEnabled = YES;
+00028 \textcolor{preprocessor}{#elif defined(\_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED)}
+00029 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isMouseEnabled = YES;
+00030 \textcolor{preprocessor}{#endif}
+00031 \textcolor{preprocessor}{}        CGSize s = [CCDirector sharedDirector].winSize;
+00032         
+00033         \textcolor{comment}{// init physics}
+00034         [\textcolor{keyword}{self} initPhysics];
+00035         
+00036         \textcolor{comment}{// create reset button}
+00037         [\textcolor{keyword}{self} createResetButton];
+00038         
+00039         \textcolor{comment}{//Set up sprite}
+00040         
+00041 \textcolor{preprocessor}{#if 1}
+00042 \textcolor{preprocessor}{}        \textcolor{comment}{// Use batch node. Faster}
+00043         CCSpriteBatchNode *parent = [CCSpriteBatchNode batchNodeWithFile:@"blocks.png" capacity:100];
+00044         spriteTexture\_ = [parent texture];
+00045 \textcolor{preprocessor}{#else}
+00046 \textcolor{preprocessor}{}        \textcolor{comment}{// doesn't use batch node. Slower}
+00047         spriteTexture\_ = [[CCTextureCache sharedTextureCache] addImage:@"blocks.png"];
+00048         CCNode *parent = [CCNode node];
+00049 \textcolor{preprocessor}{#endif}
+00050 \textcolor{preprocessor}{}        [\textcolor{keyword}{self} addChild:parent z:0 tag:kTagParentNode];
+00051     
+00052         CCLabelTTF *label = [CCLabelTTF labelWithString:@"LeapPuzz" fontName:@"Marker Felt" fontSize:32];
+00053         [\textcolor{keyword}{self} addChild:label z:0];
+00054         [label setColor:ccc3(0,0,255)];
+00055         label.position = ccp( s.width/2, s.height-50);
+00056         
+00057         [\textcolor{keyword}{self} scheduleUpdate];
+00058         
+00059         trackableList = [[NSMutableDictionary alloc] init];
+00060              
+00061         
+00062     \}
+00063     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00064 \}
+00065 
+00066 \textcolor{preprocessor}{#pragma mark -}
+00067 \textcolor{preprocessor}{}
+00068 -(void) createResetButton
+00069 \{
+00070     CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender)\{
+00071         CCScene *s = [CCScene node];
+00072         id child = [\hyperlink{interface_draw_scene}{DrawScene} node];
+00073         [s addChild:child];
+00074         [[CCDirector sharedDirector] replaceScene: s];
+00075     \}];
+00076     
+00077     CCMenu *menu = [CCMenu menuWithItems:reset, nil];
+00078     
+00079     CGSize s = [[CCDirector sharedDirector] winSize];
+00080     
+00081     menu.position = ccp(s.width/2, 30);
+00082     [\textcolor{keyword}{self} addChild: menu z:-1];
+00083     
+00084 \}
+00085 
+00086 -(void) initPhysics
+00087 \{
+00088     
+00089     CGSize s = [[CCDirector sharedDirector] winSize];
+00090     
+00091     \textcolor{comment}{//Gravity}
+00092     b2Vec2 gravity;
+00093     gravity.Set(0.0f, -10.0f);
+00094     world = \textcolor{keyword}{new} b2World(gravity);
+00095     
+00096     
+00097     \textcolor{comment}{// Do we want to let bodies sleep?}
+00098     world->SetAllowSleeping(\textcolor{keyword}{true});
+00099     
+00100     world->SetContinuousPhysics(\textcolor{keyword}{true});
+00101     
+00102     m\_debugDraw = \textcolor{keyword}{new} \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw}( PTM\_RATIO );
+00103     world->SetDebugDraw(m\_debugDraw);
+00104     
+00105     \_world = world;
+00106     
+00107     uint32 flags = 0;
+00108     flags += b2Draw::e\_shapeBit;
+00109     \textcolor{comment}{//      flags += b2Draw::e\_jointBit;}
+00110     \textcolor{comment}{//      flags += b2Draw::e\_aabbBit;}
+00111     \textcolor{comment}{//      flags += b2Draw::e\_pairBit;}
+00112     \textcolor{comment}{//      flags += b2Draw::e\_centerOfMassBit;}
+00113     m\_debugDraw->SetFlags(flags);
+00114     
+00115     
+00116     \textcolor{comment}{// Define the ground body.}
+00117     b2BodyDef groundBodyDef;
+00118     groundBodyDef.position.Set(0, 0); \textcolor{comment}{// bottom-left corner}
+00119     
+00120     \textcolor{comment}{// Call the body factory which allocates memory for the ground body}
+00121     \textcolor{comment}{// from a pool and creates the ground box shape (also from a pool).}
+00122     \textcolor{comment}{// The body is also added to the world.}
+00123     b2Body* groundBody = world->CreateBody(&groundBodyDef);
+00124     
+00125     \textcolor{comment}{// Define the ground box shape.}
+00126     b2EdgeShape groundBox;
+00127     
+00128     \textcolor{comment}{// bottom}
+00129     
+00130     groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM\_RATIO,0));
+00131     groundBody->CreateFixture(&groundBox,0);
+00132     
+00133     \textcolor{comment}{// top}
+00134     groundBox.Set(b2Vec2(0,s.height/PTM\_RATIO), b2Vec2(s.width/PTM\_RATIO,s.height/PTM\_RATIO));
+00135     groundBody->CreateFixture(&groundBox,0);
+00136     
+00137     \textcolor{comment}{// left}
+00138     groundBox.Set(b2Vec2(0,s.height/PTM\_RATIO), b2Vec2(0,0));
+00139     groundBody->CreateFixture(&groundBox,0);
+00140     
+00141     \textcolor{comment}{// right}
+00142     groundBox.Set(b2Vec2(s.width/PTM\_RATIO,s.height/PTM\_RATIO), b2Vec2(s.width/PTM\_RATIO,0));
+00143     groundBody->CreateFixture(&groundBox,0);
+00144     
+00145     \_groundBody = groundBody;
+00146 \}
+00147 
+00148 
+00149 
+00150 \textcolor{keyword}{@end}
+\end{DoxyCode}

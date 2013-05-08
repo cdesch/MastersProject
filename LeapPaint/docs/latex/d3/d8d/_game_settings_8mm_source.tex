@@ -1,0 +1,48 @@
+\hypertarget{_game_settings_8mm}{\section{Game\-Settings.\-mm}
+\label{d3/d8d/_game_settings_8mm}\index{Leap\-Paint/\-Game\-Settings.\-mm@{Leap\-Paint/\-Game\-Settings.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameSettings.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/16/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "GameSettings.h"}
+00010 
+00011 
+00012 \textcolor{comment}{//Constants}
+00013 \textcolor{keywordtype}{int} \textcolor{keyword}{const}  BLOCK\_SIZE = 128;
+00014 
+00015 
+00016 \textcolor{keyword}{@implementation }\hyperlink{interface_game_settings}{GameSettings}
+00017 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depthOpacityMode};
+00018 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{eraserMode};
+00019 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}{inputMode};
+\hypertarget{_game_settings_8mm_source_l00023}{}\hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{00023} + (\hyperlink{interface_game_settings}{GameSettings} *)\hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance}
+00024 \{
+00025     \textcolor{keyword}{static} \hyperlink{interface_game_settings}{GameSettings} *\hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance};
+00026     
+00027     @\textcolor{keyword}{synchronized}(\textcolor{keyword}{self})
+00028     \{
+00029         \textcolor{keywordflow}{if} (!sharedInstance)
+00030             sharedInstance = [[\hyperlink{interface_game_settings}{GameSettings} alloc] init];
+00031         
+00032         \textcolor{keywordflow}{return} \hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance};
+00033     \}
+00034 \}
+00035 
+00036 
+00038 - (id)init
+00039 \{
+00040     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00041         \textcolor{comment}{// Init Defaults}
+00042         \textcolor{keyword}{self}.\hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depthOpacityMode} = \textcolor{keyword}{false};
+00043     \}
+00044     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00045 \}
+00046 \textcolor{keyword}{@end}
+\end{DoxyCode}

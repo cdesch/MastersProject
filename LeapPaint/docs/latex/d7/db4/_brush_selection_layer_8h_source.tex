@@ -1,0 +1,34 @@
+\hypertarget{_brush_selection_layer_8h}{\section{Brush\-Selection\-Layer.\-h}
+\label{d7/db4/_brush_selection_layer_8h}\index{Leap\-Paint/\-Brush\-Selection\-Layer.\-h@{Leap\-Paint/\-Brush\-Selection\-Layer.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  BrushSelectionLayer.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/9/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 \textcolor{preprocessor}{#import "CCControlExtension.h"}
+\hypertarget{_brush_selection_layer_8h_source_l00012}{}\hyperlink{protocol_brush_selection_layer_delegate-p}{00012} \textcolor{keyword}{@protocol }\hyperlink{protocol_brush_selection_layer_delegate-p}{BrushSelectionLayerDelegate} <NSObject>
+00013 
+00014 - (void)hidePanel;
+00015 - (void)brushSelected:(NSString*)brushname;
+00016 \textcolor{keyword}{@end}
+00017 
+\hypertarget{_brush_selection_layer_8h_source_l00018}{}\hyperlink{interface_brush_selection_layer}{00018} \textcolor{keyword}{@interface }\hyperlink{interface_brush_selection_layer}{BrushSelectionLayer} : CCLayer\{
+00019     
+00020     NSMutableDictionary* imageNamesDictionary;
+00021 
+00022 \}
+00023 
+00024 
+00025 \textcolor{keyword}{@property} (nonatomic, weak) id <BrushSelectionLayerDelegate> delegate;
+00026 \textcolor{keyword}{@property} (nonatomic, readwrite) \textcolor{keywordtype}{bool} layerHidden;
+00027 
+00028 \textcolor{keyword}{@end}
+\end{DoxyCode}

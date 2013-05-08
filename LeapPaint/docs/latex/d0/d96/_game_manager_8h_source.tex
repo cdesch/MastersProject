@@ -1,0 +1,51 @@
+\hypertarget{_game_manager_8h}{\section{Game\-Manager.\-h}
+\label{d0/d96/_game_manager_8h}\index{Leap\-Paint/\-Game\-Manager.\-h@{Leap\-Paint/\-Game\-Manager.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameManager.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/2/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00012 \textcolor{preprocessor}{#import "HUDLayer.h"}
+00013 
+00014 
+00015 \textcolor{preprocessor}{#import "SketchRenderTextureScene.h"}
+00016 \textcolor{preprocessor}{#import "BackgroundLayer.h"}
+00017 \textcolor{preprocessor}{#import "ControlsLayer.h"}
+00018 \textcolor{preprocessor}{#import "GameSettings.h"}
+00019 \textcolor{preprocessor}{#import "SimplePoint.h"}
+00020 
+\hypertarget{_game_manager_8h_source_l00027}{}\hyperlink{interface_game_manager}{00027} \textcolor{keyword}{@interface }\hyperlink{interface_game_manager}{GameManager} : CCScene <LeapListener, \hyperlink{protocol_h_u_d_delegate-p}{HUDDelegate}, 
+      \hyperlink{protocol_controls_layer_delegate-p}{ControlsLayerDelegate}>
+00028 \{
+00029     InputMode \hyperlink{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{inputMode};    
+\hypertarget{_game_manager_8h_source_l00030}{}\hyperlink{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{00030}     LeapPointable* \hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable}; 
+\hypertarget{_game_manager_8h_source_l00031}{}\hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{00031}     CGPoint \hyperlink{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{currentPoint};   
+\hypertarget{_game_manager_8h_source_l00032}{}\hyperlink{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{00032}     \textcolor{comment}{//Settings}
+00033     BOOL painting;
+00034     
+00035     \hyperlink{interface_game_settings}{GameSettings}* \hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{gameSettings}; 
+00038     \textcolor{keywordtype}{int} \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag};                
+\hypertarget{_game_manager_8h_source_l00039}{}\hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{00039}     \hyperlink{interface_simple_point}{SimplePoint}* \hyperlink{interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}{lastPoint};     
+\hypertarget{_game_manager_8h_source_l00040}{}\hyperlink{interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}{00040}     \textcolor{keywordtype}{int} \hyperlink{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{framesSinceLastFound};   
+00043 \}
+00044 
+00045 \textcolor{keyword}{@property} (nonatomic,strong) \hyperlink{interface_h_u_d_layer}{HUDLayer}* hudLayer;                    
+\hypertarget{_game_manager_8h_source_l00046}{}\hyperlink{interface_game_manager_ae286fb2f9d31810d73c7231a574b56b0}{00046} \textcolor{keyword}{@property} (nonatomic,strong) \hyperlink{interface_sketch_render_texture_scene}{SketchRenderTextureScene}* textureScene;
+\hypertarget{_game_manager_8h_source_l00047}{}\hyperlink{interface_game_manager_a79a86ff991f39b3007d99ca61af21253}{00047} \textcolor{keyword}{@property} (nonatomic,strong) \hyperlink{interface_background_layer}{BackgroundLayer}* backgroundLayer;      
+\hypertarget{_game_manager_8h_source_l00048}{}\hyperlink{interface_game_manager_a2a3a96f1202b13592f244cf1402b4051}{00048} \textcolor{keyword}{@property} (nonatomic,strong) \hyperlink{interface_controls_layer}{ControlsLayer}* controlsLayer;          
+00050 \textcolor{keyword}{@property} (nonatomic,strong) LeapController* controller;            
+\hypertarget{_game_manager_8h_source_l00051}{}\hyperlink{interface_game_manager_a4b089253ae3569099d28535b128f3436}{00051} \textcolor{keyword}{@property} (nonatomic,strong) LeapScreen* leapScreen;                
+00054 - (float)findPecentageDifference:(\textcolor{keywordtype}{float})max withMin:(\textcolor{keywordtype}{float})min withValue:(\textcolor{keywordtype}{float})value;
+00055 - (float)opacityPercentage:(\textcolor{keywordtype}{float})value;
+00056 
+00057 \textcolor{keyword}{@end}
+\end{DoxyCode}

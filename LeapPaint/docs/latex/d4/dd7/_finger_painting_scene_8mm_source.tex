@@ -1,0 +1,558 @@
+\hypertarget{_finger_painting_scene_8mm}{\section{Finger\-Painting\-Scene.\-mm}
+\label{d4/dd7/_finger_painting_scene_8mm}\index{Leap\-Paint/\-Finger\-Painting\-Scene.\-mm@{Leap\-Paint/\-Finger\-Painting\-Scene.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  FingerPaintingScene.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/18/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "FingerPaintingScene.h"}
+00010 \textcolor{preprocessor}{#import "SimplePoint.h"}
+00011 
+00012 \textcolor{preprocessor}{#define PTM\_RATIO 32}
+00013 \textcolor{preprocessor}{}
+00014 \textcolor{keyword}{enum} \{
+00015     kTagParentNode = 1,
+00016 \};
+00017 
+00018 
+00019 
+00020 \textcolor{keyword}{@implementation }\hyperlink{interface_finger_painting_scene}{FingerPaintingScene}
+00021 
+00022 -(id) init
+00023 \{
+00024     \textcolor{keywordflow}{if}( (\textcolor{keyword}{self}=[super init])) \{
+00025         
+00026         \textcolor{comment}{// enable events}
+00027 
+00028         \textcolor{keyword}{self}.isMouseEnabled = YES;
+00029 
+00030         CGSize s = [CCDirector sharedDirector].winSize;
+00031         
+00032         
+00033         \textcolor{comment}{// create reset button}
+00034         [\textcolor{keyword}{self} createResetButton];
+00035         
+00036         \textcolor{comment}{//Set up sprite}
+00037         
+00038 \textcolor{preprocessor}{#if 1}
+00039 \textcolor{preprocessor}{}        \textcolor{comment}{// Use batch node. Faster}
+00040         CCSpriteBatchNode *parent = [CCSpriteBatchNode batchNodeWithFile:@"blocks.png" capacity:100];
+00041         spriteTexture\_ = [parent texture];
+00042 \textcolor{preprocessor}{#else}
+00043 \textcolor{preprocessor}{}        \textcolor{comment}{// doesn't use batch node. Slower}
+00044         spriteTexture\_ = [[CCTextureCache sharedTextureCache] addImage:@"blocks.png"];
+00045         CCNode *parent = [CCNode node];
+00046 \textcolor{preprocessor}{#endif}
+00047 \textcolor{preprocessor}{}        [\textcolor{keyword}{self} addChild:parent z:0 tag:kTagParentNode];
+00048         
+00049                 
+00050         CCLabelTTF *label = [CCLabelTTF labelWithString:@"MotionStreak" fontName:@"Marker Felt" fontSize:32
+      ];
+00051         [\textcolor{keyword}{self} addChild:label z:0];
+00052         [label setColor:ccc3(0,0,255)];
+00053         label.position = ccp( s.width/2, s.height-50);
+00054         
+00055         \textcolor{comment}{//[self scheduleUpdate];}
+00056         
+00057         
+00058         updateDraw = [NSTimer scheduledTimerWithTimeInterval:0.1
+00059                                          target:self
+00060                                        selector:@selector(updateDrawing:)
+00061                                        userInfo:nil
+00062                                         repeats:YES];
+00063         
+00064         trackableList = [[NSMutableDictionary alloc] init];
+00065         brushesList = [[NSMutableDictionary alloc] init];
+00066         
+00067         [\textcolor{keyword}{self} run];
+00068         
+00069     
+00070         
+00071     \}
+00072     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00073 \}
+00074 
+00075 - (void)updateDrawing:(\textcolor{keywordtype}{id})sender\{
+00076     
+00077     
+00078     glLineWidth(5.f);
+00079     ccDrawColor4B(0, 0, 255, 255);
+00080     
+00081     glEnable(GL\_LINE\_SMOOTH);
+00082     
+00083     
+00084     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{id} key in [trackableList allKeys]) \{
+00085         RedDot* sprite = [trackableList objectForKey:key];
+00086         \textcolor{keywordflow}{if} ([sprite.path count] > 1)\{
+00087             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;  i < [sprite.path count] -1; i++)\{
+00088                 \hyperlink{interface_simple_point}{SimplePoint}* simplePoint =  [sprite.path objectAtIndex:i];
+00089                 \hyperlink{interface_simple_point}{SimplePoint}* simplePointNext = [sprite.path objectAtIndex:i+1];
+00090                 
+00091                 NSLog(\textcolor{stringliteral}{@"Dragged %0.0f , %0.0f "}, simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y});
+00092                 ccDrawLine( ccp(simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}), ccp(simplePointNext.
+      \hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}));
+00093                 
+00094                 
+00095                 NSLog(\textcolor{stringliteral}{@"Draw"});
+00096             \}
+00097             [sprite.path removeAllObjects];
+00098         \}
+00099         
+00100     \}
+00101     
+00102     
+00103     \textcolor{keywordflow}{if} (mouseCursor != nil)\{
+00104         \textcolor{keywordflow}{if} ([mouseCursor.path count] > 1)\{
+00105             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;  i < [mouseCursor.path count] -1; i++)\{
+00106                 \hyperlink{interface_simple_point}{SimplePoint}* simplePoint =  [mouseCursor.path objectAtIndex:i];
+00107                 \hyperlink{interface_simple_point}{SimplePoint}* simplePointNext = [mouseCursor.path objectAtIndex:i+1];
+00108                 
+00109                 NSLog(\textcolor{stringliteral}{@"Dragged %0.0f , %0.0f "}, simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y});
+00110                 ccDrawLine( ccp(simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}), ccp(simplePointNext.
+      \hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}));
+00111                 
+00112                 
+00113                 NSLog(\textcolor{stringliteral}{@"Draw"});
+00114             \}
+00115             NSRange range = NSMakeRange(0, [mouseCursor.path count] -1);
+00116             
+00117             [mouseCursor.path removeObjectsInRange:range];
+00118 
+00119         \}
+00120 
+00121     \}
+00122         
+00123 \}
+00124 
+00125 
+00126 \textcolor{preprocessor}{#pragma mark - SampleDelegate Callbacks}
+00127 \textcolor{preprocessor}{}- (void)run
+00128 \{
+00129     controller = [[LeapController alloc] init];
+00130     [controller addListener:self];
+00131     NSLog(\textcolor{stringliteral}{@"running"});
+00132 \}
+00133 
+00134 - (void)onInit:(NSNotification *)notification\{
+00135     NSLog(\textcolor{stringliteral}{@"Leap: Initialized"});
+00136 \}
+00137 
+00138 - (void)onConnect:(NSNotification *)notification;
+00139 \{
+00140     NSLog(\textcolor{stringliteral}{@"Leap: Connected"});
+00141     LeapController *aController = (LeapController *)[notification \textcolor{keywordtype}{object}];
+00142     [aController enableGesture:LEAP\_GESTURE\_TYPE\_CIRCLE enable:YES];
+00143     [aController enableGesture:LEAP\_GESTURE\_TYPE\_KEY\_TAP enable:YES];
+00144     [aController enableGesture:LEAP\_GESTURE\_TYPE\_SCREEN\_TAP enable:YES];
+00145     [aController enableGesture:LEAP\_GESTURE\_TYPE\_SWIPE enable:YES];
+00146 \}
+00147 
+00148 - (void)onDisconnect:(NSNotification *)notification\{
+00149     NSLog(\textcolor{stringliteral}{@"Leap: Disconnected"});
+00150 \}
+00151 
+00152 - (void)onExit:(NSNotification *)notification\{
+00153     NSLog(\textcolor{stringliteral}{@"Leap: Exited"});
+00154 \}
+00155 - (void)onFrame:(NSNotification *)notification\{
+00156     
+00158     LeapController *aController = (LeapController *)[notification \textcolor{keywordtype}{object}];
+00159     \textcolor{comment}{// Get the most recent frame and report some basic information}
+00160     LeapFrame *frame = [aController frame:0];
+00161     
+00162     
+00163     \textcolor{comment}{/*}
+00164 \textcolor{comment}{     NSLog(@"Frame id: %lld, timestamp: %lld, hands: %ld, fingers: %ld, tools: %ld",}
+00165 \textcolor{comment}{     [frame id], [frame timestamp], [[frame hands] count],}
+00166 \textcolor{comment}{     [[frame fingers] count], [[frame tools] count]);}
+00167 \textcolor{comment}{     */}
+00168     \textcolor{keywordflow}{if} ([[frame hands] count] != 0) \{
+00169         \textcolor{comment}{// Get the first hand}
+00170         LeapHand *hand = [[frame hands] objectAtIndex:0];
+00171         
+00172         \textcolor{comment}{// Check if the hand has any fingers}
+00173         NSArray *fingers = [hand fingers];
+00174         
+00175         \textcolor{keywordflow}{if} ([fingers count] != 0) \{
+00176             
+00177             \textcolor{comment}{// Calculate the hand's average finger tip position}
+00178             LeapVector *avgPos = [[LeapVector alloc] init];
+00179             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < [fingers count]; i++) \{
+00180                 LeapFinger *finger = [fingers objectAtIndex:i];
+00181                 avgPos = [avgPos plus:[finger tipPosition]];
+00182                 
+00183                 \textcolor{keywordflow}{if} (avgPos.z < 0)\{
+00184                     NSString* fingerID = [NSString stringWithFormat:@"%d", finger.id];
+00185                     
+00186                     \textcolor{comment}{//Check if the Finger ID exists in the list already}
+00187                     \textcolor{keywordflow}{if} ([trackableList objectForKey:fingerID]) \{
+00188                         
+00189                         \textcolor{comment}{//If it does exist update the position on the screen}
+00190                         RedDot* sprite = [trackableList objectForKey:fingerID];
+00191                         sprite.position = [\textcolor{keyword}{self} covertLeapCoordinates:CGPointMake(finger.tipPosition.x, 
+      finger.tipPosition.y)];
+00192                         sprite.updated = TRUE;
+00193                         
+00194                         CCMotionStreak* streak = [\textcolor{keyword}{self} getMotionStreak:[sprite.fingerID intValue] 
+      withSprite:sprite];
+00195                         streak.position = sprite.position;
+00196                         
+00197                         \hyperlink{interface_simple_point}{SimplePoint}* simplePoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] 
+      initWithPosition:sprite.position];
+00198                         [sprite.path addObject:simplePoint];
+00199                         
+00200                         
+00201                     \}\textcolor{keywordflow}{else}\{
+00202                         
+00203                         NSLog(\textcolor{stringliteral}{@"x %0.0f y %0.0f z %0.0f"}, finger.tipPosition.x, finger.tipPosition.y, 
+      finger.tipPosition.z);
+00204                         \textcolor{comment}{// CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];}
+00205                         \textcolor{comment}{//CGPoint mouseLocation = [self convertToNodeSpace:point];}
+00206                         
+00207                         \textcolor{comment}{//Add it to the dictionary}
+00208                         RedDot* redDot = [\textcolor{keyword}{self} addRedDot:[\textcolor{keyword}{self} covertLeapCoordinates:CGPointMake(finger.
+      tipPosition.x, finger.tipPosition.y)] finger:fingerID];
+00209                         [trackableList setObject:redDot forKey:fingerID];
+00210                         
+00211                         \textcolor{comment}{//NSMutableArray* myDraw = [[NSMutableArray alloc]init];}
+00212                         
+00213                     \}
+00214                 \}
+00215 
+00216             \}
+00217             
+00218             avgPos = [avgPos divide:[fingers count]];
+00219             
+00220             \textcolor{comment}{//NSLog(@"Hand has %ld fingers, average finger tip position %@", [fingers count], avgPos);}
+00221             \textcolor{keywordflow}{for} (LeapFinger* finger in fingers)\{
+00222                 
+00223                 \textcolor{comment}{//NSLog(@"Finger ID %d %ld", finger.id, (unsigned long)[finger hash]);}
+00224             \}
+00225             
+00226         \}
+00227         
+00228         \textcolor{comment}{//}
+00229         [\textcolor{keyword}{self} checkFingerExists];
+00230         
+00231         \textcolor{comment}{// Get the hand's sphere radius and palm position}
+00232         \textcolor{comment}{/*}
+00233 \textcolor{comment}{         NSLog(@"Hand sphere radius: %f mm, palm position: %@",}
+00234 \textcolor{comment}{         [hand sphereRadius], [hand palmPosition]);}
+00235 \textcolor{comment}{         */}
+00236         \textcolor{comment}{// Get the hand's normal vector and direction}
+00237         \textcolor{comment}{//const LeapVector *normal = [hand palmNormal];}
+00238         \textcolor{comment}{//const LeapVector *direction = [hand direction];}
+00239         
+00240         \textcolor{comment}{/*}
+00241 \textcolor{comment}{         // Calculate the hand's pitch, roll, and yaw angles}
+00242 \textcolor{comment}{         NSLog(@"Hand pitch: %f degrees, roll: %f degrees, yaw: %f degrees\(\backslash\)n",}
+00243 \textcolor{comment}{         [direction pitch] * LEAP\_RAD\_TO\_DEG,}
+00244 \textcolor{comment}{         [normal roll] * LEAP\_RAD\_TO\_DEG,}
+00245 \textcolor{comment}{         [direction yaw] * LEAP\_RAD\_TO\_DEG);}
+00246 \textcolor{comment}{         */}
+00247     \}
+00248     \textcolor{comment}{/*}
+00249 \textcolor{comment}{    NSArray *gestures = [frame gestures:nil];}
+00250 \textcolor{comment}{    for (int g = 0; g < [gestures count]; g++) \{}
+00251 \textcolor{comment}{        LeapGesture *gesture = [gestures objectAtIndex:g];}
+00252 \textcolor{comment}{        switch (gesture.type) \{}
+00253 \textcolor{comment}{            case LEAP\_GESTURE\_TYPE\_CIRCLE: \{}
+00254 \textcolor{comment}{                LeapCircleGesture *circleGesture = (LeapCircleGesture *)gesture;}
+00255 \textcolor{comment}{                // Calculate the angle swept since the last frame}
+00256 \textcolor{comment}{                float sweptAngle = 0;}
+00257 \textcolor{comment}{                if(circleGesture.state != LEAP\_GESTURE\_STATE\_START) \{}
+00258 \textcolor{comment}{                    LeapCircleGesture *previousUpdate = (LeapCircleGesture *)[[aController frame:1]
+       gesture:gesture.id];}
+00259 \textcolor{comment}{                    sweptAngle = (circleGesture.progress - previousUpdate.progress) * 2 * LEAP\_PI;}
+00260 \textcolor{comment}{                \}}
+00261 \textcolor{comment}{                }
+00262 \textcolor{comment}{                NSLog(@"Circle id: %d, %@, progress: %f, radius %f, angle: %f degrees",}
+00263 \textcolor{comment}{                      circleGesture.id, [FingerPaintingScene stringForState:gesture.state],}
+00264 \textcolor{comment}{                      circleGesture.progress, circleGesture.radius, sweptAngle * LEAP\_RAD\_TO\_DEG);}
+00265 \textcolor{comment}{                break;}
+00266 \textcolor{comment}{            \}}
+00267 \textcolor{comment}{            case LEAP\_GESTURE\_TYPE\_SWIPE: \{}
+00268 \textcolor{comment}{                LeapSwipeGesture *swipeGesture = (LeapSwipeGesture *)gesture;}
+00269 \textcolor{comment}{                NSLog(@"Swipe id: %d, %@, position: %@, direction: %@, speed: %f",}
+00270 \textcolor{comment}{                      swipeGesture.id, [FingerPaintingScene stringForState:swipeGesture.state],}
+00271 \textcolor{comment}{                      swipeGesture.position, swipeGesture.direction, swipeGesture.speed);}
+00272 \textcolor{comment}{                break;}
+00273 \textcolor{comment}{            \}}
+00274 \textcolor{comment}{            case LEAP\_GESTURE\_TYPE\_KEY\_TAP: \{}
+00275 \textcolor{comment}{                LeapKeyTapGesture *keyTapGesture = (LeapKeyTapGesture *)gesture;}
+00276 \textcolor{comment}{                NSLog(@"Key Tap id: %d, %@, position: %@, direction: %@",}
+00277 \textcolor{comment}{                      keyTapGesture.id, [FingerPaintingScene stringForState:keyTapGesture.state],}
+00278 \textcolor{comment}{                      keyTapGesture.position, keyTapGesture.direction);}
+00279 \textcolor{comment}{                break;}
+00280 \textcolor{comment}{            \}}
+00281 \textcolor{comment}{            case LEAP\_GESTURE\_TYPE\_SCREEN\_TAP: \{}
+00282 \textcolor{comment}{                LeapScreenTapGesture *screenTapGesture = (LeapScreenTapGesture *)gesture;}
+00283 \textcolor{comment}{                NSLog(@"Screen Tap id: %d, %@, position: %@, direction: %@",}
+00284 \textcolor{comment}{                      screenTapGesture.id, [FingerPaintingScene stringForState:screenTapGesture.state],}
+00285 \textcolor{comment}{                      screenTapGesture.position, screenTapGesture.direction);}
+00286 \textcolor{comment}{                break;}
+00287 \textcolor{comment}{            \}}
+00288 \textcolor{comment}{            default:}
+00289 \textcolor{comment}{                NSLog(@"Unknown gesture type");}
+00290 \textcolor{comment}{                break;}
+00291 \textcolor{comment}{        \}}
+00292 \textcolor{comment}{    \}}
+00293 \textcolor{comment}{     */}
+00294 
+00295 \}
+00296 
+00297 \textcolor{comment}{//Cycle through all the trackable dots and check if the fingers still exist.}
+00298 \textcolor{comment}{//If they don't, delete them.}
+00299 - (void)checkFingerExists\{
+00300     
+00301     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{id} key in [trackableList allKeys]) \{
+00302         RedDot* sprite = [trackableList objectForKey:key];
+00303         \textcolor{keywordflow}{if} (sprite.updated) \{
+00304             sprite.updated = FALSE;
+00305             \textcolor{comment}{//return;}
+00306         \}\textcolor{keywordflow}{else}\{
+00307             CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00308             [trackableList removeObjectForKey:key];
+00309             [parent removeChild:sprite cleanup:YES];
+00310             \textcolor{comment}{//Get rid of the motion streak}
+00311             [\textcolor{keyword}{self} removeMotionStreak:[sprite.fingerID intValue]];
+00312             
+00313         \}
+00314     \}
+00315 \}
+00316 
+00317 
+00318 - (RedDot*)addRedDot:(CGPoint)p finger:(NSString*)fingerID\{
+00319     
+00320     CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00321     \textcolor{keywordtype}{int} idx = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00322     \textcolor{keywordtype}{int} idy = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00323     
+00324     \textcolor{comment}{//RedDot *sprite = [RedDot spriteWithFile:@"redcrosshair.png"];}
+00325     RedDot *sprite = [RedDot spriteWithTexture:spriteTexture\_ rect:CGRectMake(32 * idx,32 * idy,32,32)];
+00326     [parent addChild:sprite];
+00327     sprite.updated = TRUE;
+00328     sprite.fingerID = fingerID;
+00329     sprite.position = ccp( p.x, p.y);
+00330     sprite.path = [[NSMutableArray alloc] init];
+00331     \hyperlink{interface_simple_point}{SimplePoint}* simplePoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:sprite.position]
+      ;
+00332     [sprite.path addObject:simplePoint];
+00333     
+00334     [\textcolor{keyword}{self} createMotionStreak:[sprite.fingerID intValue] withSprite:sprite];
+00335     
+00336     \textcolor{keywordflow}{return} sprite;
+00337 \}
+00338 
+00339 - (CGPoint)covertLeapCoordinates:(CGPoint)p\{
+00340     
+00341     CGSize s = [[CCDirector sharedDirector] winSize];
+00342     \textcolor{keywordtype}{float} screenCenter = 0.0f;
+00343     \textcolor{keywordtype}{float} xScale = 1.75f;
+00344     \textcolor{keywordtype}{float} yScale = 1.25f;
+00345     \textcolor{keywordflow}{return} CGPointMake((s.width/2)+ (( p.x - screenCenter) * xScale), p.y * yScale);
+00346 \}
+00347 \textcolor{preprocessor}{#pragma mark -}
+00348 \textcolor{preprocessor}{}
+00349 -(void) createResetButton
+00350 \{
+00351     CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender)\{
+00352         CCScene *s = [CCScene node];
+00353         id child = [\hyperlink{interface_finger_painting_scene}{FingerPaintingScene} node];
+00354         [s addChild:child];
+00355         [[CCDirector sharedDirector] replaceScene: s];
+00356     \}];
+00357     
+00358     CCMenu *menu = [CCMenu menuWithItems:reset, nil];
+00359     
+00360     CGSize s = [[CCDirector sharedDirector] winSize];
+00361     
+00362     menu.position = ccp(s.width/2, 30);
+00363     [\textcolor{keyword}{self} addChild: menu z:-1];
+00364     
+00365 \}
+00366 
+00367 - (void)createMotionStreak:(NSInteger)touchHash withSprite:(CCSprite*)sprite
+00368 \{
+00369     CCMotionStreak* streak = [CCMotionStreak streakWithFade:1.7f minSeg:10 width:32 color:ccc3(0, 255, 255)
+       texture:sprite.texture];
+00370     [\textcolor{keyword}{self} addChild:streak z:5 tag:touchHash];
+00371 \}
+00372 
+00373 - (void)removeMotionStreak:(NSInteger)touchHash
+00374 \{
+00375     [\textcolor{keyword}{self} removeChildByTag:touchHash cleanup:YES];
+00376 \}
+00377 
+00378 - (CCMotionStreak*)getMotionStreak:(NSInteger)touchHash withSprite:(CCSprite*)sprite
+00379 \{
+00380     CCNode* node = [\textcolor{keyword}{self} getChildByTag:touchHash];
+00381     \textcolor{keywordflow}{if}(![node isKindOfClass:[CCMotionStreak \textcolor{keyword}{class}]]) \{
+00382         [\textcolor{keyword}{self} createMotionStreak:touchHash withSprite:sprite];
+00383     \}
+00384     \textcolor{keywordflow}{return} (CCMotionStreak*)node;
+00385 \}
+00386 
+00387 - (void)addMotionStreakPoint:(CGPoint)point on:(NSInteger)touchHash withSprite:(CCSprite*)sprite
+00388 \{
+00389     CCMotionStreak* streak = [\textcolor{keyword}{self} getMotionStreak:touchHash withSprite:sprite];
+00390     streak.position = point;
+00391     \textcolor{comment}{//[streak.ribbon addPointAt:point width:32];}
+00392 \}
+00393 
+00394 \textcolor{preprocessor}{#pragma mark - Gestures}
+00395 \textcolor{preprocessor}{}
+00396 - (void)activateColorWheel\{
+00397     
+00398 \}
+00399 
+00400 - (void)deactivateColorWheel\{
+00401     
+00402 \}
+00403 
+00404 
+00405 - (void)draw \{
+00406     \textcolor{comment}{// ...}
+00407     [\textcolor{keyword}{super} draw];
+00408 
+00409     \textcolor{comment}{// draw a simple line}
+00410     \textcolor{comment}{// The default state is:}
+00411     \textcolor{comment}{// Line Width: 1}
+00412     \textcolor{comment}{// color: 255,255,255,255 (white, non-transparent)}
+00413     \textcolor{comment}{// Anti-Aliased}
+00414     glLineWidth(5.f);
+00415     ccDrawColor4B(0, 0, 255, 255);
+00416     
+00417     glEnable(GL\_LINE\_SMOOTH);
+00418     
+00419 
+00420     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{id} key in [trackableList allKeys]) \{
+00421         RedDot* sprite = [trackableList objectForKey:key];
+00422         \textcolor{keywordflow}{if} ([sprite.path count] > 1)\{
+00423             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;  i < [sprite.path count] -1; i++)\{
+00424                 \hyperlink{interface_simple_point}{SimplePoint}* simplePoint =  [sprite.path objectAtIndex:i];
+00425                 \hyperlink{interface_simple_point}{SimplePoint}* simplePointNext = [sprite.path objectAtIndex:i+1];
+00426                 
+00427                 NSLog(\textcolor{stringliteral}{@"Dragged %0.0f , %0.0f "}, simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y});
+00428                 ccDrawLine( ccp(simplePoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}), ccp(simplePointNext.
+      \hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, simplePoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}));
+00429                 
+00430                 
+00431                 NSLog(\textcolor{stringliteral}{@"Draw"});
+00432             \}
+00433             [sprite.path removeAllObjects];
+00434         \}
+00435         
+00436     \}
+00437     
+00438     \textcolor{comment}{// ...}
+00439 \}
+00440 
+00441 
+00442 
+00443 
+00444 + (NSString *)stringForState:(LeapGestureState)state
+00445 \{
+00446     \textcolor{keywordflow}{switch} (state) \{
+00447         \textcolor{keywordflow}{case} LEAP\_GESTURE\_STATE\_INVALID:
+00448             \textcolor{keywordflow}{return} \textcolor{stringliteral}{@"STATE\_INVALID"};
+00449         \textcolor{keywordflow}{case} LEAP\_GESTURE\_STATE\_START:
+00450             \textcolor{keywordflow}{return} \textcolor{stringliteral}{@"STATE\_START"};
+00451         \textcolor{keywordflow}{case} LEAP\_GESTURE\_STATE\_UPDATE:
+00452             \textcolor{keywordflow}{return} \textcolor{stringliteral}{@"STATE\_UPDATED"};
+00453         \textcolor{keywordflow}{case} LEAP\_GESTURE\_STATE\_STOP:
+00454             \textcolor{keywordflow}{return} \textcolor{stringliteral}{@"STATE\_STOP"};
+00455         \textcolor{keywordflow}{default}:
+00456             \textcolor{keywordflow}{return} \textcolor{stringliteral}{@"STATE\_INVALID"};
+00457     \}
+00458 \}
+00459 
+00460 
+00461 
+00462 - (void)beginFingerDraw:(\textcolor{keywordtype}{id})sender\{
+00463     
+00464     \textcolor{comment}{//TrackedFinger* trackedFinger = (TrackedFinger*)[sender object];}
+00465     \textcolor{comment}{//[self beginDraw:trackedFinger.position];}
+00466     
+00467 \}
+00468 
+00469 - (void)updateFingerDraw:(\textcolor{keywordtype}{id})sender\{
+00470     \textcolor{comment}{//TrackedFinger* trackedFinger = (TrackedFinger*)[sender object];}
+00471     \textcolor{comment}{//[self updateDraw:trackedFinger.position];}
+00472     
+00473 \}
+00474 
+00475 - (void)endFingerDraw:(\textcolor{keywordtype}{id})sender\{
+00476     \textcolor{comment}{//TrackedFinger* trackedFinger = (TrackedFinger*)[sender object];}
+00477     \textcolor{comment}{//[self endDraw:trackedFinger.position];}
+00478 \}
+00479 
+00480 \textcolor{comment}{//The further negative, the thicker the line.}
+00481 - (void)beginDraw:(CGPoint)point\{
+00482     
+00483     
+00484   
+00485 \}
+00486 
+00487 - (void)updateDraw:(CGPoint)point\{
+00488     
+00489     
+00490 \}
+00491 
+00492 - (void)endDraw:(CGPoint)point\{
+00493     
+00494 \}
+00495 
+00496 
+00497 \textcolor{preprocessor}{#pragma mark - Mouse Handling}
+00498 \textcolor{preprocessor}{}- (BOOL)ccMouseDown:(NSEvent *)event\{
+00499     
+00500     \textcolor{keywordflow}{if} (mouseCursor == nil)\{
+00501         
+00502         
+00503         CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00504         mouseCursor = [\textcolor{keyword}{self} addRedDot:point finger:@"mouse"];
+00505 
+00506     \}
+00507 
+00508     
+00509         \textcolor{keywordflow}{return} YES;
+00510 \}
+00511 
+00512 - (BOOL)ccMouseDragged:(NSEvent *)event \{
+00513     
+00514  
+00515     \textcolor{keywordflow}{if} (mouseCursor != nil)\{
+00516         CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00517         mouseCursor.position = point;
+00518         \hyperlink{interface_simple_point}{SimplePoint}* simplePoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:point];
+00519         [mouseCursor.path addObject:simplePoint];
+00520         
+00521     \}
+00522     
+00523     \textcolor{keywordflow}{return} YES;
+00524     
+00525 \}
+00526 
+00527 - (BOOL)ccMouseUp:(NSEvent *)event\{
+00528     
+00529     \textcolor{keywordflow}{if} (mouseCursor != nil)\{
+00530         CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00531         [parent removeChild:mouseCursor cleanup:nil];
+00532         mouseCursor =nil;
+00533     \}
+00534         
+00535 
+00536 
+00537     \textcolor{keywordflow}{return} YES;
+00538 \}
+00539 
+00540 
+00541 \textcolor{keyword}{@end}
+\end{DoxyCode}

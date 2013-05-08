@@ -1,0 +1,47 @@
+\hypertarget{_sketch_render_texture_scene_8h}{\section{Sketch\-Render\-Texture\-Scene.\-h}
+\label{d8/dbe/_sketch_render_texture_scene_8h}\index{Leap\-Paint/\-Sketch\-Render\-Texture\-Scene.\-h@{Leap\-Paint/\-Sketch\-Render\-Texture\-Scene.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SketchRenderTextureScene.h}
+00003 \textcolor{comment}{//  Cocos2D-CCRenderTexture-Demo}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Copyright (c) 2011 Steffen Itterheim.}
+00006 \textcolor{comment}{//  Distributed under MIT License.}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "cocos2d.h"}
+00010 \textcolor{preprocessor}{#import "SimplePoint.h"}
+00011 \textcolor{preprocessor}{#import "GameSettings.h"}
+\hypertarget{_sketch_render_texture_scene_8h_source_l00012}{}\hyperlink{interface_sketch_render_texture_scene}{00012} \textcolor{keyword}{@interface }\hyperlink{interface_sketch_render_texture_scene}{SketchRenderTextureScene} : CCLayer
+00013 \{
+00014     CCSprite* brush;
+00015     NSMutableArray* touches;
+00016 
+00017     
+00018     ccColor3B lastColor;
+00019     ccColor3B previousColor;
+00020     NSString* lastBrush;
+00021     \textcolor{keywordtype}{float} lastScale;
+00022     \textcolor{keywordtype}{bool} eraseMode;
+00023     
+00024 
+00025     
+00026 \}
+00027 
+00028 \textcolor{keyword}{@property} (nonatomic,readwrite) \textcolor{keywordtype}{float} opacity;
+00029 
+00030 - (void)beginDraw:(CGPoint)point withZ:(\textcolor{keywordtype}{float})z;
+00031 - (void)updateDraw:(CGPoint)point withZ:(\textcolor{keywordtype}{float})z;
+00032 - (void)endDraw:(CGPoint)point;
+00033 
+00034 - (void)changeColor:(ccColor3B)color;
+00035 - (void)changeBrush:(NSString*)brushname;
+00036 - (void)changeScale:(\textcolor{keywordtype}{float})size;
+00037 - (void)changeOpacity:(\textcolor{keywordtype}{float})o;
+00038 - (void)erasingMode:(BOOL)mode;
+00039 
+00040 - (void)clearDrawing;
+00041 \textcolor{keyword}{@end}
+\end{DoxyCode}

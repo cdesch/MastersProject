@@ -1,0 +1,58 @@
+\hypertarget{_h_u_d_layer_8h}{\section{H\-U\-D\-Layer.\-h}
+\label{db/dc8/_h_u_d_layer_8h}\index{Leap\-Paint/\-H\-U\-D\-Layer.\-h@{Leap\-Paint/\-H\-U\-D\-Layer.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  HUDLayer.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/1/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 \textcolor{preprocessor}{#import "LPTool.h"}
+00012 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00013 \textcolor{preprocessor}{#import "SimplePoint.h"}
+00014 \textcolor{preprocessor}{#import "GameSettings.h"}
+00015 
+00016 
+\hypertarget{_h_u_d_layer_8h_source_l00020}{}\hyperlink{protocol_h_u_d_delegate-p}{00020} \textcolor{keyword}{@protocol }\hyperlink{protocol_h_u_d_delegate-p}{HUDDelegate} <NSObject>
+00021 
+00022 - (void)changeMode:(InputMode)mode;
+00023 - (void)painting:(BOOL)paintingState;
+00024 
+00025 \textcolor{keyword}{@end}
+00026 
+\hypertarget{_h_u_d_layer_8h_source_l00030}{}\hyperlink{interface_h_u_d_layer}{00030} \textcolor{keyword}{@interface }\hyperlink{interface_h_u_d_layer}{HUDLayer} : CCLayer  \{
+\hypertarget{_h_u_d_layer_8h_source_l00031}{}\hyperlink{interface_h_u_d_layer_aae17304a5ecff2a6fa43471edb779341}{00031}     NSString* \hyperlink{interface_h_u_d_layer_aae17304a5ecff2a6fa43471edb779341}{primaryToolID};    
+\hypertarget{_h_u_d_layer_8h_source_l00032}{}\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{00032}     \hyperlink{interface_l_p_tool}{LPTool}* \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool};        
+\hypertarget{_h_u_d_layer_8h_source_l00034}{}\hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{00034}     InputMode \hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode};        
+\hypertarget{_h_u_d_layer_8h_source_l00036}{}\hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{00036}     ccColor3B \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor};        
+\hypertarget{_h_u_d_layer_8h_source_l00037}{}\hyperlink{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{00037}     ccColor3B \hyperlink{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{previousColor};    
+\hypertarget{_h_u_d_layer_8h_source_l00038}{}\hyperlink{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{00038}     NSString* \hyperlink{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{lastBrush};        
+\hypertarget{_h_u_d_layer_8h_source_l00039}{}\hyperlink{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{00039}     \textcolor{keywordtype}{float} \hyperlink{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{lastScale};            
+\hypertarget{_h_u_d_layer_8h_source_l00043}{}\hyperlink{interface_h_u_d_layer_a67d356e56a82f871b6c5de5818c5985d}{00043}     CCSprite* \hyperlink{interface_h_u_d_layer_a67d356e56a82f871b6c5de5818c5985d}{paintingIndicator}; 
+\hypertarget{_h_u_d_layer_8h_source_l00044}{}\hyperlink{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{00044}     BOOL \hyperlink{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{eraseMode};             
+\hypertarget{_h_u_d_layer_8h_source_l00047}{}\hyperlink{interface_h_u_d_layer_a69515b3bf7bddc07e65bad3eaa4a2e7a}{00047}     \hyperlink{interface_game_settings}{GameSettings}* \hyperlink{interface_h_u_d_layer_a69515b3bf7bddc07e65bad3eaa4a2e7a}{gameSettings}; 
+00050 \}
+00051 
+\hypertarget{_h_u_d_layer_8h_source_l00052}{}\hyperlink{interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}{00052} \textcolor{keyword}{@property} (nonatomic, weak) id <HUDDelegate> delegate; 
+00053 \textcolor{keyword}{@property} (nonatomic, strong) CCLabelTTF* xyzcoords;
+00054 
+00055 
+00056 
+00057 - (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid;
+00058 - (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid;
+00059 - (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid;
+00060 - (void)endTrackingTool;
+00061 - (void)changeColor:(ccColor3B)color;
+00062 - (void)changeBrush:(NSString*)brushname;
+00063 - (void)changeScale:(\textcolor{keywordtype}{float})size;
+00064 
+00065 - (void)erasingMode:(BOOL)mode;
+00066 
+00067 \textcolor{keyword}{@end}
+\end{DoxyCode}

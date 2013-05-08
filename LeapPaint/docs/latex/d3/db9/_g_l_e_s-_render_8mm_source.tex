@@ -1,0 +1,263 @@
+\hypertarget{_g_l_e_s-_render_8mm}{\section{G\-L\-E\-S-\/\-Render.mm}
+\label{d3/db9/_g_l_e_s-_render_8mm}\index{Leap\-Paint/\-G\-L\-E\-S-\/\-Render.\-mm@{Leap\-Paint/\-G\-L\-E\-S-\/\-Render.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * Copyright (c) 2006-2007 Erin Catto http://www.gphysics.com}
+00003 \textcolor{comment}{ *}
+00004 \textcolor{comment}{ * iPhone port by Simon Oliver - http://www.simonoliver.com - http://www.handcircus.com}
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * This software is provided 'as-is', without any express or implied}
+00007 \textcolor{comment}{ * warranty.  In no event will the authors be held liable for any damages}
+00008 \textcolor{comment}{ * arising from the use of this software.}
+00009 \textcolor{comment}{ * Permission is granted to anyone to use this software for any purpose,}
+00010 \textcolor{comment}{ * including commercial applications, and to alter it and redistribute it}
+00011 \textcolor{comment}{ * freely, subject to the following restrictions:}
+00012 \textcolor{comment}{ * 1. The origin of this software must not be misrepresented; you must not}
+00013 \textcolor{comment}{ * claim that you wrote the original software. If you use this software}
+00014 \textcolor{comment}{ * in a product, an acknowledgment in the product documentation would be}
+00015 \textcolor{comment}{ * appreciated but is not required.}
+00016 \textcolor{comment}{ * 2. Altered source versions must be plainly marked as such, and must not be}
+00017 \textcolor{comment}{ * misrepresented as being the original software.}
+00018 \textcolor{comment}{ * 3. This notice may not be removed or altered from any source distribution.}
+00019 \textcolor{comment}{ */}
+00020 
+00021 \textcolor{comment}{//}
+00022 \textcolor{comment}{// File modified for cocos2d integration}
+00023 \textcolor{comment}{// http://www.cocos2d-iphone.org}
+00024 \textcolor{comment}{//}
+00025 
+00026 \textcolor{preprocessor}{#import "cocos2d.h"}
+00027 \textcolor{preprocessor}{#include "GLES-Render.h"}
+00028 
+00029 
+00030 \textcolor{preprocessor}{#include <cstdio>}
+00031 \textcolor{preprocessor}{#include <cstdarg>}
+00032 
+00033 \textcolor{preprocessor}{#include <cstring>}
+00034 
+00035 GLESDebugDraw::GLESDebugDraw()
+00036 : mRatio( 1.0f )
+00037 \{
+00038     this->initShader();
+00039 \}
+00040 
+00041 GLESDebugDraw::GLESDebugDraw( float32 ratio )
+00042 : mRatio( ratio )
+00043 \{
+00044     this->initShader();
+00045 \}
+00046 
+00047 \textcolor{keywordtype}{void} GLESDebugDraw::initShader( \textcolor{keywordtype}{void} )
+00048 \{
+00049     mShaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader\_Position\_uColor];
+00050     
+00051     mColorLocation = glGetUniformLocation( mShaderProgram->program\_, \textcolor{stringliteral}{"u\_color"});
+00052 \}
+00053 
+00054 \textcolor{keywordtype}{void} GLESDebugDraw::DrawPolygon(\textcolor{keyword}{const} b2Vec2* old\_vertices, int32 vertexCount, \textcolor{keyword}{const} b2Color& color)
+00055 \{
+00056     [mShaderProgram use];
+00057     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00058 
+00059     ccVertex2F vertices[vertexCount];
+00060 
+00061     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<vertexCount;i++) \{
+00062         b2Vec2 tmp = old\_vertices[i];
+00063         tmp *= mRatio;
+00064         vertices[i].x = tmp.x;
+00065         vertices[i].y = tmp.y;
+00066     \}
+00067 
+00068     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00069 
+00070     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, vertices);
+00071     glDrawArrays(GL\_LINE\_LOOP, 0, vertexCount);
+00072 
+00073     CC\_INCREMENT\_GL\_DRAWS(1);
+00074 
+00075     CHECK\_GL\_ERROR\_DEBUG();
+00076 \}
+00077 
+00078 \textcolor{keywordtype}{void} GLESDebugDraw::DrawSolidPolygon(\textcolor{keyword}{const} b2Vec2* old\_vertices, int32 vertexCount, \textcolor{keyword}{const} b2Color& color)
+00079 \{
+00080     [mShaderProgram use];
+00081     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00082 
+00083     ccVertex2F vertices[vertexCount];
+00084 
+00085     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<vertexCount;i++) \{
+00086         b2Vec2 tmp = old\_vertices[i];
+00087         tmp = old\_vertices[i];
+00088         tmp *= mRatio;
+00089         vertices[i].x = tmp.x;
+00090         vertices[i].y = tmp.y;
+00091     \}
+00092 
+00093     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r*0.5f f2:color.g*0.5f f3:color.b*0.5f 
+      f4:0.5f];
+00094 
+00095     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, vertices);
+00096 
+00097     glDrawArrays(GL\_TRIANGLE\_FAN, 0, vertexCount);
+00098 
+00099     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00100     glDrawArrays(GL\_LINE\_LOOP, 0, vertexCount);
+00101 
+00102     CC\_INCREMENT\_GL\_DRAWS(2);
+00103 
+00104     CHECK\_GL\_ERROR\_DEBUG();
+00105 \}
+00106 
+00107 \textcolor{keywordtype}{void} GLESDebugDraw::DrawCircle(\textcolor{keyword}{const} b2Vec2& center, float32 radius, \textcolor{keyword}{const} b2Color& color)
+00108 \{
+00109     [mShaderProgram use];
+00110     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00111 
+00112     \textcolor{keyword}{const} float32 k\_segments = 16.0f;
+00113     \textcolor{keywordtype}{int} vertexCount=16;
+00114     \textcolor{keyword}{const} float32 k\_increment = 2.0f * b2\_pi / k\_segments;
+00115     float32 theta = 0.0f;
+00116 
+00117     GLfloat             glVertices[vertexCount*2];
+00118     \textcolor{keywordflow}{for} (int32 i = 0; i < k\_segments; ++i)
+00119     \{
+00120         b2Vec2 v = center + radius * b2Vec2(cosf(theta), sinf(theta));
+00121         glVertices[i*2]=v.x * mRatio;
+00122         glVertices[i*2+1]=v.y * mRatio;
+00123         theta += k\_increment;
+00124     \}
+00125 
+00126     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00127     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, glVertices);
+00128 
+00129     glDrawArrays(GL\_LINE\_LOOP, 0, vertexCount);
+00130 
+00131     CC\_INCREMENT\_GL\_DRAWS(1);
+00132 
+00133     CHECK\_GL\_ERROR\_DEBUG();
+00134 \}
+00135 
+00136 \textcolor{keywordtype}{void} GLESDebugDraw::DrawSolidCircle(\textcolor{keyword}{const} b2Vec2& center, float32 radius, \textcolor{keyword}{const} b2Vec2& axis, \textcolor{keyword}{const} b2Color
+      & color)
+00137 \{
+00138     [mShaderProgram use];
+00139     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00140 
+00141     \textcolor{keyword}{const} float32 k\_segments = 16.0f;
+00142     \textcolor{keywordtype}{int} vertexCount=16;
+00143     \textcolor{keyword}{const} float32 k\_increment = 2.0f * b2\_pi / k\_segments;
+00144     float32 theta = 0.0f;
+00145 
+00146     GLfloat             glVertices[vertexCount*2];
+00147     \textcolor{keywordflow}{for} (int32 i = 0; i < k\_segments; ++i)
+00148     \{
+00149         b2Vec2 v = center + radius * b2Vec2(cosf(theta), sinf(theta));
+00150         glVertices[i*2]=v.x * mRatio;
+00151         glVertices[i*2+1]=v.y * mRatio;
+00152         theta += k\_increment;
+00153     \}
+00154 
+00155 
+00156     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r*0.5f f2:color.g*0.5f f3:color.b*0.5f 
+      f4:0.5f];
+00157     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, glVertices);
+00158     glDrawArrays(GL\_TRIANGLE\_FAN, 0, vertexCount);
+00159 
+00160 
+00161     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00162     glDrawArrays(GL\_LINE\_LOOP, 0, vertexCount);
+00163 
+00164     \textcolor{comment}{// Draw the axis line}
+00165     DrawSegment(center,center+radius*axis,color);
+00166 
+00167     CC\_INCREMENT\_GL\_DRAWS(2);
+00168 
+00169     CHECK\_GL\_ERROR\_DEBUG();
+00170 \}
+00171 
+00172 \textcolor{keywordtype}{void} GLESDebugDraw::DrawSegment(\textcolor{keyword}{const} b2Vec2& p1, \textcolor{keyword}{const} b2Vec2& p2, \textcolor{keyword}{const} b2Color& color)
+00173 \{
+00174     [mShaderProgram use];
+00175     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00176 
+00177     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00178 
+00179     GLfloat             glVertices[] = \{
+00180         p1.x * mRatio, p1.y * mRatio,
+00181         p2.x * mRatio, p2.y * mRatio
+00182     \};
+00183 
+00184     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, glVertices);
+00185 
+00186     glDrawArrays(GL\_LINES, 0, 2);
+00187     
+00188     CC\_INCREMENT\_GL\_DRAWS(1);
+00189 
+00190     CHECK\_GL\_ERROR\_DEBUG();
+00191 \}
+00192 
+00193 \textcolor{keywordtype}{void} GLESDebugDraw::DrawTransform(\textcolor{keyword}{const} b2Transform& xf)
+00194 \{
+00195     b2Vec2 p1 = xf.p, p2;
+00196     \textcolor{keyword}{const} float32 k\_axisScale = 0.4f;
+00197     p2 = p1 + k\_axisScale * xf.q.GetXAxis();
+00198     DrawSegment(p1, p2, b2Color(1,0,0));
+00199 
+00200     p2 = p1 + k\_axisScale * xf.q.GetYAxis();
+00201     DrawSegment(p1,p2,b2Color(0,1,0));
+00202 \}
+00203 
+00204 \textcolor{keywordtype}{void} GLESDebugDraw::DrawPoint(\textcolor{keyword}{const} b2Vec2& p, float32 size, \textcolor{keyword}{const} b2Color& color)
+00205 \{
+00206     [mShaderProgram use];
+00207     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00208 
+00209     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00210 
+00211 \textcolor{comment}{//  glPointSize(size);}
+00212 
+00213     GLfloat             glVertices[] = \{
+00214         p.x * mRatio, p.y * mRatio
+00215     \};
+00216 
+00217     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, glVertices);
+00218 
+00219     glDrawArrays(GL\_POINTS, 0, 1);
+00220 \textcolor{comment}{//  glPointSize(1.0f);}
+00221     
+00222     CC\_INCREMENT\_GL\_DRAWS(1);
+00223 
+00224     CHECK\_GL\_ERROR\_DEBUG();
+00225 \}
+00226 
+00227 \textcolor{keywordtype}{void} GLESDebugDraw::DrawString(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\textcolor{keywordtype}{string}, ...)
+00228 \{
+00229     \textcolor{comment}{//  NSLog(@"DrawString: unsupported: %s", string);}
+00230     \textcolor{comment}{//printf(string);}
+00231     \textcolor{comment}{/* Unsupported as yet. Could replace with bitmap font renderer at a later date */}
+00232 \}
+00233 
+00234 \textcolor{keywordtype}{void} GLESDebugDraw::DrawAABB(b2AABB* aabb, \textcolor{keyword}{const} b2Color& color)
+00235 \{
+00236     [mShaderProgram use];
+00237     [mShaderProgram setUniformForModelViewProjectionMatrix];
+00238 
+00239     [mShaderProgram setUniformLocation:mColorLocation withF1:color.r f2:color.g f3:color.b f4:1];
+00240 
+00241     GLfloat             glVertices[] = \{
+00242         aabb->lowerBound.x * mRatio, aabb->lowerBound.y * mRatio,
+00243         aabb->upperBound.x * mRatio, aabb->lowerBound.y * mRatio,
+00244         aabb->upperBound.x * mRatio, aabb->upperBound.y * mRatio,
+00245         aabb->lowerBound.x * mRatio, aabb->upperBound.y * mRatio
+00246     \};
+00247 
+00248     glVertexAttribPointer(kCCVertexAttrib\_Position, 2, GL\_FLOAT, GL\_FALSE, 0, glVertices);
+00249     glDrawArrays(GL\_LINE\_LOOP, 0, 8);
+00250     
+00251     CC\_INCREMENT\_GL\_DRAWS(1);
+00252 
+00253     CHECK\_GL\_ERROR\_DEBUG();
+00254 \}
+\end{DoxyCode}

@@ -1,0 +1,59 @@
+\hypertarget{_utility_8m}{\section{Utility.\-m}
+\label{d1/da3/_utility_8m}\index{Leap\-Paint/\-Utility.\-m@{Leap\-Paint/\-Utility.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Utility.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/24/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "Utility.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_utility}{Utility}
+00012 
+\hypertarget{_utility_8m_source_l00014}{}\hyperlink{interface_utility_a1fadf871f2de27c45caf4497a769f3d8}{00014} + (int)getRandomNumberBetween:(\textcolor{keywordtype}{int})from to:(\textcolor{keywordtype}{int})to \{
+00015     
+00016     \textcolor{comment}{//Check that one isn't greater than the other}
+00017     \textcolor{comment}{//if so, flip them}
+00018     
+00019     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})from + arc4random() % (to-from+1);
+00020 \}
+00021 
+\hypertarget{_utility_8m_source_l00023}{}\hyperlink{interface_utility_a7af585df1742d836af6bc5b0eaf09cd3}{00023} + (int)getRandomNumberUnder:(\textcolor{keywordtype}{int})to\{
+00024     \textcolor{keywordflow}{return} (arc4random() % to);
+00025 \}
+00026 
+00027 
+\hypertarget{_utility_8m_source_l00029}{}\hyperlink{interface_utility_a18dd8a4d335aacab117cfefa4fffb06c}{00029} + (int)getRandomUniformNumberUnder:(\textcolor{keywordtype}{int})to\{
+00030     \textcolor{comment}{//Check if uniform available}
+00031     \textcolor{keywordflow}{if} (arc4random\_uniform != NULL)
+00032         \textcolor{keywordflow}{return}  arc4random\_uniform (to);
+00033     \textcolor{keywordflow}{else}
+00034         \textcolor{keywordflow}{return}  (arc4random() % to);
+00035 \}
+00036 
+00037 
+00038 
+00039 
+00040 
+00041 \textcolor{comment}{/*}
+00042 \textcolor{comment}{static unsigned long seed;}
+00043 \textcolor{comment}{}
+00044 \textcolor{comment}{void initRandomSeed(long firstSeed)}
+00045 \textcolor{comment}{\{}
+00046 \textcolor{comment}{    seed = firstSeed;}
+00047 \textcolor{comment}{\}}
+00048 \textcolor{comment}{}
+00049 \textcolor{comment}{float nextRandomFloat()}
+00050 \textcolor{comment}{\{}
+00051 \textcolor{comment}{    return (((seed= 1664525*seed + 1013904223)>>16) / (float)0x10000);}
+00052 \textcolor{comment}{\}*/}
+00053 
+00054 
+00055 
+00056 \textcolor{keyword}{@end}
+\end{DoxyCode}

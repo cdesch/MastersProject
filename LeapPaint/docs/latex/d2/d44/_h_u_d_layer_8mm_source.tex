@@ -1,0 +1,244 @@
+\hypertarget{_h_u_d_layer_8mm}{\section{H\-U\-D\-Layer.\-mm}
+\label{d2/d44/_h_u_d_layer_8mm}\index{Leap\-Paint/\-H\-U\-D\-Layer.\-mm@{Leap\-Paint/\-H\-U\-D\-Layer.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  HUDLayer.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/1/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "HUDLayer.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_h_u_d_layer}{HUDLayer}
+00012 \textcolor{keyword}{@synthesize} \hyperlink{interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}{delegate};
+00013 \textcolor{keyword}{@synthesize} xyzcoords;
+00014 - (id)init
+00015 \{
+00016     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]))
+00017     \{
+00018         \textcolor{comment}{// Get window size}
+00019         CGSize size = [[CCDirector sharedDirector] winSize];
+00020         
+00021         \textcolor{comment}{// Add a button which takes us back to HelloWorldScene}
+00022         
+00023         \textcolor{comment}{// Create a label with the text we want on the button}
+00024         CCLabelTTF *label = [CCLabelTTF labelWithString:@"Tap Here" fontName:@"Helvetica" fontSize:32.0];
+00025         
+00026         \textcolor{comment}{// Create a button out of the label, and tell it to run the "switchScene" method}
+00027         CCMenuItem *button = [CCMenuItemLabel itemWithLabel:label target:self selector:@selector(testing:)]
+      ;
+00028         
+00029         \textcolor{comment}{// Add the button to a menu - "nil" terminates the list of items to add}
+00030         CCMenu *menu = [CCMenu menuWithItems:button, nil];
+00031         
+00032         \textcolor{comment}{// Place the menu in center of screen}
+00033         [menu setPosition:ccp(size.width / 2, size.height / 2)];
+00034         
+00035         \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor} = ccWHITE;
+00036         \hyperlink{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{lastBrush} = \textcolor{stringliteral}{@"roundbrush.png"};
+00037         \hyperlink{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{lastScale} = 1.0;
+00038         
+00039         \hyperlink{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{eraseMode} = \textcolor{keyword}{false};
+00040         
+00041         \textcolor{comment}{// Finally add the menu to the layer}
+00042         \textcolor{comment}{//[self addChild:menu];}
+00043 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00044 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isTouchEnabled = YES;
+00045         \textcolor{keyword}{self}.isAccelerometerEnabled = YES;
+00046 \textcolor{preprocessor}{#elif defined(\_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED)}
+00047 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isMouseEnabled = YES;
+00048         \textcolor{keyword}{self}.isKeyboardEnabled= YES;
+00049 \textcolor{preprocessor}{#endif}
+00050 \textcolor{preprocessor}{}        \hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode} = kDepthMode;
+00051         
+00052         \textcolor{comment}{/*}
+00053 \textcolor{comment}{        self.xyzcoords = [CCLabelTTF labelWithString:@"Coords" fontName:@"Helvetica" fontSize:16.0];}
+00054 \textcolor{comment}{        self.xyzcoords.position = ccp(size.width / 2, 50);}
+00055 \textcolor{comment}{        [self addChild:self.xyzcoords];}
+00056 \textcolor{comment}{        }
+00057 \textcolor{comment}{        [[NSNotificationCenter defaultCenter] addObserver:self}
+00058 \textcolor{comment}{                                                 selector:@selector(handleHUDCoordUpdate:)}
+00059 \textcolor{comment}{                                                     name:@"CoordHUDUpdate"}
+00060 \textcolor{comment}{                                                   object:nil];}
+00061 \textcolor{comment}{         }
+00062 \textcolor{comment}{         */}
+00063         
+00064     \}
+00065     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00066 \}
+00067 
+00068 
+00069 \textcolor{comment}{//Add the sprite hud}
+00070 - (\hyperlink{interface_l_p_tool}{LPTool}*)addLPTool:(CGPoint)p objectID:(NSString*)objectID withBrushName:(NSString*)brushname\{
+00071     
+00072     \hyperlink{interface_l_p_tool}{LPTool} *sprite = [\hyperlink{interface_l_p_tool}{LPTool} spriteWithFile:brushname];
+00073     
+00074     [\textcolor{keyword}{self} addChild:sprite];
+00075     
+00076     sprite.\hyperlink{interface_l_p_tool_a25dbad647c537177b138bdbbb01936e4}{updated} = TRUE;
+00077     sprite.\hyperlink{interface_l_p_tool_aafbd850bbcc6c8e33ba201d45a8107c2}{toolID} = objectID;
+00078     [sprite setScale:lastScale];
+00079     sprite.position = ccp( p.x, p.y);
+00080     sprite.color = \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor};
+00081     
+00082     \textcolor{keywordflow}{return} sprite;
+00083 \}
+00084 
+00085 \textcolor{comment}{/* Tool Moved */}
+00086 - (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid\{
+00087     
+00088     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} == nil)\{
+00089         [\textcolor{keyword}{self} startTrackingTool:point toolID:toolid];
+00090     \}\textcolor{keywordflow}{else}\{
+00091         [\textcolor{keyword}{self} moveTrackingTool:point toolID:toolid];
+00092     \}
+00093 \}
+00094 
+00095 \textcolor{comment}{/* Start Tracking Tool */}
+00096 - (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid\{
+00097     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} == nil)\{
+00098         \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} = [\textcolor{keyword}{self} addLPTool:point objectID:toolid withBrushName:lastBrush];
+00099     \}
+00100 \}
+00101 
+00102 \textcolor{comment}{/* Move Tracking Tool*/}
+00103 - (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid\{
+00104     
+00105     \textcolor{comment}{//Create tool if it does not exist}
+00106     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} == nil)\{
+00107         \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} = [\textcolor{keyword}{self} addLPTool:point objectID:toolid withBrushName:lastBrush];
+00108     \}\textcolor{keywordflow}{else}\{
+00109         \textcolor{comment}{//Update since it does exist}
+00110         \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool}.position =  point;
+00111         \textcolor{keywordflow}{if} ([toolid isNotEqualTo:\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool}.\hyperlink{interface_l_p_tool_aafbd850bbcc6c8e33ba201d45a8107c2}{toolID}])\{
+00112             \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool}.\hyperlink{interface_l_p_tool_aafbd850bbcc6c8e33ba201d45a8107c2}{toolID} = toolid;
+00113         \}
+00114     \}
+00115 \}
+00116 
+00117 \textcolor{comment}{/* End Trackingn Tool */}
+00118 - (void)endTrackingTool\{
+00119     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} != nil)\{
+00120         [\textcolor{keyword}{self} removeChild:primaryTool cleanup:YES];
+00121         \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} = nil;
+00122     \}
+00123 \}
+00124 
+00125 
+00126 \textcolor{comment}{//Key up event}
+00127 -(BOOL) ccKeyUp:(NSEvent*)event\{
+00128 
+00129     unichar ch = [event keyCode];
+00130 
+00131     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode} == kPressKeyMode)\{
+00132         \textcolor{keywordflow}{if} ( ch == 49)\{
+00133             [\textcolor{keyword}{self}.delegate painting:FALSE];
+00134         \}
+00135     \}
+00136     
+00137     \textcolor{keywordflow}{if} ( ch == 18)\{
+00138         \textcolor{comment}{//change to space bar press mode}
+00139         \hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode} = kPressKeyMode;
+00140         [\textcolor{keyword}{self}.delegate changeMode:inputMode];
+00141     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(ch == 19)\{
+00142         \textcolor{comment}{//Change to depth mode}
+00143         \hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode} = kDepthMode;
+00144         [\textcolor{keyword}{self}.delegate changeMode:inputMode];
+00145     \}
+00146     
+00147     \textcolor{keywordflow}{return} YES;
+00148 \}
+00149 \textcolor{comment}{//Key down event}
+00150 -(BOOL) ccKeyDown:(NSEvent*)event\{
+00151     unichar ch = [event keyCode];
+00152     
+00153     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{inputMode} == kPressKeyMode)\{
+00154         \textcolor{keywordflow}{if} ( ch == 49)\{
+00155             [\textcolor{keyword}{self}.delegate painting:TRUE];
+00156         \}
+00157     \}
+00158     \textcolor{keywordflow}{return} YES;
+00159 \}
+00160 
+00161 - (void)changeColor:(ccColor3B)color\{
+00162     
+00163 
+00164 
+00165     \textcolor{keywordflow}{if}(\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} != nil)\{
+00166         
+00167         [primaryTool setColor:color];
+00168 
+00169     \}
+00170     \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor} = color;
+00171 \}
+00172 
+00173 - (void)changeBrush:(NSString*)brushname\{
+00174     
+00175     \hyperlink{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{lastBrush} = brushname;
+00176     \textcolor{keywordflow}{if} (\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} != nil)\{
+00177         \textcolor{comment}{//Save important data}
+00178         CGPoint lastlocation = \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool}.position;
+00179         NSString* toolid = [primaryTool.toolID copy];
+00180         
+00181         \textcolor{comment}{//Remove Tool}
+00182         [\textcolor{keyword}{self} removeChild:primaryTool cleanup:YES];
+00183         
+00184         \textcolor{comment}{//Add it back}
+00185         \hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} = [\textcolor{keyword}{self} addLPTool:lastlocation objectID:toolid withBrushName:lastBrush];
+00186     \}
+00187     
+00188 \}
+00189 
+00190 
+00191 - (void)changeScale:(\textcolor{keywordtype}{float})size\{
+00192     
+00193     \hyperlink{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{lastScale} = size;
+00194     \textcolor{keywordflow}{if}(\hyperlink{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{primaryTool} != nil)\{
+00195         
+00196         [primaryTool setScale:size];
+00197     \}
+00198 \}
+00199 
+00200 
+00201 - (void)erasingMode:(BOOL)mode\{
+00202     
+00203     \hyperlink{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{eraseMode} = mode;
+00204 
+00205     \textcolor{comment}{//turn Erasing Mode on}
+00206     \textcolor{keywordflow}{if} (mode)\{
+00207         \hyperlink{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{previousColor} = \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor};
+00208         \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor} = ccRED;
+00209         [primaryTool setColor:ccRED];
+00210     \}\textcolor{keywordflow}{else}\{
+00211         \textcolor{comment}{//Turn erasing mode off}
+00212         \hyperlink{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{lastColor} = \hyperlink{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{previousColor};
+00213         [primaryTool setColor:lastColor];
+00214     \}
+00215 
+00216 \}
+00217 
+00218 - (void)updateCoordsHUDWithX:(\textcolor{keywordtype}{float})x withY:(\textcolor{keywordtype}{float})y withZ:(\textcolor{keywordtype}{float})z\{
+00219     
+00220     \textcolor{keyword}{self}.xyzcoords.string = [NSString stringWithFormat:@"Coords x: %0.0f, y %0.0f, z %0.0f",x,y,z];
+00221     
+00222 \}
+00223 
+00224 - (void)handleHUDCoordUpdate:(\textcolor{keywordtype}{id})sender\{
+00225     
+00226     NSNotification* note = sender;
+00227     \textcolor{comment}{//LEDColor* ledColor = note.object;}
+00228     
+00229     \hyperlink{interface_simple_point}{SimplePoint}* point = note.object;
+00230     
+00231     [\textcolor{keyword}{self} updateCoordsHUDWithX:point.x withY:point.y withZ:point.z];
+00232     
+00233     
+00234 \}
+00235 
+00236 
+00237 \textcolor{keyword}{@end}
+\end{DoxyCode}

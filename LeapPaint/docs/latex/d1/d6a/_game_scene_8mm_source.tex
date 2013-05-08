@@ -1,0 +1,58 @@
+\hypertarget{_game_scene_8mm}{\section{Game\-Scene.\-mm}
+\label{d1/d6a/_game_scene_8mm}\index{Leap\-Paint/\-Game\-Scene.\-mm@{Leap\-Paint/\-Game\-Scene.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameScene.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/1/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "GameScene.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_game_scene}{GameScene}
+00012 
+00013 
+00014 
+00015 +(CCScene *) scene
+00016 \{
+00017     \textcolor{comment}{// 'scene' is an autorelease object.}
+00018     \textcolor{comment}{//CCScene *scene = [CCScene node];}
+00019     \hyperlink{interface_game_manager}{GameManager}*scene = [\hyperlink{interface_game_manager}{GameManager} node];
+00020     
+00021     
+00022     \textcolor{comment}{// 'layer' is an autorelease object.}
+00023     \hyperlink{interface_h_u_d_layer}{HUDLayer}* hudLayer = [\hyperlink{interface_h_u_d_layer}{HUDLayer} node];
+00024     \hyperlink{interface_background_layer}{BackgroundLayer}* backgroundLayer = [\hyperlink{interface_background_layer}{BackgroundLayer} node];
+00025     \hyperlink{interface_controls_layer}{ControlsLayer}* controlsLayer = [\hyperlink{interface_controls_layer}{ControlsLayer} node];
+00026     
+00027     
+00028     hudLayer.\hyperlink{interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}{delegate} = scene;
+00029     controlsLayer.\hyperlink{interface_controls_layer_aebfe5471226d1bc0afef5d662219f913}{delegate} = scene;
+00030     
+00031     \textcolor{comment}{//DrawingLayer* drawingLayer = [DrawingLayer node];}
+00032     \hyperlink{interface_sketch_render_texture_scene}{SketchRenderTextureScene}* textureScene = [
+      \hyperlink{interface_sketch_render_texture_scene}{SketchRenderTextureScene} node];
+00033     [scene addChild:backgroundLayer z:0];
+00034     [scene addChild:controlsLayer z:3];
+00035     \textcolor{comment}{// add layer as a child to scene}
+00036     [scene addChild:hudLayer z:5];
+00037     \textcolor{comment}{//[scene addChild:drawingLayer z:0];}
+00038 
+00039     [scene addChild:textureScene z:2];
+00040     
+00041 
+00042     scene.\hyperlink{interface_game_manager_ae286fb2f9d31810d73c7231a574b56b0}{hudLayer} = hudLayer;
+00043     scene.\hyperlink{interface_game_manager_a2a3a96f1202b13592f244cf1402b4051}{backgroundLayer} = backgroundLayer;
+00044     scene.\hyperlink{interface_game_manager_a0ee5903be06e4a676ddde4c1f03530a7}{controlsLayer} = controlsLayer;
+00045     \textcolor{comment}{//scene.drawingLayer = drawingLayer;}
+00046 
+00047     scene.\hyperlink{interface_game_manager_a79a86ff991f39b3007d99ca61af21253}{textureScene} = textureScene;
+00048     
+00049     \textcolor{comment}{// return the scene}
+00050     \textcolor{keywordflow}{return} scene;
+00051 \}\textcolor{keyword}{@end}
+\end{DoxyCode}

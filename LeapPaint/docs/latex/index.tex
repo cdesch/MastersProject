@@ -1,0 +1,54 @@
+\href{http://hci.montclair.edu/groups/leap/}{\tt Project Home \& Wiki}
+
+\#\-Requirements Specification
+
+\subsection*{Interface}
+
+
+\begin{DoxyItemize}
+\item H\-U\-D Requirement to render a cursor where the pointable is intersecting with the screen. The cursor should show the color that will be painting on the screen
+\item Ring and round cursor to indicate drawing or not drawing.
+\end{DoxyItemize}
+
+\subsection*{Features}
+
+
+\begin{DoxyItemize}
+\item Change Colors
+\item Change Brushes
+\item Eraser
+\item Change size of brush
+\item Reset drawing
+\item Change Opacity of brushes
+\end{DoxyItemize}
+
+\#\-Unit Tests
+
+\#\-Libraries \& Sub Modules
+
+
+\begin{DoxyItemize}
+\item \href{http://www.cocos2d-iphone.org/}{\tt Cocos2d 2.\-0}
+\item \href{https://github.com/YannickL/CCControlExtension}{\tt C\-C\-Control\-Extension}
+\item \#\-Build Settings
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Valid Architecture i386 x86\-\_\-64
+\item Other Linker Flags -\/lz -\/\-Obj\-C
+\item C Language Dialect G\-N\-U99 -\/std=gnu99
+\item C ++ Language Dialect G\-N\-U++11 -\/std=gnu++11
+\item C ++ Standard Library libc++ (L\-L\-V\-M C++ standard lib)
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item run script after build\-:
+
+echo T\-A\-R\-G\-E\-T\-\_\-\-B\-U\-I\-L\-D\-\_\-\-D\-I\-R=\$\{T\-A\-R\-G\-E\-T\-\_\-\-B\-U\-I\-L\-D\-\_\-\-D\-I\-R\} echo T\-A\-R\-G\-E\-T\-\_\-\-N\-A\-M\-E=\$\{T\-A\-R\-G\-E\-T\-\_\-\-N\-A\-M\-E\} cd \$\{T\-A\-R\-G\-E\-T\-\_\-\-B\-U\-I\-L\-D\-\_\-\-D\-I\-R\}/\$\{T\-A\-R\-G\-E\-T\-\_\-\-N\-A\-M\-E\}.app/\-Contents/\-Mac\-O\-S ls -\/la install\-\_\-name\-\_\-tool -\/change /lib\-Leap.dylib /../\-Resources/lib\-Leap.dylib \$\{T\-A\-R\-G\-E\-T\-\_\-\-N\-A\-M\-E\}
+\end{DoxyItemize}
+
+\#\-Documentation
+
+Documentation is done using \href{doxygen.org}{\tt Doxygen} 

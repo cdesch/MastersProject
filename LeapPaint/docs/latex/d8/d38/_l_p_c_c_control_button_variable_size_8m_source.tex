@@ -1,0 +1,86 @@
+\hypertarget{_l_p_c_c_control_button_variable_size_8m}{\section{L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-m}
+\label{d8/d38/_l_p_c_c_control_button_variable_size_8m}\index{Leap\-Paint/\-L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-m@{Leap\-Paint/\-L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  LPCCControlButtonVariableSize.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/9/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "LPCCControlButtonVariableSize.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_l_p_c_c_control_button_variable_size}{LPCCControlButtonVariableSize}
+00012 - (id)init
+00013 \{
+00014     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]))
+00015     \{
+00016         CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00017         
+00018         \textcolor{comment}{// Defines an array of title to create buttons dynamically}
+00019         NSArray *stringArray = [NSArray arrayWithObjects:@"Hello",@"Variable",@"Size",@"!", nil];
+00020         
+00021         CCNode *layer = [CCNode node];
+00022         [\textcolor{keyword}{self} addChild:layer z:1];
+00023         
+00024         \textcolor{keywordtype}{double} total\_width = 0, height = 0;
+00025         
+00026         \textcolor{comment}{// For each title in the array}
+00027         \textcolor{keywordflow}{for} (NSString *title in stringArray)
+00028         \{
+00029             \textcolor{comment}{// Creates a button with this string as title}
+00030             CCControlButton *button = [\textcolor{keyword}{self} standardButtonWithTitle:title];
+00031             [button setPosition:ccp (total\_width + button.contentSize.width / 2, button.contentSize.height 
+      / 2)];
+00032             [layer addChild:button];
+00033             
+00034             \textcolor{comment}{// Compute the size of the layer}
+00035             height = button.contentSize.height;
+00036             total\_width += button.contentSize.width;
+00037         \}
+00038         
+00039         [layer setAnchorPoint:ccp (0.5, 0.5)];
+00040         [layer setContentSize:CGSizeMake(total\_width, height)];
+00041         [layer setPosition:ccp(screenSize.width / 2.0f, screenSize.height / 2.0f)];
+00042         
+00043         \textcolor{comment}{// Add the black background}
+00044         CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00045         [background setContentSize:CGSizeMake(total\_width + 14, height + 14)];
+00046         [background setPosition:ccp(screenSize.width / 2.0f, screenSize.height / 2.0f)];
+00047         [\textcolor{keyword}{self} addChild:background];
+00048     \}
+00049     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00050 \}
+00051 
+00052 \textcolor{preprocessor}{#pragma mark -}
+00053 \textcolor{preprocessor}{}\textcolor{preprocessor}{#pragma CCControlButtonTest\_HelloVariableSize Public Methods}
+00054 \textcolor{preprocessor}{}
+00055 \textcolor{preprocessor}{#pragma CCControlButtonTest\_HelloVariableSize Private Methods}
+00056 \textcolor{preprocessor}{}
+\hypertarget{_l_p_c_c_control_button_variable_size_8m_source_l00057}{}\hyperlink{interface_l_p_c_c_control_button_variable_size_acd2df17edaf3d7dbd80e283a7ee35c52}{00057} - (CCControlButton *)standardButtonWithTitle:(NSString *)title
+00058 \{
+00060     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00061     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00062     
+00063 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00064 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30]
+      ;
+00065 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00066 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
+00067 \textcolor{preprocessor}{#endif}
+00068 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00069     
+00070     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:
+      backgroundButton];
+00071     [button setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00072     [button setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00073     
+00074     \textcolor{keywordflow}{return} button;
+00075 \}
+00076 
+00077 
+00078 \textcolor{keyword}{@end}
+\end{DoxyCode}

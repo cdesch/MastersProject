@@ -1,0 +1,624 @@
+\hypertarget{_controls_layer_8mm}{\section{Controls\-Layer.\-mm}
+\label{db/d91/_controls_layer_8mm}\index{Leap\-Paint/\-Controls\-Layer.\-mm@{Leap\-Paint/\-Controls\-Layer.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  ControlsLayer.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/9/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "ControlsLayer.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_controls_layer}{ControlsLayer}
+00012 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_a599701380c37caf4e656efaa860469a3}{slider};
+00013 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider};
+00014 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_a1a60fd6edd83a2789b575845390a44be}{opacitydisplayValueLabel};
+00015 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_ad2bbac273b79a99c46e66c61ea66c88b}{opacitySwitchControl};
+00016 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_aebfe5471226d1bc0afef5d662219f913}{delegate};
+00017 
+00018 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel};
+00019 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}{switchControl};
+00020 \textcolor{keyword}{@synthesize} \hyperlink{interface_controls_layer_a56c514c5fde8025a9de19c4b8225478b}{brushSelection};
+00021 - (id)init
+00022 \{
+00023     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]))
+00024     \{
+00025         \textcolor{comment}{// Get window size}
+00026         CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00027         
+00028         \hyperlink{interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}{gameSettings} = [\hyperlink{interface_game_settings}{GameSettings} \hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance}];
+00029         
+00030         \textcolor{comment}{//LayerBackground}
+00031         
+00032         
+00033         [\textcolor{keyword}{self} sliderinit];
+00034         \textcolor{comment}{//[self buttoninit];}
+00035         \textcolor{comment}{//[self initEraserButton];}
+00036         [\textcolor{keyword}{self} initEraserSwitch];
+00037         [\textcolor{keyword}{self} colorpickerinit];
+00038         
+00039         [\textcolor{keyword}{self} initResetButton];
+00040         
+00041         \textcolor{comment}{//Open button}
+00042         
+00043         \textcolor{comment}{//Close Button}
+00044         \textcolor{keyword}{self}.brushSelection = [\hyperlink{interface_brush_selection_layer}{BrushSelectionLayer} node];
+00045         \textcolor{keyword}{self}.brushSelection.position = ccp(-screenSize.width,0);
+00046         
+00047         \textcolor{keyword}{self}.brushSelection.delegate = \textcolor{keyword}{self};
+00048         
+00049         [\textcolor{keyword}{self} addChild:brushSelection z:10];
+00050         [\textcolor{keyword}{self} initBrushSelectionButton];
+00051         [\textcolor{keyword}{self} opacitySliderInit];
+00052         [\textcolor{keyword}{self} initOpacitySwitch];
+00053         \textcolor{comment}{//buttons}
+00054         
+00055         \textcolor{comment}{// Color picker}
+00056         
+00057         \textcolor{comment}{//}
+00058         
+00059 
+00060     \}
+00061     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00062 \}
+00063 
+00064 
+00065 - (void)sliderinit\{
+00066     
+00067     \textcolor{comment}{//Slideer}
+00068     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00069     \textcolor{comment}{// Add the slider}
+00070     \textcolor{keyword}{self}.slider                     = [CCControlSlider sliderWithBackgroundFile:@"sliderTrack.png"
+00071                                                                    progressFile:@"sliderProgress.png"
+00072                                                                       thumbFile:@"sliderThumb.png"];
+00073     \textcolor{keyword}{self}.slider.anchorPoint              = ccp(0.5f, 1.0f);
+00074     \textcolor{keyword}{self}.slider.minimumValue             = 0.0f; \textcolor{comment}{// Sets the min value of range}
+00075     \textcolor{keyword}{self}.slider.maximumValue             = 5.0f; \textcolor{comment}{// Sets the max value of range}
+00076     \textcolor{keyword}{self}.slider.position                 = ccp(screenSize.width / 2.0f, 100);
+00077     
+00078     
+00079     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Size" fontName:@"Marker Felt" fontSize:30];
+00080     titleButton.position =ccp(screenSize.width / 2.0f , 125);
+00081     
+00082     \textcolor{comment}{// Add the black background}
+00083     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00084     [background setContentSize:CGSizeMake(350,100)];
+00085     [background setPosition:ccp(screenSize.width / 2.0f, 100)];
+00086     [\textcolor{keyword}{self} addChild:background];
+00087 
+00088     [\textcolor{keyword}{self} addChild:titleButton];
+00089     \textcolor{comment}{// When the value of the slider will change, the given selector will be call}
+00090     [\textcolor{keyword}{self}.slider addTarget:self action:@selector(valueChanged:) forControlEvents:CCControlEventValueChanged
+      ];
+00091     
+00092     [\textcolor{keyword}{self} addChild:self.slider z:0 tag:1];
+00093 \}
+00094 
+\hypertarget{_controls_layer_8mm_source_l00095}{}\hyperlink{interface_controls_layer_a883bebd74a6a657ded8e74a33ea13228}{00095} - (void)valueChanged:(CCControlSlider *)sender
+00096 \{
+00097     \textcolor{comment}{// Change value of label.}
+00098     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
+00099     [\textcolor{keyword}{self}.delegate changeThicknessControl:sender.value];
+00100 \}
+00101 
+00102 
+00103 - (void)opacitySliderInit\{
+00104     
+00105     \textcolor{comment}{//Slideer}
+00106     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00107     CCNode *layer                       = [CCNode node];
+00108     layer.position                      =ccp(screenSize.width / 2.0f + 200, 100);
+00109     [\textcolor{keyword}{self} addChild:layer z:3];
+00110     
+00111     \textcolor{keywordtype}{double} layer\_width = 0;
+00112 
+00113     
+00114     \textcolor{comment}{// Add the black background}
+00115     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00116     [background setContentSize:CGSizeMake(350,100)];
+00117     [background setPosition:ccp(background.contentSize.width / 2.0f, 0)];
+00118     [layer addChild:background];
+00119     layer\_width += background.contentSize.width;
+00120 
+00121     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Opacity" fontName:@"Marker Felt" fontSize:30];
+00122     titleButton.position =ccp(layer\_width / 2.0f , 25);
+00123     
+00124     
+00125     [layer addChild:titleButton];
+00126     \textcolor{comment}{// When the value of the slider will change, the given selector will be call}
+00127     
+00128     \textcolor{comment}{// Add the slider}
+00129     \textcolor{keyword}{self}.opacitySlider                     = [CCControlSlider sliderWithBackgroundFile:@"sliderTrack.png"
+00130                                                                           progressFile:@"sliderProgress.png
+      "
+00131                                                                              thumbFile:@"sliderThumb.png"];
+00132     \textcolor{keyword}{self}.opacitySlider.anchorPoint              = ccp(0.5f, 1.0f);
+00133     \textcolor{keyword}{self}.opacitySlider.minimumValue             = 0.0f; \textcolor{comment}{// Sets the min value of range}
+00134     \textcolor{keyword}{self}.opacitySlider.maximumValue             = 100.0f; \textcolor{comment}{// Sets the max value of range}
+00135     \textcolor{keyword}{self}.opacitySlider.position                 = ccp(layer\_width  / 2.0f, 0);
+00136     
+00137     [\textcolor{keyword}{self}.opacitySlider addTarget:self action:@selector(opacitySliderChanged:) forControlEvents:
+      CCControlEventValueChanged];
+00138     
+00139     [layer addChild:self.opacitySlider z:0 tag:2];
+00140 \}
+00141 
+\hypertarget{_controls_layer_8mm_source_l00142}{}\hyperlink{interface_controls_layer_a83c9c1fd8899606cca2535589c0f0b45}{00142} - (void)opacitySliderChanged:(CCControlSlider *)sender
+00143 \{
+00144     
+00145     \textcolor{comment}{// Change value of label.}
+00146     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
+00147     [\textcolor{keyword}{self}.delegate changeOpacityControl:sender.value];
+00148 \}
+00149 
+\hypertarget{_controls_layer_8mm_source_l00150}{}\hyperlink{interface_controls_layer_a5d92a7806c63fd37b54b6071dfdc611b}{00150} - (void)updateOpacitySlider:(\textcolor{keywordtype}{float})value\{
+00151     
+00152     
+00153     \textcolor{comment}{//ensure the value is within its bounds}
+00154     \textcolor{keywordflow}{if}(value > \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.maximumValue)\{
+00155         \textcolor{comment}{//Max Value}
+00156         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.maximumValue;
+00157     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value < \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.minimumValue)\{
+00158         \textcolor{comment}{//Min Value}
+00159         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.minimumValue;
+00160     \}\textcolor{keywordflow}{else}\{
+00161         \textcolor{keyword}{self}.opacitySlider.value = value;
+00162     \}
+00163 \}
+00164 
+00165 
+00166 - (void)initOpacitySwitch\{
+00167     
+00168     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00169     
+00170     CCNode *layer               = [CCNode node];
+00171     \textcolor{comment}{//layer.position              = ccp (screenSize.width / 2, screenSize.height / 2);}
+00172     layer.position = ccp(screenSize.width / 2.0f + 400, 125);
+00173     [\textcolor{keyword}{self} addChild:layer z:5];
+00174     
+00175     \textcolor{keywordtype}{double} layer\_width = 0;
+00176     
+00177     \textcolor{comment}{// Add the black background for the text}
+00178     CCScale9Sprite *background  = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00179     background.contentSize      = CGSizeMake(80, 50);
+00180     background.position         = ccp(layer\_width + background.contentSize.width / 2.0f, 0);
+00181     \textcolor{comment}{//[layer addChild:background];}
+00182     
+00183     layer\_width += background.contentSize.width;
+00184     
+00185 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00186 \textcolor{preprocessor}{}    \textcolor{keyword}{self}.displayValueLabel      = [CCLabelTTF labelWithString:@"on" fontName:@"HelveticaNeue-Bold" fontSize
+      :30];
+00187 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00188 \textcolor{preprocessor}{}    \textcolor{keyword}{self}.opacitydisplayValueLabel      = [CCLabelTTF labelWithString:@"Auto" fontName:@"Marker Felt" 
+      fontSize:30];
+00189 \textcolor{preprocessor}{#endif}
+00190 \textcolor{preprocessor}{}    \textcolor{keyword}{self}.opacitydisplayValueLabel.position  = background.position;
+00191     \textcolor{comment}{//[layer addChild:self.opacitydisplayValueLabel];}
+00192     
+00193     \textcolor{comment}{// Create the switch}
+00194     \textcolor{keyword}{self}.opacitySwitchControl          = [\textcolor{keyword}{self} makeControlSwitch];
+00195     \textcolor{keyword}{self}.opacitySwitchControl.position      = ccp (layer\_width + 10 + \textcolor{keyword}{self}.
+      \hyperlink{interface_controls_layer_ad2bbac273b79a99c46e66c61ea66c88b}{opacitySwitchControl}.contentSize.width / 2, 0);
+00196     \textcolor{keyword}{self}.opacitySwitchControl.on            = NO;
+00197     [layer addChild:self.opacitySwitchControl];
+00198     
+00199     [\textcolor{keyword}{self}.opacitySwitchControl addTarget:self action:@selector(opacitySwitchValueChanged:) forControlEvents
+      :CCControlEventValueChanged];
+00200     
+00201     \textcolor{comment}{// Set the layer size}
+00202     layer.contentSize           = CGSizeMake(layer\_width, 0);
+00203     layer.anchorPoint           = ccp (0.5f, 0.5f);
+00204     
+00205     
+00206 \}
+00207 
+00208 
+00209 
+00210 
+00211 - (void)opacitySwitchValueChanged:(CCControlSwitch *)sender
+00212 \{
+00213     \textcolor{keywordflow}{if} ([sender isOn])
+00214     \{
+00215         \textcolor{comment}{//displayValueLabel.string    = @"Eraser";}
+00216         
+00217         \hyperlink{interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}{gameSettings}.\hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depthOpacityMode}  = \textcolor{keyword}{true};
+00218     \} \textcolor{keywordflow}{else}
+00219     \{
+00220         \textcolor{comment}{//displayValueLabel.string    = @"Eraser";}
+00221         \hyperlink{interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}{gameSettings}.\hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depthOpacityMode}  = \textcolor{keyword}{false};
+00222     \}
+00223 \}
+00224 
+00225 
+00226 
+00227 \textcolor{preprocessor}{#pragma mark - button}
+00228 \textcolor{preprocessor}{}
+00229 - (void)buttoninit\{
+00230     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00231     \textcolor{comment}{// Add the button}
+00232     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00233     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00234     
+00235 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00236 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" 
+      fontSize:30];
+00237 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00238 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"Marker Felt" fontSize:30]
+      ;
+00239 \textcolor{preprocessor}{#endif}
+00240 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00241     
+00242     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
+00243                                                      backgroundSprite:backgroundButton];
+00244     [controlButton setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00245     [controlButton setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00246     
+00247     controlButton.anchorPoint = ccp(0.5f, 1);
+00248     controlButton.position = ccp(screenSize.width / 2.0f, screenSize.height / 2.0f);
+00249     [\textcolor{keyword}{self} addChild:controlButton z:1];
+00250     
+00251     \textcolor{comment}{// Add the black background}
+00252     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00253     [background setContentSize:CGSizeMake(300, 170)];
+00254     [background setPosition:ccp(screenSize.width / 2.0f, screenSize.height / 2.0f)];
+00255     [\textcolor{keyword}{self} addChild:background];
+00256     
+00257     \textcolor{comment}{// Sets up event handlers}
+00258     [controlButton addTarget:self action:@selector(touchDownAction:) forControlEvents:
+      CCControlEventTouchDown];
+00259 \}
+00260 
+00261 
+00262 
+00263 
+00264 
+00265 - (void)touchDownAction:(CCControlButton *)sender
+00266 \{
+00267     NSLog(\textcolor{stringliteral}{@"button value %@"}, [NSString stringWithFormat:\textcolor{stringliteral}{@"Touch Down"}]);
+00268 \}
+00269 
+00270 - (void)initEraserButton\{
+00271     
+00272 
+00273     \textcolor{comment}{// Add the button}
+00274     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00275     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00276     
+00277 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00278 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" 
+      fontSize:30];
+00279 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00280 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Eraser" fontName:@"Marker Felt" fontSize:30];
+00281 \textcolor{preprocessor}{#endif}
+00282 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00283     
+00284     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
+00285                                                      backgroundSprite:backgroundButton];
+00286     [controlButton setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00287     [controlButton setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00288     
+00289     controlButton.anchorPoint = ccp(0.5f, 1);
+00290     controlButton.position = ccp(100, 100);
+00291     [\textcolor{keyword}{self} addChild:controlButton z:1];
+00292     
+00293     \textcolor{comment}{// Add the black background}
+00294     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00295     background.anchorPoint =  ccp(0, 0);
+00296     [background setContentSize:CGSizeMake(100, 75)];
+00297     [background setPosition: ccp(50, 50)];
+00298     [\textcolor{keyword}{self} addChild:background];
+00299     
+00300     \textcolor{comment}{// Sets up event handlers}
+00301     [controlButton addTarget:self action:@selector(eraserAction:) forControlEvents:CCControlEventTouchDown]
+      ;
+00302 \}
+00303 
+00304 - (void)eraserAction:(CCControlButton *)sender
+00305 \{
+00306     [\textcolor{keyword}{self}.delegate changeColorControl:ccWHITE];
+00307 
+00308 \}
+00309 - (void)initResetButton\{
+00310     
+00311     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00312     \textcolor{comment}{// Add the button}
+00313     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00314     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00315     
+00316 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00317 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" 
+      fontSize:30];
+00318 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00319 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Reset" fontName:@"Marker Felt" fontSize:30];
+00320 \textcolor{preprocessor}{#endif}
+00321 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00322     
+00323     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
+00324                                                      backgroundSprite:backgroundButton];
+00325     [controlButton setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00326     [controlButton setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00327     
+00328     controlButton.anchorPoint = ccp(0.5f, 1);
+00329     controlButton.position = ccp(100, screenSize.height -100);
+00330     [\textcolor{keyword}{self} addChild:controlButton z:1];
+00331     
+00332     \textcolor{comment}{// Add the black background}
+00333     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00334     [background setContentSize:CGSizeMake(100, 75)];
+00335     [background setPosition:ccp(100, screenSize.height -125)];
+00336     [\textcolor{keyword}{self} addChild:background];
+00337     
+00338     \textcolor{comment}{// Sets up event handlers}
+00339     [controlButton addTarget:self action:@selector(resetAction:) forControlEvents:CCControlEventTouchDown];
+00340 \}
+00341 
+00342 
+00343 - (void)resetAction:(CCControlButton*)sender\{
+00344     [\textcolor{keyword}{self}.delegate clearDrawing];
+00345 \}
+00346 
+00347 
+00348 - (CCControlButton *)standardButtonWithTitle:(NSString *)title
+00349 \{
+00351     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00352     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00353     
+00354 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00355 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30]
+      ;
+00356 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00357 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
+00358 \textcolor{preprocessor}{#endif}
+00359 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00360     
+00361     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:
+      backgroundButton];
+00362     [button setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00363     [button setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00364     
+00365     \textcolor{keywordflow}{return} button;
+00366 \}
+00367 
+00368 
+00369 \textcolor{preprocessor}{#pragma mark - ColorPicker}
+00370 \textcolor{preprocessor}{}
+00371 - (void)colorpickerinit\{
+00372     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00373     CCNode *layer                       = [CCNode node];
+00374     layer.position                      = ccp (screenSize.width -300 , screenSize.height / 2);
+00375     [\textcolor{keyword}{self} addChild:layer z:1];
+00376     
+00377     \textcolor{keywordtype}{double} layer\_width = 0;
+00378     
+00379     \textcolor{comment}{// Add the black background for the text}
+00380     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00381     [background setContentSize:CGSizeMake(150, 50)];
+00382     [background setPosition:ccp(layer\_width + background.contentSize.width / 2.0f, 0)];
+00383     \textcolor{comment}{//[layer addChild:background];}
+00384     
+00385     layer\_width += background.contentSize.width;
+00386     
+00387 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00388 \textcolor{preprocessor}{}    \hyperlink{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{colorLabel} = [CCLabelTTF labelWithString:@"#color" fontName:@"HelveticaNeue-Bold" fontSize:30
+      ];
+00389 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00390 \textcolor{preprocessor}{}    \hyperlink{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{colorLabel} = [CCLabelTTF labelWithString:@"#color" fontName:@"Marker Felt" fontSize:30];
+00391 \textcolor{preprocessor}{#endif}
+00392 \textcolor{preprocessor}{}    \hyperlink{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{colorLabel}.position = background.position;
+00393     \textcolor{comment}{//[layer addChild:colorLabel];}
+00394     
+00395     \textcolor{comment}{// Create the colour picker}
+00396     CCControlColourPicker *colourPicker = [CCControlColourPicker colourPickerWithHueFile:@"hueBackground.pn
+      g"
+00397                                                                       tintBackgroundFile:@"tintBackground.p
+      ng"
+00398                                                                          tintOverlayFile:@"tintOverlay.png"
+00399                                                                               pickerFile:@"picker.png"
+00400                                                                                arrowFile:@"arrow.png"];
+00401     colourPicker.color                  = ccc3(37, 46, 252);
+00402     colourPicker.position               = ccp (layer\_width + colourPicker.contentSize.width / 2, 0);
+00403     colourPicker.arrowDirection         = CCControlColourPickerArrowDirectionLeft;
+00404     
+00405     \textcolor{comment}{// Add it to the layer}
+00406     [layer addChild:colourPicker];
+00407     
+00408 \textcolor{preprocessor}{#if NS\_BLOCKS\_AVAILABLE}
+00409 \textcolor{preprocessor}{}    \textcolor{comment}{// Add block for value changed event}
+00410     [colourPicker setBlock:^(id sender, CCControlEvent event)
+00411      \{
+00412          [\textcolor{keyword}{self} colourValueChanged:sender];
+00413      \}
+00414           forControlEvents:CCControlEventValueChanged];
+00415 \textcolor{preprocessor}{#else}
+00416 \textcolor{preprocessor}{}    \textcolor{comment}{// Add the target-action pair}
+00417     [colourPicker addTarget:self action:@selector(colourValueChanged:) forControlEvents:
+      CCControlEventValueChanged];
+00418 \textcolor{preprocessor}{#endif}
+00419 \textcolor{preprocessor}{}    
+00420     layer\_width += colourPicker.contentSize.width;
+00421     
+00422     \textcolor{comment}{// Set the layer size}
+00423     layer.contentSize                   = CGSizeMake(layer\_width, 0);
+00424     layer.anchorPoint                   = ccp (0.5f, 0.5f);
+00425     
+00426     \textcolor{comment}{// Update the color text}
+00427     [\textcolor{keyword}{self} colourValueChanged:colourPicker];
+00428 \}
+00429 
+00430 - (void)colourValueChanged:(CCControlColourPicker *)sender
+00431 \{
+00432     \hyperlink{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{colorLabel}.string   = [NSString stringWithFormat:@"#%02X%02X%02X",sender.color.r, sender.
+      color.g, sender.color.b];
+00433     
+00434     [\textcolor{keyword}{self}.delegate changeColorControl:sender.color];
+00435 \}
+00436 
+00437 
+00438 \textcolor{preprocessor}{#pragma mark - Window Controls}
+00439 \textcolor{preprocessor}{}
+\hypertarget{_controls_layer_8mm_source_l00440}{}\hyperlink{interface_controls_layer_a9891f37671f87b622eb28a252e2e5190}{00440} - (void)\hyperlink{interface_controls_layer_a9891f37671f87b622eb28a252e2e5190}{expandPanel}\{
+00441     
+00442     
+00443 \}
+00444 
+\hypertarget{_controls_layer_8mm_source_l00445}{}\hyperlink{interface_controls_layer_afddcb3b6b63d05a784b18cb129ec5643}{00445} - (void)\hyperlink{interface_controls_layer_afddcb3b6b63d05a784b18cb129ec5643}{collapsePanel}\{
+00446     
+00447 \}
+00448 
+00449 - (void)initEraserSwitch\{
+00450     
+00451 
+00452     
+00453     CCNode *layer               = [CCNode node];
+00454     \textcolor{comment}{//layer.position              = ccp (screenSize.width / 2, screenSize.height / 2);}
+00455     layer.position = ccp(100, 100);
+00456     [\textcolor{keyword}{self} addChild:layer z:1];
+00457     
+00458     \textcolor{keywordtype}{double} layer\_width = 0;
+00459     
+00460     \textcolor{comment}{// Add the black background for the text}
+00461     CCScale9Sprite *background  = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00462     background.contentSize      = CGSizeMake(80, 50);
+00463     background.position         = ccp(layer\_width + background.contentSize.width / 2.0f, 0);
+00464     [layer addChild:background];
+00465     
+00466     layer\_width += background.contentSize.width;
+00467     
+00468 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00469 \textcolor{preprocessor}{}    \textcolor{keyword}{self}.displayValueLabel      = [CCLabelTTF labelWithString:@"on" fontName:@"HelveticaNeue-Bold" fontSize
+      :30];
+00470 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00471 \textcolor{preprocessor}{}    \textcolor{keyword}{self}.displayValueLabel      = [CCLabelTTF labelWithString:@"Eraser" fontName:@"Marker Felt" fontSize:30
+      ];
+00472 \textcolor{preprocessor}{#endif}
+00473 \textcolor{preprocessor}{}    \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.position  = background.position;
+00474     [layer addChild:displayValueLabel];
+00475     
+00476     \textcolor{comment}{// Create the switch}
+00477     \textcolor{keyword}{self}.switchControl          = [\textcolor{keyword}{self} makeControlSwitch];
+00478     \hyperlink{interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}{switchControl}.position      = ccp (layer\_width + 10 + 
+      \hyperlink{interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}{switchControl}.contentSize.width / 2, 0);
+00479     \hyperlink{interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}{switchControl}.on            = NO;
+00480     [layer addChild:switchControl];
+00481     
+00482     [switchControl addTarget:self action:@selector(switchValueChanged:) forControlEvents:
+      CCControlEventValueChanged];
+00483     
+00484     \textcolor{comment}{// Set the layer size}
+00485     layer.contentSize           = CGSizeMake(layer\_width, 0);
+00486     layer.anchorPoint           = ccp (0.5f, 0.5f);
+00487 
+00488     
+00489 \}
+00490 
+00491 
+\hypertarget{_controls_layer_8mm_source_l00492}{}\hyperlink{interface_controls_layer_a17c02c66db2aa779b9b7af552eb43a46}{00492} - (CCControlSwitch *)\hyperlink{interface_controls_layer_a17c02c66db2aa779b9b7af552eb43a46}{makeControlSwitch}
+00493 \{
+00494     \textcolor{keywordflow}{return} [CCControlSwitch switchWithMaskSprite:[CCSprite spriteWithFile:@"switch-mask.png"]
+00495                                         onSprite:[CCSprite spriteWithFile:@"switch-on.png"]
+00496                                        offSprite:[CCSprite spriteWithFile:@"switch-off.png"]
+00497                                      thumbSprite:[CCSprite spriteWithFile:@"switch-thumb.png"]
+00498                                          onLabel:[CCLabelTTF labelWithString:@"On" fontName:@"Arial-BoldMT"
+       fontSize:16]
+00499                                         offLabel:[CCLabelTTF labelWithString:@"Off" fontName:@"Arial-BoldMT
+      " fontSize:16]];
+00500 \}
+00501 
+00502 
+\hypertarget{_controls_layer_8mm_source_l00503}{}\hyperlink{interface_controls_layer_a02affb06b2d595b54d10b3593a8370f2}{00503} - (void)switchValueChanged:(CCControlSwitch *)sender
+00504 \{
+00505     \textcolor{keywordflow}{if} ([sender isOn])
+00506     \{
+00507         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
+00508         
+00509         [\textcolor{keyword}{self}.delegate eraserMode:true];
+00510     \} \textcolor{keywordflow}{else}
+00511     \{
+00512         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
+00513         [\textcolor{keyword}{self}.delegate eraserMode:false];
+00514     \}
+00515 \}
+00516 
+00517 
+00518 \textcolor{preprocessor}{#pragma mark- Brush Selection Delegate}
+00519 \textcolor{preprocessor}{}
+00520 - (void)initBrushSelectionButton\{
+00521     
+00522     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00523     \textcolor{comment}{// Add the button}
+00524     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00525     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00526     
+00527 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00528 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" 
+      fontSize:30];
+00529 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00530 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Brushes" fontName:@"Marker Felt" fontSize:30];
+00531 \textcolor{preprocessor}{#endif}
+00532 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00533     
+00534     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
+00535                                                      backgroundSprite:backgroundButton];
+00536     [controlButton setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00537     [controlButton setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00538     
+00539     controlButton.anchorPoint = ccp(0.5f, 1);
+00540     controlButton.position = ccp(screenSize.width -100, screenSize.height -100);
+00541     [\textcolor{keyword}{self} addChild:controlButton z:1];
+00542     
+00543     \textcolor{comment}{// Add the black background}
+00544     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00545     [background setContentSize:CGSizeMake(100, 75)];
+00546     [background setPosition:ccp(screenSize.width -100, screenSize.height -125)];
+00547     [\textcolor{keyword}{self} addChild:background];
+00548     
+00549     \textcolor{comment}{// Sets up event handlers}
+00550     [controlButton addTarget:self action:@selector(brushButtonAction:) forControlEvents:
+      CCControlEventTouchDown];
+00551 \}
+00552 
+00553 
+00554 - (void)brushButtonAction:(CCControlButton*)sender\{
+00555     \textcolor{keywordflow}{if} (\textcolor{keyword}{self}.\hyperlink{interface_controls_layer_a56c514c5fde8025a9de19c4b8225478b}{brushSelection}.layerHidden) \{
+00556         [\textcolor{keyword}{self} showBrushSelectionPanel];
+00557     \}\textcolor{keywordflow}{else}\{
+00558         [\textcolor{keyword}{self} hideBrushSelectionPanel];
+00559     \}
+00560 
+00561 \}
+00562 
+00563 
+00564 - (void)showBrushSelectionPanel\{
+00565     
+00566     \textcolor{keyword}{self}.brushSelection.layerHidden = \textcolor{keyword}{false};
+00567     \textcolor{comment}{//[sprite runAction: [CCMoveBy actionWithDuration:2 position:ccp(50,10)]];}
+00568     [\textcolor{keyword}{self}.brushSelection runAction:[CCMoveTo actionWithDuration:2 position:ccp(0,0)]];
+00569 \}
+00570 
+00571 - (void)hideBrushSelectionPanel\{
+00572     \textcolor{comment}{// Get window size}
+00573     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00574     
+00575     \textcolor{keyword}{self}.brushSelection.layerHidden = \textcolor{keyword}{true};
+00576     [\textcolor{keyword}{self}.brushSelection runAction:[CCMoveTo actionWithDuration:2 position:ccp(-screenSize.width,0)]];
+00577     
+00578 \}
+00579 
+00580 - (void)hidePanel\{
+00581 
+00582     [\textcolor{keyword}{self} hideBrushSelectionPanel];
+00583 \}
+00584 
+00585 
+00586 - (void)brushSelected:(NSString *)brushname\{
+00587     [\textcolor{keyword}{self}.delegate changeBrushControl:brushname];
+00588 \}
+00589 
+00590 
+00591 \textcolor{keyword}{@end}
+\end{DoxyCode}

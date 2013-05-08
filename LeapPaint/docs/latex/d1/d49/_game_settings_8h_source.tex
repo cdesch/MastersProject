@@ -1,0 +1,51 @@
+\hypertarget{_game_settings_8h}{\section{Game\-Settings.\-h}
+\label{d1/d49/_game_settings_8h}\index{Leap\-Paint/\-Game\-Settings.\-h@{Leap\-Paint/\-Game\-Settings.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameSettings.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/16/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 
+00011 
+00012 \textcolor{preprocessor}{#define kVelMax 1000}
+00013 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define kVelMin 0}
+00014 \textcolor{preprocessor}{}
+00015 \textcolor{preprocessor}{#define kOpMinRange -80}
+00016 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define kOpMaxRange 120}
+00017 \textcolor{preprocessor}{}
+00018 \textcolor{preprocessor}{#define kOpMin 0}
+00019 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define kOpMax 100}
+00020 \textcolor{preprocessor}{}
+00021 \textcolor{preprocessor}{#define kNormalizedVelMax 15}
+00022 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define kNormalizedVelMin 0}
+00023 \textcolor{preprocessor}{}
+00024 \textcolor{preprocessor}{#define kMaxFrames 1000}
+00025 \textcolor{preprocessor}{}
+00026 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} \textcolor{keyword}{const} BLOCK\_SIZE;
+00027 
+00028 
+00029 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{
+00030     kPressKeyMode,
+00031     kDepthMode,
+00032     
+00033 \} InputMode;
+00034 
+\hypertarget{_game_settings_8h_source_l00035}{}\hyperlink{interface_game_settings}{00035} \textcolor{keyword}{@interface }\hyperlink{interface_game_settings}{GameSettings} : NSObject\{
+00036     
+00037     
+00038 \}
+00039 
+\hypertarget{_game_settings_8h_source_l00040}{}\hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{00040} \textcolor{keyword}{@property} (nonatomic,readwrite) BOOL depthOpacityMode;      
+\hypertarget{_game_settings_8h_source_l00041}{}\hyperlink{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{00041} \textcolor{keyword}{@property} (nonatomic,readwrite) BOOL eraserMode;            
+\hypertarget{_game_settings_8h_source_l00042}{}\hyperlink{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}{00042} \textcolor{keyword}{@property} (nonatomic,readwrite) InputMode inputMode;        
+00044 + (\hyperlink{interface_game_settings}{GameSettings} *)sharedInstance;
+00045 
+00046 \textcolor{keyword}{@end}
+\end{DoxyCode}

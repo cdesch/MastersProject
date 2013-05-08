@@ -1,0 +1,53 @@
+\hypertarget{_finger_painting_scene_8h}{\section{Finger\-Painting\-Scene.\-h}
+\label{de/df5/_finger_painting_scene_8h}\index{Leap\-Paint/\-Finger\-Painting\-Scene.\-h@{Leap\-Paint/\-Finger\-Painting\-Scene.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  FingerPaintingScene.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/18/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 \textcolor{preprocessor}{#import "Box2D.h"}
+00012 \textcolor{preprocessor}{#import "GLES-Render.h"}
+00013 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00014 \textcolor{preprocessor}{#import "RedDot.h"}
+00015 
+00016 
+\hypertarget{_finger_painting_scene_8h_source_l00017}{}\hyperlink{interface_finger_painting_scene}{00017} \textcolor{keyword}{@interface }\hyperlink{interface_finger_painting_scene}{FingerPaintingScene} : CCLayer <LeapListener> \{
+00018     
+00019     LeapController *controller;
+00020     
+00021     CCTexture2D *spriteTexture\_;    \textcolor{comment}{// weak ref}
+00022     b2World* world;                 \textcolor{comment}{// strong ref}
+00023     \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw} *m\_debugDraw;        \textcolor{comment}{// strong ref}
+00024     
+00025     CCSprite* targetSprite;
+00026     b2MouseJoint *\_mouseJoint;
+00027     b2World* \_world;
+00028     b2Body *\_groundBody;
+00029     
+00030     CIColor* brushColor;
+00031     
+00032     
+00033     NSMutableDictionary* trackableList;
+00034     NSMutableDictionary* brushesList;
+00035     
+00036     NSTimer* updateDraw;
+00037     
+00038     
+00039     RedDot* mouseCursor;
+00040     
+00041     
+00042     
+00043 \}
+00044 
+00045 
+00046 
+00047 \textcolor{keyword}{@end}
+\end{DoxyCode}

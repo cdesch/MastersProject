@@ -1,0 +1,80 @@
+\hypertarget{_simple_point_8mm}{\section{Simple\-Point.\-mm}
+\label{d1/d15/_simple_point_8mm}\index{Leap\-Paint/\-Simple\-Point.\-mm@{Leap\-Paint/\-Simple\-Point.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SimplePoint.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/19/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "SimplePoint.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_simple_point}{SimplePoint}
+00012 
+00013 \textcolor{keyword}{@synthesize} \hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x},\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y},\hyperlink{interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}{z};
+00014 \textcolor{keyword}{@synthesize} \hyperlink{interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}{is3d};
+00015 
+00016 
+\hypertarget{_simple_point_8mm_source_l00018}{}\hyperlink{interface_simple_point_aa138ca80c0a7a5fa1684c38483042a76}{00018} - (id)initWithPosition:(CGPoint)p\{
+00019     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00020 
+00021         \textcolor{keyword}{self}.x = p.x;
+00022         \textcolor{keyword}{self}.y = p.y;
+00023         \textcolor{keyword}{self}.z = 0.0f;
+00024         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{false};
+00025         
+00026     \}
+00027     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00028 \}
+00029 
+\hypertarget{_simple_point_8mm_source_l00031}{}\hyperlink{interface_simple_point_a9ded444176a17c3ff2c398c17e6c7c74}{00031} - (id)initWithX:(\textcolor{keywordtype}{float})xVal withY:(\textcolor{keywordtype}{float})yVal\{
+00032     
+00033     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00034         
+00035         \textcolor{keyword}{self}.x = xVal;
+00036         \textcolor{keyword}{self}.y = yVal;
+00037         \textcolor{keyword}{self}.z = 0.0f;
+00038         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{false};
+00039         
+00040     \}
+00041     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00042 \}
+00043 
+00044 
+\hypertarget{_simple_point_8mm_source_l00046}{}\hyperlink{interface_simple_point_a24776a0473601bcdf437ba02dbc89d5c}{00046} - (id)initWithPosition:(CGPoint)p withZ:(\textcolor{keywordtype}{float})zVal\{
+00047     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00048         
+00049         \textcolor{keyword}{self}.x = p.x;
+00050         \textcolor{keyword}{self}.y = p.y;
+00051         \textcolor{keyword}{self}.z = zVal;
+00052         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{true};
+00053         
+00054     \}
+00055     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00056 \}
+00057 
+00058 
+\hypertarget{_simple_point_8mm_source_l00060}{}\hyperlink{interface_simple_point_afb23073d7d7146f85e0dec2029c962d0}{00060} - (id)initWithX:(\textcolor{keywordtype}{float})xVal withY:(\textcolor{keywordtype}{float})yVal withZ:(\textcolor{keywordtype}{float})zVal\{
+00061     
+00062     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00063         
+00064         \textcolor{keyword}{self}.x = xVal;
+00065         \textcolor{keyword}{self}.y = yVal;
+00066         \textcolor{keyword}{self}.z = zVal;
+00067         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{true};
+00068         
+00069     \}
+00070     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00071 \}
+00072 
+\hypertarget{_simple_point_8mm_source_l00074}{}\hyperlink{interface_simple_point_a2f2ec1990349aa281ea9003c2d7e320b}{00074} - (CGPoint)\hyperlink{interface_simple_point_a2f2ec1990349aa281ea9003c2d7e320b}{point}\{
+00075     \textcolor{keywordflow}{return} CGPointMake(\textcolor{keyword}{self}.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, \textcolor{keyword}{self}.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y});
+00076 \}
+00077 
+00078 
+00079 \textcolor{keyword}{@end}
+\end{DoxyCode}

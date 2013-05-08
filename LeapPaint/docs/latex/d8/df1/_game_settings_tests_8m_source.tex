@@ -1,0 +1,82 @@
+\hypertarget{_game_settings_tests_8m}{\section{Game\-Settings\-Tests.\-m}
+\label{d8/df1/_game_settings_tests_8m}\index{Leap\-Paint\-Tests/\-Game\-Settings\-Tests.\-m@{Leap\-Paint\-Tests/\-Game\-Settings\-Tests.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameSettingsTests.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/24/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "GameSettingsTests.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_game_settings_tests}{GameSettingsTests}
+00012 
+00016 - (void)setUp
+00017 \{
+00018     [\textcolor{keyword}{super} setUp];
+00019     
+00020     \textcolor{comment}{// Set-up code here.}
+00021     
+00022     \hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings} = [\hyperlink{interface_game_settings}{GameSettings} \hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance}];
+00023     
+00024     \textcolor{comment}{//Test that the shared instance created a new singleton}
+00025     STAssertNotNil(\hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings}, \textcolor{stringliteral}{@"GameSettings not init as singleton"});
+00026     
+00027 \}
+00031 - (void)tearDown
+00032 \{
+00033     \textcolor{comment}{// Tear-down code here.}
+00034     
+00035     [\textcolor{keyword}{super} tearDown];
+00036 \}
+00037 
+00038 
+00044 - (void)testDefinedValues\{
+00045 
+00046     \textcolor{comment}{//Assert values are true to their names such that Min is less than max and vise versa}
+00047     STAssertTrue(kVelMax > kVelMin, \textcolor{stringliteral}{@"kVel Constant Values are within range of their definition."});
+00048     
+00049     STAssertTrue((kOpMaxRange > kOpMinRange), \textcolor{stringliteral}{@"kOp Constant Values are within range of their definition."})
+      ;
+00050     
+00051     STAssertTrue((kOpMax > kOpMin), \textcolor{stringliteral}{@"kNormalized Constant Values are within range of their definition."});
+00052     
+00053     STAssertTrue((kNormalizedVelMax > kNormalizedVelMin), \textcolor{stringliteral}{@"kNormalized Constant Values are within range of
+       their definition."});
+00054     
+00055     \textcolor{comment}{//Assert that it exists}
+00056     STAssertNotNil(kMaxFrames, \textcolor{stringliteral}{@"kMax does not exist"});
+00057     
+00058 \}
+00059 
+00060 
+00062 - (void)testSharedInstance\{
+00063     
+00064     STAssertNotNil([\hyperlink{interface_game_settings}{GameSettings} sharedInstance], \textcolor{stringliteral}{@"GameSettings Does not provide
+       SharedInstance"});
+00065 \}
+00066 
+00068 - (void)testProperties\{
+00069     
+00070     
+00071     \textcolor{comment}{//Set to false}
+00072     \hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings}.depthOpacity = \textcolor{keyword}{false};
+00073     \textcolor{comment}{//Check}
+00074     STAssertFalse(\hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings}.depthOpacity, \textcolor{stringliteral}{@"depthOpacity cannot be set to false"});
+00075     
+00076     \textcolor{comment}{//Set to true}
+00077     \hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings}.depthOpacity = \textcolor{keyword}{true};
+00078     \textcolor{comment}{//Check}
+00079     STAssertTrue(\hyperlink{interface_game_settings_tests_abe72ed6a60e61029a7f71293ffef436e}{gameSettings}.depthOpacity, \textcolor{stringliteral}{@"depthOpacity cannot be set to true"});
+00080     
+00081     
+00082 \}
+00083 
+00084 
+00085 
+00086 \textcolor{keyword}{@end}
+\end{DoxyCode}

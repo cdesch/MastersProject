@@ -1,0 +1,92 @@
+\hypertarget{_simple_point_tests_8m}{\section{Simple\-Point\-Tests.\-m}
+\label{d7/d93/_simple_point_tests_8m}\index{Leap\-Paint\-Tests/\-Simple\-Point\-Tests.\-m@{Leap\-Paint\-Tests/\-Simple\-Point\-Tests.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SimplePointTests.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/24/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "SimplePointTests.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_simple_point_tests}{SimplePointTests}
+00012 
+00016 - (void)setUp
+00017 \{
+00018     [\textcolor{keyword}{super} setUp];
+00019     
+00020     \textcolor{comment}{// Set-up code here.}
+00021     \hyperlink{interface_simple_point_tests_a7de54d867fc86e46d98627fd689508f6}{twoValuePoint} = [\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:CGPointMake(5, 5);
+00022     
+00023     \hyperlink{interface_simple_point_tests_a3eaccf68ce0b22a31daba1edb2e70762}{threeValuePoint} = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithX:5.0f withY:5.0f withZ:5.0f];
+00024     
+00025     
+00026 \}
+00030 - (void)tearDown
+00031 \{
+00032     \textcolor{comment}{// Tear-down code here.}
+00033     
+00034     [\textcolor{keyword}{super} tearDown];
+00035 \}
+00036 
+00037 
+00039 - (void)testInits
+00040 \{
+00041     NSString* \hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName} = [NSString stringWithFormat:@"%s - %s",\_\_FILE\_\_, \_\_PRETTY\_FUNCTION\_\_, nil];
+00042     
+00043     \textcolor{keywordtype}{float} pointValue = 5.0f;
+00044     
+00045     NSMutableArray* testPoints = [[NSMutableArray alloc] init];
+00046     
+00047     \hyperlink{interface_simple_point}{SimplePoint}* testPoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:CGPointMake(
+      pointValue, pointValue)];
+00048     [testPoints addObject:testPoint];
+00049     
+00050     testPoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:CGPointMake(pointValue,pointValue) withZ:
+      pointValue];
+00051     [testPoints addObject:testPoint];
+00052     
+00053     testPoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithX:pointValue withY:pointValue];
+00054     [testPoints addObject:testPoint];
+00055     
+00056     testPoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithX:pointValue withY:pointValue withZ:pointValue];
+00057     [testPoints addObject:testPoint];
+00058     
+00059     
+00060     \textcolor{comment}{//Check to make sure each point exists}
+00061     \textcolor{keywordflow}{for}(\hyperlink{interface_simple_point}{SimplePoint}* point in testPoints)\{
+00062         
+00063         STAssertNotNil(testPoint, [NSString stringWithFormat:\textcolor{stringliteral}{@"%@ - %@"},\hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName}, \textcolor{stringliteral}{@"SimplePoint
+       init not working"},nil]);
+00064         
+00065         \textcolor{comment}{//Test that both values are equal to the point value}
+00066         STAssertEquals(testPoint.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, pointValue,  [NSString stringWithFormat:\textcolor{stringliteral}{@"%@ - %@"},
+      \hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName}, \textcolor{stringliteral}{@"Values do not match"},nil]);
+00067         
+00068         STAssertEquals(testPoint.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y}, pointValue,  [NSString stringWithFormat:\textcolor{stringliteral}{@"%@ - %@"},
+      \hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName}, \textcolor{stringliteral}{@"Values do not match"},nil]);
+00069         
+00070         
+00071         \textcolor{comment}{//If it is a 3d point, test the z}
+00072         \textcolor{keywordflow}{if} (testPoint.\hyperlink{interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}{is3d})\{
+00073             STAssertEquals(testPoint.\hyperlink{interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}{z}, pointValue,  [NSString stringWithFormat:\textcolor{stringliteral}{@"%@ - %@"},
+      \hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName}, \textcolor{stringliteral}{@"Values do not match"},nil]);
+00074             
+00075         \}\textcolor{keywordflow}{else}\{
+00076             
+00077             \textcolor{comment}{//if not, test that it is 0.0f}
+00078             STAssertEquals(testPoint.\hyperlink{interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}{z}, 0.0f,  [NSString stringWithFormat:\textcolor{stringliteral}{@"%@ - %@"},
+      \hyperlink{interface_simple_point_tests_a649cb8fc74d522648b3d242a79d67c52}{testName}, \textcolor{stringliteral}{@"Values do not match"},nil]);
+00079             
+00080         \}
+00081         
+00082         
+00083     \}
+00084 
+00085 \}
+00086 \textcolor{keyword}{@end}
+\end{DoxyCode}

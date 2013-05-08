@@ -1,0 +1,134 @@
+\hypertarget{_brush_selection_layer_8mm}{\section{Brush\-Selection\-Layer.\-mm}
+\label{d2/d04/_brush_selection_layer_8mm}\index{Leap\-Paint/\-Brush\-Selection\-Layer.\-mm@{Leap\-Paint/\-Brush\-Selection\-Layer.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  BrushSelectionLayer.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/9/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "BrushSelectionLayer.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_brush_selection_layer}{BrushSelectionLayer}
+00012 \textcolor{keyword}{@synthesize} delegate;
+00013 \textcolor{keyword}{@synthesize} layerHidden;
+00014 - (id)init
+00015 \{
+00016     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]))
+00017     \{
+00018         \textcolor{comment}{// Get window size}
+00019         CGSize size = [[CCDirector sharedDirector] winSize];
+00020         
+00021         \textcolor{comment}{// Add a button which takes us back to HelloWorldScene}
+00022         CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"BrushSelectionLayer" fontName:@"Marker Felt
+      " fontSize:30];
+00023         titleButton.position =ccp(size.width / 2.0f , 125);
+00024         
+00025         
+00026         [\textcolor{keyword}{self} addChild:titleButton];
+00027         \textcolor{comment}{// Add the generated background}
+00028         CCSprite *background = [CCSprite spriteWithFile:@"background-fullscreen.png"];
+00029         [background setPosition:ccp(size.width / 2, size.height / 2)];
+00030         \textcolor{keyword}{self}.layerHidden = \textcolor{keyword}{true};
+00031         [\textcolor{keyword}{self} addChild:background];
+00032         
+00033         [\textcolor{keyword}{self} buttoninit];
+00034         
+00035         \textcolor{keywordtype}{int} brushCount = 30;
+00036         \textcolor{comment}{//NSMutableArray* menuItems = [[NSMutableArray alloc] init];}
+00037         imageNamesDictionary = [[NSMutableDictionary alloc] init];
+00038         CCMenu *starMenu = [CCMenu menuWithItems:nil];
+00039         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i =0; i < brushCount; i++)\{
+00040             NSString* imagename = [NSString stringWithFormat:@"brush\_%d.png",i];
+00041             CCMenuItem *starMenuItem = [CCMenuItemImage
+00042                                         itemWithNormalImage:imagename selectedImage:imagename
+00043                                         target:self selector:@selector(brushSelectedAction:)];
+00044             \textcolor{comment}{//starMenuItem.position = ccp(size.width /2, size.height /2);}
+00045             starMenuItem.tag = i;
+00046             [imageNamesDictionary setObject:imagename forKey:[NSString stringWithFormat:@"%d",i]];
+00047             
+00048             
+00049             
+00050             [starMenu addChild:starMenuItem];
+00051         \}
+00052         
+00053         \textcolor{comment}{//[starMenu alignItemsHorizontally];}
+00054         NSNumber* itemsPerRow = [NSNumber numberWithInt:5];
+00055         [starMenu alignItemsInColumns:itemsPerRow,itemsPerRow,itemsPerRow,itemsPerRow,itemsPerRow,
+      itemsPerRow, nil];
+00056 
+00057         
+00058         
+00059         
+00060         
+00061         starMenu.position = ccp(size.width / 2, size.height / 2);
+00062         [\textcolor{keyword}{self} addChild:starMenu];
+00063         
+00064     \}
+00065     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00066 \}
+00067 
+00068 
+00069 
+00070 - (void)buttoninit\{
+00071     CGSize screenSize = [[CCDirector sharedDirector] winSize];
+00072     \textcolor{comment}{// Add the button}
+00073     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+00074     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+00075     
+00076 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00077 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" 
+      fontSize:30];
+00078 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+00079 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Hide" fontName:@"Marker Felt" fontSize:30];
+00080 \textcolor{preprocessor}{#endif}
+00081 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+00082     
+00083     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
+00084                                                      backgroundSprite:backgroundButton];
+00085     [controlButton setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+00086     [controlButton setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+00087     
+00088     controlButton.anchorPoint = ccp(0.5f, 1);
+00089     controlButton.position = ccp(screenSize.width / 2.0f, screenSize.height -100);
+00090     [\textcolor{keyword}{self} addChild:controlButton z:1];
+00091     
+00092     \textcolor{comment}{// Add the black background}
+00093     CCScale9Sprite *background = [CCScale9Sprite spriteWithFile:@"buttonBackground.png"];
+00094     [background setContentSize:CGSizeMake(300, 170)];
+00095     [background setPosition:ccp(screenSize.width / 2.0f, screenSize.height / 2.0f)];
+00096     \textcolor{comment}{//[self addChild:background];}
+00097     
+00098     \textcolor{comment}{// Sets up event handlers}
+00099     [controlButton addTarget:self action:@selector(touchDownAction:) forControlEvents:
+      CCControlEventTouchDown];
+00100 \}
+00101 
+00102 - (void)touchDownAction:(CCControlButton *)sender
+00103 \{
+00104 
+00105 
+00106     [\textcolor{keyword}{self}.delegate hidePanel];
+00107 \}
+00108 
+00109 
+00110 - (void)brushSelectedAction:(\textcolor{keywordtype}{id})sender
+00111 \{
+00112     NSLog(\textcolor{stringliteral}{@"Selected Brush"});
+00113     
+00114     CCMenuItemImage* menuItem =     (CCMenuItemImage*)sender;
+00115     \textcolor{keywordtype}{int} i = menuItem.tag;
+00116     NSString* imageName = [imageNamesDictionary objectForKey:[NSString stringWithFormat:@"%d",i]];
+00117     [\textcolor{keyword}{self}.delegate brushSelected:imageName];
+00118     [\textcolor{keyword}{self}.delegate hidePanel];
+00119     
+00120 \}
+00121 
+00122 
+00123 
+00124 \textcolor{keyword}{@end}
+\end{DoxyCode}

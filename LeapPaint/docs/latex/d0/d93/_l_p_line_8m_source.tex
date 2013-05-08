@@ -1,0 +1,38 @@
+\hypertarget{_l_p_line_8m}{\section{L\-P\-Line.\-m}
+\label{d0/d93/_l_p_line_8m}\index{Leap\-Paint/\-L\-P\-Line.\-m@{Leap\-Paint/\-L\-P\-Line.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  LPLine.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/2/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "LPLine.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_l_p_line}{LPLine}
+00012 
+00013 \textcolor{keyword}{@synthesize} points;
+00014 \textcolor{keyword}{@synthesize} width;
+00015 
+00016 - (id) init
+00017 \{
+00018     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]) == nil) \{
+00019         
+00020         
+00021         \textcolor{keyword}{self}.points = [[NSMutableArray alloc] init];
+00022         \textcolor{keyword}{self}.width = 1.0f;
+00023     \} \textcolor{comment}{// end if}
+00024     
+00025 
+00026 
+00027     
+00028     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00029     
+00030 \} \textcolor{comment}{// end initWithNSPoint}
+00031 
+00032 \textcolor{keyword}{@end}
+\end{DoxyCode}

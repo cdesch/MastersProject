@@ -1,0 +1,308 @@
+\hypertarget{_sketch_render_texture_scene_8mm}{\section{Sketch\-Render\-Texture\-Scene.\-mm}
+\label{d3/d58/_sketch_render_texture_scene_8mm}\index{Leap\-Paint/\-Sketch\-Render\-Texture\-Scene.\-mm@{Leap\-Paint/\-Sketch\-Render\-Texture\-Scene.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  SketchRenderTextureScene.m}
+00003 \textcolor{comment}{//  Cocos2D-CCRenderTexture-Demo}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Copyright (c) 2011 Steffen Itterheim.}
+00006 \textcolor{comment}{//  Distributed under MIT License.}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "SketchRenderTextureScene.h"}
+00010 
+00011 
+00012 \textcolor{keyword}{@implementation }\hyperlink{interface_sketch_render_texture_scene}{SketchRenderTextureScene}
+00013 \textcolor{keyword}{@synthesize} opacity;
+00014 
+00015 -(id) init
+00016 \{
+00017     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init])) 
+00018     \{
+00019         \textcolor{comment}{// create a simple rendertexture node and clear it with the color white}
+00020         
+00021         \textcolor{comment}{//target = [CCRenderTexture renderTextureWithWidth:s.width height: s.height
+       pixelFormat:kCCTexture2DPixelFormat\_RGBA8888];}
+00022         CGSize s = [CCDirector sharedDirector].winSize;
+00023 
+00024         CCDirector* sharedDirector =[CCDirector sharedDirector];
+00025         CGSize frameSize = sharedDirector.view.frame.size;
+00026         
+00027         
+00028         
+00029         \textcolor{keywordtype}{float} topbottombar = 300;
+00030         \textcolor{keywordtype}{float} sidebars = 300;
+00031 
+00032         
+00033         
+00034         
+00035         \textcolor{comment}{//CCSprite* imageBackground = [CCSprite spriteWithFile:@"squarebrush.png"] ;}
+00036         \textcolor{comment}{//imageBackground set}
+00037 
+00038         
+00039         CCRenderTexture* rtx = [CCRenderTexture renderTextureWithWidth:frameSize.width-sidebars height: 
+      frameSize.height-topbottombar];
+00040         [rtx clear:1.0f 
+00041                  g:1.0f
+00042                  b:1.0f
+00043                  a:1.0f];
+00044         
+00045         rtx.position = CGPointMake(s.width/2, s.height/2);
+00046         [\textcolor{keyword}{self} addChild:rtx z:0 tag:1];
+00047         
+00048         
+00049         
+00050 
+00051         \textcolor{comment}{//CCLabelTTF* label = [CCLabelTTF labelWithString:@"Drawing onto CCRenderTexture without clear"
+       fontName:@"Arial" fontSize:16];}
+00052         \textcolor{comment}{//label.position = CGPointMake(240, 15);}
+00053         \textcolor{comment}{//label.color = ccGRAY;}
+00054         \textcolor{comment}{//[self addChild:label];}
+00055 
+00056         \textcolor{comment}{// create and retain the brush sprite, but don't add it as child}
+00057         
+00058         lastColor = ccWHITE;
+00059         lastBrush = \textcolor{stringliteral}{@"roundbrush.png"};
+00060         lastScale = 1.0;
+00061         
+00062         eraseMode = \textcolor{keyword}{false};
+00063         \textcolor{keyword}{self}.opacity = 10;
+00064         
+00065         [\textcolor{keyword}{self} addBrush:lastBrush];
+00066         
+00067     
+00068         
+00069         \textcolor{comment}{//brush.scale = 0.5f;}
+00070 
+00071         \textcolor{comment}{// create the array holding the touches}
+00072         touches = [[NSMutableArray alloc] init];
+00073         
+00074         \textcolor{comment}{//[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];}
+00075         
+00076         [\textcolor{keyword}{self} scheduleUpdate];
+00077 
+00078     \}
+00079     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00080 \}
+00081 
+00082 - (void)addBrush:(NSString*)brushName\{
+00083     
+00084     brush = [CCSprite spriteWithFile:brushName] ;
+00085     [brush setScale:lastScale];
+00086     
+00087     
+00088     \textcolor{keywordflow}{if}(eraseMode)\{
+00089         \textcolor{comment}{//[brush setBlendFunc:(ccBlendFunc) \{ GL\_ZERO,GL\_ONE\_MINUS\_SRC\_ALPHA \}];}
+00090         [brush setBlendFunc:(ccBlendFunc) \{ GL\_ONE,GL\_ONE \}];
+00091         
+00092         
+00093 
+00094         [brush setOpacity:80];
+00095     \}\textcolor{keywordflow}{else}\{
+00096         brush.color = lastColor;
+00097         brush.opacity = opacity;
+00098     \}
+00099 \}
+00100 
+00101 -(void) cleanup
+00102 \{
+00103     brush = nil;
+00104     touches = nil;
+00105     
+00106     [\textcolor{keyword}{super} cleanup];
+00107 \}
+00108 
+00109 - (void)beginDraw:(CGPoint)point withZ:(\textcolor{keywordtype}{float})z\{
+00110     \textcolor{comment}{//NSLog(@"Begin Draw");}
+00111     \hyperlink{interface_simple_point}{SimplePoint}* simplePoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:point withZ:z];
+00112     [touches addObject:simplePoint];
+00113     
+00114 \}
+00115 - (void)updateDraw:(CGPoint)point withZ:(\textcolor{keywordtype}{float})z\{
+00116     
+00117       \textcolor{comment}{//  NSLog(@"update Draw");}
+00118     \hyperlink{interface_simple_point}{SimplePoint}* simplePoint = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithPosition:point withZ:z];
+00119     [touches addObject:simplePoint];
+00120     
+00121 \}
+00122 - (void)endDraw:(CGPoint)point \{
+00123     [touches removeAllObjects];
+00124 \}
+00125 
+00126 
+00127 \textcolor{comment}{/*}
+00128 \textcolor{comment}{-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event}
+00129 \textcolor{comment}{\{}
+00130 \textcolor{comment}{    // add new touches to the array as they come in}
+00131 \textcolor{comment}{    [touches addObject:touch];}
+00132 \textcolor{comment}{    return YES;}
+00133 \textcolor{comment}{\}}
+00134 \textcolor{comment}{}
+00135 \textcolor{comment}{-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event}
+00136 \textcolor{comment}{\{}
+00137 \textcolor{comment}{    // must remove the touches that have ended or where cancelled}
+00138 \textcolor{comment}{    [touches removeObject:touch];}
+00139 \textcolor{comment}{\}}
+00140 \textcolor{comment}{}
+00141 \textcolor{comment}{-(void) ccTouchCancelled:(UITouch *)touch withEvent:(UIEvent *)event}
+00142 \textcolor{comment}{\{}
+00143 \textcolor{comment}{    [self ccTouchEnded:touch withEvent:event];}
+00144 \textcolor{comment}{\}}
+00145 \textcolor{comment}{}
+00146 \textcolor{comment}{*/}
+00147 -(void) setBrushColor:(\textcolor{keywordtype}{int})color
+00148 \{
+00149     \textcolor{keywordflow}{switch} (color)
+00150     \{
+00151         \textcolor{keywordflow}{default}:
+00152         \textcolor{keywordflow}{case} 0:
+00153             brush.color = ccWHITE;
+00154             \textcolor{keywordflow}{break};
+00155         \textcolor{keywordflow}{case} 1:
+00156             brush.color = ccGREEN;
+00157             \textcolor{keywordflow}{break};
+00158         \textcolor{keywordflow}{case} 2:
+00159             brush.color = ccRED;
+00160             \textcolor{keywordflow}{break};
+00161         \textcolor{keywordflow}{case} 3:
+00162             brush.color = ccc3(0, 255, 255);
+00163             \textcolor{keywordflow}{break};
+00164         \textcolor{keywordflow}{case} 4:
+00165             brush.color = ccBLUE;
+00166             \textcolor{keywordflow}{break};
+00167     \}
+00168 \}
+00169 
+00170 -(void) update:(ccTime)delta
+00171 \{
+00172 
+00173     CCRenderTexture* rtx = (CCRenderTexture*)[\textcolor{keyword}{self} getChildByTag:1];
+00174 
+00175     \textcolor{comment}{// explicitly don't clear the rendertexture}
+00176     [rtx begin];
+00177 
+00178     \textcolor{comment}{//int color = 0;}
+00179 
+00180     \textcolor{comment}{// Since we store all current touches in an array, we can render a sprite at each touch location}
+00181     \textcolor{comment}{// even if the touch isn't moving. That way a continued press will increase the opacity of the sprite}
+00182     \textcolor{comment}{// simply because the sprite is drawn repeatedly with low opacity at the same location.}
+00183     NSArray* tempTouches = [[NSArray alloc] initWithArray:touches];
+00184     \textcolor{keywordflow}{for} (\hyperlink{interface_simple_point}{SimplePoint}* touch in tempTouches)
+00185     \{
+00186         \textcolor{comment}{//CGPoint touchLocation = [director convertToGL:[touch locationInView:director.openGLView]];}
+00187         CGPoint touchLocation = [touch point];
+00188         
+00189         \textcolor{comment}{// the location must be converted to the rendertexture sprite's node space}
+00190         touchLocation = [rtx.sprite convertToNodeSpace:touchLocation];
+00191         
+00192         \textcolor{comment}{// because the rendertexture sprite is flipped along its Y axis the Y coordinate must be flipped:}
+00193         touchLocation.y = rtx.sprite.contentSize.height - touchLocation.y;
+00194         
+00195         \textcolor{comment}{//CCLOG(@"touch: %.0f, %.0f", touchLocation.x, touchLocation.y);}
+00196         
+00197         \textcolor{comment}{// set the brush at that location and render it}
+00198         brush.position = touchLocation;
+00199         \textcolor{comment}{//[self setBrushColor:color++];}
+00200         [brush visit];
+00201     \}
+00202     
+00203     
+00204     
+00205     [rtx end];
+00206     
+00207     [touches removeAllObjects];
+00208 \}
+00209 
+00210 - (void)changeColor:(ccColor3B)color\{
+00211     
+00212        
+00213     \textcolor{keywordflow}{if}(brush != nil)\{
+00214         
+00215         brush.color = color;
+00216      
+00217     \}
+00218     lastColor = color;
+00219     
+00220 \}
+00221 - (void)changeBrush:(NSString*)brushname\{
+00222     
+00223     lastBrush = brushname;
+00224     \textcolor{keywordflow}{if} (brush != nil)\{
+00225         \textcolor{comment}{//Save important data}
+00226         CGPoint lastlocation = brush.position;
+00227         [\textcolor{keyword}{self} addBrush:lastBrush];
+00228         brush.position = lastlocation;
+00229     \}
+00230     
+00231 \}
+00232 
+00233 - (void)changeScale:(\textcolor{keywordtype}{float})size\{
+00234     
+00235     lastScale = size;
+00236     \textcolor{keywordflow}{if}(brush != nil)\{
+00237         
+00238         [brush setScale:size];
+00239         
+00240     \}
+00241 \}
+00242 
+00243 - (void)changeOpacity:(\textcolor{keywordtype}{float})o\{
+00244     
+00245     \textcolor{keyword}{self}.opacity = o;
+00246     \textcolor{keywordflow}{if} (brush != nil)\{
+00247         
+00248         brush.opacity = \textcolor{keyword}{self}.opacity;
+00249     \}
+00250     
+00251 \}
+00252 
+00253 - (void)clearDrawing\{
+00254     
+00255     CCRenderTexture* rtx = (CCRenderTexture*)[\textcolor{keyword}{self} getChildByTag:1];
+00256     
+00257     \textcolor{comment}{// explicitly don't clear the rendertexture}
+00258 \textcolor{comment}{//  [rtx begin];}
+00259 \textcolor{comment}{//    glClearColor(r, g, b, a);}
+00260   \textcolor{comment}{//  glClear(GL\_COLOR\_BUFFER\_BIT | GL\_DEPTH\_BUFFER\_BIT);}
+00261         \textcolor{comment}{//get rid of the mask}
+00262         \textcolor{comment}{// glColorMask(TRUE, TRUE, TRUE, FALSE);}
+00263 \textcolor{comment}{//    [rtx end];}
+00264     
+00265     [rtx clear:1 g:1 b:1 a:0];
+00266     
+00267 \}
+00268 
+00269 
+00270 
+00271 - (void)erasingMode:(BOOL)mode\{
+00272     
+00273     eraseMode = mode;
+00274     
+00275     \textcolor{comment}{//turn Erasing Mode on}
+00276     \textcolor{keywordflow}{if} (mode)\{
+00277         previousColor = lastColor;
+00278         lastColor = ccRED;
+00279         
+00280         CGPoint lastlocation = brush.position;
+00281         [\textcolor{keyword}{self} addBrush:lastBrush];
+00282         brush.position = lastlocation;
+00283         
+00284     \}\textcolor{keywordflow}{else}\{
+00285         \textcolor{comment}{//Turn erasing mode off}
+00286         lastColor = previousColor;
+00287         CGPoint lastlocation = brush.position;
+00288         [\textcolor{keyword}{self} addBrush:lastBrush];
+00289         brush.position = lastlocation;
+00290         
+00291     \}
+00292     
+00293 \}
+00294 
+00295 
+00296 
+00297 
+00298 
+00299 \textcolor{keyword}{@end}
+\end{DoxyCode}

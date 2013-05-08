@@ -1,0 +1,38 @@
+\hypertarget{_background_layer_8mm}{\section{Background\-Layer.\-mm}
+\label{db/d2a/_background_layer_8mm}\index{Leap\-Paint/\-Background\-Layer.\-mm@{Leap\-Paint/\-Background\-Layer.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  BackgroundLayer.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/9/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "BackgroundLayer.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_background_layer}{BackgroundLayer}
+00012 
+00014 - (id)init
+00015 \{
+00016     \textcolor{keywordflow}{if} ((\textcolor{keyword}{self} = [super init]))
+00017     \{
+00018         \textcolor{comment}{// Get window size}
+00019         CGSize size = [[CCDirector sharedDirector] winSize];
+00020         
+00021         \textcolor{comment}{// Add a button which takes us back to HelloWorldScene}
+00022         
+00023         \textcolor{comment}{// Add the generated background}
+00024         CCSprite *background = [CCSprite spriteWithFile:@"background-fullscreen.png"];
+00025         [background setPosition:ccp(size.width / 2, size.height / 2)];
+00026 
+00027         [\textcolor{keyword}{self} addChild:background];
+00028 
+00029     \}
+00030     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00031 \}
+00032 
+00033 \textcolor{keyword}{@end}
+\end{DoxyCode}

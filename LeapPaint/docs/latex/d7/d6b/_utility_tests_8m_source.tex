@@ -1,0 +1,45 @@
+\hypertarget{_utility_tests_8m}{\section{Utility\-Tests.\-m}
+\label{d7/d6b/_utility_tests_8m}\index{Leap\-Paint\-Tests/\-Utility\-Tests.\-m@{Leap\-Paint\-Tests/\-Utility\-Tests.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  UtilityTests.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/24/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "UtilityTests.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_utility_tests}{UtilityTests}
+00012 
+00016 - (void)setUp
+00017 \{
+00018     [\textcolor{keyword}{super} setUp];
+00019     
+00020     \textcolor{comment}{// Set-up code here.}
+00021     \hyperlink{interface_utility_tests_a0d3c1bf9a3bb4676bcf18650af0168d8}{testName} = \textcolor{stringliteral}{@"UtilityTests"};
+00022 \}
+00023 
+00027 - (void)tearDown
+00028 \{
+00029     \textcolor{comment}{// Tear-down code here.}
+00030     
+00031     [\textcolor{keyword}{super} tearDown];
+00032 \}
+00033 
+00035 - (void)testRandomNumbers
+00036 \{
+00037     NSString* testCase = [NSString stringWithFormat:@"%@ - %s - %s",testName, \_\_FILE\_\_, \_\_PRETTY\_FUNCTION\_\_
+      , nil];
+00038         
+00039     \textcolor{keywordtype}{int} randomNumber = [\hyperlink{interface_utility}{Utility} \hyperlink{interface_utility_a7af585df1742d836af6bc5b0eaf09cd3}{getRandomNumberUnder}:100];
+00040     STAssertTrue((randomNumber >= 0 && randomNumber < 100) , testCase);
+00041     
+00042     
+00043     \textcolor{comment}{//Test within a range}
+00044 \}
+00045 \textcolor{keyword}{@end}
+\end{DoxyCode}

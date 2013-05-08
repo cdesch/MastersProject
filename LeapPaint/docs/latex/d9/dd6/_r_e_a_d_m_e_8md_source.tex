@@ -1,0 +1,63 @@
+\hypertarget{_r_e_a_d_m_e_8md_source}{\section{Leap\-Paint/\-R\-E\-A\-D\-M\-E.md}
+}
+
+\begin{DoxyCode}
+00001 LeapPuzz
+00002 ========
+00003 
+00004 [Project Home & Wiki]( http:\textcolor{comment}{//hci.montclair.edu/groups/leap/)}
+00005 
+00006 \textcolor{preprocessor}{#Requirements Specification}
+00007 \textcolor{preprocessor}{}
+00008 \textcolor{preprocessor}{##Interface}
+00009 \textcolor{preprocessor}{} - HUD Requirement to render a cursor where the pointable is intersecting with the screen. The cursor 
+      should show the color that will be painting on the screen
+00010  - Ring and round cursor to indicate drawing or not drawing.
+00011 
+00012 ##Features
+00013 
+00014  - Change Colors
+00015  - Change Brushes
+00016  - Eraser
+00017  - Change size of brush
+00018  - Reset drawing
+00019  - Change Opacity of brushes
+00020 
+00021 
+00022 \textcolor{preprocessor}{#Unit Tests}
+00023 \textcolor{preprocessor}{}
+00024 
+00025 
+00026 
+00027 \textcolor{preprocessor}{#Libraries & Sub Modules}
+00028 \textcolor{preprocessor}{}
+00029  - [Cocos2d 2.0](http:\textcolor{comment}{//www.cocos2d-iphone.org/)}
+00030  - [CCControlExtension](https:\textcolor{comment}{//github.com/YannickL/CCControlExtension)}
+00031  -
+00032 
+00033 \textcolor{preprocessor}{#Build Settings}
+00034 \textcolor{preprocessor}{}
+00035  - Valid Architecture i386 x86\_64
+00036  - Other Linker Flags -lz -ObjC
+00037  - C Language Dialect GNU99 -std=gnu99
+00038  - C ++ Language Dialect GNU++11 -std=gnu++11
+00039  - C ++ Standard Library libc++ (LLVM C++ standard lib)
+00040 
+00041  - run script after build:
+00042 
+00043     echo TARGET\_BUILD\_DIR=$\{TARGET\_BUILD\_DIR\}
+00044     echo TARGET\_NAME=$\{TARGET\_NAME\}
+00045     cd $\{TARGET\_BUILD\_DIR\}/$\{TARGET\_NAME\}.app/Contents/MacOS
+00046     ls -la
+00047     install\_name\_tool -change @loader\_path/libLeap.dylib @executable\_path/../Resources/libLeap.dylib $\{
+      TARGET\_NAME\}
+00048 
+00049 \textcolor{preprocessor}{#Documentation}
+00050 \textcolor{preprocessor}{}
+00051 Documentation is done \textcolor{keyword}{using} [Doxygen](doxygen.org)
+00052 
+00053 
+00054 
+00055 
+00056 
+\end{DoxyCode}

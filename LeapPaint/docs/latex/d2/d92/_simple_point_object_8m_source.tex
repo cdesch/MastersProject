@@ -1,0 +1,38 @@
+\hypertarget{_simple_point_object_8m}{\section{Simple\-Point\-Object.\-m}
+\label{d2/d92/_simple_point_object_8m}\index{Leap\-Paint/\-Simple\-Point\-Object.\-m@{Leap\-Paint/\-Simple\-Point\-Object.\-m}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  Point.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/19/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "SimplePointObject.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_simple_point_object}{SimplePointObject}
+00012 
+00013 
+00014 - (id)initWithPosition:(CGPoint)p\{
+00015     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00016         
+00017         \textcolor{keyword}{self}.\hyperlink{interface_simple_point_object_a9796a8e6a00e61bb255f59a80aef77d4}{point} = p;
+00018         
+00019     \}
+00020     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00021 \}
+00022 
+00023 - (id)initWithX:(\textcolor{keywordtype}{float})x withY:(\textcolor{keywordtype}{float})y\{
+00024     
+00025     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
+00026         
+00027         \textcolor{keyword}{self}.point = CGPointMake(x, y);
+00028         
+00029     \}
+00030     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00031 \}
+00032 \textcolor{keyword}{@end}
+\end{DoxyCode}

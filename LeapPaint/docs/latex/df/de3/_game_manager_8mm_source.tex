@@ -1,0 +1,396 @@
+\hypertarget{_game_manager_8mm}{\section{Game\-Manager.\-mm}
+\label{df/de3/_game_manager_8mm}\index{Leap\-Paint/\-Game\-Manager.\-mm@{Leap\-Paint/\-Game\-Manager.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  GameManager.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 4/2/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "GameManager.h"}
+00010 
+00011 \textcolor{keyword}{@implementation }\hyperlink{interface_game_manager}{GameManager}
+00012 
+00013 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_ae286fb2f9d31810d73c7231a574b56b0}{hudLayer};
+00014 
+00015 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_a79a86ff991f39b3007d99ca61af21253}{textureScene};
+00016 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_a2a3a96f1202b13592f244cf1402b4051}{backgroundLayer};
+00017 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_a0ee5903be06e4a676ddde4c1f03530a7}{controlsLayer};
+00018 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_a4b089253ae3569099d28535b128f3436}{controller};
+00019 \textcolor{keyword}{@synthesize} \hyperlink{interface_game_manager_a85cb30e21c987f66855a762c6ba88096}{leapScreen};
+00020 
+00021 
+00022 \textcolor{comment}{// on "init" you need to initialize your instance}
+00023 -(id) init
+00024 \{
+00025     \textcolor{comment}{// always call "super" init}
+00026     \textcolor{comment}{// Apple recommends to re-assign "self" with the "super" return value}
+00027     \textcolor{keywordflow}{if}( (\textcolor{keyword}{self}=[super init])) \{
+00028         
+00029                 
+00030         \textcolor{comment}{// create and initialize a Label}
+00031         CCLabelTTF *label = [CCLabelTTF labelWithString:@"Leap Paint" fontName:@"Marker Felt" fontSize:64];
+00032         
+00033         \textcolor{comment}{// ask director the the window size}
+00034         CGSize size = [[CCDirector sharedDirector] winSize];
+00035         
+00036         NSLog(\textcolor{stringliteral}{@"Window size (pixels)-- Width: %0.0f Height: %0.0f"},size.width, size.height);
+00037         
+00038         \textcolor{comment}{// position the label on the center of the screen}
+00039         label.position =  ccp( size.width /2 , size.height - 25 );
+00040             \textcolor{comment}{// add the label as a child to this Layer}
+00041         
+00042         [\textcolor{keyword}{self} addChild: label];
+00043         [\textcolor{keyword}{self} run];
+00044         
+00045         \hyperlink{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{inputMode} = kPressKeyMode;
+00046         painting = \textcolor{keyword}{false};
+00047         
+00048         \hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{gameSettings} = [\hyperlink{interface_game_settings}{GameSettings} \hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance}];
+00049         
+00050         \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} = -1;
+00051         \hyperlink{interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}{lastPoint} = [[\hyperlink{interface_simple_point}{SimplePoint} alloc] initWithX:0.0f withY:0.0f withZ:0.0f];
+00052         \hyperlink{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{framesSinceLastFound} = 0;
+00053          
+00054     \}
+00055     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00056 \}
+00057 
+00058 \textcolor{preprocessor}{#pragma mark - SampleDelegate Callbacks}
+00059 \textcolor{preprocessor}{}- (void)run
+00060 \{
+00061     \hyperlink{interface_game_manager_a4b089253ae3569099d28535b128f3436}{controller} = [[LeapController alloc] init];
+00062     [controller addListener:self];
+00063     
+00064 \}
+00065 
+00066 - (void)onInit:(NSNotification *)notification\{
+00067     NSLog(\textcolor{stringliteral}{@"Leap: Initialized"});
+00068 \}
+00069 
+00070 - (void)onConnect:(NSNotification *)notification;
+00071 \{
+00072     NSLog(\textcolor{stringliteral}{@"Leap: Connected"});
+00073 
+00074     
+00075     \textcolor{comment}{//NSArray* screens = controller.calibratedScreens;}
+00076     NSArray* screens = \hyperlink{interface_game_manager_a4b089253ae3569099d28535b128f3436}{controller}.locatedScreens;
+00077     
+00078     
+00079     \textcolor{keywordflow}{if} ([screens count] > 0)\{
+00080         \hyperlink{interface_game_manager_a85cb30e21c987f66855a762c6ba88096}{leapScreen} = [screens objectAtIndex:0];
+00081         NSLog(\textcolor{stringliteral}{@"Screens: %0.0ld"}, (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long})[screens count]);
+00082         
+00083         
+00084     \}\textcolor{keywordflow}{else}\{
+00085         NSLog(\textcolor{stringliteral}{@"No Screens"});
+00086     \}
+00087     
+00088     NSLog(\textcolor{stringliteral}{@"running"});
+00089 
+00090 \}
+00091 
+00092 
+00093 - (void)onDisconnect:(NSNotification *)notification\{
+00094     NSLog(\textcolor{stringliteral}{@"Leap: Disconnected"});
+00095 \}
+00096 
+00097 - (void)onExit:(NSNotification *)notification\{
+00098     NSLog(\textcolor{stringliteral}{@"Leap: Exited"});
+00099 \}
+00100 
+00101 - (void)onFrame:(NSNotification *)notification\{
+00103     LeapController *aController = (LeapController *)[notification \textcolor{keywordtype}{object}];
+00104     \textcolor{comment}{// Get the most recent frame and report some basic information}
+00105     LeapFrame *frame = [aController frame:0];
+00106     
+00107     \textcolor{comment}{//Try and find the same one as last time.}
+00108     \textcolor{keywordflow}{if} ([[frame pointables] count] != 0) \{
+00109         NSArray* leapPointables = [frame pointables];
+00110         
+00111         LeapPointable* tool;
+00112         \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} != -1)\{
+00113             \textcolor{keywordflow}{for} (LeapPointable* pointable in leapPointables)\{
+00114                 
+00115                 \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} == pointable.id)\{
+00116                     
+00117                     tool = pointable;
+00118                     \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} = pointable.id;
+00119                     \textcolor{keywordflow}{break};
+00120                 \}
+00121                 
+00122             \}
+00123             
+00124             \textcolor{comment}{//Find a new point able}
+00125             \textcolor{keywordflow}{if} (tool == nil)\{
+00126                 
+00127                 tool = [\textcolor{keyword}{self} pointableClosestToScreen:leapPointables];
+00128                 \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} = tool.id;
+00129                 
+00130             \}
+00131             
+00132     
+00133         \}\textcolor{keywordflow}{else}\{
+00134             \textcolor{comment}{//Find a new pointable}
+00135             tool = [\textcolor{keyword}{self} pointableClosestToScreen:leapPointables];
+00136             \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} = tool.id;
+00137             
+00138         \}
+00139         
+00140         \textcolor{comment}{//Get the screen}
+00141         LeapVector* normalized = [leapScreen intersect:tool normalize:YES clampRatio:2.0];
+00142         
+00143         \textcolor{keywordflow}{if} ([\hyperlink{interface_game_manager_a85cb30e21c987f66855a762c6ba88096}{leapScreen} isValid])\{
+00144             \textcolor{keywordtype}{double} x = normalized.x * [leapScreen widthPixels];
+00145             \textcolor{keywordtype}{double} y = normalized.y * [leapScreen heightPixels];
+00146             
+00147             CGPoint pointer = CGPointMake(x, y);
+00148             
+00149             \textcolor{comment}{//Convert to Local coordinates from Screen Coordinates}
+00150             CCDirector* director = [CCDirector sharedDirector];
+00151             NSPoint var = [director.view.window convertScreenToBase:pointer];
+00152             
+00153             \textcolor{comment}{//Logging}
+00154             \textcolor{comment}{//NSLog(@"x %0.0f y %0.0f z %0.0f Pointer: x %0.0f y %0.0f ", x, y,tool.tipPosition.z, var.x,
+       var.y);}
+00155             \textcolor{comment}{//SimplePoint* simplePoint = [[SimplePoint alloc] initWithPosition:var
+       withZ:tool.tipPosition.z];}
+00156             \textcolor{comment}{//[[NSNotificationCenter defaultCenter] postNotificationName:@"CoordHUDUpdate"
+       object:simplePoint];}
+00157 
+00158             \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{gameSettings}.\hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depthOpacityMode})\{
+00159                 
+00160                 \textcolor{keywordtype}{float} opacity = [\textcolor{keyword}{self} opacityPercentage:tool.tipPosition.z];
+00161                 
+00162                 \textcolor{comment}{//Update the controls}
+00163                 [controlsLayer updateOpacitySlider:opacity];
+00164                 
+00165             \}
+00166                     
+00167             \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{inputMode} == kDepthMode)\{
+00168                 
+00169                 \textcolor{keywordflow}{if} (tool.tipPosition.z > 0)\{
+00170                     painting = FALSE;
+00171 
+00172                 
+00173                 \}\textcolor{keywordflow}{else}\{
+00174                     painting = TRUE;
+00175                     
+00176                 \}
+00177             \}
+00178             
+00179             \textcolor{comment}{//Update the HUD View}
+00180             [\textcolor{keyword}{self}.hudLayer toolMoved:var toolID:[NSString stringWithFormat:@"%0.0d",tool.id]];
+00181             \textcolor{keywordflow}{if} (painting)\{
+00182                 [\textcolor{keyword}{self} movedToolTexture:var tool:tool];
+00183             \}\textcolor{keywordflow}{else}\{
+00184                \textcolor{comment}{// NSLog(@"Not Painting");}
+00185             \}
+00186             
+00187         \}\textcolor{keywordflow}{else}\{
+00188             NSLog(\textcolor{stringliteral}{@"Leap Screen is invalid"});
+00189         \}
+00190         
+00191     \}\textcolor{keywordflow}{else}\{
+00192         
+00193         
+00194         NSLog(\textcolor{stringliteral}{@"No frame"});
+00195         \textcolor{comment}{//Remove the marker from the HUD view}
+00196         \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable} != nil) \{
+00197 
+00198             [\textcolor{keyword}{self} endLineDrawingTexture:currentPoint tool:currentPointable];
+00199             [\textcolor{keyword}{self}.hudLayer endTrackingTool];
+00200         \}
+00201         
+00202         \hyperlink{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{lastTag} = -1;
+00203         
+00204         \hyperlink{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{framesSinceLastFound} ++;
+00205         \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{framesSinceLastFound} > kMaxFrames)\{
+00206             
+00207             \hyperlink{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{framesSinceLastFound} = 0;
+00208         \}
+00209         
+00210     \}
+00211 \}
+00212 
+00213 \textcolor{preprocessor}{#pragma mark - TextureScene}
+00214 \textcolor{preprocessor}{}
+00216 - (void)movedToolTexture:(CGPoint)point tool:(LeapPointable*)pointable\{
+00217     
+00218     \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable} != nil)\{
+00219         
+00220         [\textcolor{keyword}{self} moveLineDrawingTexture:point tool:pointable];
+00221         \hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable} = pointable;
+00222     \}\textcolor{keywordflow}{else}\{
+00223         [\textcolor{keyword}{self} beginLineDrawingTexture:point tool:pointable];
+00224         \hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable} = pointable;
+00225     \}
+00226 \}
+00227 
+00230 - (void)beginLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable\{
+00231     
+00232     [\textcolor{keyword}{self}.textureScene beginDraw:point withZ:pointable.tipPosition.z];
+00233     \hyperlink{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{currentPoint} = point;
+00234 \}
+00236 - (void)moveLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable\{
+00237     
+00238     [\textcolor{keyword}{self}.textureScene updateDraw:point withZ:pointable.tipPosition.z];
+00239     \hyperlink{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{currentPoint} = point;
+00240     
+00241 \}
+00242 
+00244 - (void)endLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable\{
+00245     [\textcolor{keyword}{self}.textureScene endDraw:point];
+00246     \hyperlink{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{currentPointable} = nil;
+00247     
+00248 \}
+00249 
+00250 \textcolor{preprocessor}{#pragma mark - Keyboard Events}
+00251 \textcolor{preprocessor}{}
+00253 - (void)changeMode:(InputMode)mode\{
+00254     \textcolor{comment}{//NSLog(@"Changemode");}
+00255     \hyperlink{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{inputMode} = mode;
+00256 \}
+00257 
+00258 
+00260 - (void)painting:(BOOL)paintingState\{
+00261     painting = paintingState;
+00262 \}
+00263 
+00264 
+00265 \textcolor{preprocessor}{#pragma mark - ControlsDelegate}
+00266 \textcolor{preprocessor}{}
+00272 - (void)changeColorControl:(ccColor3B)color\{
+00273     
+00274     [\textcolor{keyword}{self}.hudLayer changeColor:color];
+00275     [\textcolor{keyword}{self}.textureScene changeColor:color];
+00276     
+00277 \}
+00282 - (void)changeThicknessControl:(\textcolor{keywordtype}{float})value\{
+00283     
+00284     [\textcolor{keyword}{self}.hudLayer changeScale:value];
+00285     [\textcolor{keyword}{self}.textureScene changeScale:value];
+00286 \}
+00291 - (void)changeBrushControl:(NSString *)brushname\{
+00292     
+00293     [\textcolor{keyword}{self}.hudLayer changeBrush:brushname];
+00294     [\textcolor{keyword}{self}.textureScene changeBrush:brushname];
+00295 \}
+00300 - (void)changeOpacityControl:(\textcolor{keywordtype}{float})value\{
+00301     [\textcolor{keyword}{self}.textureScene changeOpacity:value];
+00302 \}
+00303 
+00305 - (void)clearDrawing\{
+00306     
+00307     [\textcolor{keyword}{self}.textureScene clearDrawing];
+00308     
+00309     \textcolor{comment}{//**Turns off eraser mode if it is on}
+00310     \textcolor{keywordflow}{if} (\hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{gameSettings}.\hyperlink{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{eraserMode})\{
+00311         \hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{gameSettings}.\hyperlink{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{eraserMode} = \textcolor{keyword}{false};
+00312         
+00313         \textcolor{comment}{//Update texture mode and update Controls layer}
+00314     \}
+00315 \}
+00319 - (void)eraserMode:(\textcolor{keywordtype}{bool})mode\{
+00320     
+00321     [\textcolor{keyword}{self}.hudLayer erasingMode:mode];
+00322     [\textcolor{keyword}{self}.textureScene erasingMode:mode];
+00323     
+00324 \}
+00325 
+\hypertarget{_game_manager_8mm_source_l00328}{}\hyperlink{interface_game_manager_a0acb835edfa002c4c66a92d02376bd0b}{00328} - (float)opacityPercentage:(\textcolor{keywordtype}{float})value\{
+00329     \textcolor{comment}{//NSLog(@"value %0.0f", value);}
+00330     \textcolor{keywordflow}{if} (value < kOpMinRange)\{
+00331         \textcolor{keywordflow}{return} kOpMax;
+00332     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value > kOpMaxRange)\{
+00333         \textcolor{keywordflow}{return} kOpMin;
+00334     \}\textcolor{keywordflow}{else} \{
+00335         
+00336         \textcolor{keywordtype}{float} percentage = [\textcolor{keyword}{self} findPecentageDifference:kOpMaxRange withMin:kOpMinRange withValue:value];
+00337         \textcolor{comment}{//NSLog(@"percentage %0.0f", percentage);}
+00338         
+00339         percentage = 100 - percentage;
+00340         
+00341         \textcolor{keywordflow}{return} percentage;
+00342         
+00343     \}
+00344 
+00345 \}
+00346 
+00347 
+00348 \textcolor{comment}{/* Find the percentage between two numbers */}
+00349 
+00350 - (float)findPecentageDifference:(\textcolor{keywordtype}{float})max withMin:(\textcolor{keywordtype}{float})min withValue:(\textcolor{keywordtype}{float})value\{
+00351     
+00352     \textcolor{keywordflow}{return} (value - min)/(max - min)*100;
+00353 
+00354 \}
+00355 
+00356 
+00357 \textcolor{comment}{//Using all the pointables, gets the closest one to the screen}
+00358 - (LeapPointable*)pointableClosestToScreen:(NSArray*)pointables\{
+00359     
+00360 
+00361     LeapPointable* closestPointable;
+00362     
+00363     \textcolor{keywordflow}{for} (LeapPointable*pointable in pointables)\{
+00364         
+00365         \textcolor{comment}{//Check for the first iteration that the closest is not equal to nil}
+00366         \textcolor{keywordflow}{if} (closestPointable != nil)\{
+00367             
+00368             \textcolor{keywordflow}{if} (closestPointable.tipPosition.z > pointable.tipPosition.z)\{
+00369                 closestPointable = pointable;
+00370             \}
+00371             
+00372         \}\textcolor{keywordflow}{else}\{
+00373             closestPointable = pointable;
+00374         \}
+00375         
+00376     \}
+00377 
+00378     \textcolor{keywordflow}{return} closestPointable;
+00379 \}
+00380 
+00382 - (LeapPointable*)pointableClosestToVector:(LeapVector*)leapVector withPointables:(NSArray*)pointables\{
+00383     
+00384     
+00385     LeapPointable* closestPointable;
+00386     \textcolor{comment}{//Check to make sure there is atleast one object in the array}
+00387     
+00388     \textcolor{comment}{//if the array is empty, throw an exception}
+00389     \textcolor{keywordflow}{if} ([pointables count] == 0)\{
+00390         NSLog(\textcolor{stringliteral}{@"Cannot pass item 0 array"});
+00391         \textcolor{keywordflow}{return} nil;
+00392     \}
+00393     \textcolor{comment}{//If there is only one object in the array, return it}
+00394     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ([pointables count] == 1)\{
+00395         \textcolor{keywordflow}{return} [pointables objectAtIndex:0];
+00396     \}\textcolor{keywordflow}{else}\{
+00397         
+00398         \textcolor{comment}{//Get the distance for the first point}
+00399         \textcolor{keywordtype}{float} minDistance = 0;
+00400         closestPointable = [pointables objectAtIndex:0];
+00401         minDistance = [leapVector distanceTo:closestPointable.tipPosition];
+00402 
+00403         
+00404         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < [pointables count]; i++)\{
+00405             
+00406             LeapPointable* point = [pointables objectAtIndex:i];
+00407             \textcolor{keywordtype}{float} distance = [leapVector distanceTo:point.tipPosition];
+00408             \textcolor{keywordflow}{if} ( distance < minDistance)\{
+00409                 minDistance = distance;
+00410                 closestPointable = point;
+00411             \}
+00412         \}
+00413     \}
+00414     
+00415     \textcolor{keywordflow}{return} closestPointable;
+00416 \}
+00417 
+00418 
+00419 \textcolor{keyword}{@end}
+\end{DoxyCode}
