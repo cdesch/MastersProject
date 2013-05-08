@@ -1,0 +1,5 @@
+platform :osx, "10.7"
+xcodeproj './LeapPaint.xcodeproj'
+
+pod 'cocos2d', '~> 2.1-rc1'
+
