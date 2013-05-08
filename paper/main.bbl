@@ -1,0 +1,94 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pierce(2012)]{theverge}
+David Pierce.
+\newblock A look inside leap motion, the 3d gesture control that's like kinect
+  on steroids, June 26 2012.
+\newblock URL
+  \url{http://www.theverge.com/2012/6/26/3118592/leap-motion-gesture-controls}.
+
+\bibitem[{Leap Motion Inc.}(2013)]{leapmotion}
+{Leap Motion Inc.}
+\newblock Leapmotion, April 2013.
+\newblock URL \url{http://www.leapMotion.com}.
+
+\bibitem[Scott et~al.(2003)Scott, Mandryk, and Inkpen]{journalsjcalScottMI03}
+Stacey~D. Scott, Regan~L. Mandryk, and Kori Inkpen.
+\newblock Understanding children's collaborative interactions in shared
+  environments.
+\newblock \emph{J. Comp. Assisted Learning}, 19\penalty0 (2):\penalty0
+  220--228, 2003.
+\newblock URL \url{http://dx.doi.org/10.1046/j.0266-4909.2003.00022.x}.
+
+\bibitem[Colella et~al.(1998)Colella, Borovoy, and Resnick]{Colella98}
+Vanessa Colella, Richard Borovoy, and Mitchel Resnick.
+\newblock Participatory simulations: Using computational objects to learn about
+  dynamic systems.
+\newblock In \emph{Proceedings of ACM CHI 98 Conference on Human Factors in
+  Computing Systems}, 1998.
+
+\bibitem[Druin(1999)]{Druin:1999:CID:302979.303166}
+Allison Druin.
+\newblock Cooperative inquiry: developing new technologies for children with
+  children.
+\newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
+  computing systems: the CHI is the limit}, CHI '99, pages 592--599, New York,
+  NY, USA, 1999. ACM.
+\newblock ISBN 0-201-48559-1.
+\newblock \doi{10.1145/302979.303166}.
+\newblock URL \url{http://doi.acm.org/10.1145/302979.303166}.
+
+\bibitem[Druin(2002)]{Druin02therole}
+Allison Druin.
+\newblock The role of children in the design of new technology.
+\newblock \emph{Behaviour and Information Technology}, 21:\penalty0 1--25,
+  2002.
+
+\bibitem[Pfleeger and Atlee(2009)]{0136061699}
+Shari~Lawrence Pfleeger and Joanne~M. Atlee.
+\newblock \emph{Software Engineering: Theory and Practice (4th Edition)}.
+\newblock Prentice Hall, 2009.
+\newblock ISBN 0136061699.
+\newblock URL
+  \url{http://www.amazon.com/Software-Engineering-Theory-Practice-Edition/dp/0136061699%3FSubscriptionId%3D0JYN1NVW651KCA56C102%26tag%3Dtechkie-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0136061699}.
+
+\bibitem[Ruparelia(2010)]{Ruparelia:2010:SDL:1764810.1764814}
+Nayan~B. Ruparelia.
+\newblock Software development lifecycle models.
+\newblock \emph{SIGSOFT Softw. Eng. Notes}, 35\penalty0 (3):\penalty0 8--13,
+  May 2010.
+\newblock ISSN 0163-5948.
+\newblock \doi{10.1145/1764810.1764814}.
+\newblock URL \url{http://doi.acm.org/10.1145/1764810.1764814}.
+
+\bibitem[{Apple Computer Inc.}(2013)]{appleapi}
+{Apple Computer Inc.}
+\newblock {Mac OS and iOS API}, 2013.
+\newblock URL \url{http://developer.apple.com}.
+
+\bibitem[{Unity Technologies}(2013)]{unity}
+{Unity Technologies}.
+\newblock {Unity SDK}, 2013.
+\newblock URL \url{http://unity3d.com/}.
+
+\bibitem[{Community Project}()]{cocos2d}
+{Community Project}.
+\newblock Cocos2d game engine framework.
+\newblock URL \url{http://www.cocos2d-iphone.org/}.
+
+\bibitem[Loriot()]{cccontrolextension}
+Yannick Loriot.
+\newblock Cccontrolextension.
+\newblock URL \url{https://github.com/YannickL/CCControlExtension}.
+
+\bibitem[Gillian()]{GRT}
+Nick Gillian.
+\newblock Gesture recognition toolkit.
+\newblock URL \url{https://code.google.com/p/gesture-recognition-toolkit/}.
+
+\end{thebibliography}

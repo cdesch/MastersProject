@@ -1,0 +1,58 @@
+\contentsline {chapter}{Abstract}{i}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{ii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{List of Figures}{v}{dummy.4}
+\contentsline {chapter}{List of Tables}{vi}{dummy.6}
+\contentsline {chapter}{Abbreviations}{vii}{dummy.8}
+\contentsline {chapter}{\numberline {1}Overview}{1}{chapter.11}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.12}
+\contentsline {section}{\numberline {1.2}LeapMotion}{2}{section.14}
+\contentsline {section}{\numberline {1.3}Use Case Exceptions}{3}{section.17}
+\contentsline {chapter}{\numberline {2}Development Methodology}{5}{chapter.18}
+\contentsline {section}{\numberline {2.1}KidsTeam}{5}{section.19}
+\contentsline {section}{\numberline {2.2}Collaboration Techniques}{6}{section.20}
+\contentsline {subsection}{\numberline {2.2.1}Sticky Notes}{6}{subsection.21}
+\contentsline {subsection}{\numberline {2.2.2}Bags of Stuff}{7}{subsection.25}
+\contentsline {subsection}{\numberline {2.2.3}Storyboarding}{7}{subsection.26}
+\contentsline {section}{\numberline {2.3}Development Model}{8}{section.27}
+\contentsline {chapter}{\numberline {3}Design and Development}{9}{chapter.31}
+\contentsline {section}{\numberline {3.1}Session 1: Introduction and Brainstorm}{9}{section.32}
+\contentsline {section}{\numberline {3.2}Session 2: Testing Breakout and Designing a Paint Application}{10}{section.35}
+\contentsline {section}{\numberline {3.3}Gesture Design Challenges}{10}{section.37}
+\contentsline {subsection}{\numberline {3.3.1}Implementation Challenges}{12}{subsection.42}
+\contentsline {subsection}{\numberline {3.3.2}Unity Testing}{12}{subsection.45}
+\contentsline {section}{\numberline {3.4}Session 3: Interface Controls}{13}{section.46}
+\contentsline {section}{\numberline {3.5}Session 4: Testing a drawing application}{14}{section.50}
+\contentsline {section}{\numberline {3.6}Session 5: Designing Gestures }{14}{section.51}
+\contentsline {section}{\numberline {3.7}Session 6: Testing}{15}{section.53}
+\contentsline {section}{\numberline {3.8}Session 7: Testing}{15}{section.54}
+\contentsline {section}{\numberline {3.9}Session 8: Testing}{16}{section.55}
+\contentsline {section}{\numberline {3.10}Session 9: Usability Comparison}{16}{section.56}
+\contentsline {chapter}{\numberline {4}Application Architecture}{18}{chapter.59}
+\contentsline {section}{\numberline {4.1}Prototyping}{18}{section.60}
+\contentsline {subsection}{\numberline {4.1.1}HelloWorld}{18}{subsection.62}
+\contentsline {subsection}{\numberline {4.1.2}BreakOut}{19}{subsection.63}
+\contentsline {subsection}{\numberline {4.1.3}Unity}{20}{subsection.71}
+\contentsline {subsection}{\numberline {4.1.4}Quartz 2D}{20}{subsection.73}
+\contentsline {subsubsection}{\numberline {4.1.4.1}Challenges}{21}{subsubsection.74}
+\contentsline {subsection}{\numberline {4.1.5}LeapPaint}{21}{subsection.75}
+\contentsline {section}{\numberline {4.2}User Interface Layout}{22}{section.77}
+\contentsline {subsection}{\numberline {4.2.1}pointer Tracking}{22}{subsection.81}
+\contentsline {subsection}{\numberline {4.2.2}Application Layers}{22}{subsection.82}
+\contentsline {section}{\numberline {4.3}External Libraries}{23}{section.84}
+\contentsline {section}{\numberline {4.4}Testing}{24}{section.85}
+\contentsline {section}{\numberline {4.5}Documentation}{24}{section.86}
+\contentsline {section}{\numberline {4.6}Experimental Features}{25}{section.87}
+\contentsline {subsection}{\numberline {4.6.1}Drawing Modes}{25}{subsection.88}
+\contentsline {subsection}{\numberline {4.6.2}Depth Opacity}{25}{subsection.89}
+\contentsline {chapter}{\numberline {5}Summary}{27}{chapter.90}
+\contentsline {section}{\numberline {5.1}General Observations}{27}{section.91}
+\contentsline {section}{\numberline {5.2}Similar Applications}{27}{section.92}
+\contentsline {subsection}{\numberline {5.2.1}Google Earth}{28}{subsection.93}
+\contentsline {section}{\numberline {5.3}Conclusions}{28}{section.94}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}Documentation}{29}{appendix.95}
+\contentsline {chapter}{\numberline {B}Specification}{77}{appendix.96}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{78}{dummy.97}
