@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 11:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,7 +1230,7 @@ ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2012/texmf
 -dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (11 pages, 57822 bytes).
+Output written on refman.pdf (11 pages, 57507 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
