@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
+#import "GLES-Render.h"
 /**
  Extends CCSprite object with two properties for tracking sprites with pointable objects
  */

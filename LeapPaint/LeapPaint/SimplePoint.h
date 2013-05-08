@@ -17,7 +17,6 @@
 
 @interface SimplePoint : NSObject {
 
-
 }
 
 @property (nonatomic, readwrite) float x; /**< x coordinate */
@@ -33,7 +32,7 @@
  */
 - (id)initWithPosition:(CGPoint)p;
 /**
- * Init constructor with existing point to create a 2d Point
+ * Init constructor with x and y values to create a 2d point
  * @param xVal coordinate value
  * @param yVal coordinate value
  * @return object instance
@@ -47,7 +46,7 @@
  */
 - (id)initWithPosition:(CGPoint)p withZ:(float)zVal;
 /**
- * Init constructor with existing point to create a 2d Point
+ * Init constructor with x, y and z values to create 3D point
  * @param xVal coordinate value
  * @param yVal coordinate value
  * @param zval coordinate value

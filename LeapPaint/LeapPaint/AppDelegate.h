@@ -20,7 +20,7 @@
     NSWindow	*window_;  /**< window is the main window to be displayed */
     CCGLView	*glView_;  /**< glView is the embedded view in which cocos2d will run inside the window */
 }
-@property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSWindow *window;
 @property (strong) IBOutlet CCGLView *glView;
 
 /** RunGameSceen sets up the Cocos2d environment and runs it in the application.

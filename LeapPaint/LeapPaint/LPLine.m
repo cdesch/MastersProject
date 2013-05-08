@@ -13,20 +13,13 @@
 @synthesize points;
 @synthesize width;
 
-- (id) init
+- (id)init
 {
 	if ((self = [super init]) == nil) {
-        
-        
         self.points = [[NSMutableArray alloc] init];
 		self.width = 1.0f;
-	} // end if
-    
-
-
-	
+	}
     return self;
-    
-} // end initWithNSPoint
+}
 
 @end

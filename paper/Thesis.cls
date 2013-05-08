@@ -309,6 +309,53 @@
     \bigskip
   \end{center}
 }
+
+
+\newenvironment{copyright}
+{
+  \btypeout{Copyright}
+  \thispagestyle{empty}
+  \null\vfil
+  \begin{center}
+    \setlength{\parskip}{0pt}
+    {\normalsize \UNIVNAME \par} % University name in capitals
+    \bigskip
+    {\huge{\textit{}} \par}
+    \bigskip
+    % {\normalsize \facname \par} % Faculty name
+    {\normalsize \deptname \par} % Department name
+    \bigskip
+    {\normalsize \degreename\par} % Degree name
+    \bigskip
+    {\normalsize\bf \@title \par} % Thesis title
+    \medskip
+    {\normalsize by \authornames \par} % Author name
+    \bigskip
+  \end{center}
+}
+\newenvironment{signatures}
+{
+  \btypeout{Signatures}
+  \thispagestyle{empty}
+  \null\vfil
+  \begin{center}
+    \setlength{\parskip}{0pt}
+    {\normalsize \UNIVNAME \par} % University name in capitals
+    \bigskip
+    {\huge{\textit{}} \par}
+    \bigskip
+    % {\normalsize \facname \par} % Faculty name
+    {\normalsize \deptname \par} % Department name
+    \bigskip
+    {\normalsize \degreename\par} % Degree name
+    \bigskip
+    {\normalsize\bf \@title \par} % Thesis title
+    \medskip
+    {\normalsize by \authornames \par} % Author name
+    \bigskip
+  \end{center}
+}
+
 %----------------------------------------------------------------------------------------
 {
   \vfil\vfil\vfil\null

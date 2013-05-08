@@ -59,14 +59,8 @@
     /** Creates and return a button with a default background and title color. */
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
-#endif
     [titleButton setColor:ccc3(159, 168, 176)];
-    
     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:backgroundButton];
     [button setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
     [button setTitleColor:ccWHITE forState:CCControlStateHighlighted];

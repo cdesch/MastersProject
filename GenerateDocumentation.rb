@@ -23,6 +23,6 @@ project_names.each do |i|
 		 %x[#{cmd}]
 	}
 	
-	progressbar.progress += (project_names.count*2) / 100
+	progressbar.progress += (project_names.count * 2) / 100
 end
 

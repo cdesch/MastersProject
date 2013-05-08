@@ -72,7 +72,6 @@
 		2371B79A173AAE6E00EAEB6B /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B6F2173AAE6E00EAEB6B /* CCScale9Sprite.m */; };
 		2371B79B173AAE6E00EAEB6B /* ControlsLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B6F5173AAE6E00EAEB6B /* ControlsLayer.mm */; };
 		2371B79C173AAE6E00EAEB6B /* darkreddot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2371B6F6173AAE6E00EAEB6B /* darkreddot.jpg */; };
-		2371B79D173AAE6E00EAEB6B /* DrawScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B6F8173AAE6E00EAEB6B /* DrawScene.mm */; };
 		2371B79E173AAE6E00EAEB6B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2371B6FA173AAE6E00EAEB6B /* Credits.rtf */; };
 		2371B79F173AAE6E00EAEB6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2371B6FC173AAE6E00EAEB6B /* InfoPlist.strings */; };
 		2371B7A0173AAE6E00EAEB6B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2371B6FE173AAE6E00EAEB6B /* MainMenu.xib */; };
@@ -82,18 +81,15 @@
 		2371B7A4173AAE6E00EAEB6B /* f2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B703173AAE6E00EAEB6B /* f2-hd.png */; };
 		2371B7A5173AAE6E00EAEB6B /* f2-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B704173AAE6E00EAEB6B /* f2-ipad.png */; };
 		2371B7A6173AAE6E00EAEB6B /* f2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B705173AAE6E00EAEB6B /* f2.png */; };
-		2371B7A7173AAE6E00EAEB6B /* FingerPaintingScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */; };
 		2371B7A8173AAE6E00EAEB6B /* GameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B709173AAE6E00EAEB6B /* GameManager.mm */; };
 		2371B7AA173AAE6E00EAEB6B /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B70D173AAE6E00EAEB6B /* GameScene.mm */; };
 		2371B7AB173AAE6E00EAEB6B /* GameSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B70F173AAE6E00EAEB6B /* GameSettings.mm */; };
-		2371B7AC173AAE6E00EAEB6B /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B711173AAE6E00EAEB6B /* GLES-Render.mm */; };
 		2371B7AD173AAE6E00EAEB6B /* hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B712173AAE6E00EAEB6B /* hair.png */; };
 		2371B7AE173AAE6E00EAEB6B /* HUDLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B714173AAE6E00EAEB6B /* HUDLayer.mm */; };
 		2371B7AF173AAE6E00EAEB6B /* hueBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B715173AAE6E00EAEB6B /* hueBackground.png */; };
 		2371B7B0173AAE6E00EAEB6B /* largeBrush.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B716173AAE6E00EAEB6B /* largeBrush.png */; };
 		2371B7B1173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B718173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m */; };
 		2371B7B2173AAE6E00EAEB6B /* LPLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B71A173AAE6E00EAEB6B /* LPLine.m */; };
-		2371B7B3173AAE6E00EAEB6B /* LPTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B71C173AAE6E00EAEB6B /* LPTool.mm */; };
 		2371B7B4173AAE6E00EAEB6B /* Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B71D173AAE6E00EAEB6B /* Paddle.png */; };
 		2371B7B5173AAE6E00EAEB6B /* pants.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B71E173AAE6E00EAEB6B /* pants.png */; };
 		2371B7B6173AAE6E00EAEB6B /* picker.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B71F173AAE6E00EAEB6B /* picker.png */; };
@@ -158,6 +154,9 @@
 		2371B801173ABE5400EAEB6B /* LPToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F8173ABE5400EAEB6B /* LPToolTests.m */; };
 		2371B802173ABE5400EAEB6B /* SimplePointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7FA173ABE5400EAEB6B /* SimplePointTests.m */; };
 		2371B803173ABE5400EAEB6B /* UtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7FC173ABE5400EAEB6B /* UtilityTests.m */; };
+		2371B847173AC45B00EAEB6B /* LPTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B846173AC45B00EAEB6B /* LPTool.mm */; };
+		2371B84D173AC8A200EAEB6B /* LPLinePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B84C173AC8A200EAEB6B /* LPLinePoint.m */; };
+		2371B84E173AC8A200EAEB6B /* LPLinePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B84C173AC8A200EAEB6B /* LPLinePoint.m */; };
 		239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
 		239B35171739EDEE00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35151739EDEE00CB0EC6 /* InfoPlist.strings */; };
 		239B35191739EDEE00CB0EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35181739EDEE00CB0EC6 /* main.m */; };
@@ -274,8 +273,6 @@
 		2371B6F4173AAE6E00EAEB6B /* ControlsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsLayer.h; sourceTree = "<group>"; };
 		2371B6F5173AAE6E00EAEB6B /* ControlsLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControlsLayer.mm; sourceTree = "<group>"; };
 		2371B6F6173AAE6E00EAEB6B /* darkreddot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkreddot.jpg; sourceTree = "<group>"; };
-		2371B6F7173AAE6E00EAEB6B /* DrawScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawScene.h; sourceTree = "<group>"; };
-		2371B6F8173AAE6E00EAEB6B /* DrawScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawScene.mm; sourceTree = "<group>"; };
 		2371B6FB173AAE6E00EAEB6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
 		2371B6FD173AAE6E00EAEB6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		2371B6FF173AAE6E00EAEB6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -285,16 +282,12 @@
 		2371B703173AAE6E00EAEB6B /* f2-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f2-hd.png"; sourceTree = "<group>"; };
 		2371B704173AAE6E00EAEB6B /* f2-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f2-ipad.png"; sourceTree = "<group>"; };
 		2371B705173AAE6E00EAEB6B /* f2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f2.png; sourceTree = "<group>"; };
-		2371B706173AAE6E00EAEB6B /* FingerPaintingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerPaintingScene.h; sourceTree = "<group>"; };
-		2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FingerPaintingScene.mm; sourceTree = "<group>"; };
 		2371B708173AAE6E00EAEB6B /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		2371B709173AAE6E00EAEB6B /* GameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameManager.mm; sourceTree = "<group>"; };
 		2371B70C173AAE6E00EAEB6B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2371B70D173AAE6E00EAEB6B /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		2371B70E173AAE6E00EAEB6B /* GameSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettings.h; sourceTree = "<group>"; };
 		2371B70F173AAE6E00EAEB6B /* GameSettings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameSettings.mm; sourceTree = "<group>"; };
-		2371B710173AAE6E00EAEB6B /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
-		2371B711173AAE6E00EAEB6B /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		2371B712173AAE6E00EAEB6B /* hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair.png; sourceTree = "<group>"; };
 		2371B713173AAE6E00EAEB6B /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
 		2371B714173AAE6E00EAEB6B /* HUDLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HUDLayer.mm; sourceTree = "<group>"; };
@@ -304,8 +297,6 @@
 		2371B718173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCCControlButtonVariableSize.m; sourceTree = "<group>"; };
 		2371B719173AAE6E00EAEB6B /* LPLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLine.h; sourceTree = "<group>"; };
 		2371B71A173AAE6E00EAEB6B /* LPLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLine.m; sourceTree = "<group>"; };
-		2371B71B173AAE6E00EAEB6B /* LPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTool.h; sourceTree = "<group>"; };
-		2371B71C173AAE6E00EAEB6B /* LPTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LPTool.mm; sourceTree = "<group>"; };
 		2371B71D173AAE6E00EAEB6B /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
 		2371B71E173AAE6E00EAEB6B /* pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pants.png; sourceTree = "<group>"; };
 		2371B71F173AAE6E00EAEB6B /* picker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picker.png; sourceTree = "<group>"; };
@@ -382,6 +373,10 @@
 		2371B7FA173ABE5400EAEB6B /* SimplePointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePointTests.m; sourceTree = "<group>"; };
 		2371B7FB173ABE5400EAEB6B /* UtilityTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityTests.h; sourceTree = "<group>"; };
 		2371B7FC173ABE5400EAEB6B /* UtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityTests.m; sourceTree = "<group>"; };
+		2371B845173AC45B00EAEB6B /* LPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTool.h; sourceTree = "<group>"; };
+		2371B846173AC45B00EAEB6B /* LPTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LPTool.mm; sourceTree = "<group>"; };
+		2371B84B173AC8A200EAEB6B /* LPLinePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLinePoint.h; sourceTree = "<group>"; };
+		2371B84C173AC8A200EAEB6B /* LPLinePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLinePoint.m; sourceTree = "<group>"; };
 		239B35091739EDEE00CB0EC6 /* LeapPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239B350C1739EDEE00CB0EC6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		239B350F1739EDEE00CB0EC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -715,25 +710,21 @@
 				2371B7ED173AAE7700EAEB6B /* images */,
 				2371B804173ABEB900EAEB6B /* Layers */,
 				2371B6D7173AAE6E00EAEB6B /* CCControlExtension */,
-				2371B6F7173AAE6E00EAEB6B /* DrawScene.h */,
-				2371B6F8173AAE6E00EAEB6B /* DrawScene.mm */,
 				2371B6F9173AAE6E00EAEB6B /* en.lproj */,
-				2371B706173AAE6E00EAEB6B /* FingerPaintingScene.h */,
-				2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */,
 				2371B708173AAE6E00EAEB6B /* GameManager.h */,
 				2371B709173AAE6E00EAEB6B /* GameManager.mm */,
 				2371B70C173AAE6E00EAEB6B /* GameScene.h */,
 				2371B70D173AAE6E00EAEB6B /* GameScene.mm */,
 				2371B70E173AAE6E00EAEB6B /* GameSettings.h */,
 				2371B70F173AAE6E00EAEB6B /* GameSettings.mm */,
-				2371B710173AAE6E00EAEB6B /* GLES-Render.h */,
-				2371B711173AAE6E00EAEB6B /* GLES-Render.mm */,
 				2371B717173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.h */,
 				2371B718173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m */,
 				2371B719173AAE6E00EAEB6B /* LPLine.h */,
 				2371B71A173AAE6E00EAEB6B /* LPLine.m */,
-				2371B71B173AAE6E00EAEB6B /* LPTool.h */,
-				2371B71C173AAE6E00EAEB6B /* LPTool.mm */,
+				2371B84B173AC8A200EAEB6B /* LPLinePoint.h */,
+				2371B84C173AC8A200EAEB6B /* LPLinePoint.m */,
+				2371B845173AC45B00EAEB6B /* LPTool.h */,
+				2371B846173AC45B00EAEB6B /* LPTool.mm */,
 				2371B720173AAE6E00EAEB6B /* Prefix.pch */,
 				2371B727173AAE6E00EAEB6B /* README.md */,
 				2371B72D173AAE6E00EAEB6B /* Shaders */,
@@ -1086,16 +1077,12 @@
 				2371B799173AAE6E00EAEB6B /* CCColourUtils.m in Sources */,
 				2371B79A173AAE6E00EAEB6B /* CCScale9Sprite.m in Sources */,
 				2371B79B173AAE6E00EAEB6B /* ControlsLayer.mm in Sources */,
-				2371B79D173AAE6E00EAEB6B /* DrawScene.mm in Sources */,
-				2371B7A7173AAE6E00EAEB6B /* FingerPaintingScene.mm in Sources */,
 				2371B7A8173AAE6E00EAEB6B /* GameManager.mm in Sources */,
 				2371B7AA173AAE6E00EAEB6B /* GameScene.mm in Sources */,
 				2371B7AB173AAE6E00EAEB6B /* GameSettings.mm in Sources */,
-				2371B7AC173AAE6E00EAEB6B /* GLES-Render.mm in Sources */,
 				2371B7AE173AAE6E00EAEB6B /* HUDLayer.mm in Sources */,
 				2371B7B1173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m in Sources */,
 				2371B7B2173AAE6E00EAEB6B /* LPLine.m in Sources */,
-				2371B7B3173AAE6E00EAEB6B /* LPTool.mm in Sources */,
 				2371B7C3173AAE6E00EAEB6B /* Position_uColor.fsh in Sources */,
 				2371B7C4173AAE6E00EAEB6B /* Position_uColor.vsh in Sources */,
 				2371B7C5173AAE6E00EAEB6B /* PositionColor.fsh in Sources */,
@@ -1113,6 +1100,8 @@
 				2371B7D3173AAE6E00EAEB6B /* SimplePointObject.m in Sources */,
 				2371B7D4173AAE6E00EAEB6B /* SketchRenderTextureScene.mm in Sources */,
 				2371B7EB173AAE6E00EAEB6B /* Utility.m in Sources */,
+				2371B847173AC45B00EAEB6B /* LPTool.mm in Sources */,
+				2371B84D173AC8A200EAEB6B /* LPLinePoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1129,6 +1118,7 @@
 				2371B801173ABE5400EAEB6B /* LPToolTests.m in Sources */,
 				2371B802173ABE5400EAEB6B /* SimplePointTests.m in Sources */,
 				2371B803173ABE5400EAEB6B /* UtilityTests.m in Sources */,
+				2371B84E173AC8A200EAEB6B /* LPLinePoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,7 +19,6 @@
 #import "SimplePoint.h"
 
 /**
- 
  Core Application Management
  Provides interfaces and controls the various inputs, controls and outputs
  
@@ -30,7 +29,7 @@
     LeapPointable* currentPointable; /**< colorLabel displays name of color in hash value */
     CGPoint currentPoint;   /**< colorLabel displays name of color in hash value */
     //Settings
-    BOOL painting;
+    BOOL painting;      /**< painting indicates wether or not the application is painting at that moment*/
     
     GameSettings* gameSettings; /**< gameSettings singleton to global seetings*/
     
@@ -50,8 +49,21 @@
 @property (nonatomic,strong) LeapController* controller;            /**< controller is the leapController */
 @property (nonatomic,strong) LeapScreen* leapScreen;                /**< leapScreen references the screen being used on the system */
 
-
+/**
+ Finds the percentage of a number between two values
+ If the number is greater or less than the range, that boundry of the range will be returned.
+ @param max is the top range value
+ @param min is the bottom range value
+ @param value is the number we are seeking the percentage from
+ @return the a percentage between 0 and 100%
+ */
 - (float)findPecentageDifference:(float)max withMin:(float)min withValue:(float)value;
+
+/**
+ Determines the opacity based upon the Z axis coordinate
+ @param value is the Z axis coordinate
+ @return the opacity value to set the brush at. 
+ */
 - (float)opacityPercentage:(float)value;
 
 @end

@@ -8,16 +8,16 @@
 
 #import "GameSettings.h"
 
-
 //Constants
 int const  BLOCK_SIZE = 128;
-
 
 @implementation GameSettings
 @synthesize depthOpacityMode;
 @synthesize eraserMode;
 @synthesize inputMode;
-/** Singleton
+@synthesize painting;
+
+/** Singleton SharedInstance
  Intiailizes and Returns a shared instance of the class
  */
 + (GameSettings *)sharedInstance
@@ -28,18 +28,19 @@ int const  BLOCK_SIZE = 128;
     {
         if (!sharedInstance)
             sharedInstance = [[GameSettings alloc] init];
-        
         return sharedInstance;
     }
 }
 
-
-/** Initialize the classe */
+/** 
+ Initialize the class and sets the default values 
+ */
 - (id)init
 {
     if (self = [super init]) {
         // Init Defaults
         self.depthOpacityMode = false;
+        self.painting = false;
     }
     return self;
 }

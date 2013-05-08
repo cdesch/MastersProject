@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
 #import "GameScene.h"
+
 @implementation AppDelegate
 
 @synthesize window=window_, glView=glView_;
@@ -20,12 +20,9 @@
 }
 
 
-
-
 - (void)runGameScene{
     
     CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
-    
     
     //NSRect screensFrame = [[NSScreen mainScreen] frame];
     NSRect screensFrame = [[NSScreen mainScreen] visibleFrame];
