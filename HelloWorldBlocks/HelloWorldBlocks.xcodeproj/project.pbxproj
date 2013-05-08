@@ -1063,11 +1063,13 @@
 				GCC_PREFIX_HEADER = HelloWorldBlocks/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"HelloWorldBlocks/libs/kazmath/include\"";
 				INFOPLIST_FILE = HelloWorldBlocks/Resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1083,11 +1085,13 @@
 				GCC_PREFIX_HEADER = HelloWorldBlocks/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"HelloWorldBlocks/libs/kazmath/include\"";
 				INFOPLIST_FILE = HelloWorldBlocks/Resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

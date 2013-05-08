@@ -1063,11 +1063,13 @@
 				GCC_PREFIX_HEADER = LeapPaint/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"LeapPaint/libs/kazmath/include\"";
 				INFOPLIST_FILE = LeapPaint/Resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1083,11 +1085,13 @@
 				GCC_PREFIX_HEADER = LeapPaint/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"LeapPaint/libs/kazmath/include\"";
 				INFOPLIST_FILE = LeapPaint/Resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1111,6 +1115,7 @@
 				232CDA7D1739DC5B00894758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
