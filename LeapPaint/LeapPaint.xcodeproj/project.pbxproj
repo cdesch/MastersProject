@@ -533,6 +533,8 @@
 		2371B7ED173AAE7700EAEB6B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2371B73B173AAE6E00EAEB6B /* shirt.png */,
+				2371B73C173AAE6E00EAEB6B /* shoes.png */,
 				2371B728173AAE6E00EAEB6B /* redcrosshair.png */,
 				2371B729173AAE6E00EAEB6B /* reddot.png */,
 				2371B72A173AAE6E00EAEB6B /* ribbon-hd.png */,
@@ -646,6 +648,21 @@
 			name = LeapSDK;
 			sourceTree = "<group>";
 		};
+		2371B804173ABEB900EAEB6B /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				2371B6AD173AAE6E00EAEB6B /* BackgroundLayer.h */,
+				2371B6AE173AAE6E00EAEB6B /* BackgroundLayer.mm */,
+				2371B6D0173AAE6E00EAEB6B /* BrushSelectionLayer.h */,
+				2371B6D1173AAE6E00EAEB6B /* BrushSelectionLayer.mm */,
+				2371B6F4173AAE6E00EAEB6B /* ControlsLayer.h */,
+				2371B6F5173AAE6E00EAEB6B /* ControlsLayer.mm */,
+				2371B713173AAE6E00EAEB6B /* HUDLayer.h */,
+				2371B714173AAE6E00EAEB6B /* HUDLayer.mm */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 		239B35001739EDEE00CB0EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -696,13 +713,8 @@
 			isa = PBXGroup;
 			children = (
 				2371B7ED173AAE7700EAEB6B /* images */,
-				2371B6AD173AAE6E00EAEB6B /* BackgroundLayer.h */,
-				2371B6AE173AAE6E00EAEB6B /* BackgroundLayer.mm */,
-				2371B6D0173AAE6E00EAEB6B /* BrushSelectionLayer.h */,
-				2371B6D1173AAE6E00EAEB6B /* BrushSelectionLayer.mm */,
+				2371B804173ABEB900EAEB6B /* Layers */,
 				2371B6D7173AAE6E00EAEB6B /* CCControlExtension */,
-				2371B6F4173AAE6E00EAEB6B /* ControlsLayer.h */,
-				2371B6F5173AAE6E00EAEB6B /* ControlsLayer.mm */,
 				2371B6F7173AAE6E00EAEB6B /* DrawScene.h */,
 				2371B6F8173AAE6E00EAEB6B /* DrawScene.mm */,
 				2371B6F9173AAE6E00EAEB6B /* en.lproj */,
@@ -716,8 +728,6 @@
 				2371B70F173AAE6E00EAEB6B /* GameSettings.mm */,
 				2371B710173AAE6E00EAEB6B /* GLES-Render.h */,
 				2371B711173AAE6E00EAEB6B /* GLES-Render.mm */,
-				2371B713173AAE6E00EAEB6B /* HUDLayer.h */,
-				2371B714173AAE6E00EAEB6B /* HUDLayer.mm */,
 				2371B717173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.h */,
 				2371B718173AAE6E00EAEB6B /* LPCCControlButtonVariableSize.m */,
 				2371B719173AAE6E00EAEB6B /* LPLine.h */,
@@ -727,8 +737,6 @@
 				2371B720173AAE6E00EAEB6B /* Prefix.pch */,
 				2371B727173AAE6E00EAEB6B /* README.md */,
 				2371B72D173AAE6E00EAEB6B /* Shaders */,
-				2371B73B173AAE6E00EAEB6B /* shirt.png */,
-				2371B73C173AAE6E00EAEB6B /* shoes.png */,
 				2371B73D173AAE6E00EAEB6B /* SimplePoint.h */,
 				2371B73E173AAE6E00EAEB6B /* SimplePoint.mm */,
 				2371B73F173AAE6E00EAEB6B /* SimplePointObject.h */,
