@@ -1,30 +1,30 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Interacting with the LeapMotion \cite {theverge} \relax }}{2}{figure.caption.13}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Interacting with the LeapMotion. \cite {theverge} \relax }}{2}{figure.caption.13}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Using a chopstick as a pointer\relax }}{3}{figure.caption.15}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Reviewing the sticky notes using a spatial graph on a white board for easy comparison and analysis. \relax }}{6}{figure.caption.22}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Rapid Application Development cycle \relax }}{8}{figure.caption.30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Hand trigging actions\relax }}{11}{figure.caption.39}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Open Thumb}}}{11}{figure.caption.39}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Closed Thumb}}}{11}{figure.caption.39}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Carousel view style maybe zoomed out using a pinch and pull gesture to a collection view. \relax }}{13}{figure.caption.47}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Carousel view style}}}{13}{figure.caption.47}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Collection view style}}}{13}{figure.caption.47}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Indicating the size of a box by specifying two opposing corners with 'L' shape between the index and thumb fingers.\relax }}{14}{figure.caption.52}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)\relax }}{17}{figure.caption.57}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)\relax }}{17}{figure.caption.58}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Hand trigging actions\relax }}{14}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Open Thumb}}}{14}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Closed Thumb}}}{14}{figure.caption.45}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Carousel view style maybe zoomed out using a pinch and pull gesture to a collection view. \relax }}{16}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Carousel view style}}}{16}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Collection view style}}}{16}{figure.caption.53}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Indicating the size of a box by specifying two opposing corners with 'L' shape between the index and thumb fingers.\relax }}{17}{figure.caption.58}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)\relax }}{19}{figure.caption.63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)\relax }}{20}{figure.caption.64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Left to right paddle control in breakout using the hand position relative to the screen \relax }}{19}{figure.caption.65}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Left position}}}{19}{figure.caption.65}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Right position}}}{19}{figure.caption.65}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Left to right paddle control in Breakout using the pointer intersection with the screen \relax }}{20}{figure.caption.68}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Left Position}}}{20}{figure.caption.68}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Right position}}}{20}{figure.caption.68}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Mock up compared to a screen shot of finished application with a drawing. \relax }}{22}{figure.caption.78}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mock Up}}}{22}{figure.caption.78}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Screenshot}}}{22}{figure.caption.78}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The ordered layers of visibility in the application. \relax }}{23}{figure.caption.83}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Left to right paddle control in breakout using the hand position relative to the screen \relax }}{22}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Left position}}}{22}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Right position}}}{22}{figure.caption.71}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Left to right paddle control in Breakout using the pointer intersection with the screen \relax }}{23}{figure.caption.74}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Left Position}}}{23}{figure.caption.74}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Right position}}}{23}{figure.caption.74}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mock up compared to a screen shot of finished application with a drawing. \relax }}{25}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mock Up}}}{25}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Screenshot}}}{25}{figure.caption.84}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The ordered layers of visibility in the application. \relax }}{26}{figure.caption.89}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
