@@ -20,10 +20,8 @@ int const  BLOCK_SIZE = 128;
 /** Singleton SharedInstance
  Intiailizes and Returns a shared instance of the class
  */
-+ (GameSettings *)sharedInstance
-{
++ (GameSettings *)sharedInstance{
     static GameSettings *sharedInstance;
-    
     @synchronized(self)
     {
         if (!sharedInstance)
@@ -35,8 +33,7 @@ int const  BLOCK_SIZE = 128;
 /** 
  Initialize the class and sets the default values 
  */
-- (id)init
-{
+- (id)init{
     if (self = [super init]) {
         // Init Defaults
         self.depthOpacityMode = false;

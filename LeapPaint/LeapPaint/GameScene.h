@@ -18,15 +18,11 @@
 /**
  GameScene 
  Initializes and assembles all of the layers and gameobjects into the GameManager
- 
  */
-@interface GameScene : CCScene  {
-    
-}
+@interface GameScene : CCScene
 /**
  Scene initializes each object and assigns interlinking pointers and delegates to each class
  @return scene for CCDirector to begin running
  */
 +(CCScene *) scene;
-
 @end

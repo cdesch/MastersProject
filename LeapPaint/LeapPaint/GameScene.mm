@@ -18,26 +18,20 @@
 	HUDLayer* hudLayer = [HUDLayer node];
     BackgroundLayer* backgroundLayer = [BackgroundLayer node];
     ControlsLayer* controlsLayer = [ControlsLayer node];
+    SketchRenderTextureScene* textureScene = [SketchRenderTextureScene node];
     
     //setup delegates
     hudLayer.delegate = scene;
     controlsLayer.delegate = scene;
     
-
-    SketchRenderTextureScene* textureScene = [SketchRenderTextureScene node];
+    // add layer as a child to scene
     [scene addChild:backgroundLayer z:0];
     [scene addChild:controlsLayer z:3];
-	// add layer as a child to scene
 	[scene addChild:hudLayer z:5];
-
-
     [scene addChild:textureScene z:2];
-    
-
     scene.hudLayer = hudLayer;
     scene.backgroundLayer = backgroundLayer;
     scene.controlsLayer = controlsLayer;
-
     scene.textureScene = textureScene;
     
 	// return the scene

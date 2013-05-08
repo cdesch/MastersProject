@@ -51,11 +51,9 @@
 
 #pragma mark -
 #pragma CCControlButtonTest_HelloVariableSize Public Methods
-
 #pragma CCControlButtonTest_HelloVariableSize Private Methods
 
-- (CCControlButton *)standardButtonWithTitle:(NSString *)title
-{
+- (CCControlButton *)standardButtonWithTitle:(NSString *)title{
     /** Creates and return a button with a default background and title color. */
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];

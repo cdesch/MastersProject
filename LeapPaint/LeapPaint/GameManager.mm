@@ -79,37 +79,23 @@
  LeapMotion SDK Delegate Callback
  Connect
  Verifies the LeapMotion is connected and additional steps for setup can continue.
- 
  Sets up the screens to be track intersecting vectors from pointables.
  */
-
-- (void)onConnect:(NSNotification *)notification;
-{
+- (void)onConnect:(NSNotification *)notification{
     NSLog(@"Leap: Connected");
-
-    
-    //NSArray* screens = controller.calibratedScreens;
     NSArray* screens = controller.locatedScreens;
-    
-    
     if ([screens count] > 0){
         leapScreen = [screens objectAtIndex:0];
         NSLog(@"Screens: %0.0ld", (unsigned long)[screens count]);
-        
-        
     }else{
         NSLog(@"No Screens");
     }
-    
-    NSLog(@"running");
-
 }
 /**
  LeapMotion SDK Delegate Callback 
  Disconnect
  Notifies the application that the LeapMotion has been disconnected and hold or release any processes in regard to the LeapMotion
  */
-
 - (void)onDisconnect:(NSNotification *)notification{
     NSLog(@"Leap: Disconnected");
 }
@@ -126,9 +112,7 @@
  LeapMotion SDK Delegate Callback
  OnFrame Event notifies the application that an incoming frame has been processed and the data can be used to control the application
  */
-
 - (void)onFrame:(NSNotification *)notification{
-    ///NSLog(@"OnFrame");
     LeapController *aController = (LeapController *)[notification object];
     // Get the most recent frame and report some basic information
     LeapFrame *frame = [aController frame:0];
@@ -140,30 +124,22 @@
         LeapPointable* tool;
         if (lastTag != -1){
             for (LeapPointable* pointable in leapPointables){
-                
                 if (lastTag == pointable.id){
-                    
                     tool = pointable;
                     lastTag = pointable.id;
                     break;
                 }
-                
             }
             
             //Find a new point able
             if (tool == nil){
-                
                 tool = [self pointableClosestToScreen:leapPointables];
                 lastTag = tool.id;
-                
             }
-            
-    
         }else{
             //Find a new pointable
             tool = [self pointableClosestToScreen:leapPointables];
             lastTag = tool.id;
-            
         }
         
         //Get the screen
@@ -185,23 +161,17 @@
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"CoordHUDUpdate" object:simplePoint];
 
             if (gameSettings.depthOpacityMode){
-                
                 float opacity = [self opacityPercentage:tool.tipPosition.z];
-                
                 //Update the controls
                 [controlsLayer updateOpacitySlider:opacity];
-                
             }
                     
             if (inputMode == kDepthMode){
                 
                 if (tool.tipPosition.z > 0){
                     painting = FALSE;
-
-                
                 }else{
                     painting = TRUE;
-                    
                 }
             }
             
@@ -216,10 +186,7 @@
         }else{
             NSLog(@"Leap Screen is invalid");
         }
-        
     }else{
-        
-        
         NSLog(@"No frame");
         //Remove the marker from the HUD view
         if (currentPointable != nil) {
@@ -235,7 +202,6 @@
             
             framesSinceLastFound = 0;
         }
-        
     }
 }
 
@@ -258,7 +224,6 @@
  @param point is the current coordinate the LeapPointable is interescting with the screen
  @param pointable is a reference to the pointable currently drawing
  */
-
 - (void)beginLineDrawingTexture:(CGPoint)point tool:(LeapPointable*)pointable{
     
     [self.textureScene beginDraw:point withZ:pointable.tipPosition.z];
@@ -272,9 +237,7 @@
     
     [self.textureScene updateDraw:point withZ:pointable.tipPosition.z];
     currentPoint = point;
-    
 }
-
 /** End the drawing 
   @param point is the current coordinate the LeapPointable is interescting with the screen
   @param pointable is a reference to the pointable currently drawing
@@ -292,8 +255,6 @@
     inputMode = mode;
     gameSettings.inputMode = mode;
 }
-
-
 /** Change Paiting state
  @param paintState changes the painting sate
  */
@@ -301,8 +262,6 @@
     painting = paintingState;
     gameSettings.painting = paintingState;
 }
-
-
 #pragma mark - ControlsDelegate
 
 /** Change the color of the brush
@@ -311,7 +270,6 @@
  */
 
 - (void)changeColorControl:(ccColor3B)color{
-    
     [self.hudLayer changeColor:color];
     [self.textureScene changeColor:color];
     
@@ -321,7 +279,6 @@
  @param value is the thinkness(width) value 
  */
 - (void)changeThicknessControl:(float)value{
-    
     [self.hudLayer changeScale:value];
     [self.textureScene changeScale:value];
 }
@@ -344,9 +301,7 @@
 
 /** Clears the drawing */
 - (void)clearDrawing{
-    
     [self.textureScene clearDrawing];
-    
     //**Turns off eraser mode if it is on
     if (gameSettings.eraserMode){
         gameSettings.eraserMode = false;
@@ -372,49 +327,34 @@
         return kOpMax;
     }else if(value > kOpMaxRange){
         return kOpMin;
-    }else {
-        
+    }else {   
         float percentage = [self findPecentageDifference:kOpMaxRange withMin:kOpMinRange withValue:value];
-        //NSLog(@"percentage %0.0f", percentage);
-        
         percentage = 100 - percentage;
-        
         return percentage;
-        
     }
-
 }
-
-
 /** Find the percentage between two numbers */
 - (float)findPecentageDifference:(float)max withMin:(float)min withValue:(float)value{
     return (value - min)/(max - min)*100;
 }
-
-
 /**
  Using all the pointables, gets the closest one to the screen
  @param pointables is an array of pointables currently observered by the LeapMotion
  @return pointable that is closest by the screen
  */
 - (LeapPointable*)pointableClosestToScreen:(NSArray*)pointables{
-    
     LeapPointable* closestPointable;
     for (LeapPointable*pointable in pointables){
         
         //Check for the first iteration that the closest is not equal to nil
         if (closestPointable != nil){
-            
             if (closestPointable.tipPosition.z > pointable.tipPosition.z){
                 closestPointable = pointable;
             }
-            
         }else{
             closestPointable = pointable;
         }
-        
     }
-
     return closestPointable;
 }
 
@@ -425,8 +365,6 @@
  @return LeapPointable closest to a leapVector
  */
 - (LeapPointable*)pointableClosestToVector:(LeapVector*)leapVector withPointables:(NSArray*)pointables{
-    
-    
     LeapPointable* closestPointable;
     //Check to make sure there is atleast one object in the array
     
@@ -439,13 +377,11 @@
     else if ([pointables count] == 1){
         return [pointables objectAtIndex:0];
     }else{
-        
         //Get the distance for the first point
         float minDistance = 0;
         closestPointable = [pointables objectAtIndex:0];
         minDistance = [leapVector distanceTo:closestPointable.tipPosition];
-
-        
+   
         for (int i = 1; i < [pointables count]; i++){
             
             LeapPointable* point = [pointables objectAtIndex:i];
@@ -456,9 +392,6 @@
             }
         }
     }
-    
     return closestPointable;
 }
-
-
 @end

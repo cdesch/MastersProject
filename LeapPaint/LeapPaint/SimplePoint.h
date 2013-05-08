@@ -8,23 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
-
 /**
  * 2D or 3D space coordinate for temporarily maniulapting points
  *
  */
-
-@interface SimplePoint : NSObject {
-
-}
-
+@interface SimplePoint : NSObject
 @property (nonatomic, readwrite) float x; /**< x coordinate */
 @property (nonatomic, readwrite) float y; /**< y coordinate */
 @property (nonatomic, readwrite) float z; /**< z coordinate */
 @property (nonatomic, readwrite) BOOL is3d; /**< is3d is 2d or 3d point type */
-
-
 /**
  * Init constructor with existing point to create a 2d Point
  * @param p an point (x,y)

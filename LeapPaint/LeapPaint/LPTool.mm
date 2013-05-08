@@ -9,6 +9,4 @@
 #import "LPTool.h"
 
 @implementation LPTool
-
-
 @end

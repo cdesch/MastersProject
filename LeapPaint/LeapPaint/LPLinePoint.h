@@ -13,10 +13,7 @@
 /**
  LPLinePoint is a plotted point for drawing onto the canvas
  */
-@interface LPLinePoint : NSObject{
-    
-    
-}
+@interface LPLinePoint : NSObject
 
 @property (nonatomic, readwrite) float x; /**< x coordinate */
 @property (nonatomic, readwrite) float y; /**< y coordinate */

@@ -16,7 +16,6 @@
 Provides a delegate interface for the layer to notify of actions
  */
 @protocol ControlsLayerDelegate <NSObject>
-
 /**
  Callback with a change in color of the brush
  @param color is the new selected color value
@@ -47,8 +46,6 @@ Provides a delegate interface for the layer to notify of actions
  TODO: Turn off eraser mode when new color is selected
  */
 - (void)eraserMode:(bool)mode;
-
-
 @end
 
 /** Controls Layer
@@ -56,7 +53,6 @@ Provides a delegate interface for the layer to notify of actions
  */
 
 @interface ControlsLayer : CCLayer <BrushSelectionLayerDelegate>{
-    
     CCLabelTTF *colorLabel;         /**< colorLabel displays name of color in hash value */
     CCLabelTTF *displayValueLabel;  /**< displayValueLabel displays coordinate */
     GameSettings* gameSettings;     /**< gameSettings global reference to shared settings instance */

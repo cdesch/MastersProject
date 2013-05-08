@@ -36,8 +36,7 @@
  */
 @interface HUDLayer : CCLayer  {
     NSString* primaryToolID;    /**< primaryToolID stores the id tag to the pointable in reference*/
-    LPTool* primaryTool;        /**< primaryTool points to the current pointable  object*/
-    
+    LPTool* primaryTool;        /**< primaryTool points to the current pointable  object*/    
     InputMode inputMode;        /**< inputMode is the current mode of input*/
     
     ccColor3B lastColor;        /**< lastColor is the lastColor to be selected */
@@ -45,8 +44,6 @@
     NSString* lastBrush;        /**< lastBrush is last brush to be selected */
     float lastScale;            /**< lastScale is last scale to be selected */
 
-    
-    
     CCSprite* paintingIndicator; /**< paintingIndicator shows the state at which the object is currently paintg */
     BOOL eraseMode;             /**< eraseMode determines weather the pointable is painting or erasing */
                             
@@ -58,7 +55,6 @@
 
 @property (nonatomic, weak) id <HUDDelegate> delegate; /**< colorLabel displays name of color in hash value */
 @property (nonatomic, strong) CCLabelTTF* xyzcoords; /**< xyzcoords is the X,Y,Z coordinates in string form for displaying on the HUD in real-time for debugging */
-
 
 /**
  ToolMoved updates the last known tracked position of the tool.

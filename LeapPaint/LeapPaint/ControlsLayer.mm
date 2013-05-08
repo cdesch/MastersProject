@@ -14,10 +14,10 @@
 @synthesize opacitydisplayValueLabel;
 @synthesize opacitySwitchControl;
 @synthesize delegate;
-
 @synthesize displayValueLabel;
 @synthesize switchControl;
 @synthesize brushSelection;
+
 - (id)init
 {
 	if ((self = [super init]))
@@ -26,21 +26,11 @@
 		CGSize screenSize = [[CCDirector sharedDirector] winSize];
         
         gameSettings = [GameSettings sharedInstance];
-        
-        //LayerBackground
-        
-        
         [self sliderinit];
-        //[self buttoninit];
-        //[self initEraserButton];
         [self initEraserSwitch];
         [self colorpickerinit];
         
         [self initResetButton];
-        
-        //Open button
-        
-        //Close Button
         self.brushSelection = [BrushSelectionLayer node];
         self.brushSelection.position = ccp(-screenSize.width,0);
         
@@ -50,13 +40,6 @@
         [self initBrushSelectionButton];
         [self opacitySliderInit];
         [self initOpacitySwitch];
-        //buttons
-        
-        // Color picker
-        
-        //
-        
-
 	}
 	return self;
 }
@@ -75,7 +58,6 @@
     self.slider.maximumValue             = 5.0f; // Sets the max value of range
     self.slider.position                 = ccp(screenSize.width / 2.0f, 100);
     
-    
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Size" fontName:@"Marker Felt" fontSize:30];
     titleButton.position =ccp(screenSize.width / 2.0f , 125);
     
@@ -92,13 +74,11 @@
     [self addChild:self.slider z:0 tag:1];
 }
 
-- (void)valueChanged:(CCControlSlider *)sender
-{
+- (void)valueChanged:(CCControlSlider *)sender{
 	// Change value of label.
 	//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);
     [self.delegate changeThicknessControl:sender.value];
 }
-
 
 - (void)opacitySliderInit{
     
@@ -139,17 +119,13 @@
     [layer addChild:self.opacitySlider z:0 tag:2];
 }
 
-- (void)opacitySliderChanged:(CCControlSlider *)sender
-{
-    
+- (void)opacitySliderChanged:(CCControlSlider *)sender{
 	// Change value of label.
 	//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);
     [self.delegate changeOpacityControl:sender.value];
 }
 
 - (void)updateOpacitySlider:(float)value{
-    
-    
     //ensure the value is within its bounds
     if(value > self.opacitySlider.maximumValue){
         //Max Value
@@ -164,7 +140,6 @@
 
 
 - (void)initOpacitySwitch{
-    
     CGSize screenSize = [[CCDirector sharedDirector] winSize];
     
     CCNode *layer               = [CCNode node];
@@ -181,12 +156,8 @@
     //[layer addChild:background];
     
     layer_width += background.contentSize.width;
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    self.displayValueLabel      = [CCLabelTTF labelWithString:@"on" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     self.opacitydisplayValueLabel      = [CCLabelTTF labelWithString:@"Auto" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     self.opacitydisplayValueLabel.position  = background.position;
     //[layer addChild:self.opacitydisplayValueLabel];
     
@@ -202,27 +173,20 @@
     layer.contentSize           = CGSizeMake(layer_width, 0);
     layer.anchorPoint           = ccp (0.5f, 0.5f);
     
-    
 }
 
 
 
 
-- (void)opacitySwitchValueChanged:(CCControlSwitch *)sender
-{
-    if ([sender isOn])
-    {
+- (void)opacitySwitchValueChanged:(CCControlSwitch *)sender{
+    if ([sender isOn]){
         //displayValueLabel.string    = @"Eraser";
-        
         gameSettings.depthOpacityMode  = true;
-    } else
-    {
+    } else{
         //displayValueLabel.string    = @"Eraser";
         gameSettings.depthOpacityMode  = false;
     }
 }
-
-
 
 #pragma mark - button
 
@@ -231,12 +195,8 @@
     // Add the button
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     [titleButton setColor:ccc3(159, 168, 176)];
     
     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
@@ -258,27 +218,17 @@
     [controlButton addTarget:self action:@selector(touchDownAction:) forControlEvents:CCControlEventTouchDown];
 }
 
-
-
-
-
 - (void)touchDownAction:(CCControlButton *)sender
 {
     NSLog(@"button value %@", [NSString stringWithFormat:@"Touch Down"]);
 }
 
 - (void)initEraserButton{
-    
-
     // Add the button
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Eraser" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     [titleButton setColor:ccc3(159, 168, 176)];
     
     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
@@ -312,12 +262,8 @@
     // Add the button
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Reset" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     [titleButton setColor:ccc3(159, 168, 176)];
     
     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
@@ -344,18 +290,13 @@
     [self.delegate clearDrawing];
 }
 
-
 - (CCControlButton *)standardButtonWithTitle:(NSString *)title
 {
     /** Creates and return a button with a default background and title color. */
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
-#endif
+
     [titleButton setColor:ccc3(159, 168, 176)];
     
     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:backgroundButton];
@@ -383,12 +324,7 @@
     //[layer addChild:background];
     
     layer_width += background.contentSize.width;
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    colorLabel = [CCLabelTTF labelWithString:@"#color" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     colorLabel = [CCLabelTTF labelWithString:@"#color" fontName:@"Marker Felt" fontSize:30];
-#endif
     colorLabel.position = background.position;
     //[layer addChild:colorLabel];
     
@@ -433,18 +369,8 @@
     
     [self.delegate changeColorControl:sender.color];
 }
-
-
 #pragma mark - Window Controls
 
-- (void)expandPanel{
-    
-    
-}
-
-- (void)collapsePanel{
-    
-}
 
 - (void)initEraserSwitch{
     
@@ -464,12 +390,8 @@
     [layer addChild:background];
     
     layer_width += background.contentSize.width;
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    self.displayValueLabel      = [CCLabelTTF labelWithString:@"on" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     self.displayValueLabel      = [CCLabelTTF labelWithString:@"Eraser" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     displayValueLabel.position  = background.position;
     [layer addChild:displayValueLabel];
     
@@ -500,15 +422,11 @@
 }
 
 
-- (void)switchValueChanged:(CCControlSwitch *)sender
-{
-    if ([sender isOn])
-    {
+- (void)switchValueChanged:(CCControlSwitch *)sender{
+    if ([sender isOn]){
         displayValueLabel.string    = @"Eraser";
-        
         [self.delegate eraserMode:true];
-    } else
-    {
+    } else{
         displayValueLabel.string    = @"Eraser";
         [self.delegate eraserMode:false];
     }
@@ -523,12 +441,8 @@
     // Add the button
     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-    
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Touch Me!" fontName:@"HelveticaNeue-Bold" fontSize:30];
-#elif __MAC_OS_X_VERSION_MAX_ALLOWED
     CCLabelTTF *titleButton = [CCLabelTTF labelWithString:@"Brushes" fontName:@"Marker Felt" fontSize:30];
-#endif
+
     [titleButton setColor:ccc3(159, 168, 176)];
     
     CCControlButton *controlButton = [CCControlButton buttonWithLabel:titleButton
@@ -560,11 +474,8 @@
 
 }
 
-
 - (void)showBrushSelectionPanel{
-    
     self.brushSelection.layerHidden = false;
-    //[sprite runAction: [CCMoveBy actionWithDuration:2 position:ccp(50,10)]];
     [self.brushSelection runAction:[CCMoveTo actionWithDuration:2 position:ccp(0,0)]];
 }
 
@@ -574,11 +485,9 @@
     
     self.brushSelection.layerHidden = true;
     [self.brushSelection runAction:[CCMoveTo actionWithDuration:2 position:ccp(-screenSize.width,0)]];
-    
 }
 
 - (void)hidePanel{
-
     [self hideBrushSelectionPanel];
 }
 
