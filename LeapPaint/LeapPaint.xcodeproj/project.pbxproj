@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
+		239B35171739EDEE00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35151739EDEE00CB0EC6 /* InfoPlist.strings */; };
+		239B35191739EDEE00CB0EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35181739EDEE00CB0EC6 /* main.m */; };
+		239B351D1739EDEE00CB0EC6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 239B351B1739EDEE00CB0EC6 /* Credits.rtf */; };
+		239B35201739EDEE00CB0EC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B351F1739EDEE00CB0EC6 /* AppDelegate.m */; };
+		239B35231739EDEE00CB0EC6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239B35211739EDEE00CB0EC6 /* MainMenu.xib */; };
+		239B352B1739EDEF00CB0EC6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B352A1739EDEF00CB0EC6 /* SenTestingKit.framework */; };
+		239B352C1739EDEF00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
+		239B35341739EDEF00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35321739EDEF00CB0EC6 /* InfoPlist.strings */; };
+		239B35371739EDEF00CB0EC6 /* LeapPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */; };
+		239B354F1739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */; };
+		239B35501739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */; };
+		239B35521739F03800CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35511739F03800CB0EC6 /* libLeap.dylib */; };
+		239B35531739F03800CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35511739F03800CB0EC6 /* libLeap.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		239B352D1739EDEF00CB0EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239B35011739EDEE00CB0EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239B35081739EDEE00CB0EC6;
+			remoteInfo = LeapPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		239B35091739EDEE00CB0EC6 /* LeapPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		239B350C1739EDEE00CB0EC6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		239B350F1739EDEE00CB0EC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		239B35101739EDEE00CB0EC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		239B35111739EDEE00CB0EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		239B35141739EDEE00CB0EC6 /* LeapPaint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeapPaint-Info.plist"; sourceTree = "<group>"; };
+		239B35161739EDEE00CB0EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		239B35181739EDEE00CB0EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		239B351A1739EDEE00CB0EC6 /* LeapPaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapPaint-Prefix.pch"; sourceTree = "<group>"; };
+		239B351C1739EDEE00CB0EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		239B351E1739EDEE00CB0EC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		239B351F1739EDEE00CB0EC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		239B35221739EDEE00CB0EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		239B35291739EDEF00CB0EC6 /* LeapPaintTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapPaintTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		239B352A1739EDEF00CB0EC6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		239B35311739EDEF00CB0EC6 /* LeapPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeapPaintTests-Info.plist"; sourceTree = "<group>"; };
+		239B35331739EDEF00CB0EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		239B35351739EDEF00CB0EC6 /* LeapPaintTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapPaintTests.h; sourceTree = "<group>"; };
+		239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeapPaintTests.m; sourceTree = "<group>"; };
+		239B354B1739F03200CB0EC6 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		239B354C1739F03200CB0EC6 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		239B354D1739F03200CB0EC6 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		239B35511739F03800CB0EC6 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		239B35061739EDEE00CB0EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */,
+				239B35521739F03800CB0EC6 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239B35251739EDEF00CB0EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B352B1739EDEF00CB0EC6 /* SenTestingKit.framework in Frameworks */,
+				239B352C1739EDEF00CB0EC6 /* Cocoa.framework in Frameworks */,
+				239B35531739F03800CB0EC6 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		239B35001739EDEE00CB0EC6 = {
+			isa = PBXGroup;
+			children = (
+				239B35511739F03800CB0EC6 /* libLeap.dylib */,
+				239B35121739EDEE00CB0EC6 /* LeapPaint */,
+				239B352F1739EDEF00CB0EC6 /* LeapPaintTests */,
+				239B350B1739EDEE00CB0EC6 /* Frameworks */,
+				239B350A1739EDEE00CB0EC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		239B350A1739EDEE00CB0EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239B35091739EDEE00CB0EC6 /* LeapPaint.app */,
+				239B35291739EDEF00CB0EC6 /* LeapPaintTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		239B350B1739EDEE00CB0EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239B350C1739EDEE00CB0EC6 /* Cocoa.framework */,
+				239B352A1739EDEF00CB0EC6 /* SenTestingKit.framework */,
+				239B350E1739EDEE00CB0EC6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		239B350E1739EDEE00CB0EC6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239B350F1739EDEE00CB0EC6 /* AppKit.framework */,
+				239B35101739EDEE00CB0EC6 /* CoreData.framework */,
+				239B35111739EDEE00CB0EC6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		239B35121739EDEE00CB0EC6 /* LeapPaint */ = {
+			isa = PBXGroup;
+			children = (
+				239B354B1739F03200CB0EC6 /* Leap.h */,
+				239B354C1739F03200CB0EC6 /* LeapMath.h */,
+				239B354D1739F03200CB0EC6 /* LeapObjectiveC.h */,
+				239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */,
+				239B351E1739EDEE00CB0EC6 /* AppDelegate.h */,
+				239B351F1739EDEE00CB0EC6 /* AppDelegate.m */,
+				239B35211739EDEE00CB0EC6 /* MainMenu.xib */,
+				239B35131739EDEE00CB0EC6 /* Supporting Files */,
+			);
+			path = LeapPaint;
+			sourceTree = "<group>";
+		};
+		239B35131739EDEE00CB0EC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				239B35141739EDEE00CB0EC6 /* LeapPaint-Info.plist */,
+				239B35151739EDEE00CB0EC6 /* InfoPlist.strings */,
+				239B35181739EDEE00CB0EC6 /* main.m */,
+				239B351A1739EDEE00CB0EC6 /* LeapPaint-Prefix.pch */,
+				239B351B1739EDEE00CB0EC6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		239B352F1739EDEF00CB0EC6 /* LeapPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				239B35351739EDEF00CB0EC6 /* LeapPaintTests.h */,
+				239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */,
+				239B35301739EDEF00CB0EC6 /* Supporting Files */,
+			);
+			path = LeapPaintTests;
+			sourceTree = "<group>";
+		};
+		239B35301739EDEF00CB0EC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				239B35311739EDEF00CB0EC6 /* LeapPaintTests-Info.plist */,
+				239B35321739EDEF00CB0EC6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		239B35081739EDEE00CB0EC6 /* LeapPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239B353A1739EDEF00CB0EC6 /* Build configuration list for PBXNativeTarget "LeapPaint" */;
+			buildPhases = (
+				239B35051739EDEE00CB0EC6 /* Sources */,
+				239B35061739EDEE00CB0EC6 /* Frameworks */,
+				239B35071739EDEE00CB0EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapPaint;
+			productName = LeapPaint;
+			productReference = 239B35091739EDEE00CB0EC6 /* LeapPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		239B35281739EDEF00CB0EC6 /* LeapPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239B353D1739EDEF00CB0EC6 /* Build configuration list for PBXNativeTarget "LeapPaintTests" */;
+			buildPhases = (
+				239B35241739EDEF00CB0EC6 /* Sources */,
+				239B35251739EDEF00CB0EC6 /* Frameworks */,
+				239B35261739EDEF00CB0EC6 /* Resources */,
+				239B35271739EDEF00CB0EC6 /* ShellScript */,
+				239B354A1739EFAC00CB0EC6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239B352E1739EDEF00CB0EC6 /* PBXTargetDependency */,
+			);
+			name = LeapPaintTests;
+			productName = LeapPaintTests;
+			productReference = 239B35291739EDEF00CB0EC6 /* LeapPaintTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		239B35011739EDEE00CB0EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cjdesch;
+			};
+			buildConfigurationList = 239B35041739EDEE00CB0EC6 /* Build configuration list for PBXProject "LeapPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 239B35001739EDEE00CB0EC6;
+			productRefGroup = 239B350A1739EDEE00CB0EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				239B35081739EDEE00CB0EC6 /* LeapPaint */,
+				239B35281739EDEF00CB0EC6 /* LeapPaintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		239B35071739EDEE00CB0EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B35171739EDEE00CB0EC6 /* InfoPlist.strings in Resources */,
+				239B351D1739EDEE00CB0EC6 /* Credits.rtf in Resources */,
+				239B35231739EDEE00CB0EC6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239B35261739EDEF00CB0EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B35341739EDEF00CB0EC6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		239B35271739EDEF00CB0EC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		239B354A1739EFAC00CB0EC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# print some debug information\necho TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\necho TARGET_NAME=${TARGET_NAME}\ncd ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS\nls -la\n# then remap the loader path\ninstall_name_tool -change @loader_path/libLeap.dylib @executable_path/../Resources/libLeap.dylib ${TARGET_NAME}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239B35051739EDEE00CB0EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B35191739EDEE00CB0EC6 /* main.m in Sources */,
+				239B35201739EDEE00CB0EC6 /* AppDelegate.m in Sources */,
+				239B354F1739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239B35241739EDEF00CB0EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239B35371739EDEF00CB0EC6 /* LeapPaintTests.m in Sources */,
+				239B35501739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		239B352E1739EDEF00CB0EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239B35081739EDEE00CB0EC6 /* LeapPaint */;
+			targetProxy = 239B352D1739EDEF00CB0EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		239B35151739EDEE00CB0EC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239B35161739EDEE00CB0EC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		239B351B1739EDEE00CB0EC6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239B351C1739EDEE00CB0EC6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		239B35211739EDEE00CB0EC6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239B35221739EDEE00CB0EC6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		239B35321739EDEF00CB0EC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239B35331739EDEF00CB0EC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		239B35381739EDEF00CB0EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		239B35391739EDEF00CB0EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		239B353B1739EDEF00CB0EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPaint/LeapPaint-Prefix.pch";
+				INFOPLIST_FILE = "LeapPaint/LeapPaint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../libs/LeapSDK/lib\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		239B353C1739EDEF00CB0EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPaint/LeapPaint-Prefix.pch";
+				INFOPLIST_FILE = "LeapPaint/LeapPaint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../libs/LeapSDK/lib\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		239B353E1739EDEF00CB0EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeapPaint.app/Contents/MacOS/LeapPaint";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPaint/LeapPaint-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../libs/LeapSDK/include/\"";
+				INFOPLIST_FILE = "LeapPaintTests/LeapPaintTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libs/LeapSDK/lib/\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		239B353F1739EDEF00CB0EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeapPaint.app/Contents/MacOS/LeapPaint";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPaint/LeapPaint-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../libs/LeapSDK/include/\"";
+				INFOPLIST_FILE = "LeapPaintTests/LeapPaintTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../libs/LeapSDK/lib/\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239B35041739EDEE00CB0EC6 /* Build configuration list for PBXProject "LeapPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239B35381739EDEF00CB0EC6 /* Debug */,
+				239B35391739EDEF00CB0EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239B353A1739EDEF00CB0EC6 /* Build configuration list for PBXNativeTarget "LeapPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239B353B1739EDEF00CB0EC6 /* Debug */,
+				239B353C1739EDEF00CB0EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		239B353D1739EDEF00CB0EC6 /* Build configuration list for PBXNativeTarget "LeapPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239B353E1739EDEF00CB0EC6 /* Debug */,
+				239B353F1739EDEF00CB0EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 239B35011739EDEE00CB0EC6 /* Project object */;
+}
