@@ -13,7 +13,7 @@
  * Tests the GameSettings object
  */
 @interface UtilityTests : SenTestCase{
-    NSString* testName; /**< name of the test */
+    NSString* testName; /**< testName is the name of the test */
     
 }
 

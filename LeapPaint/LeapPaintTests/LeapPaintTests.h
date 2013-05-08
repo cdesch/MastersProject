@@ -8,6 +8,9 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface LeapPaintTests : SenTestCase
+@interface LeapPaintTests : SenTestCase{
+    
+    NSString* testName; /**< testName is the name of the test */
+}
 
 @end

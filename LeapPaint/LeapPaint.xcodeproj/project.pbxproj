@@ -157,6 +157,7 @@
 		2371B847173AC45B00EAEB6B /* LPTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B846173AC45B00EAEB6B /* LPTool.mm */; };
 		2371B84D173AC8A200EAEB6B /* LPLinePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B84C173AC8A200EAEB6B /* LPLinePoint.m */; };
 		2371B84E173AC8A200EAEB6B /* LPLinePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B84C173AC8A200EAEB6B /* LPLinePoint.m */; };
+		2371B851173ACBFE00EAEB6B /* LPLinePointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B850173ACBFE00EAEB6B /* LPLinePointTests.m */; };
 		239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
 		239B35171739EDEE00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35151739EDEE00CB0EC6 /* InfoPlist.strings */; };
 		239B35191739EDEE00CB0EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35181739EDEE00CB0EC6 /* main.m */; };
@@ -377,6 +378,8 @@
 		2371B846173AC45B00EAEB6B /* LPTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LPTool.mm; sourceTree = "<group>"; };
 		2371B84B173AC8A200EAEB6B /* LPLinePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLinePoint.h; sourceTree = "<group>"; };
 		2371B84C173AC8A200EAEB6B /* LPLinePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLinePoint.m; sourceTree = "<group>"; };
+		2371B84F173ACBFE00EAEB6B /* LPLinePointTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLinePointTests.h; sourceTree = "<group>"; };
+		2371B850173ACBFE00EAEB6B /* LPLinePointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLinePointTests.m; sourceTree = "<group>"; };
 		239B35091739EDEE00CB0EC6 /* LeapPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239B350C1739EDEE00CB0EC6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		239B350F1739EDEE00CB0EC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -776,6 +779,8 @@
 				2371B7FC173ABE5400EAEB6B /* UtilityTests.m */,
 				239B35351739EDEF00CB0EC6 /* LeapPaintTests.h */,
 				239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */,
+				2371B84F173ACBFE00EAEB6B /* LPLinePointTests.h */,
+				2371B850173ACBFE00EAEB6B /* LPLinePointTests.m */,
 				239B35301739EDEF00CB0EC6 /* Supporting Files */,
 			);
 			path = LeapPaintTests;
@@ -1119,6 +1124,7 @@
 				2371B802173ABE5400EAEB6B /* SimplePointTests.m in Sources */,
 				2371B803173ABE5400EAEB6B /* UtilityTests.m in Sources */,
 				2371B84E173AC8A200EAEB6B /* LPLinePoint.m in Sources */,
+				2371B851173ACBFE00EAEB6B /* LPLinePointTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
