@@ -1,6 +1,10 @@
 \hypertarget{interface_brush_selection_layer}{\subsection{Brush\-Selection\-Layer Class Reference}
 \label{d5/d83/interface_brush_selection_layer}\index{Brush\-Selection\-Layer@{Brush\-Selection\-Layer}}
 }
+
+
+{\ttfamily \#import $<$Brush\-Selection\-Layer.\-h$>$}
+
 Inheritance diagram for Brush\-Selection\-Layer\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,26 +14,34 @@ Inheritance diagram for Brush\-Selection\-Layer\-:\begin{figure}[H]
 \subsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_brush_selection_layer_a4ec74d274a54411ce95f3168ee5823ba}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries image\-Names\-Dictionary}}\label{d5/d83/interface_brush_selection_layer_a4ec74d274a54411ce95f3168ee5823ba}
-
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_brush_selection_layer_a4ec74d274a54411ce95f3168ee5823ba}{image\-Names\-Dictionary}
 \end{DoxyCompactItemize}
 \subsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_brush_selection_layer_a777a4f065988aee06e9a46ccd0ffb10a}{id$<$ \hyperlink{protocol_brush_selection_layer_delegate-p}{Brush\-Selection\-Layer\-Delegate} $>$ {\bfseries delegate}}\label{d5/d83/interface_brush_selection_layer_a777a4f065988aee06e9a46ccd0ffb10a}
-
+id$<$ \hyperlink{protocol_brush_selection_layer_delegate-p}{Brush\-Selection\-Layer\-Delegate} $>$ \hyperlink{interface_brush_selection_layer_a777a4f065988aee06e9a46ccd0ffb10a}{delegate}
 \item 
-\hypertarget{interface_brush_selection_layer_aaf6677a075014de2c2b0abe254b241a6}{bool {\bfseries layer\-Hidden}}\label{d5/d83/interface_brush_selection_layer_aaf6677a075014de2c2b0abe254b241a6}
-
+bool \hyperlink{interface_brush_selection_layer_aaf6677a075014de2c2b0abe254b241a6}{layer\-Hidden}
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
+\hyperlink{interface_brush_selection_layer}{Brush\-Selection\-Layer} This user interface layer provides a collection view of all the available brushes that can be selected. 
 
+\subsubsection{Member Data Documentation}
+\hypertarget{interface_brush_selection_layer_a4ec74d274a54411ce95f3168ee5823ba}{\index{Brush\-Selection\-Layer@{Brush\-Selection\-Layer}!image\-Names\-Dictionary@{image\-Names\-Dictionary}}
+\index{image\-Names\-Dictionary@{image\-Names\-Dictionary}!BrushSelectionLayer@{Brush\-Selection\-Layer}}
+\paragraph[{image\-Names\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) image\-Names\-Dictionary\hspace{0.3cm}{\ttfamily [protected]}}}\label{d5/d83/interface_brush_selection_layer_a4ec74d274a54411ce95f3168ee5823ba}
+image\-Names\-Dictionary is the list of brush names available for selection 
 
-Definition at line 18 of file Brush\-Selection\-Layer.\-h.
-
-
+\subsubsection{Property Documentation}
+\hypertarget{interface_brush_selection_layer_a777a4f065988aee06e9a46ccd0ffb10a}{\index{Brush\-Selection\-Layer@{Brush\-Selection\-Layer}!delegate@{delegate}}
+\index{delegate@{delegate}!BrushSelectionLayer@{Brush\-Selection\-Layer}}
+\paragraph[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf Brush\-Selection\-Layer\-Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}}\label{d5/d83/interface_brush_selection_layer_a777a4f065988aee06e9a46ccd0ffb10a}
+delegate is the instance reference for triggering delegate call back functions \hypertarget{interface_brush_selection_layer_aaf6677a075014de2c2b0abe254b241a6}{\index{Brush\-Selection\-Layer@{Brush\-Selection\-Layer}!layer\-Hidden@{layer\-Hidden}}
+\index{layer\-Hidden@{layer\-Hidden}!BrushSelectionLayer@{Brush\-Selection\-Layer}}
+\paragraph[{layer\-Hidden}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (bool) layer\-Hidden\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d5/d83/interface_brush_selection_layer_aaf6677a075014de2c2b0abe254b241a6}
+layer\-Hidded tracks the visibility state of the layer 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

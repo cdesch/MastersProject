@@ -14,17 +14,13 @@ Inheritance diagram for H\-U\-D\-Layer\-:\begin{figure}[H]
 \subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_h_u_d_layer_a4c9b0669e5d9c7f787df2d2db3b70650}{(void) -\/ {\bfseries tool\-Moved\-:tool\-I\-D\-:}}\label{d3/d8a/interface_h_u_d_layer_a4c9b0669e5d9c7f787df2d2db3b70650}
-
+(void) -\/ \hyperlink{interface_h_u_d_layer_a4c9b0669e5d9c7f787df2d2db3b70650}{tool\-Moved\-:tool\-I\-D\-:}
 \item 
-\hypertarget{interface_h_u_d_layer_a1665f0f39e98837d8fd851d6ffd10070}{(void) -\/ {\bfseries start\-Tracking\-Tool\-:tool\-I\-D\-:}}\label{d3/d8a/interface_h_u_d_layer_a1665f0f39e98837d8fd851d6ffd10070}
-
+(void) -\/ \hyperlink{interface_h_u_d_layer_a1665f0f39e98837d8fd851d6ffd10070}{start\-Tracking\-Tool\-:tool\-I\-D\-:}
 \item 
-\hypertarget{interface_h_u_d_layer_aa9d2fea251c1f1dfd3a4c86673068c3a}{(void) -\/ {\bfseries move\-Tracking\-Tool\-:tool\-I\-D\-:}}\label{d3/d8a/interface_h_u_d_layer_aa9d2fea251c1f1dfd3a4c86673068c3a}
-
+(void) -\/ \hyperlink{interface_h_u_d_layer_aa9d2fea251c1f1dfd3a4c86673068c3a}{move\-Tracking\-Tool\-:tool\-I\-D\-:}
 \item 
-\hypertarget{interface_h_u_d_layer_ace1d8e50cc1942bb7ed538848d01f00b}{(void) -\/ {\bfseries end\-Tracking\-Tool}}\label{d3/d8a/interface_h_u_d_layer_ace1d8e50cc1942bb7ed538848d01f00b}
-
+(void) -\/ \hyperlink{interface_h_u_d_layer_ace1d8e50cc1942bb7ed538848d01f00b}{end\-Tracking\-Tool}
 \item 
 \hypertarget{interface_h_u_d_layer_a15d2dcde1af34b73b29a4b5dc52ebce4}{(void) -\/ {\bfseries change\-Color\-:}}\label{d3/d8a/interface_h_u_d_layer_a15d2dcde1af34b73b29a4b5dc52ebce4}
 
@@ -66,90 +62,112 @@ B\-O\-O\-L \hyperlink{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{e
 \item 
 id$<$ \hyperlink{protocol_h_u_d_delegate-p}{H\-U\-D\-Delegate} $>$ \hyperlink{interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}{delegate}
 \item 
-\hypertarget{interface_h_u_d_layer_ae0974aa467c08003e700e3d538f282c0}{C\-C\-Label\-T\-T\-F $\ast$ {\bfseries xyzcoords}}\label{d3/d8a/interface_h_u_d_layer_ae0974aa467c08003e700e3d538f282c0}
-
+C\-C\-Label\-T\-T\-F $\ast$ \hyperlink{interface_h_u_d_layer_ae0974aa467c08003e700e3d538f282c0}{xyzcoords}
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
 H\-U\-D Layer Tracks the position of the Leap\-Cursor on the screen 
 
-Definition at line 30 of file H\-U\-D\-Layer.\-h.
+\subsubsection{Method Documentation}
+\hypertarget{interface_h_u_d_layer_ace1d8e50cc1942bb7ed538848d01f00b}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!end\-Tracking\-Tool@{end\-Tracking\-Tool}}
+\index{end\-Tracking\-Tool@{end\-Tracking\-Tool}!HUDLayer@{H\-U\-D\-Layer}}
+\paragraph[{end\-Tracking\-Tool}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\-Tracking\-Tool 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{d3/d8a/interface_h_u_d_layer_ace1d8e50cc1942bb7ed538848d01f00b}
+End\-Tracking tool singles the end of the tool being tracked. The tool may be lost or no longer drawing \hypertarget{interface_h_u_d_layer_aa9d2fea251c1f1dfd3a4c86673068c3a}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!move\-Tracking\-Tool\-:tool\-I\-D\-:@{move\-Tracking\-Tool\-:tool\-I\-D\-:}}
+\index{move\-Tracking\-Tool\-:tool\-I\-D\-:@{move\-Tracking\-Tool\-:tool\-I\-D\-:}!HUDLayer@{H\-U\-D\-Layer}}
+\paragraph[{move\-Tracking\-Tool\-:tool\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Tracking\-Tool\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\item[{toolID:(N\-S\-String$\ast$)}]{toolid}
+\end{DoxyParamCaption}
+}}\label{d3/d8a/interface_h_u_d_layer_aa9d2fea251c1f1dfd3a4c86673068c3a}
+Move\-Tracking\-Tool updates the position and path of a tool. 
+\begin{DoxyParams}{Parameters}
+{\em point} & is the coordinate location on the screen in which pointable interesects \\
+\hline
+{\em toolid} & is Leap\-S\-D\-K provided tool id of the tool moving \\
+\hline
+\end{DoxyParams}
 
+
+Referenced by tool\-Moved\-:tool\-I\-D\-:.
+
+\hypertarget{interface_h_u_d_layer_a1665f0f39e98837d8fd851d6ffd10070}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!start\-Tracking\-Tool\-:tool\-I\-D\-:@{start\-Tracking\-Tool\-:tool\-I\-D\-:}}
+\index{start\-Tracking\-Tool\-:tool\-I\-D\-:@{start\-Tracking\-Tool\-:tool\-I\-D\-:}!HUDLayer@{H\-U\-D\-Layer}}
+\paragraph[{start\-Tracking\-Tool\-:tool\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) start\-Tracking\-Tool\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\item[{toolID:(N\-S\-String$\ast$)}]{toolid}
+\end{DoxyParamCaption}
+}}\label{d3/d8a/interface_h_u_d_layer_a1665f0f39e98837d8fd851d6ffd10070}
+Start\-Tracking\-Tool begins the process of tracking a tool starting with a new path 
+\begin{DoxyParams}{Parameters}
+{\em point} & is the coordinate location on the screen in which pointable interesects \\
+\hline
+{\em toolid} & is Leap\-S\-D\-K provided tool id of the tool moving \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by tool\-Moved\-:tool\-I\-D\-:.
+
+\hypertarget{interface_h_u_d_layer_a4c9b0669e5d9c7f787df2d2db3b70650}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!tool\-Moved\-:tool\-I\-D\-:@{tool\-Moved\-:tool\-I\-D\-:}}
+\index{tool\-Moved\-:tool\-I\-D\-:@{tool\-Moved\-:tool\-I\-D\-:}!HUDLayer@{H\-U\-D\-Layer}}
+\paragraph[{tool\-Moved\-:tool\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) tool\-Moved\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{point}
+\item[{toolID:(N\-S\-String$\ast$)}]{toolid}
+\end{DoxyParamCaption}
+}}\label{d3/d8a/interface_h_u_d_layer_a4c9b0669e5d9c7f787df2d2db3b70650}
+Tool\-Moved updates the last known tracked position of the tool. 
+\begin{DoxyParams}{Parameters}
+{\em point} & is the coordinate location on the screen in which pointable interesects \\
+\hline
+{\em toolid} & is Leap\-S\-D\-K provided tool id of the tool moving \\
+\hline
+\end{DoxyParams}
 
 
 \subsubsection{Member Data Documentation}
 \hypertarget{interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!erase\-Mode@{erase\-Mode}}
 \index{erase\-Mode@{erase\-Mode}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{erase\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) erase\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_aa1df984387a5f884acf38a7d733d6432}
-erase\-Mode determines weather the pointable is painting or erasing 
-
-Definition at line 44 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_a69515b3bf7bddc07e65bad3eaa4a2e7a}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!game\-Settings@{game\-Settings}}
+erase\-Mode determines weather the pointable is painting or erasing \hypertarget{interface_h_u_d_layer_a69515b3bf7bddc07e65bad3eaa4a2e7a}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!game\-Settings@{game\-Settings}}
 \index{game\-Settings@{game\-Settings}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{game\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Game\-Settings}$\ast$) game\-Settings\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_a69515b3bf7bddc07e65bad3eaa4a2e7a}
-game\-Settings singleton to global seetings 
-
-Definition at line 47 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!input\-Mode@{input\-Mode}}
+game\-Settings singleton to global seetings \hypertarget{interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!input\-Mode@{input\-Mode}}
 \index{input\-Mode@{input\-Mode}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{input\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Input\-Mode) input\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_a1e506792d581032644d75804beb359a7}
-input\-Mode is the current mode of input 
-
-Definition at line 34 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Brush@{last\-Brush}}
+input\-Mode is the current mode of input \hypertarget{interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Brush@{last\-Brush}}
 \index{last\-Brush@{last\-Brush}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{last\-Brush}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) last\-Brush\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_ad7cb8a30419241ee8d2f2813031191be}
-last\-Brush is last brush to be selected 
-
-Definition at line 38 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Color@{last\-Color}}
+last\-Brush is last brush to be selected \hypertarget{interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Color@{last\-Color}}
 \index{last\-Color@{last\-Color}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{last\-Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (cc\-Color3\-B) last\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_a2d27bf64876ea6f0b2f0d1b9013c1cd7}
-last\-Color is the last\-Color to be selected 
-
-Definition at line 36 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Scale@{last\-Scale}}
+last\-Color is the last\-Color to be selected \hypertarget{interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!last\-Scale@{last\-Scale}}
 \index{last\-Scale@{last\-Scale}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{last\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) last\-Scale\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_aedd1d8d2b2d31e203c3242d09390b561}
-last\-Scale is last scale to be selected 
-
-Definition at line 39 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_a67d356e56a82f871b6c5de5818c5985d}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!painting\-Indicator@{painting\-Indicator}}
+last\-Scale is last scale to be selected \hypertarget{interface_h_u_d_layer_a67d356e56a82f871b6c5de5818c5985d}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!painting\-Indicator@{painting\-Indicator}}
 \index{painting\-Indicator@{painting\-Indicator}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{painting\-Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Sprite$\ast$) painting\-Indicator\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_a67d356e56a82f871b6c5de5818c5985d}
-painting\-Indicator shows the state at which the object is currently paintg 
-
-Definition at line 43 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!previous\-Color@{previous\-Color}}
+painting\-Indicator shows the state at which the object is currently paintg \hypertarget{interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!previous\-Color@{previous\-Color}}
 \index{previous\-Color@{previous\-Color}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{previous\-Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (cc\-Color3\-B) previous\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_a2b737d7aa3b728dd3d5990ef4cb68f29}
-previous\-Color is the color before the lastcolor to be selected 
-
-Definition at line 37 of file H\-U\-D\-Layer.\-h.
-
-\hypertarget{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!primary\-Tool@{primary\-Tool}}
+previous\-Color is the color before the lastcolor to be selected \hypertarget{interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!primary\-Tool@{primary\-Tool}}
 \index{primary\-Tool@{primary\-Tool}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{primary\-Tool}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf L\-P\-Tool}$\ast$) primary\-Tool\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_aad9b0e2b4164986e18ea0a9afcd1a914}
 primary\-Tool points to the current pointable object 
 
-Definition at line 32 of file H\-U\-D\-Layer.\-h.
+Referenced by end\-Tracking\-Tool, move\-Tracking\-Tool\-:tool\-I\-D\-:, start\-Tracking\-Tool\-:tool\-I\-D\-:, and tool\-Moved\-:tool\-I\-D\-:.
 
 \hypertarget{interface_h_u_d_layer_aae17304a5ecff2a6fa43471edb779341}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!primary\-Tool\-I\-D@{primary\-Tool\-I\-D}}
 \index{primary\-Tool\-I\-D@{primary\-Tool\-I\-D}!HUDLayer@{H\-U\-D\-Layer}}
 \paragraph[{primary\-Tool\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) primary\-Tool\-I\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{d3/d8a/interface_h_u_d_layer_aae17304a5ecff2a6fa43471edb779341}
 primary\-Tool\-I\-D stores the id tag to the pointable in reference 
-
-Definition at line 31 of file H\-U\-D\-Layer.\-h.
-
-
 
 \subsubsection{Property Documentation}
 \hypertarget{interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!delegate@{delegate}}
@@ -157,9 +175,12 @@ Definition at line 31 of file H\-U\-D\-Layer.\-h.
 \paragraph[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf H\-U\-D\-Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}}\label{d3/d8a/interface_h_u_d_layer_a64cb26c1f8c5a76e8f392a02291c0cf6}
 color\-Label displays name of color in hash value 
 
-Definition at line 52 of file H\-U\-D\-Layer.\-h.
+Referenced by Game\-Scene\-::scene.
 
-
+\hypertarget{interface_h_u_d_layer_ae0974aa467c08003e700e3d538f282c0}{\index{H\-U\-D\-Layer@{H\-U\-D\-Layer}!xyzcoords@{xyzcoords}}
+\index{xyzcoords@{xyzcoords}!HUDLayer@{H\-U\-D\-Layer}}
+\paragraph[{xyzcoords}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F$\ast$) xyzcoords\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d3/d8a/interface_h_u_d_layer_ae0974aa467c08003e700e3d538f282c0}
+xyzcoords is the X,Y,Z coordinates in string form for displaying on the H\-U\-D in real-\/time for debugging 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

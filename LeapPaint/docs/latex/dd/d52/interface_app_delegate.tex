@@ -1,27 +1,89 @@
 \hypertarget{interface_app_delegate}{\subsection{App\-Delegate Class Reference}
 \label{dd/d52/interface_app_delegate}\index{App\-Delegate@{App\-Delegate}}
 }
+
+
+{\ttfamily \#import $<$App\-Delegate.\-h$>$}
+
 Inheritance diagram for App\-Delegate\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{dd/d52/interface_app_delegate}
 \end{center}
 \end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_app_delegate_aa03ed24826ea60753de347b0ab33adfb}{run\-Game\-Scene}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_delegate_ae9916ea37adae8d345a8008be3aa054f}{toggle\-Full\-Screen\-:}
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Window $\ast$ \hyperlink{interface_app_delegate_a5338c82d195ce50c948cbbf1b974665b}{window\-\_\-}
+\item 
+C\-C\-G\-L\-View $\ast$ \hyperlink{interface_app_delegate_a5f256d1ae550f33820c6730d70088694}{gl\-View\-\_\-}
+\end{DoxyCompactItemize}
 \subsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{interface_app_delegate_acdf10c46711b4d6a8d95def15620afb6}{I\-B\-Outlet N\-S\-Window $\ast$ {\bfseries window}}\label{dd/d52/interface_app_delegate_acdf10c46711b4d6a8d95def15620afb6}
 
+\item 
+\hypertarget{interface_app_delegate_aa68fb87b4f494cd1f0a0ef7d55590a17}{I\-B\-Outlet C\-C\-G\-L\-View $\ast$ {\bfseries gl\-View}}\label{dd/d52/interface_app_delegate_aa68fb87b4f494cd1f0a0ef7d55590a17}
+
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
+Application Delegate Creates app instance and binds libraries to interface builder xibs
+
+Serves as an application wide callback object for events that affects the whole application, such as low-\/memory, etc. 
+
+\subsubsection{Method Documentation}
+\hypertarget{interface_app_delegate_aa03ed24826ea60753de347b0ab33adfb}{\index{App\-Delegate@{App\-Delegate}!run\-Game\-Scene@{run\-Game\-Scene}}
+\index{run\-Game\-Scene@{run\-Game\-Scene}!AppDelegate@{App\-Delegate}}
+\paragraph[{run\-Game\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) run\-Game\-Scene 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{dd/d52/interface_app_delegate_aa03ed24826ea60753de347b0ab33adfb}
+Run\-Game\-Sceen sets up the Cocos2d environment and runs it in the application. \hypertarget{interface_app_delegate_ae9916ea37adae8d345a8008be3aa054f}{\index{App\-Delegate@{App\-Delegate}!toggle\-Full\-Screen\-:@{toggle\-Full\-Screen\-:}}
+\index{toggle\-Full\-Screen\-:@{toggle\-Full\-Screen\-:}!AppDelegate@{App\-Delegate}}
+\paragraph[{toggle\-Full\-Screen\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) toggle\-Full\-Screen\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{dd/d52/interface_app_delegate_ae9916ea37adae8d345a8008be3aa054f}
+Toggles from a window to full screen view point 
+\begin{DoxyParams}{Parameters}
+{\em sender} & is the action sending the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\-B\-Action binding to interface builder 
+\end{DoxyReturn}
 
 
-Definition at line 11 of file App\-Delegate.\-h.
+\subsubsection{Member Data Documentation}
+\hypertarget{interface_app_delegate_a5f256d1ae550f33820c6730d70088694}{\index{App\-Delegate@{App\-Delegate}!gl\-View\-\_\-@{gl\-View\-\_\-}}
+\index{gl\-View\-\_\-@{gl\-View\-\_\-}!AppDelegate@{App\-Delegate}}
+\paragraph[{gl\-View\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-G\-L\-View$\ast$) gl\-View\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{dd/d52/interface_app_delegate_a5f256d1ae550f33820c6730d70088694}
+gl\-View is the embedded view in which cocos2d will run inside the window 
+
+Referenced by run\-Game\-Scene.
+
+\hypertarget{interface_app_delegate_a5338c82d195ce50c948cbbf1b974665b}{\index{App\-Delegate@{App\-Delegate}!window\-\_\-@{window\-\_\-}}
+\index{window\-\_\-@{window\-\_\-}!AppDelegate@{App\-Delegate}}
+\paragraph[{window\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Window$\ast$) window\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{dd/d52/interface_app_delegate_a5338c82d195ce50c948cbbf1b974665b}
+window is the main window to be displayed 
+
+Referenced by run\-Game\-Scene.
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Leap\-Paint/App\-Delegate.\-h\end{DoxyCompactItemize}
+Leap\-Paint/App\-Delegate.\-h\item 
+Leap\-Paint/App\-Delegate.\-m\end{DoxyCompactItemize}

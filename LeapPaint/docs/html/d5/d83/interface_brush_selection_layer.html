@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">BrushSelectionLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#import &lt;<a class="el" href="../../d7/db4/_brush_selection_layer_8h_source.html">BrushSelectionLayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BrushSelectionLayer:</div>
 <div class="dyncontent">
@@ -100,29 +102,90 @@ Inheritance diagram for BrushSelectionLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a4ec74d274a54411ce95f3168ee5823ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec74d274a54411ce95f3168ee5823ba"></a>
-NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>imageNamesDictionary</b></td></tr>
+<tr class="memitem:a4ec74d274a54411ce95f3168ee5823ba"><td class="memItemLeft" align="right" valign="top">NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d83/interface_brush_selection_layer.html#a4ec74d274a54411ce95f3168ee5823ba">imageNamesDictionary</a></td></tr>
 <tr class="separator:a4ec74d274a54411ce95f3168ee5823ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a777a4f065988aee06e9a46ccd0ffb10a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a777a4f065988aee06e9a46ccd0ffb10a"></a>
-id&lt; <a class="el" href="../../d7/dd2/protocol_brush_selection_layer_delegate-p.html">BrushSelectionLayerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr class="memitem:a777a4f065988aee06e9a46ccd0ffb10a"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="../../d7/dd2/protocol_brush_selection_layer_delegate-p.html">BrushSelectionLayerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d83/interface_brush_selection_layer.html#a777a4f065988aee06e9a46ccd0ffb10a">delegate</a></td></tr>
 <tr class="separator:a777a4f065988aee06e9a46ccd0ffb10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6677a075014de2c2b0abe254b241a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf6677a075014de2c2b0abe254b241a6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>layerHidden</b></td></tr>
+<tr class="memitem:aaf6677a075014de2c2b0abe254b241a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d83/interface_brush_selection_layer.html#aaf6677a075014de2c2b0abe254b241a6">layerHidden</a></td></tr>
 <tr class="separator:aaf6677a075014de2c2b0abe254b241a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d7/db4/_brush_selection_layer_8h_source.html#l00018">18</a> of file <a class="el" href="../../d7/db4/_brush_selection_layer_8h_source.html">BrushSelectionLayer.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p><a class="el" href="../../d5/d83/interface_brush_selection_layer.html">BrushSelectionLayer</a> This user interface layer provides a collection view of all the available brushes that can be selected. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4ec74d274a54411ce95f3168ee5823ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableDictionary*) imageNamesDictionary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>imageNamesDictionary is the list of brush names available for selection </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a777a4f065988aee06e9a46ccd0ffb10a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id&lt;<a class="el" href="../../d7/dd2/protocol_brush_selection_layer_delegate-p.html">BrushSelectionLayerDelegate</a>&gt;) delegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">weak</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>delegate is the instance reference for triggering delegate call back functions </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf6677a075014de2c2b0abe254b241a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (bool) layerHidden</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>layerHidded tracks the visibility state of the layer </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>LeapPaint/<a class="el" href="../../d7/db4/_brush_selection_layer_8h_source.html">BrushSelectionLayer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 13:08:37 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 8 2013 15:12:17 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

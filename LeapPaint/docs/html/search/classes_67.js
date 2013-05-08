@@ -5,6 +5,5 @@ var searchData=
   ['gamescene',['GameScene',['../d5/d01/interface_game_scene.html',1,'']]],
   ['gamescenetests',['GameSceneTests',['../d5/def/interface_game_scene_tests.html',1,'']]],
   ['gamesettings',['GameSettings',['../d1/d0c/interface_game_settings.html',1,'']]],
-  ['gamesettingstests',['GameSettingsTests',['../d9/ddc/interface_game_settings_tests.html',1,'']]],
-  ['glesdebugdraw',['GLESDebugDraw',['../d7/da9/class_g_l_e_s_debug_draw.html',1,'']]]
+  ['gamesettingstests',['GameSettingsTests',['../d9/ddc/interface_game_settings_tests.html',1,'']]]
 ];

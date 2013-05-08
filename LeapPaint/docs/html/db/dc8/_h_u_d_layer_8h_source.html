@@ -103,45 +103,42 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="../../d4/db1/protocol_h_u_d_delegate-p.html">   20</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="../../d4/db1/protocol_h_u_d_delegate-p.html">HUDDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (void)changeMode:(InputMode)mode;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)painting:(BOOL)paintingState;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html">   30</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html">HUDLayer</a> : CCLayer  {</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aae17304a5ecff2a6fa43471edb779341">   31</a></span>&#160;    NSString* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aae17304a5ecff2a6fa43471edb779341">primaryToolID</a>;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">   32</a></span>&#160;    <a class="code" href="../../d3/d2e/interface_l_p_tool.html">LPTool</a>* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a>;        </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1e506792d581032644d75804beb359a7">   34</a></span>&#160;    InputMode <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1e506792d581032644d75804beb359a7">inputMode</a>;        </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2d27bf64876ea6f0b2f0d1b9013c1cd7">   36</a></span>&#160;    ccColor3B <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2d27bf64876ea6f0b2f0d1b9013c1cd7">lastColor</a>;        </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2b737d7aa3b728dd3d5990ef4cb68f29">   37</a></span>&#160;    ccColor3B <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2b737d7aa3b728dd3d5990ef4cb68f29">previousColor</a>;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ad7cb8a30419241ee8d2f2813031191be">   38</a></span>&#160;    NSString* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ad7cb8a30419241ee8d2f2813031191be">lastBrush</a>;        </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aedd1d8d2b2d31e203c3242d09390b561">   39</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aedd1d8d2b2d31e203c3242d09390b561">lastScale</a>;            </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a67d356e56a82f871b6c5de5818c5985d">   43</a></span>&#160;    CCSprite* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a67d356e56a82f871b6c5de5818c5985d">paintingIndicator</a>; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa1df984387a5f884acf38a7d733d6432">   44</a></span>&#160;    BOOL <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa1df984387a5f884acf38a7d733d6432">eraseMode</a>;             </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a69515b3bf7bddc07e65bad3eaa4a2e7a">   47</a></span>&#160;    <a class="code" href="../../d1/d0c/interface_game_settings.html">GameSettings</a>* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a69515b3bf7bddc07e65bad3eaa4a2e7a">gameSettings</a>; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a64cb26c1f8c5a76e8f392a02291c0cf6">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id &lt;HUDDelegate&gt; delegate; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF* xyzcoords;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;- (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;- (void)endTrackingTool;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;- (void)changeColor:(ccColor3B)color;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (void)changeBrush:(NSString*)brushname;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;- (void)changeScale:(<span class="keywordtype">float</span>)size;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;- (void)erasingMode:(BOOL)mode;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)changeMode:(InputMode)mode;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)painting:(BOOL)paintingState;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html">HUDLayer</a> : CCLayer  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aae17304a5ecff2a6fa43471edb779341">   38</a></span>&#160;    NSString* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aae17304a5ecff2a6fa43471edb779341">primaryToolID</a>;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">   39</a></span>&#160;    <a class="code" href="../../d3/d2e/interface_l_p_tool.html">LPTool</a>* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a>;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1e506792d581032644d75804beb359a7">   41</a></span>&#160;    InputMode <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1e506792d581032644d75804beb359a7">inputMode</a>;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2d27bf64876ea6f0b2f0d1b9013c1cd7">   43</a></span>&#160;    ccColor3B <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2d27bf64876ea6f0b2f0d1b9013c1cd7">lastColor</a>;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2b737d7aa3b728dd3d5990ef4cb68f29">   44</a></span>&#160;    ccColor3B <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a2b737d7aa3b728dd3d5990ef4cb68f29">previousColor</a>;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ad7cb8a30419241ee8d2f2813031191be">   45</a></span>&#160;    NSString* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ad7cb8a30419241ee8d2f2813031191be">lastBrush</a>;        </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aedd1d8d2b2d31e203c3242d09390b561">   46</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aedd1d8d2b2d31e203c3242d09390b561">lastScale</a>;            </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a67d356e56a82f871b6c5de5818c5985d">   50</a></span>&#160;    CCSprite* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a67d356e56a82f871b6c5de5818c5985d">paintingIndicator</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa1df984387a5f884acf38a7d733d6432">   51</a></span>&#160;    BOOL <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa1df984387a5f884acf38a7d733d6432">eraseMode</a>;             </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a69515b3bf7bddc07e65bad3eaa4a2e7a">   54</a></span>&#160;    <a class="code" href="../../d1/d0c/interface_game_settings.html">GameSettings</a>* <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a69515b3bf7bddc07e65bad3eaa4a2e7a">gameSettings</a>; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a64cb26c1f8c5a76e8f392a02291c0cf6">   59</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id &lt;HUDDelegate&gt; delegate; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ae0974aa467c08003e700e3d538f282c0">   60</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF* xyzcoords; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;- (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;- (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (void)endTrackingTool;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)changeColor:(ccColor3B)color;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)changeBrush:(NSString*)brushname;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (void)changeScale:(<span class="keywordtype">float</span>)size;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (void)erasingMode:(BOOL)mode;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 13:08:36 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 8 2013 15:12:16 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -40,10 +40,6 @@ B\-O\-O\-L \hyperlink{interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}{
 \subsubsection{Detailed Description}
 2\-D or 3\-D space coordinate for temporarily maniulapting points 
 
-Definition at line 18 of file Simple\-Point.\-h.
-
-
-
 \subsubsection{Method Documentation}
 \hypertarget{interface_simple_point_aa138ca80c0a7a5fa1684c38483042a76}{\index{Simple\-Point@{Simple\-Point}!init\-With\-Position\-:@{init\-With\-Position\-:}}
 \index{init\-With\-Position\-:@{init\-With\-Position\-:}!SimplePoint@{Simple\-Point}}
@@ -60,25 +56,7 @@ Init constructor with existing point to create a 2d Point
 \begin{DoxyReturn}{Returns}
 object instance
 \end{DoxyReturn}
-init 2d point with C\-G\-Point 
-
-Definition at line 18 of file Simple\-Point.\-mm.
-
-
-\begin{DoxyCode}
-18                       :(CGPoint)p\{
-19     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
-20 
-21         \textcolor{keyword}{self}.x = p.x;
-22         \textcolor{keyword}{self}.y = p.y;
-23         \textcolor{keyword}{self}.z = 0.0f;
-24         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{false};
-25         
-26     \}
-27     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
-28 \}
-\end{DoxyCode}
-\hypertarget{interface_simple_point_a24776a0473601bcdf437ba02dbc89d5c}{\index{Simple\-Point@{Simple\-Point}!init\-With\-Position\-:with\-Z\-:@{init\-With\-Position\-:with\-Z\-:}}
+init 2d point with C\-G\-Point \hypertarget{interface_simple_point_a24776a0473601bcdf437ba02dbc89d5c}{\index{Simple\-Point@{Simple\-Point}!init\-With\-Position\-:with\-Z\-:@{init\-With\-Position\-:with\-Z\-:}}
 \index{init\-With\-Position\-:with\-Z\-:@{init\-With\-Position\-:with\-Z\-:}!SimplePoint@{Simple\-Point}}
 \paragraph[{init\-With\-Position\-:with\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Position\-:} 
 \begin{DoxyParamCaption}
@@ -96,25 +74,7 @@ Init constructor with existing point to create a 3d Point
 \begin{DoxyReturn}{Returns}
 object instance
 \end{DoxyReturn}
-Init 3d point with C\-G\-Point and z Value 
-
-Definition at line 46 of file Simple\-Point.\-mm.
-
-
-\begin{DoxyCode}
-46                       :(CGPoint)p withZ:(\textcolor{keywordtype}{float})zVal\{
-47     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
-48         
-49         \textcolor{keyword}{self}.x = p.x;
-50         \textcolor{keyword}{self}.y = p.y;
-51         \textcolor{keyword}{self}.z = zVal;
-52         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{true};
-53         
-54     \}
-55     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
-56 \}
-\end{DoxyCode}
-\hypertarget{interface_simple_point_a9ded444176a17c3ff2c398c17e6c7c74}{\index{Simple\-Point@{Simple\-Point}!init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}}
+Init 3d point with C\-G\-Point and z Value \hypertarget{interface_simple_point_a9ded444176a17c3ff2c398c17e6c7c74}{\index{Simple\-Point@{Simple\-Point}!init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}}
 \index{init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}!SimplePoint@{Simple\-Point}}
 \paragraph[{init\-With\-X\-:with\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-X\-: 
 \begin{DoxyParamCaption}
@@ -122,7 +82,7 @@ Definition at line 46 of file Simple\-Point.\-mm.
 \item[{withY:(float)}]{y\-Val}
 \end{DoxyParamCaption}
 }}\label{d9/dc7/interface_simple_point_a9ded444176a17c3ff2c398c17e6c7c74}
-Init constructor with existing point to create a 2d Point 
+Init constructor with x and y values to create a 2d point 
 \begin{DoxyParams}{Parameters}
 {\em x\-Val} & coordinate value \\
 \hline
@@ -132,26 +92,7 @@ Init constructor with existing point to create a 2d Point
 \begin{DoxyReturn}{Returns}
 object instance
 \end{DoxyReturn}
-Init 2d Point with 2 separate values 
-
-Definition at line 31 of file Simple\-Point.\-mm.
-
-
-\begin{DoxyCode}
-31                :(float)xVal withY:(\textcolor{keywordtype}{float})yVal\{
-32     
-33     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
-34         
-35         \textcolor{keyword}{self}.x = xVal;
-36         \textcolor{keyword}{self}.y = yVal;
-37         \textcolor{keyword}{self}.z = 0.0f;
-38         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{false};
-39         
-40     \}
-41     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
-42 \}
-\end{DoxyCode}
-\hypertarget{interface_simple_point_afb23073d7d7146f85e0dec2029c962d0}{\index{Simple\-Point@{Simple\-Point}!init\-With\-X\-:with\-Y\-:with\-Z\-:@{init\-With\-X\-:with\-Y\-:with\-Z\-:}}
+Init 2d Point with 2 separate values \hypertarget{interface_simple_point_afb23073d7d7146f85e0dec2029c962d0}{\index{Simple\-Point@{Simple\-Point}!init\-With\-X\-:with\-Y\-:with\-Z\-:@{init\-With\-X\-:with\-Y\-:with\-Z\-:}}
 \index{init\-With\-X\-:with\-Y\-:with\-Z\-:@{init\-With\-X\-:with\-Y\-:with\-Z\-:}!SimplePoint@{Simple\-Point}}
 \paragraph[{init\-With\-X\-:with\-Y\-:with\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-X\-: 
 \begin{DoxyParamCaption}
@@ -160,7 +101,7 @@ Definition at line 31 of file Simple\-Point.\-mm.
 \item[{withZ:(float)}]{z\-Val}
 \end{DoxyParamCaption}
 }}\label{d9/dc7/interface_simple_point_afb23073d7d7146f85e0dec2029c962d0}
-Init constructor with existing point to create a 2d Point 
+Init constructor with x, y and z values to create 3\-D point 
 \begin{DoxyParams}{Parameters}
 {\em x\-Val} & coordinate value \\
 \hline
@@ -172,26 +113,7 @@ Init constructor with existing point to create a 2d Point
 \begin{DoxyReturn}{Returns}
 object instance
 \end{DoxyReturn}
-Init 3d Point with 3 separate values 
-
-Definition at line 60 of file Simple\-Point.\-mm.
-
-
-\begin{DoxyCode}
-60                :(float)xVal withY:(\textcolor{keywordtype}{float})yVal withZ:(float)zVal\{
-61     
-62     \textcolor{keywordflow}{if} (\textcolor{keyword}{self} = [super init]) \{
-63         
-64         \textcolor{keyword}{self}.x = xVal;
-65         \textcolor{keyword}{self}.y = yVal;
-66         \textcolor{keyword}{self}.z = zVal;
-67         \textcolor{keyword}{self}.is3d = \textcolor{keyword}{true};
-68         
-69     \}
-70     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
-71 \}
-\end{DoxyCode}
-\hypertarget{interface_simple_point_a2f2ec1990349aa281ea9003c2d7e320b}{\index{Simple\-Point@{Simple\-Point}!point@{point}}
+Init 3d Point with 3 separate values \hypertarget{interface_simple_point_a2f2ec1990349aa281ea9003c2d7e320b}{\index{Simple\-Point@{Simple\-Point}!point@{point}}
 \index{point@{point}!SimplePoint@{Simple\-Point}}
 \paragraph[{point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) point 
 \begin{DoxyParamCaption}
@@ -203,32 +125,14 @@ C\-G\-Point
 \end{DoxyReturn}
 Return the C\-G\-Point type from the object 
 
-Definition at line 74 of file Simple\-Point.\-mm.
-
-
-\begin{DoxyCode}
-74                 \{
-75     \textcolor{keywordflow}{return} CGPointMake(\textcolor{keyword}{self}.\hyperlink{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{x}, \textcolor{keyword}{self}.\hyperlink{interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}{y});
-76 \}
-\end{DoxyCode}
-
-
 \subsubsection{Property Documentation}
 \hypertarget{interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}{\index{Simple\-Point@{Simple\-Point}!is3d@{is3d}}
 \index{is3d@{is3d}!SimplePoint@{Simple\-Point}}
 \paragraph[{is3d}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is3d\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d9/dc7/interface_simple_point_ad56fae41f389d3c12b4023c3e797f452}
-is3d is 2d or 3d point type 
-
-Definition at line 26 of file Simple\-Point.\-h.
-
-\hypertarget{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{\index{Simple\-Point@{Simple\-Point}!x@{x}}
+is3d is 2d or 3d point type \hypertarget{interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}{\index{Simple\-Point@{Simple\-Point}!x@{x}}
 \index{x@{x}!SimplePoint@{Simple\-Point}}
 \paragraph[{x}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) x\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d9/dc7/interface_simple_point_abb16aaf6215e9e946606b30199b1c3af}
 x coordinate 
-
-Definition at line 23 of file Simple\-Point.\-h.
-
-
 
 Referenced by point.
 
@@ -237,20 +141,12 @@ Referenced by point.
 \paragraph[{y}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) y\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d9/dc7/interface_simple_point_ae10ba2c5156e6061258a0720443cd1c8}
 y coordinate 
 
-Definition at line 24 of file Simple\-Point.\-h.
-
-
-
 Referenced by point.
 
 \hypertarget{interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}{\index{Simple\-Point@{Simple\-Point}!z@{z}}
 \index{z@{z}!SimplePoint@{Simple\-Point}}
 \paragraph[{z}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) z\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d9/dc7/interface_simple_point_ad74ae8e5d653579e791c040155e7d4d6}
 z coordinate 
-
-Definition at line 25 of file Simple\-Point.\-h.
-
-
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

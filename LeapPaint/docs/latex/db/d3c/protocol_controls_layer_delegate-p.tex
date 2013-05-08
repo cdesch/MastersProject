@@ -14,31 +14,91 @@ Inheritance diagram for $<$Controls\-Layer\-Delegate$>$\-:\begin{figure}[H]
 \subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_ae43a35a6ddca486c0ddbe044d4e59c6a}{(void) -\/ {\bfseries change\-Color\-Control\-:}}\label{db/d3c/protocol_controls_layer_delegate-p_ae43a35a6ddca486c0ddbe044d4e59c6a}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_ae43a35a6ddca486c0ddbe044d4e59c6a}{change\-Color\-Control\-:}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_ae067b1264299a12d48213857ab3df45e}{(void) -\/ {\bfseries change\-Thickness\-Control\-:}}\label{db/d3c/protocol_controls_layer_delegate-p_ae067b1264299a12d48213857ab3df45e}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_ae067b1264299a12d48213857ab3df45e}{change\-Thickness\-Control\-:}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_a74beabc6dd814b96172efa611058759c}{(void) -\/ {\bfseries change\-Brush\-Control\-:}}\label{db/d3c/protocol_controls_layer_delegate-p_a74beabc6dd814b96172efa611058759c}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_a74beabc6dd814b96172efa611058759c}{change\-Brush\-Control\-:}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_ad4fc244191c678ef9b27a2ffdb00a70a}{(void) -\/ {\bfseries change\-Opacity\-Control\-:}}\label{db/d3c/protocol_controls_layer_delegate-p_ad4fc244191c678ef9b27a2ffdb00a70a}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_ad4fc244191c678ef9b27a2ffdb00a70a}{change\-Opacity\-Control\-:}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_a6dc6c910f8147fd574e24f4f6e1cd48d}{(void) -\/ {\bfseries clear\-Drawing}}\label{db/d3c/protocol_controls_layer_delegate-p_a6dc6c910f8147fd574e24f4f6e1cd48d}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_a6dc6c910f8147fd574e24f4f6e1cd48d}{clear\-Drawing}
 \item 
-\hypertarget{protocol_controls_layer_delegate-p_a652a78380947aba4783ddfb6e153287d}{(void) -\/ {\bfseries eraser\-Mode\-:}}\label{db/d3c/protocol_controls_layer_delegate-p_a652a78380947aba4783ddfb6e153287d}
-
+(void) -\/ \hyperlink{protocol_controls_layer_delegate-p_a652a78380947aba4783ddfb6e153287d}{eraser\-Mode\-:}
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
-Controls Layer Delegate 
+Controls Layer Delegate Provides a delegate interface for the layer to notify of actions 
 
-Definition at line 19 of file Controls\-Layer.\-h.
-
+\subsubsection{Method Documentation}
+\hypertarget{protocol_controls_layer_delegate-p_a74beabc6dd814b96172efa611058759c}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!change\-Brush\-Control\-:@{change\-Brush\-Control\-:}}
+\index{change\-Brush\-Control\-:@{change\-Brush\-Control\-:}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{change\-Brush\-Control\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) change\-Brush\-Control\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{brushname}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_a74beabc6dd814b96172efa611058759c}
+Callback with a change in brush texture 
+\begin{DoxyParams}{Parameters}
+{\em brushname} & is the new selected brush value \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_controls_layer_delegate-p_ae43a35a6ddca486c0ddbe044d4e59c6a}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!change\-Color\-Control\-:@{change\-Color\-Control\-:}}
+\index{change\-Color\-Control\-:@{change\-Color\-Control\-:}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{change\-Color\-Control\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) change\-Color\-Control\-: 
+\begin{DoxyParamCaption}
+\item[{(cc\-Color3\-B)}]{color}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_ae43a35a6ddca486c0ddbe044d4e59c6a}
+Callback with a change in color of the brush 
+\begin{DoxyParams}{Parameters}
+{\em color} & is the new selected color value \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_controls_layer_delegate-p_ad4fc244191c678ef9b27a2ffdb00a70a}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!change\-Opacity\-Control\-:@{change\-Opacity\-Control\-:}}
+\index{change\-Opacity\-Control\-:@{change\-Opacity\-Control\-:}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{change\-Opacity\-Control\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) change\-Opacity\-Control\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{value}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_ad4fc244191c678ef9b27a2ffdb00a70a}
+Callback with a change in opacity 
+\begin{DoxyParams}{Parameters}
+{\em value} & is the new selected opacity value \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_controls_layer_delegate-p_ae067b1264299a12d48213857ab3df45e}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!change\-Thickness\-Control\-:@{change\-Thickness\-Control\-:}}
+\index{change\-Thickness\-Control\-:@{change\-Thickness\-Control\-:}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{change\-Thickness\-Control\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) change\-Thickness\-Control\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{value}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_ae067b1264299a12d48213857ab3df45e}
+Callback with a change in thickness of the brush 
+\begin{DoxyParams}{Parameters}
+{\em value} & is the new selected color value \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_controls_layer_delegate-p_a6dc6c910f8147fd574e24f4f6e1cd48d}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!clear\-Drawing@{clear\-Drawing}}
+\index{clear\-Drawing@{clear\-Drawing}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{clear\-Drawing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\-Drawing 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_a6dc6c910f8147fd574e24f4f6e1cd48d}
+Callback to notify to clear the drawing \hypertarget{protocol_controls_layer_delegate-p_a652a78380947aba4783ddfb6e153287d}{\index{Controls\-Layer\-Delegate-\/p@{Controls\-Layer\-Delegate-\/p}!eraser\-Mode\-:@{eraser\-Mode\-:}}
+\index{eraser\-Mode\-:@{eraser\-Mode\-:}!ControlsLayerDelegate-p@{Controls\-Layer\-Delegate-\/p}}
+\paragraph[{eraser\-Mode\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) eraser\-Mode\-: 
+\begin{DoxyParamCaption}
+\item[{(bool)}]{mode}
+\end{DoxyParamCaption}
+}}\label{db/d3c/protocol_controls_layer_delegate-p_a652a78380947aba4783ddfb6e153287d}
+Callback with a change in color 
+\begin{DoxyParams}{Parameters}
+{\em mode} & is the toggled eraser mode T\-O\-D\-O\-: Turn off eraser mode when new color is selected \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}

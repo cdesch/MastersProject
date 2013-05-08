@@ -1,0 +1,149 @@
+\hypertarget{interface_l_p_line_point}{\subsection{L\-P\-Line\-Point Class Reference}
+\label{d6/dab/interface_l_p_line_point}\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}}
+}
+
+
+{\ttfamily \#import $<$L\-P\-Line\-Point.\-h$>$}
+
+Inheritance diagram for L\-P\-Line\-Point\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/dab/interface_l_p_line_point}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_l_p_line_point_a6ad6bb58075f8a4304f5987e2a62fe7f}{init\-With\-Position\-:}
+\item 
+(id) -\/ \hyperlink{interface_l_p_line_point_a78f4149d3bb41fe6f98c3eed65be2395}{init\-With\-X\-:with\-Y\-:}
+\item 
+(id) -\/ \hyperlink{interface_l_p_line_point_af514651adc0da65e9c62b551a576bd7a}{init\-With\-Position\-:with\-Width\-:}
+\item 
+(id) -\/ \hyperlink{interface_l_p_line_point_ad1f9c17d1938f324639495ce3fa5fd80}{init\-With\-X\-:with\-Y\-:with\-Width\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{interface_l_p_line_point_a6cb916c0bd397a0580a4b506b3322b69}{point}
+\end{DoxyCompactItemize}
+\subsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_l_p_line_point_abc1309a6c53c6ca75ead346c748b3f7b}{x}
+\item 
+float \hyperlink{interface_l_p_line_point_ad03af34f7646b5e17a9d5a70a82ce36e}{y}
+\item 
+float \hyperlink{interface_l_p_line_point_aa4cb4e74747c8c5e7b61e3de32c8da2c}{width}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\hyperlink{interface_l_p_line_point}{L\-P\-Line\-Point} is a plotted point for drawing onto the canvas 
+
+\subsubsection{Method Documentation}
+\hypertarget{interface_l_p_line_point_a6ad6bb58075f8a4304f5987e2a62fe7f}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!init\-With\-Position\-:@{init\-With\-Position\-:}}
+\index{init\-With\-Position\-:@{init\-With\-Position\-:}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{init\-With\-Position\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Position\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{p}
+\end{DoxyParamCaption}
+}}\label{d6/dab/interface_l_p_line_point_a6ad6bb58075f8a4304f5987e2a62fe7f}
+Init constructor with existing point to create with no width 
+\begin{DoxyParams}{Parameters}
+{\em p} & an point (x,y) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance
+\end{DoxyReturn}
+init 2d point with C\-G\-Point \hypertarget{interface_l_p_line_point_af514651adc0da65e9c62b551a576bd7a}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!init\-With\-Position\-:with\-Width\-:@{init\-With\-Position\-:with\-Width\-:}}
+\index{init\-With\-Position\-:with\-Width\-:@{init\-With\-Position\-:with\-Width\-:}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{init\-With\-Position\-:with\-Width\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Position\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{p}
+\item[{withWidth:(float)}]{w\-Val}
+\end{DoxyParamCaption}
+}}\label{d6/dab/interface_l_p_line_point_af514651adc0da65e9c62b551a576bd7a}
+Init constructor with existing point with width 
+\begin{DoxyParams}{Parameters}
+{\em p} & a point (x,y) \\
+\hline
+{\em w\-Val} & width of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance
+\end{DoxyReturn}
+Init point with C\-G\-Point and width Value \hypertarget{interface_l_p_line_point_a78f4149d3bb41fe6f98c3eed65be2395}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}}
+\index{init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{init\-With\-X\-:with\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x\-Val}
+\item[{withY:(float)}]{y\-Val}
+\end{DoxyParamCaption}
+}}\label{d6/dab/interface_l_p_line_point_a78f4149d3bb41fe6f98c3eed65be2395}
+Init constructor with x and y values with no width 
+\begin{DoxyParams}{Parameters}
+{\em x\-Val} & coordinate value \\
+\hline
+{\em y\-Val} & coordinate value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance
+\end{DoxyReturn}
+Init Point with 2 separate values \hypertarget{interface_l_p_line_point_ad1f9c17d1938f324639495ce3fa5fd80}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!init\-With\-X\-:with\-Y\-:with\-Width\-:@{init\-With\-X\-:with\-Y\-:with\-Width\-:}}
+\index{init\-With\-X\-:with\-Y\-:with\-Width\-:@{init\-With\-X\-:with\-Y\-:with\-Width\-:}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{init\-With\-X\-:with\-Y\-:with\-Width\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x\-Val}
+\item[{withY:(float)}]{y\-Val}
+\item[{withWidth:(float)}]{w\-Val}
+\end{DoxyParamCaption}
+}}\label{d6/dab/interface_l_p_line_point_ad1f9c17d1938f324639495ce3fa5fd80}
+Init constructor with x and y values with width 
+\begin{DoxyParams}{Parameters}
+{\em x\-Val} & coordinate value \\
+\hline
+{\em y\-Val} & coordinate value \\
+\hline
+{\em w\-Val} & width of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance
+\end{DoxyReturn}
+Init Point with x and y values with width \hypertarget{interface_l_p_line_point_a6cb916c0bd397a0580a4b506b3322b69}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!point@{point}}
+\index{point@{point}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) point 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{d6/dab/interface_l_p_line_point_a6cb916c0bd397a0580a4b506b3322b69}
+Returns point based on x and y \begin{DoxyReturn}{Returns}
+C\-G\-Point
+\end{DoxyReturn}
+Return the C\-G\-Point type from the object 
+
+\subsubsection{Property Documentation}
+\hypertarget{interface_l_p_line_point_aa4cb4e74747c8c5e7b61e3de32c8da2c}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!width@{width}}
+\index{width@{width}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) width\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d6/dab/interface_l_p_line_point_aa4cb4e74747c8c5e7b61e3de32c8da2c}
+width of the point \hypertarget{interface_l_p_line_point_abc1309a6c53c6ca75ead346c748b3f7b}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!x@{x}}
+\index{x@{x}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{x}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) x\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d6/dab/interface_l_p_line_point_abc1309a6c53c6ca75ead346c748b3f7b}
+x coordinate 
+
+Referenced by point.
+
+\hypertarget{interface_l_p_line_point_ad03af34f7646b5e17a9d5a70a82ce36e}{\index{L\-P\-Line\-Point@{L\-P\-Line\-Point}!y@{y}}
+\index{y@{y}!LPLinePoint@{L\-P\-Line\-Point}}
+\paragraph[{y}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) y\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d6/dab/interface_l_p_line_point_ad03af34f7646b5e17a9d5a70a82ce36e}
+y coordinate 
+
+Referenced by point.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Leap\-Paint/L\-P\-Line\-Point.\-h\item 
+Leap\-Paint/L\-P\-Line\-Point.\-m\end{DoxyCompactItemize}

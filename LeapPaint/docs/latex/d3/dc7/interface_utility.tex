@@ -25,10 +25,6 @@ Inheritance diagram for Utility\-:\begin{figure}[H]
 \subsubsection{Detailed Description}
 \hyperlink{interface_utility}{Utility} class provides common usage function throughout the application. 
 
-Definition at line 17 of file Utility.\-h.
-
-
-
 \subsubsection{Method Documentation}
 \hypertarget{interface_utility_a1fadf871f2de27c45caf4497a769f3d8}{\index{Utility@{Utility}!get\-Random\-Number\-Between\-:to\-:@{get\-Random\-Number\-Between\-:to\-:}}
 \index{get\-Random\-Number\-Between\-:to\-:@{get\-Random\-Number\-Between\-:to\-:}!Utility@{Utility}}
@@ -48,21 +44,7 @@ Generates a random number between two designated integers
 \begin{DoxyReturn}{Returns}
 a random number between the from and to parameters
 \end{DoxyReturn}
-returns random number within a range with defined upper and lower bounds 
-
-Definition at line 14 of file Utility.\-m.
-
-
-\begin{DoxyCode}
-14                              :(int)from to:(\textcolor{keywordtype}{int})to \{
-15     
-16     \textcolor{comment}{//Check that one isn't greater than the other}
-17     \textcolor{comment}{//if so, flip them}
-18     
-19     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})from + arc4random() % (to-from+1);
-20 \}
-\end{DoxyCode}
-\hypertarget{interface_utility_a7af585df1742d836af6bc5b0eaf09cd3}{\index{Utility@{Utility}!get\-Random\-Number\-Under\-:@{get\-Random\-Number\-Under\-:}}
+returns random number within a range with defined upper and lower bounds \hypertarget{interface_utility_a7af585df1742d836af6bc5b0eaf09cd3}{\index{Utility@{Utility}!get\-Random\-Number\-Under\-:@{get\-Random\-Number\-Under\-:}}
 \index{get\-Random\-Number\-Under\-:@{get\-Random\-Number\-Under\-:}!Utility@{Utility}}
 \paragraph[{get\-Random\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Number\-Under\-: 
 \begin{DoxyParamCaption}
@@ -77,17 +59,7 @@ Generates a random number between 0 designated integer
 \begin{DoxyReturn}{Returns}
 a random number between 0 and to parameters
 \end{DoxyReturn}
-Returns a random number from 0 to an upper bound 
-
-Definition at line 23 of file Utility.\-m.
-
-
-\begin{DoxyCode}
-23                            :(int)to\{
-24     \textcolor{keywordflow}{return} (arc4random() % to);
-25 \}
-\end{DoxyCode}
-\hypertarget{interface_utility_a18dd8a4d335aacab117cfefa4fffb06c}{\index{Utility@{Utility}!get\-Random\-Uniform\-Number\-Under\-:@{get\-Random\-Uniform\-Number\-Under\-:}}
+Returns a random number from 0 to an upper bound \hypertarget{interface_utility_a18dd8a4d335aacab117cfefa4fffb06c}{\index{Utility@{Utility}!get\-Random\-Uniform\-Number\-Under\-:@{get\-Random\-Uniform\-Number\-Under\-:}}
 \index{get\-Random\-Uniform\-Number\-Under\-:@{get\-Random\-Uniform\-Number\-Under\-:}!Utility@{Utility}}
 \paragraph[{get\-Random\-Uniform\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Uniform\-Number\-Under\-: 
 \begin{DoxyParamCaption}
@@ -103,20 +75,6 @@ Generates a random number between 0 designated integer
 a random number between 0 and to parameters
 \end{DoxyReturn}
 Returns a Uniform Random Number from 0 to an upper bound 
-
-Definition at line 29 of file Utility.\-m.
-
-
-\begin{DoxyCode}
-29                                   :(int)to\{
-30     \textcolor{comment}{//Check if uniform available}
-31     \textcolor{keywordflow}{if} (arc4random\_uniform != NULL)
-32         \textcolor{keywordflow}{return}  arc4random\_uniform (to);
-33     \textcolor{keywordflow}{else}
-34         \textcolor{keywordflow}{return}  (arc4random() % to);
-35 \}
-\end{DoxyCode}
-
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

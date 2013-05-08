@@ -1,6 +1,10 @@
 \hypertarget{protocol_brush_selection_layer_delegate-p}{\subsection{$<$Brush\-Selection\-Layer\-Delegate$>$ Protocol Reference}
 \label{d7/dd2/protocol_brush_selection_layer_delegate-p}\index{$<$\-Brush\-Selection\-Layer\-Delegate$>$@{$<$\-Brush\-Selection\-Layer\-Delegate$>$}}
 }
+
+
+{\ttfamily \#import $<$Brush\-Selection\-Layer.\-h$>$}
+
 Inheritance diagram for $<$Brush\-Selection\-Layer\-Delegate$>$\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,20 +14,36 @@ Inheritance diagram for $<$Brush\-Selection\-Layer\-Delegate$>$\-:\begin{figure}
 \subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{protocol_brush_selection_layer_delegate-p_a22d681b5b588c7524638b37e1331057e}{(void) -\/ {\bfseries hide\-Panel}}\label{d7/dd2/protocol_brush_selection_layer_delegate-p_a22d681b5b588c7524638b37e1331057e}
-
+(void) -\/ \hyperlink{protocol_brush_selection_layer_delegate-p_a22d681b5b588c7524638b37e1331057e}{hide\-Panel}
 \item 
-\hypertarget{protocol_brush_selection_layer_delegate-p_ad5ad967fe1efe627f46296129703f8f8}{(void) -\/ {\bfseries brush\-Selected\-:}}\label{d7/dd2/protocol_brush_selection_layer_delegate-p_ad5ad967fe1efe627f46296129703f8f8}
-
+(void) -\/ \hyperlink{protocol_brush_selection_layer_delegate-p_ad5ad967fe1efe627f46296129703f8f8}{brush\-Selected\-:}
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
+\hyperlink{interface_brush_selection_layer}{Brush\-Selection\-Layer} Delegate Provides a delegate interface for the layer to notify of actions 
 
-
-Definition at line 12 of file Brush\-Selection\-Layer.\-h.
-
-
+\subsubsection{Method Documentation}
+\hypertarget{protocol_brush_selection_layer_delegate-p_ad5ad967fe1efe627f46296129703f8f8}{\index{Brush\-Selection\-Layer\-Delegate-\/p@{Brush\-Selection\-Layer\-Delegate-\/p}!brush\-Selected\-:@{brush\-Selected\-:}}
+\index{brush\-Selected\-:@{brush\-Selected\-:}!BrushSelectionLayerDelegate-p@{Brush\-Selection\-Layer\-Delegate-\/p}}
+\paragraph[{brush\-Selected\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) brush\-Selected\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{brushname}
+\end{DoxyParamCaption}
+}}\label{d7/dd2/protocol_brush_selection_layer_delegate-p_ad5ad967fe1efe627f46296129703f8f8}
+Calls back to notify a new brushname has been selected 
+\begin{DoxyParams}{Parameters}
+{\em brushname} & is the name of the brush that has been selected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_brush_selection_layer_delegate-p_a22d681b5b588c7524638b37e1331057e}{\index{Brush\-Selection\-Layer\-Delegate-\/p@{Brush\-Selection\-Layer\-Delegate-\/p}!hide\-Panel@{hide\-Panel}}
+\index{hide\-Panel@{hide\-Panel}!BrushSelectionLayerDelegate-p@{Brush\-Selection\-Layer\-Delegate-\/p}}
+\paragraph[{hide\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) hide\-Panel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{d7/dd2/protocol_brush_selection_layer_delegate-p_a22d681b5b588c7524638b37e1331057e}
+Calls back to notify that the layer can be hidden 
 
 The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

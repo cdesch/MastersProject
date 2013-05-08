@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@implementation </span><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html">HUDLayer</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@synthesize</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a64cb26c1f8c5a76e8f392a02291c0cf6">delegate</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@synthesize</span> xyzcoords;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@synthesize</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ae0974aa467c08003e700e3d538f282c0">xyzcoords</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;- (id)init</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> ((<span class="keyword">self</span> = [super init]))</div>
@@ -171,24 +171,24 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* Tool Moved */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid{</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a4c9b0669e5d9c7f787df2d2db3b70650">   86</a></span>&#160;- (void)toolMoved:(CGPoint)point toolID:(NSString*)toolid{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> == nil){</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        [<span class="keyword">self</span> startTrackingTool:point toolID:toolid];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        [<span class="keyword">self</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1665f0f39e98837d8fd851d6ffd10070">startTrackingTool</a>:point <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1665f0f39e98837d8fd851d6ffd10070">toolID</a>:toolid];</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        [<span class="keyword">self</span> moveTrackingTool:point toolID:toolid];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        [<span class="keyword">self</span> <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa9d2fea251c1f1dfd3a4c86673068c3a">moveTrackingTool</a>:point <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa9d2fea251c1f1dfd3a4c86673068c3a">toolID</a>:toolid];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* Start Tracking Tool */</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid{</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#a1665f0f39e98837d8fd851d6ffd10070">   96</a></span>&#160;- (void)startTrackingTool:(CGPoint)point toolID:(NSString*)toolid{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> == nil){</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> = [<span class="keyword">self</span> addLPTool:point objectID:toolid withBrushName:lastBrush];</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/* Move Tracking Tool*/</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid{</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aa9d2fea251c1f1dfd3a4c86673068c3a">  103</a></span>&#160;- (void)moveTrackingTool:(CGPoint)point toolID:(NSString*)toolid{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//Create tool if it does not exist</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> == nil){</div>
@@ -203,7 +203,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/* End Trackingn Tool */</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void)endTrackingTool{</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ace1d8e50cc1942bb7ed538848d01f00b">  118</a></span>&#160;- (void)<a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#ace1d8e50cc1942bb7ed538848d01f00b">endTrackingTool</a>{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> != nil){</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        [<span class="keyword">self</span> removeChild:primaryTool cleanup:YES];</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="../../d3/d8a/interface_h_u_d_layer.html#aad9b0e2b4164986e18ea0a9afcd1a914">primaryTool</a> = nil;</div>
@@ -326,7 +326,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 13:08:36 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 8 2013 15:05:25 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

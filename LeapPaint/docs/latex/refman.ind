@@ -1,7 +1,7 @@
 \begin{theindex}
 
   \item {$<$\discretionary {-}{}{}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}, 
-		\hyperpage{6}
+		\hyperpage{7}
   \item {$<$\discretionary {-}{}{}Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}, 
 		\hyperpage{10}
   \item {$<$\discretionary {-}{}{}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$}, 
@@ -10,39 +10,76 @@
   \indexspace
 
   \item {App\discretionary {-}{}{}Delegate}, \hyperpage{4}
+    \subitem {gl\discretionary {-}{}{}View\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{5}
+    \subitem {run\discretionary {-}{}{}Game\discretionary {-}{}{}Scene}, 
+		\hyperpage{5}
+    \subitem {toggle\discretionary {-}{}{}Full\discretionary {-}{}{}Screen\discretionary {-}{}{}:}, 
+		\hyperpage{5}
+    \subitem {window\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{5}
 
   \indexspace
 
   \item {Background\discretionary {-}{}{}Layer}, \hyperpage{5}
   \item {background\discretionary {-}{}{}Layer}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
+  \item {brush\discretionary {-}{}{}Selected\discretionary {-}{}{}:}
+    \subitem {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{7}
   \item {brush\discretionary {-}{}{}Selection}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
   \item {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}, 
-		\hyperpage{5}
+		\hyperpage{6}
+    \subitem {delegate}, \hyperpage{7}
+    \subitem {image\discretionary {-}{}{}Names\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{6}
+    \subitem {layer\discretionary {-}{}{}Hidden}, \hyperpage{7}
+  \item {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}
+    \subitem {brush\discretionary {-}{}{}Selected\discretionary {-}{}{}:}, 
+		\hyperpage{7}
+    \subitem {hide\discretionary {-}{}{}Panel}, \hyperpage{7}
 
   \indexspace
 
+  \item {change\discretionary {-}{}{}Brush\discretionary {-}{}{}Control\discretionary {-}{}{}:}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{11}
+  \item {change\discretionary {-}{}{}Color\discretionary {-}{}{}Control\discretionary {-}{}{}:}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{11}
+  \item {change\discretionary {-}{}{}Mode\discretionary {-}{}{}:}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{19}
+  \item {change\discretionary {-}{}{}Opacity\discretionary {-}{}{}Control\discretionary {-}{}{}:}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{11}
+  \item {change\discretionary {-}{}{}Thickness\discretionary {-}{}{}Control\discretionary {-}{}{}:}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{11}
+  \item {clear\discretionary {-}{}{}Drawing}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{12}
   \item {collapse\discretionary {-}{}{}Panel}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{7}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
   \item {color\discretionary {-}{}{}Label}
     \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
   \item {controller}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
-  \item {Controls\discretionary {-}{}{}Layer}, \hyperpage{6}
-    \subitem {brush\discretionary {-}{}{}Selection}, \hyperpage{9}
-    \subitem {collapse\discretionary {-}{}{}Panel}, \hyperpage{7}
+  \item {Controls\discretionary {-}{}{}Layer}, \hyperpage{8}
+    \subitem {brush\discretionary {-}{}{}Selection}, \hyperpage{10}
+    \subitem {collapse\discretionary {-}{}{}Panel}, \hyperpage{9}
     \subitem {color\discretionary {-}{}{}Label}, \hyperpage{9}
-    \subitem {delegate}, \hyperpage{9}
+    \subitem {delegate}, \hyperpage{10}
     \subitem {display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}, 
-		\hyperpage{9}
-    \subitem {expand\discretionary {-}{}{}Panel}, \hyperpage{7}
-    \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{9}
+		\hyperpage{10}
+    \subitem {expand\discretionary {-}{}{}Panel}, \hyperpage{9}
+    \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{10}
     \subitem {make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}, 
-		\hyperpage{7}
+		\hyperpage{9}
     \subitem {opacity\discretionary {-}{}{}Slider}, \hyperpage{10}
     \subitem {opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}, 
 		\hyperpage{10}
     \subitem {opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}, 
@@ -50,57 +87,76 @@
     \subitem {slider}, \hyperpage{10}
     \subitem {switch\discretionary {-}{}{}Control}, \hyperpage{10}
     \subitem {switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}, 
-		\hyperpage{8}
+		\hyperpage{9}
     \subitem {value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}, 
 		\hyperpage{9}
   \item {controls\discretionary {-}{}{}Layer}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
+  \item {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}
+    \subitem {change\discretionary {-}{}{}Brush\discretionary {-}{}{}Control\discretionary {-}{}{}:}, 
+		\hyperpage{11}
+    \subitem {change\discretionary {-}{}{}Color\discretionary {-}{}{}Control\discretionary {-}{}{}:}, 
+		\hyperpage{11}
+    \subitem {change\discretionary {-}{}{}Opacity\discretionary {-}{}{}Control\discretionary {-}{}{}:}, 
+		\hyperpage{11}
+    \subitem {change\discretionary {-}{}{}Thickness\discretionary {-}{}{}Control\discretionary {-}{}{}:}, 
+		\hyperpage{11}
+    \subitem {clear\discretionary {-}{}{}Drawing}, \hyperpage{12}
+    \subitem {eraser\discretionary {-}{}{}Mode\discretionary {-}{}{}:}, 
+		\hyperpage{12}
   \item {current\discretionary {-}{}{}Point}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{13}
   \item {current\discretionary {-}{}{}Pointable}
-    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{13}
 
   \indexspace
 
   \item {delegate}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
+    \subitem {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}, 
+		\hyperpage{7}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
-		\hyperpage{21}
+		\hyperpage{22}
   \item {depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}
-    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{17}
+    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{18}
   \item {display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
-  \item {Draw\discretionary {-}{}{}Scene}, \hyperpage{11}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
 
   \indexspace
 
-  \item {erase\discretionary {-}{}{}Mode}
+  \item {end\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
 		\hyperpage{20}
+  \item {erase\discretionary {-}{}{}Mode}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
+		\hyperpage{21}
   \item {eraser\discretionary {-}{}{}Mode}
-    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{17}
+    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{18}
+  \item {eraser\discretionary {-}{}{}Mode\discretionary {-}{}{}:}
+    \subitem {Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{12}
   \item {expand\discretionary {-}{}{}Panel}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{7}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
 
   \indexspace
 
-  \item {Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene}, 
-		\hyperpage{12}
+  \item {find\discretionary {-}{}{}Pecentage\discretionary {-}{}{}Difference\discretionary {-}{}{}:with\discretionary {-}{}{}Min\discretionary {-}{}{}:with\discretionary {-}{}{}Value\discretionary {-}{}{}:}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{13}
   \item {frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
 
   \indexspace
 
-  \item {G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw}, 
-		\hyperpage{18}
   \item {Game\discretionary {-}{}{}Manager}, \hyperpage{12}
     \subitem {background\discretionary {-}{}{}Layer}, \hyperpage{14}
     \subitem {controller}, \hyperpage{14}
     \subitem {controls\discretionary {-}{}{}Layer}, \hyperpage{14}
     \subitem {current\discretionary {-}{}{}Point}, \hyperpage{13}
-    \subitem {current\discretionary {-}{}{}Pointable}, \hyperpage{14}
+    \subitem {current\discretionary {-}{}{}Pointable}, \hyperpage{13}
+    \subitem {find\discretionary {-}{}{}Pecentage\discretionary {-}{}{}Difference\discretionary {-}{}{}:with\discretionary {-}{}{}Min\discretionary {-}{}{}:with\discretionary {-}{}{}Value\discretionary {-}{}{}:}, 
+		\hyperpage{13}
     \subitem {frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}, 
 		\hyperpage{14}
     \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{14}
@@ -108,92 +164,151 @@
     \subitem {input\discretionary {-}{}{}Mode}, \hyperpage{14}
     \subitem {last\discretionary {-}{}{}Point}, \hyperpage{14}
     \subitem {last\discretionary {-}{}{}Tag}, \hyperpage{14}
-    \subitem {leap\discretionary {-}{}{}Screen}, \hyperpage{15}
+    \subitem {leap\discretionary {-}{}{}Screen}, \hyperpage{14}
     \subitem {opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}, 
 		\hyperpage{13}
-    \subitem {texture\discretionary {-}{}{}Scene}, \hyperpage{15}
+    \subitem {painting}, \hyperpage{14}
+    \subitem {texture\discretionary {-}{}{}Scene}, \hyperpage{14}
   \item {Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}, 
 		\hyperpage{15}
     \subitem {node}, \hyperpage{15}
-  \item {Game\discretionary {-}{}{}Scene}, \hyperpage{16}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{15}
+  \item {Game\discretionary {-}{}{}Scene}, \hyperpage{15}
+    \subitem {scene}, \hyperpage{16}
   \item {Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests}, 
 		\hyperpage{16}
-  \item {Game\discretionary {-}{}{}Settings}, \hyperpage{16}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{17}
+  \item {Game\discretionary {-}{}{}Settings}, \hyperpage{17}
     \subitem {depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}, 
-		\hyperpage{17}
-    \subitem {eraser\discretionary {-}{}{}Mode}, \hyperpage{17}
-    \subitem {input\discretionary {-}{}{}Mode}, \hyperpage{17}
+		\hyperpage{18}
+    \subitem {eraser\discretionary {-}{}{}Mode}, \hyperpage{18}
+    \subitem {input\discretionary {-}{}{}Mode}, \hyperpage{18}
+    \subitem {painting}, \hyperpage{18}
     \subitem {shared\discretionary {-}{}{}Instance}, \hyperpage{17}
   \item {game\discretionary {-}{}{}Settings}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
     \subitem {Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}, 
 		\hyperpage{18}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
-		\hyperpage{20}
+		\hyperpage{21}
   \item {Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}, 
 		\hyperpage{18}
     \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{18}
   \item {get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}
-    \subitem {Utility}, \hyperpage{32}
+    \subitem {Utility}, \hyperpage{34}
   \item {get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}
-    \subitem {Utility}, \hyperpage{32}
+    \subitem {Utility}, \hyperpage{34}
   \item {get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}
-    \subitem {Utility}, \hyperpage{32}
+    \subitem {Utility}, \hyperpage{34}
+  \item {gl\discretionary {-}{}{}View\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {App\discretionary {-}{}{}Delegate}, \hyperpage{5}
 
   \indexspace
 
+  \item {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate-\/p}
+    \subitem {change\discretionary {-}{}{}Mode\discretionary {-}{}{}:}, 
+		\hyperpage{19}
+    \subitem {painting\discretionary {-}{}{}:}, \hyperpage{19}
   \item {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
 		\hyperpage{19}
-    \subitem {delegate}, \hyperpage{21}
-    \subitem {erase\discretionary {-}{}{}Mode}, \hyperpage{20}
-    \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{20}
+    \subitem {delegate}, \hyperpage{22}
+    \subitem {end\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool}, 
+		\hyperpage{20}
+    \subitem {erase\discretionary {-}{}{}Mode}, \hyperpage{21}
+    \subitem {game\discretionary {-}{}{}Settings}, \hyperpage{21}
     \subitem {input\discretionary {-}{}{}Mode}, \hyperpage{21}
     \subitem {last\discretionary {-}{}{}Brush}, \hyperpage{21}
     \subitem {last\discretionary {-}{}{}Color}, \hyperpage{21}
     \subitem {last\discretionary {-}{}{}Scale}, \hyperpage{21}
+    \subitem {move\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}, 
+		\hyperpage{20}
     \subitem {painting\discretionary {-}{}{}Indicator}, \hyperpage{21}
-    \subitem {previous\discretionary {-}{}{}Color}, \hyperpage{21}
-    \subitem {primary\discretionary {-}{}{}Tool}, \hyperpage{21}
+    \subitem {previous\discretionary {-}{}{}Color}, \hyperpage{22}
+    \subitem {primary\discretionary {-}{}{}Tool}, \hyperpage{22}
     \subitem {primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{22}
+    \subitem {start\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}, 
 		\hyperpage{21}
+    \subitem {tool\discretionary {-}{}{}Moved\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}, 
+		\hyperpage{21}
+    \subitem {xyzcoords}, \hyperpage{22}
+  \item {hide\discretionary {-}{}{}Panel}
+    \subitem {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{7}
   \item {hud\discretionary {-}{}{}Layer}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
 
   \indexspace
 
+  \item {image\discretionary {-}{}{}Names\discretionary {-}{}{}Dictionary}
+    \subitem {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}, 
+		\hyperpage{6}
   \item {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{26}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{25}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{29}
+  \item {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Width\discretionary {-}{}{}:}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{25}
   \item {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{26}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{30}
   \item {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{27}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{25}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{30}
+  \item {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Width\discretionary {-}{}{}:}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{26}
   \item {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{27}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{30}
   \item {input\discretionary {-}{}{}Mode}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
-    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{17}
+    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{18}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
 		\hyperpage{21}
   \item {is3d}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{28}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{31}
 
   \indexspace
 
   \item {L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}, 
-		\hyperpage{22}
+		\hyperpage{23}
     \subitem {standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}, 
 		\hyperpage{23}
   \item {L\discretionary {-}{}{}P\discretionary {-}{}{}Line}, 
-		\hyperpage{23}
+		\hyperpage{24}
+    \subitem {points}, \hyperpage{24}
+    \subitem {width}, \hyperpage{24}
+  \item {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{24}
+    \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}, 
+		\hyperpage{25}
+    \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Width\discretionary {-}{}{}:}, 
+		\hyperpage{25}
+    \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}, 
+		\hyperpage{25}
+    \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Width\discretionary {-}{}{}:}, 
+		\hyperpage{26}
+    \subitem {point}, \hyperpage{26}
+    \subitem {width}, \hyperpage{26}
+    \subitem {x}, \hyperpage{26}
+    \subitem {y}, \hyperpage{26}
+  \item {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
+		\hyperpage{27}
+    \subitem {point\discretionary {-}{}{}No\discretionary {-}{}{}Width}, 
+		\hyperpage{27}
+    \subitem {point\discretionary {-}{}{}With\discretionary {-}{}{}Width}, 
+		\hyperpage{27}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{27}
   \item {L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}, 
-		\hyperpage{24}
+		\hyperpage{27}
     \subitem {tool\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
-		\hyperpage{24}
-    \subitem {updated}, \hyperpage{24}
+		\hyperpage{28}
+    \subitem {updated}, \hyperpage{28}
   \item {L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}, 
-		\hyperpage{24}
-    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{25}
+		\hyperpage{28}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{29}
   \item {last\discretionary {-}{}{}Brush}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
 		\hyperpage{21}
@@ -207,17 +322,24 @@
 		\hyperpage{21}
   \item {last\discretionary {-}{}{}Tag}
     \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
+  \item {layer\discretionary {-}{}{}Hidden}
+    \subitem {Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}, 
+		\hyperpage{7}
   \item {Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests}, 
 		\hyperpage{22}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{22}
   \item {Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests}, 
-		\hyperpage{22}
+		\hyperpage{23}
   \item {leap\discretionary {-}{}{}Screen}
-    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{15}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
 
   \indexspace
 
   \item {make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{7}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
+  \item {move\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
+		\hyperpage{20}
 
   \indexspace
 
@@ -232,7 +354,7 @@
   \item {opacity\discretionary {-}{}{}Slider}
     \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
   \item {opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{8}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
   \item {opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}
     \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
   \item {opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}
@@ -240,99 +362,139 @@
 
   \indexspace
 
+  \item {painting}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
+    \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{18}
+  \item {painting\discretionary {-}{}{}:}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate-\/p}, 
+		\hyperpage{19}
   \item {painting\discretionary {-}{}{}Indicator}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
 		\hyperpage{21}
   \item {point}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{28}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{26}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{30}
     \subitem {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}, 
-		\hyperpage{29}
+		\hyperpage{32}
+  \item {point\discretionary {-}{}{}No\discretionary {-}{}{}Width}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
+		\hyperpage{27}
+  \item {point\discretionary {-}{}{}With\discretionary {-}{}{}Width}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
+		\hyperpage{27}
+  \item {points}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line}, 
+		\hyperpage{24}
   \item {previous\discretionary {-}{}{}Color}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
-		\hyperpage{21}
+		\hyperpage{22}
   \item {primary\discretionary {-}{}{}Tool}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
-		\hyperpage{21}
+		\hyperpage{22}
   \item {primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}
     \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
-		\hyperpage{21}
+		\hyperpage{22}
 
   \indexspace
 
+  \item {run\discretionary {-}{}{}Game\discretionary {-}{}{}Scene}
+    \subitem {App\discretionary {-}{}{}Delegate}, \hyperpage{5}
+
+  \indexspace
+
+  \item {scene}
+    \subitem {Game\discretionary {-}{}{}Scene}, \hyperpage{16}
   \item {shared\discretionary {-}{}{}Instance}
     \subitem {Game\discretionary {-}{}{}Settings}, \hyperpage{17}
-  \item {Simple\discretionary {-}{}{}Point}, \hyperpage{25}
+  \item {Simple\discretionary {-}{}{}Point}, \hyperpage{29}
     \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}, 
-		\hyperpage{26}
+		\hyperpage{29}
     \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}, 
-		\hyperpage{26}
+		\hyperpage{30}
     \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}, 
-		\hyperpage{27}
+		\hyperpage{30}
     \subitem {init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}, 
-		\hyperpage{27}
-    \subitem {is3d}, \hyperpage{28}
-    \subitem {point}, \hyperpage{28}
-    \subitem {x}, \hyperpage{28}
-    \subitem {y}, \hyperpage{28}
-    \subitem {z}, \hyperpage{28}
+		\hyperpage{30}
+    \subitem {is3d}, \hyperpage{31}
+    \subitem {point}, \hyperpage{30}
+    \subitem {x}, \hyperpage{31}
+    \subitem {y}, \hyperpage{31}
+    \subitem {z}, \hyperpage{31}
   \item {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}, 
-		\hyperpage{29}
-    \subitem {point}, \hyperpage{29}
+		\hyperpage{31}
+    \subitem {point}, \hyperpage{32}
   \item {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
-		\hyperpage{29}
-    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{30}
+		\hyperpage{32}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{32}
     \subitem {three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}, 
-		\hyperpage{30}
+		\hyperpage{32}
     \subitem {two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}, 
-		\hyperpage{30}
+		\hyperpage{32}
   \item {Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene}, 
-		\hyperpage{30}
+		\hyperpage{33}
   \item {slider}
     \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
   \item {standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}
     \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}, 
 		\hyperpage{23}
+  \item {start\discretionary {-}{}{}Tracking\discretionary {-}{}{}Tool\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
+		\hyperpage{21}
   \item {switch\discretionary {-}{}{}Control}
     \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{10}
   \item {switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{8}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
 
   \indexspace
 
   \item {test\discretionary {-}{}{}Name}
+    \subitem {Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}, 
+		\hyperpage{15}
+    \subitem {Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests}, 
+		\hyperpage{17}
+    \subitem {Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests}, 
+		\hyperpage{22}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
+		\hyperpage{27}
     \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}, 
-		\hyperpage{25}
+		\hyperpage{29}
     \subitem {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
-		\hyperpage{30}
-    \subitem {Utility\discretionary {-}{}{}Tests}, \hyperpage{33}
+		\hyperpage{32}
+    \subitem {Utility\discretionary {-}{}{}Tests}, \hyperpage{35}
   \item {texture\discretionary {-}{}{}Scene}
-    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{15}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{14}
   \item {three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}
     \subitem {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
-		\hyperpage{30}
+		\hyperpage{32}
+  \item {toggle\discretionary {-}{}{}Full\discretionary {-}{}{}Screen\discretionary {-}{}{}:}
+    \subitem {App\discretionary {-}{}{}Delegate}, \hyperpage{5}
   \item {tool\discretionary {-}{}{}I\discretionary {-}{}{}D}
     \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}, 
-		\hyperpage{24}
+		\hyperpage{28}
+  \item {tool\discretionary {-}{}{}Moved\discretionary {-}{}{}:tool\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}:}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
+		\hyperpage{21}
   \item {two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}
     \subitem {Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}, 
-		\hyperpage{30}
+		\hyperpage{32}
 
   \indexspace
 
   \item {update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}
-    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{8}
+    \subitem {Controls\discretionary {-}{}{}Layer}, \hyperpage{9}
   \item {updated}
     \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}, 
-		\hyperpage{24}
-  \item {Utility}, \hyperpage{31}
+		\hyperpage{28}
+  \item {Utility}, \hyperpage{34}
     \subitem {get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}, 
-		\hyperpage{32}
+		\hyperpage{34}
     \subitem {get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}, 
-		\hyperpage{32}
+		\hyperpage{34}
     \subitem {get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}, 
-		\hyperpage{32}
-  \item {Utility\discretionary {-}{}{}Tests}, \hyperpage{33}
-    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{33}
+		\hyperpage{34}
+  \item {Utility\discretionary {-}{}{}Tests}, \hyperpage{35}
+    \subitem {test\discretionary {-}{}{}Name}, \hyperpage{35}
 
   \indexspace
 
@@ -341,17 +503,34 @@
 
   \indexspace
 
+  \item {width}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line}, 
+		\hyperpage{24}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{26}
+  \item {window\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {App\discretionary {-}{}{}Delegate}, \hyperpage{5}
+
+  \indexspace
+
   \item {x}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{28}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{26}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{31}
+  \item {xyzcoords}
+    \subitem {H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}, 
+		\hyperpage{22}
 
   \indexspace
 
   \item {y}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{28}
+    \subitem {L\discretionary {-}{}{}P\discretionary {-}{}{}Line\discretionary {-}{}{}Point}, 
+		\hyperpage{26}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{31}
 
   \indexspace
 
   \item {z}
-    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{28}
+    \subitem {Simple\discretionary {-}{}{}Point}, \hyperpage{31}
 
 \end{theindex}

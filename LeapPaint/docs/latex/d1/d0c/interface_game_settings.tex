@@ -1,6 +1,10 @@
 \hypertarget{interface_game_settings}{\subsection{Game\-Settings Class Reference}
 \label{d1/d0c/interface_game_settings}\index{Game\-Settings@{Game\-Settings}}
 }
+
+
+{\ttfamily \#import $<$Game\-Settings.\-h$>$}
+
 Inheritance diagram for Game\-Settings\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,6 +21,8 @@ Inheritance diagram for Game\-Settings\-:\begin{figure}[H]
 \item 
 B\-O\-O\-L \hyperlink{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{depth\-Opacity\-Mode}
 \item 
+B\-O\-O\-L \hyperlink{interface_game_settings_a83ea5a83eca0198be2e302aa782d8cf9}{painting}
+\item 
 B\-O\-O\-L \hyperlink{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{eraser\-Mode}
 \item 
 Input\-Mode \hyperlink{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}{input\-Mode}
@@ -24,11 +30,9 @@ Input\-Mode \hyperlink{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057
 
 
 \subsubsection{Detailed Description}
+\hyperlink{interface_game_settings}{Game\-Settings} is a globally shared class instance which tracks all the game settings.
 
-
-Definition at line 35 of file Game\-Settings.\-h.
-
-
+This class can be accessed by any object in the game. 
 
 \subsubsection{Method Documentation}
 \hypertarget{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{\index{Game\-Settings@{Game\-Settings}!shared\-Instance@{shared\-Instance}}
@@ -38,49 +42,25 @@ Definition at line 35 of file Game\-Settings.\-h.
 {}
 \end{DoxyParamCaption}
 }}\label{d1/d0c/interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}
-Singleton Intiailizes and Returns a shared instance of the class 
-
-Definition at line 23 of file Game\-Settings.\-mm.
-
-
-\begin{DoxyCode}
-24 \{
-25     \textcolor{keyword}{static} \hyperlink{interface_game_settings}{GameSettings} *\hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance};
-26     
-27     @\textcolor{keyword}{synchronized}(\textcolor{keyword}{self})
-28     \{
-29         \textcolor{keywordflow}{if} (!sharedInstance)
-30             sharedInstance = [[\hyperlink{interface_game_settings}{GameSettings} alloc] init];
-31         
-32         \textcolor{keywordflow}{return} \hyperlink{interface_game_settings_abdcc2e77ea14381a85c6de67c83df624}{sharedInstance};
-33     \}
-34 \}
-\end{DoxyCode}
-
+Singleton Intiailizes and Returns a shared instance of the class \begin{DoxyReturn}{Returns}
+shared\-Instance of the class.
+\end{DoxyReturn}
+Singleton Shared\-Instance Intiailizes and Returns a shared instance of the class 
 
 \subsubsection{Property Documentation}
 \hypertarget{interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}{\index{Game\-Settings@{Game\-Settings}!depth\-Opacity\-Mode@{depth\-Opacity\-Mode}}
 \index{depth\-Opacity\-Mode@{depth\-Opacity\-Mode}!GameSettings@{Game\-Settings}}
 \paragraph[{depth\-Opacity\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) depth\-Opacity\-Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d1/d0c/interface_game_settings_a1ac5ddcb61e46f952ccd0e876a8578a4}
-depth\-Opacity\-Mode controls use of z axis control of opacity 
-
-Definition at line 40 of file Game\-Settings.\-h.
-
-\hypertarget{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{\index{Game\-Settings@{Game\-Settings}!eraser\-Mode@{eraser\-Mode}}
+depth\-Opacity\-Mode controls use of z axis control of opacity \hypertarget{interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}{\index{Game\-Settings@{Game\-Settings}!eraser\-Mode@{eraser\-Mode}}
 \index{eraser\-Mode@{eraser\-Mode}!GameSettings@{Game\-Settings}}
 \paragraph[{eraser\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) eraser\-Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d1/d0c/interface_game_settings_ab192ff4717d84e69f4e3a32a4e38d6b8}
-eraser\-Mode controls erasing on drawing canvas 
-
-Definition at line 41 of file Game\-Settings.\-h.
-
-\hypertarget{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}{\index{Game\-Settings@{Game\-Settings}!input\-Mode@{input\-Mode}}
+eraser\-Mode controls erasing on drawing canvas \hypertarget{interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}{\index{Game\-Settings@{Game\-Settings}!input\-Mode@{input\-Mode}}
 \index{input\-Mode@{input\-Mode}!GameSettings@{Game\-Settings}}
 \paragraph[{input\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Input\-Mode) input\-Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d1/d0c/interface_game_settings_a57e428fbdeeb3dbffa09bb7ffcf6b057}
-input\-Mode controller input mode for leapmotion 
-
-Definition at line 42 of file Game\-Settings.\-h.
-
-
+input\-Mode controller input mode for leapmotion \hypertarget{interface_game_settings_a83ea5a83eca0198be2e302aa782d8cf9}{\index{Game\-Settings@{Game\-Settings}!painting@{painting}}
+\index{painting@{painting}!GameSettings@{Game\-Settings}}
+\paragraph[{painting}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) painting\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d1/d0c/interface_game_settings_a83ea5a83eca0198be2e302aa782d8cf9}
+painting indicates wether or not the application is painting at that moment 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

@@ -96,51 +96,51 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;cocos2d.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;CCControlExtension.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#import &quot;BrushSelectionLayer.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#import &quot;GameSettings.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="../../db/d3c/protocol_controls_layer_delegate-p.html">   19</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="../../db/d3c/protocol_controls_layer_delegate-p.html">ControlsLayerDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (void)changeColorControl:(ccColor3B)color;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (void)changeThicknessControl:(<span class="keywordtype">float</span>)value;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)changeBrushControl:(NSString*)brushname;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (void)changeOpacityControl:(<span class="keywordtype">float</span>)value;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)clearDrawing;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (void)eraserMode:(<span class="keywordtype">bool</span>)mode;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html">   34</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d1/d1a/interface_controls_layer.html">ControlsLayer</a> : CCLayer &lt;<a class="code" href="../../d7/dd2/protocol_brush_selection_layer_delegate-p.html">BrushSelectionLayerDelegate</a>&gt;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aa3d424dcbfa618632f97478ee61148cb">   36</a></span>&#160;    CCLabelTTF *<a class="code" href="../../d1/d1a/interface_controls_layer.html#aa3d424dcbfa618632f97478ee61148cb">colorLabel</a>;         </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#ab9f12f7a90a0bf6ae1abaeb4d4c4e378">   37</a></span>&#160;    CCLabelTTF *<a class="code" href="../../d1/d1a/interface_controls_layer.html#ab9f12f7a90a0bf6ae1abaeb4d4c4e378">displayValueLabel</a>;  </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a6fb04c60ed1bfab11e2940a025b4927e">   38</a></span>&#160;    <a class="code" href="../../d1/d0c/interface_game_settings.html">GameSettings</a>* <a class="code" href="../../d1/d1a/interface_controls_layer.html#a6fb04c60ed1bfab11e2940a025b4927e">gameSettings</a>;     </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a599701380c37caf4e656efaa860469a3">   40</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSlider   *slider;                    </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aff48213936f8ff3b2aa2f44d5125fc6f">   41</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSlider   *opacitySlider;             </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#ad2bbac273b79a99c46e66c61ea66c88b">   42</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSwitch   *opacitySwitchControl;      </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a1a60fd6edd83a2789b575845390a44be">   43</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF        *opacitydisplayValueLabel;  </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aebfe5471226d1bc0afef5d662219f913">   44</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id &lt;ControlsLayerDelegate&gt; delegate;            </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a56c514c5fde8025a9de19c4b8225478b">   45</a></span>&#160;<span class="keyword">@property</span> (nonatomic,strong) <a class="code" href="../../d5/d83/interface_brush_selection_layer.html">BrushSelectionLayer</a> *brushSelection;           </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF        *displayValueLabel;         </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a8997cfae8a4f6bcfb8c53d8cab6bb480">   47</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSwitch   *switchControl;             </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (void)valueChanged:(CCControlSlider *)sender;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (void)opacitySliderChanged:(CCControlSlider *)sender;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (void)expandPanel;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (void)collapsePanel;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (CCControlSwitch *)makeControlSwitch;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (void)switchValueChanged:(CCControlSwitch *)sender;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (void)updateOpacitySlider:(<span class="keywordtype">float</span>)value;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;CCControlExtension.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;BrushSelectionLayer.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#import &quot;GameSettings.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="../../db/d3c/protocol_controls_layer_delegate-p.html">   18</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="../../db/d3c/protocol_controls_layer_delegate-p.html">ControlsLayerDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;- (void)changeColorControl:(ccColor3B)color;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)changeThicknessControl:(<span class="keywordtype">float</span>)value;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (void)changeBrushControl:(NSString*)brushname;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (void)changeOpacityControl:(<span class="keywordtype">float</span>)value;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;- (void)<a class="code" href="../../db/d3c/protocol_controls_layer_delegate-p.html#a6dc6c910f8147fd574e24f4f6e1cd48d">clearDrawing</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (void)eraserMode:(<span class="keywordtype">bool</span>)mode;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html">   58</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d1/d1a/interface_controls_layer.html">ControlsLayer</a> : CCLayer &lt;<a class="code" href="../../d7/dd2/protocol_brush_selection_layer_delegate-p.html">BrushSelectionLayerDelegate</a>&gt;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aa3d424dcbfa618632f97478ee61148cb">   60</a></span>&#160;    CCLabelTTF *<a class="code" href="../../d1/d1a/interface_controls_layer.html#aa3d424dcbfa618632f97478ee61148cb">colorLabel</a>;         </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#ab9f12f7a90a0bf6ae1abaeb4d4c4e378">   61</a></span>&#160;    CCLabelTTF *<a class="code" href="../../d1/d1a/interface_controls_layer.html#ab9f12f7a90a0bf6ae1abaeb4d4c4e378">displayValueLabel</a>;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a6fb04c60ed1bfab11e2940a025b4927e">   62</a></span>&#160;    <a class="code" href="../../d1/d0c/interface_game_settings.html">GameSettings</a>* <a class="code" href="../../d1/d1a/interface_controls_layer.html#a6fb04c60ed1bfab11e2940a025b4927e">gameSettings</a>;     </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a599701380c37caf4e656efaa860469a3">   64</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSlider   *slider;                    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aff48213936f8ff3b2aa2f44d5125fc6f">   65</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSlider   *opacitySlider;             </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#ad2bbac273b79a99c46e66c61ea66c88b">   66</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSwitch   *opacitySwitchControl;      </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a1a60fd6edd83a2789b575845390a44be">   67</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF        *opacitydisplayValueLabel;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#aebfe5471226d1bc0afef5d662219f913">   68</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id &lt;ControlsLayerDelegate&gt; delegate;            </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a56c514c5fde8025a9de19c4b8225478b">   69</a></span>&#160;<span class="keyword">@property</span> (nonatomic,strong) <a class="code" href="../../d5/d83/interface_brush_selection_layer.html">BrushSelectionLayer</a> *brushSelection;           </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCLabelTTF        *displayValueLabel;         </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="../../d1/d1a/interface_controls_layer.html#a8997cfae8a4f6bcfb8c53d8cab6bb480">   71</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) CCControlSwitch   *switchControl;             </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void)valueChanged:(CCControlSlider *)sender;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (void)opacitySliderChanged:(CCControlSlider *)sender;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void)expandPanel;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)collapsePanel;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;- (CCControlSwitch *)makeControlSwitch;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void)switchValueChanged:(CCControlSwitch *)sender;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)updateOpacitySlider:(<span class="keywordtype">float</span>)value;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 13:08:36 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 8 2013 15:12:16 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

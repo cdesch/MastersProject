@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 13:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,20 +1126,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 68.
+(Font)              scaled to size 6.29996pt on input line 86.
  [1] [2]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 155.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 207.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 155.
+(Font)              scaled to size 10.79993pt on input line 207.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 207.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 207.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 207.
 )
 \tf@toc=\write5
 \openout5 = `refman.toc'.
@@ -1164,18 +1164,38 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (./hierarchy.tex
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 1.
- [2]) (./annotated.tex [3] [4])
+ [2] [3]) (./annotated.tex [4])
 (./dd/d52/interface_app_delegate.tex
-<dd/d52/interface_app_delegate.pdf, id=598, 501.875pt x 122.4073pt>
+<dd/d52/interface_app_delegate.pdf, id=637, 501.875pt x 122.4073pt>
 File: dd/d52/interface_app_delegate.pdf Graphic file (type pdf)
 
 <use dd/d52/interface_app_delegate.pdf>
-Package pdftex.def Info: dd/d52/interface_app_delegate.pdf used on input line 7
-.
+Package pdftex.def Info: dd/d52/interface_app_delegate.pdf used on input line 1
+1.
 (pdftex.def)             Requested size: 233.31584pt x 56.9055pt.
+ [5 <./dd/d52/interface_app_delegate.pdf>]
+LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 58.
+LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 58.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 61.
+
+Underfull \vbox (badness 10000) detected at line 63
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 72.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-(./d0/d09/interface_background_layer.tex
-<d0/d09/interface_background_layer.pdf, id=599, 501.875pt x 331.81966pt>
+
+LaTeX Font Warning: Font shape `OT1/pcr/bc/n' undefined
+(Font)              using `OT1/pcr/m/n' instead on input line 72.
+
+) (./d0/d09/interface_background_layer.tex
+<d0/d09/interface_background_layer.pdf, id=669, 501.875pt x 331.81966pt>
 File: d0/d09/interface_background_layer.pdf Graphic file (type pdf)
 
 <use d0/d09/interface_background_layer.pdf>
@@ -1183,16 +1203,16 @@ Package pdftex.def Info: d0/d09/interface_background_layer.pdf used on input li
 ne 11.
 (pdftex.def)             Requested size: 86.0681pt x 56.9055pt.
 )
-(./d5/d83/interface_brush_selection_layer.tex
-<d5/d83/interface_brush_selection_layer.pdf, id=600, 501.875pt x 290.94696pt>
+(./d5/d83/interface_brush_selection_layer.tex [6 <./d0/d09/interface_background
+_layer.pdf>]
+<d5/d83/interface_brush_selection_layer.pdf, id=686, 501.875pt x 290.94696pt>
 File: d5/d83/interface_brush_selection_layer.pdf Graphic file (type pdf)
 
 <use d5/d83/interface_brush_selection_layer.pdf>
 Package pdftex.def Info: d5/d83/interface_brush_selection_layer.pdf used on inp
-ut line 7.
+ut line 11.
 (pdftex.def)             Requested size: 98.16005pt x 56.9055pt.
- [5 <./dd/d52/interface_app_delegate.pdf> <./d0/d09/interface_background_layer.
-pdf>])
+)
 (./d7/dd2/protocol_brush_selection_layer_delegate-p.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1211,57 +1231,44 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
 
-<d7/dd2/protocol_brush_selection_layer_delegate-p.pdf, id=621, 501.875pt x 298.
+<d7/dd2/protocol_brush_selection_layer_delegate-p.pdf, id=692, 501.875pt x 298.
 14386pt>
 File: d7/dd2/protocol_brush_selection_layer_delegate-p.pdf Graphic file (type p
 df)
  <use d7/dd2/protocol_brush_selection_layer_delegate-p.pdf>
 Package pdftex.def Info: d7/dd2/protocol_brush_selection_layer_delegate-p.pdf u
-sed on input line 7.
+sed on input line 11.
 (pdftex.def)             Requested size: 143.68678pt x 85.35826pt.
- [6 <./d5/d83/interface_brush_selection_layer.pdf> <./d7/dd2/protocol_brush_sel
-ection_layer_delegate-p.pdf>]) (./d1/d1a/interface_controls_layer.tex
-<d1/d1a/interface_controls_layer.pdf, id=644, 501.875pt x 149.06691pt>
+ [7 <./d5/d83/interface_brush_selection_layer.pdf>]
+Underfull \vbox (badness 10000) detected at line 38
+ []
+
+) (./d1/d1a/interface_controls_layer.tex
+<d1/d1a/interface_controls_layer.pdf, id=713, 501.875pt x 149.06691pt>
 File: d1/d1a/interface_controls_layer.pdf Graphic file (type pdf)
 
 <use d1/d1a/interface_controls_layer.pdf>
 Package pdftex.def Info: d1/d1a/interface_controls_layer.pdf used on input line
  11.
 (pdftex.def)             Requested size: 287.38889pt x 85.35826pt.
- [7 <./d1/d1a/interface_controls_layer.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 79.
-LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
-(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 132.
-
-LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 135.
-
-Underfull \vbox (badness 10000) detected at line 137
+ [8 <./d7/dd2/protocol_brush_selection_layer_delegate-p.pdf> <./d1/d1a/interfac
+e_controls_layer.pdf>] [9]
+Underfull \vbox (badness 10000) detected at line 98
  []
 
-[8]
-Underfull \vbox (badness 10000) detected at line 218
+
+Underfull \vbox (badness 10000) detected at line 110
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 237.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+Underfull \vbox (badness 10000) detected at line 122
+ []
 
-LaTeX Font Warning: Font shape `OT1/pcr/bc/n' undefined
-(Font)              using `OT1/pcr/m/n' instead on input line 237.
 
-[9]) (./db/d3c/protocol_controls_layer_delegate-p.tex [10]
+Underfull \vbox (badness 10000) detected at line 134
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
-
+[10]) (./db/d3c/protocol_controls_layer_delegate-p.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1275,94 +1282,99 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
 
-<db/d3c/protocol_controls_layer_delegate-p.pdf, id=733, 501.875pt x 367.22194pt
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+<db/d3c/protocol_controls_layer_delegate-p.pdf, id=799, 501.875pt x 367.22194pt
 >
 File: db/d3c/protocol_controls_layer_delegate-p.pdf Graphic file (type pdf)
  <use db/d3c/protocol_controls_layer_delegate-p.pdf>
 Package pdftex.def Info: db/d3c/protocol_controls_layer_delegate-p.pdf used on 
 input line 11.
 (pdftex.def)             Requested size: 116.6541pt x 85.35826pt.
-)
-(./df/dce/interface_draw_scene.tex
-<df/dce/interface_draw_scene.pdf, id=734, 501.875pt x 466.8642pt>
-File: df/dce/interface_draw_scene.pdf Graphic file (type pdf)
+ [11 <./db/d3c/protocol_controls_layer_delegate-p.pdf>]
+Underfull \vbox (badness 10000) detected at line 46
+ []
 
-<use df/dce/interface_draw_scene.pdf>
-Package pdftex.def Info: df/dce/interface_draw_scene.pdf used on input line 7.
-(pdftex.def)             Requested size: 61.17198pt x 56.9055pt.
- [11 <./db/d3c/protocol_controls_layer_delegate-p.pdf> <./df/dce/interface_draw
-_scene.pdf>])
-(./dd/df0/interface_finger_painting_scene.tex
-<dd/df0/interface_finger_painting_scene.pdf, id=763, 501.875pt x 145.47348pt>
-File: dd/df0/interface_finger_painting_scene.pdf Graphic file (type pdf)
 
-<use dd/df0/interface_finger_painting_scene.pdf>
-Package pdftex.def Info: dd/df0/interface_finger_painting_scene.pdf used on inp
-ut line 7.
-(pdftex.def)             Requested size: 196.32011pt x 56.9055pt.
-)
-(./d4/d94/interface_game_manager.tex
-<d4/d94/interface_game_manager.pdf, id=765, 501.875pt x 91.80298pt>
+Underfull \vbox (badness 10000) detected at line 58
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 70
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 82
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 101
+ []
+
+[12]) (./d4/d94/interface_game_manager.tex
+<d4/d94/interface_game_manager.pdf, id=844, 501.875pt x 91.80298pt>
 File: d4/d94/interface_game_manager.pdf Graphic file (type pdf)
 
 <use d4/d94/interface_game_manager.pdf>
 Package pdftex.def Info: d4/d94/interface_game_manager.pdf used on input line 1
 1.
 (pdftex.def)             Requested size: 398.37608pt x 72.86676pt.
- [12 <./dd/df0/interface_finger_painting_scene.pdf>] [13 <./d4/d94/interface_ga
-me_manager.pdf>] [14])
-(./d2/d7d/interface_game_manager_tests.tex
-<d2/d7d/interface_game_manager_tests.pdf, id=854, 501.875pt x 304.16637pt>
+ [13 <./d4/d94/interface_game_manager.pdf>]
+Underfull \vbox (badness 10000) detected at line 78
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 97
+ []
+
+[14]) (./d2/d7d/interface_game_manager_tests.tex
+<d2/d7d/interface_game_manager_tests.pdf, id=908, 501.875pt x 304.16637pt>
 File: d2/d7d/interface_game_manager_tests.pdf Graphic file (type pdf)
 
 <use d2/d7d/interface_game_manager_tests.pdf>
 Package pdftex.def Info: d2/d7d/interface_game_manager_tests.pdf used on input 
 line 11.
 (pdftex.def)             Requested size: 93.89456pt x 56.9055pt.
- [15 <./d2/d7d/interface_game_manager_tests.pdf>]) (./d5/d01/interface_game_sce
-ne.tex
-<d5/d01/interface_game_scene.pdf, id=875, 501.875pt x 456.25455pt>
+ [15])
+(./d5/d01/interface_game_scene.tex
+<d5/d01/interface_game_scene.pdf, id=926, 501.875pt x 456.25455pt>
 File: d5/d01/interface_game_scene.pdf Graphic file (type pdf)
 
 <use d5/d01/interface_game_scene.pdf>
-Package pdftex.def Info: d5/d01/interface_game_scene.pdf used on input line 7.
+Package pdftex.def Info: d5/d01/interface_game_scene.pdf used on input line 11.
+
 (pdftex.def)             Requested size: 62.58871pt x 56.9055pt.
-) (./d5/def/interface_game_scene_tests.tex <d5/def/interface_game_scene_tests.p
-df, id=876, 501.875pt x 343.16205pt>
+ [16 <./d2/d7d/interface_game_manager_tests.pdf> <./d5/d01/interface_game_scene
+.pdf>])
+(./d5/def/interface_game_scene_tests.tex
+<d5/def/interface_game_scene_tests.pdf, id=953, 501.875pt x 343.16205pt>
 File: d5/def/interface_game_scene_tests.pdf Graphic file (type pdf)
 
 <use d5/def/interface_game_scene_tests.pdf>
 Package pdftex.def Info: d5/def/interface_game_scene_tests.pdf used on input li
-ne 7.
+ne 11.
 (pdftex.def)             Requested size: 83.21933pt x 56.9055pt.
- [16 <./d5/d01/interface_game_scene.pdf> <./d5/def/interface_game_scene_tests.p
-df>])
+)
 (./d1/d0c/interface_game_settings.tex
-<d1/d0c/interface_game_settings.pdf, id=895, 501.875pt x 418.23253pt>
+<d1/d0c/interface_game_settings.pdf, id=956, 501.875pt x 418.23253pt>
 File: d1/d0c/interface_game_settings.pdf Graphic file (type pdf)
 
 <use d1/d0c/interface_game_settings.pdf>
 Package pdftex.def Info: d1/d0c/interface_game_settings.pdf used on input line 
-7.
+11.
 (pdftex.def)             Requested size: 68.2786pt x 56.9055pt.
- [17 <./d1/d0c/interface_game_settings.pdf>]) (./d9/ddc/interface_game_settings
-_tests.tex
-<d9/ddc/interface_game_settings_tests.pdf, id=922, 501.875pt x 321.2pt>
+ [17 <./d5/def/interface_game_scene_tests.pdf>] [18 <./d1/d0c/interface_game_se
+ttings.pdf>])
+(./d9/ddc/interface_game_settings_tests.tex
+<d9/ddc/interface_game_settings_tests.pdf, id=997, 501.875pt x 321.2pt>
 File: d9/ddc/interface_game_settings_tests.pdf Graphic file (type pdf)
 
 <use d9/ddc/interface_game_settings_tests.pdf>
 Package pdftex.def Info: d9/ddc/interface_game_settings_tests.pdf used on input
  line 11.
 (pdftex.def)             Requested size: 88.90921pt x 56.9055pt.
- [18 <./d9/ddc/interface_game_settings_tests.pdf>]) (./d7/da9/class_g_l_e_s_deb
-ug_draw.tex
-<d7/da9/class_g_l_e_s_debug_draw.pdf, id=941, 501.875pt x 337.39049pt>
-File: d7/da9/class_g_l_e_s_debug_draw.pdf Graphic file (type pdf)
-
-<use d7/da9/class_g_l_e_s_debug_draw.pdf>
-Package pdftex.def Info: d7/da9/class_g_l_e_s_debug_draw.pdf used on input line
- 7.
-(pdftex.def)             Requested size: 84.6437pt x 56.9055pt.
 )
 (./d4/db1/protocol_h_u_d_delegate-p.tex
 
@@ -1381,26 +1393,44 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<d4/db1/protocol_h_u_d_delegate-p.pdf, id=942, 501.875pt x 547.49545pt>
+<d4/db1/protocol_h_u_d_delegate-p.pdf, id=1001, 501.875pt x 547.49545pt>
 File: d4/db1/protocol_h_u_d_delegate-p.pdf Graphic file (type pdf)
 
 <use d4/db1/protocol_h_u_d_delegate-p.pdf>
 Package pdftex.def Info: d4/db1/protocol_h_u_d_delegate-p.pdf used on input lin
 e 11.
 (pdftex.def)             Requested size: 78.24164pt x 85.35826pt.
- [19 <./d7/da9/class_g_l_e_s_debug_draw.pdf> <./d4/db1/protocol_h_u_d_delegate-
-p.pdf>])
-(./d3/d8a/interface_h_u_d_layer.tex
-<d3/d8a/interface_h_u_d_layer.pdf, id=968, 501.875pt x 508.22873pt>
+ [19 <./d9/ddc/interface_game_settings_tests.pdf>]
+Underfull \vbox (badness 10000) detected at line 38
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 50
+ []
+
+) (./d3/d8a/interface_h_u_d_layer.tex
+<d3/d8a/interface_h_u_d_layer.pdf, id=1017, 501.875pt x 508.22873pt>
 File: d3/d8a/interface_h_u_d_layer.pdf Graphic file (type pdf)
 
 <use d3/d8a/interface_h_u_d_layer.pdf>
 Package pdftex.def Info: d3/d8a/interface_h_u_d_layer.pdf used on input line 11
 .
 (pdftex.def)             Requested size: 56.18663pt x 56.9055pt.
- [20 <./d3/d8a/interface_h_u_d_layer.pdf>] [21]) (./d6/d93/interface_leap_paint
-_tests.tex
-<d6/d93/interface_leap_paint_tests.pdf, id=1031, 501.875pt x 382.37857pt>
+ [20 <./d4/db1/protocol_h_u_d_delegate-p.pdf> <./d3/d8a/interface_h_u_d_layer.p
+df>]
+Underfull \vbox (badness 10000) detected at line 94
+ []
+
+[21]
+Underfull \vbox (badness 10000) detected at line 113
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 132
+ []
+
+[22]) (./d6/d93/interface_leap_paint_tests.tex
+<d6/d93/interface_leap_paint_tests.pdf, id=1107, 501.875pt x 382.37857pt>
 File: d6/d93/interface_leap_paint_tests.pdf Graphic file (type pdf)
 
 <use d6/d93/interface_leap_paint_tests.pdf>
@@ -1409,51 +1439,86 @@ ne 7.
 (pdftex.def)             Requested size: 74.68832pt x 56.9055pt.
 )
 (./da/da0/interface_leap_puzz_tests.tex
-<da/da0/interface_leap_puzz_tests.pdf, id=1032, 501.875pt x 386.06232pt>
+<da/da0/interface_leap_puzz_tests.pdf, id=1109, 501.875pt x 386.06232pt>
 File: da/da0/interface_leap_puzz_tests.pdf Graphic file (type pdf)
 
 <use da/da0/interface_leap_puzz_tests.pdf>
 Package pdftex.def Info: da/da0/interface_leap_puzz_tests.pdf used on input lin
 e 7.
 (pdftex.def)             Requested size: 73.97614pt x 56.9055pt.
- [22 <./d6/d93/interface_leap_paint_tests.pdf>]) (./d7/d50/interface_l_p_c_c_co
+ [23 <./d6/d93/interface_leap_paint_tests.pdf>]) (./d7/d50/interface_l_p_c_c_co
 ntrol_button_variable_size.tex
-<d7/d50/interface_l_p_c_c_control_button_variable_size.pdf, id=1046, 501.875pt 
+<d7/d50/interface_l_p_c_c_control_button_variable_size.pdf, id=1125, 501.875pt 
 x 199.74625pt>
 File: d7/d50/interface_l_p_c_c_control_button_variable_size.pdf Graphic file (t
 ype pdf)
  <use d7/d50/interface_l_p_c_c_control_button_variable_size.pdf>
 Package pdftex.def Info: d7/d50/interface_l_p_c_c_control_button_variable_size.
-pdf used on input line 7.
+pdf used on input line 11.
 (pdftex.def)             Requested size: 142.9746pt x 56.9055pt.
-
-[23 <./da/da0/interface_leap_puzz_tests.pdf> <./d7/d50/interface_l_p_c_c_contro
-l_button_variable_size.pdf>]) (./df/dbc/interface_l_p_line.tex
-<df/dbc/interface_l_p_line.pdf, id=1065, 501.875pt x 542.567pt>
+) (./df/dbc/interface_l_p_line.tex
+<df/dbc/interface_l_p_line.pdf, id=1128, 501.875pt x 542.567pt>
 File: df/dbc/interface_l_p_line.pdf Graphic file (type pdf)
 
 <use df/dbc/interface_l_p_line.pdf>
-Package pdftex.def Info: df/dbc/interface_l_p_line.pdf used on input line 7.
+Package pdftex.def Info: df/dbc/interface_l_p_line.pdf used on input line 11.
 (pdftex.def)             Requested size: 52.63333pt x 56.9055pt.
-) (./d3/d2e/interface_l_p_tool.tex
-<d3/d2e/interface_l_p_tool.pdf, id=1066, 501.875pt x 565.49268pt>
+ [24 <./da/da0/interface_leap_puzz_tests.pdf> <./d7/d50/interface_l_p_c_c_contr
+ol_button_variable_size.pdf>])
+(./d6/dab/interface_l_p_line_point.tex
+<d6/dab/interface_l_p_line_point.pdf, id=1150, 501.875pt x 461.49413pt>
+File: d6/dab/interface_l_p_line_point.pdf Graphic file (type pdf)
+
+<use d6/dab/interface_l_p_line_point.pdf>
+Package pdftex.def Info: d6/dab/interface_l_p_line_point.pdf used on input line
+ 11.
+(pdftex.def)             Requested size: 61.88417pt x 56.9055pt.
+ [25 <./df/dbc/interface_l_p_line.pdf> <./d6/dab/interface_l_p_line_point.pdf>]
+
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 71
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+[26]
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+) (./d0/d38/interface_l_p_line_point_tests.tex
+<d0/d38/interface_l_p_line_point_tests.pdf, id=1199, 501.875pt x 346.1231pt>
+File: d0/d38/interface_l_p_line_point_tests.pdf Graphic file (type pdf)
+
+<use d0/d38/interface_l_p_line_point_tests.pdf>
+Package pdftex.def Info: d0/d38/interface_l_p_line_point_tests.pdf used on inpu
+t line 11.
+(pdftex.def)             Requested size: 82.50713pt x 56.9055pt.
+ [27])
+(./d3/d2e/interface_l_p_tool.tex
+<d3/d2e/interface_l_p_tool.pdf, id=1216, 501.875pt x 565.49268pt>
 File: d3/d2e/interface_l_p_tool.pdf Graphic file (type pdf)
 
 <use d3/d2e/interface_l_p_tool.pdf>
 Package pdftex.def Info: d3/d2e/interface_l_p_tool.pdf used on input line 11.
 (pdftex.def)             Requested size: 50.49675pt x 56.9055pt.
- [24 <./df/dbc/interface_l_p_line.pdf> <./d3/d2e/interface_l_p_tool.pdf>]) (./d
-1/d2b/interface_l_p_tool_tests.tex
-<d1/d2b/interface_l_p_tool_tests.pdf, id=1089, 501.875pt x 427.12573pt>
+ [28 <./d0/d38/interface_l_p_line_point_tests.pdf> <./d3/d2e/interface_l_p_tool
+.pdf>])
+(./d1/d2b/interface_l_p_tool_tests.tex
+<d1/d2b/interface_l_p_tool_tests.pdf, id=1245, 501.875pt x 427.12573pt>
 File: d1/d2b/interface_l_p_tool_tests.pdf Graphic file (type pdf)
 
 <use d1/d2b/interface_l_p_tool_tests.pdf>
 Package pdftex.def Info: d1/d2b/interface_l_p_tool_tests.pdf used on input line
  11.
 (pdftex.def)             Requested size: 66.86186pt x 56.9055pt.
- [25 <./d1/d2b/interface_l_p_tool_tests.pdf>]) (./d9/dc7/interface_simple_point
-.tex
-<d9/dc7/interface_simple_point.pdf, id=1106, 501.875pt x 472.3547pt>
+) (./d9/dc7/interface_simple_point.tex [29 <./d1/d2b/interface_l_p_tool_tests.p
+df>]
+<d9/dc7/interface_simple_point.pdf, id=1262, 501.875pt x 472.3547pt>
 File: d9/dc7/interface_simple_point.pdf Graphic file (type pdf)
 
 <use d9/dc7/interface_simple_point.pdf>
@@ -1461,101 +1526,101 @@ Package pdftex.def Info: d9/dc7/interface_simple_point.pdf used on input line 1
 1.
 (pdftex.def)             Requested size: 60.4598pt x 56.9055pt.
 
-Underfull \vbox (badness 10000) detected at line 59
+Underfull \vbox (badness 10000) detected at line 55
  []
 
-[26 <./d9/dc7/interface_simple_point.pdf>]
-Underfull \vbox (badness 10000) detected at line 95
+[30 <./d9/dc7/interface_simple_point.pdf>]
+Underfull \vbox (badness 10000) detected at line 73
  []
 
 
-Underfull \vbox (badness 10000) detected at line 131
+Underfull \vbox (badness 10000) detected at line 91
  []
 
-[27]
-Underfull \vbox (badness 10000) detected at line 171
+
+Underfull \vbox (badness 10000) detected at line 112
  []
 
-[28]) (./d8/d8e/interface_simple_point_object.tex
-<d8/d8e/interface_simple_point_object.pdf, id=1157, 501.875pt x 329.0995pt>
+[31]) (./d8/d8e/interface_simple_point_object.tex
+<d8/d8e/interface_simple_point_object.pdf, id=1306, 501.875pt x 329.0995pt>
 File: d8/d8e/interface_simple_point_object.pdf Graphic file (type pdf)
 
 <use d8/d8e/interface_simple_point_object.pdf>
 Package pdftex.def Info: d8/d8e/interface_simple_point_object.pdf used on input
  line 11.
 (pdftex.def)             Requested size: 86.78029pt x 56.9055pt.
- [29 <./d8/d8e/interface_simple_point_object.pdf>]) (./df/dbc/interface_simple_
+ [32 <./d8/d8e/interface_simple_point_object.pdf>]) (./df/dbc/interface_simple_
 point_tests.tex
-<df/dbc/interface_simple_point_tests.pdf, id=1175, 501.875pt x 352.1958pt>
+<df/dbc/interface_simple_point_tests.pdf, id=1327, 501.875pt x 352.1958pt>
 File: df/dbc/interface_simple_point_tests.pdf Graphic file (type pdf)
 
 <use df/dbc/interface_simple_point_tests.pdf>
 Package pdftex.def Info: df/dbc/interface_simple_point_tests.pdf used on input 
 line 11.
 (pdftex.def)             Requested size: 81.09041pt x 56.9055pt.
- [30 <./df/dbc/interface_simple_point_tests.pdf>]) (./dc/d61/interface_sketch_r
-ender_texture_scene.tex
-<dc/d61/interface_sketch_render_texture_scene.pdf, id=1199, 501.875pt x 226.837
+)
+(./dc/d61/interface_sketch_render_texture_scene.tex
+<dc/d61/interface_sketch_render_texture_scene.pdf, id=1334, 501.875pt x 226.837
 46pt>
 File: dc/d61/interface_sketch_render_texture_scene.pdf Graphic file (type pdf)
  <use dc/d61/interface_sketch_render_texture_scene.pdf>
 Package pdftex.def Info: dc/d61/interface_sketch_render_texture_scene.pdf used 
 on input line 7.
 (pdftex.def)             Requested size: 125.89728pt x 56.9055pt.
- [31 <./dc/d61/interface_sketch_render_texture_scene.pdf>]) (./d3/dc7/interface
-_utility.tex
-<d3/dc7/interface_utility.pdf, id=1232, 501.875pt x 542.567pt>
+ [33 <./df/dbc/interface_simple_point_tests.pdf>]) (./d3/dc7/interface_utility.
+tex
+<d3/dc7/interface_utility.pdf, id=1351, 501.875pt x 542.567pt>
 File: d3/dc7/interface_utility.pdf Graphic file (type pdf)
 
 <use d3/dc7/interface_utility.pdf>
 Package pdftex.def Info: d3/dc7/interface_utility.pdf used on input line 11.
 (pdftex.def)             Requested size: 52.63333pt x 56.9055pt.
-
-Underfull \vbox (badness 10000) detected at line 47
- []
-
-[32 <./d3/dc7/interface_utility.pdf>]
-Underfull \vbox (badness 10000) detected at line 76
+ [34 <./dc/d61/interface_sketch_render_texture_scene.pdf>]
+Underfull \vbox (badness 10000) detected at line 43
  []
 
 
-Underfull \vbox (badness 10000) detected at line 101
+Underfull \vbox (badness 10000) detected at line 58
+ []
+
+[35 <./d3/dc7/interface_utility.pdf>]
+Underfull \vbox (badness 10000) detected at line 73
  []
 
 ) (./dc/d82/interface_utility_tests.tex
-<dc/d82/interface_utility_tests.pdf, id=1252, 501.875pt x 427.12573pt>
+<dc/d82/interface_utility_tests.pdf, id=1404, 501.875pt x 427.12573pt>
 File: dc/d82/interface_utility_tests.pdf Graphic file (type pdf)
 
 <use dc/d82/interface_utility_tests.pdf>
 Package pdftex.def Info: dc/d82/interface_utility_tests.pdf used on input line 
 11.
 (pdftex.def)             Requested size: 66.86186pt x 56.9055pt.
- [33]) (./refman.ind [34 <./dc/d82/interface_utility_tests.pdf>] [35
+) (./refman.ind [36 <./dc/d82/interface_utility_tests.pdf>] [37
 
-] [36] [37
+] [38] [39] [40
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 78E66021D1F2B646BED827BA42A83585;16029.
+(rerunfilecheck)             Checksum: 6E577F7FF482052F999A8FC6977ADCEA;17871.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 12339 strings out of 493488
- 191817 string characters out of 3141326
- 284526 words of memory out of 3000000
- 14905 multiletter control sequences out of 15000+200000
- 62621 words of font info for 103 fonts, out of 3000000 for 9000
+ 12412 strings out of 493488
+ 191442 string characters out of 3141326
+ 286526 words of memory out of 3000000
+ 14916 multiletter control sequences out of 15000+200000
+ 60264 words of font info for 100 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,13n,58p,521b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,58p,521b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1565,10 +1630,10 @@ live/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
 fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2012/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
 urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (40 pages, 253975 bytes).
+Output written on refman.pdf (43 pages, 260862 bytes).
 PDF statistics:
- 1576 PDF objects out of 1728 (max. 8388607)
- 1453 compressed objects within 15 object streams
- 420 named destinations out of 1000 (max. 500000)
- 834 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1823 PDF objects out of 2073 (max. 8388607)
+ 1697 compressed objects within 17 object streams
+ 486 named destinations out of 1000 (max. 500000)
+ 909 words of extra memory for PDF output out of 10000 (max. 10000000)
 

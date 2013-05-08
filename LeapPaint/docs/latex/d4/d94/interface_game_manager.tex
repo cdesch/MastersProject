@@ -14,8 +14,7 @@ Inheritance diagram for Game\-Manager\-:\begin{figure}[H]
 \subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_game_manager_a7071b8391346173da0beeac17ea27310}{(float) -\/ {\bfseries find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:}}\label{d4/d94/interface_game_manager_a7071b8391346173da0beeac17ea27310}
-
+(float) -\/ \hyperlink{interface_game_manager_a7071b8391346173da0beeac17ea27310}{find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:}
 \item 
 (float) -\/ \hyperlink{interface_game_manager_a0acb835edfa002c4c66a92d02376bd0b}{opacity\-Percentage\-:}
 \end{DoxyCompactItemize}
@@ -28,8 +27,7 @@ Leap\-Pointable $\ast$ \hyperlink{interface_game_manager_a9899e94be0e9364a59e5b7
 \item 
 C\-G\-Point \hyperlink{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{current\-Point}
 \item 
-\hypertarget{interface_game_manager_a71f6112c6ebea5c0083db68cdb0e01d8}{B\-O\-O\-L {\bfseries painting}}\label{d4/d94/interface_game_manager_a71f6112c6ebea5c0083db68cdb0e01d8}
-
+B\-O\-O\-L \hyperlink{interface_game_manager_a71f6112c6ebea5c0083db68cdb0e01d8}{painting}
 \item 
 \hyperlink{interface_game_settings}{Game\-Settings} $\ast$ \hyperlink{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{game\-Settings}
 \item 
@@ -59,11 +57,32 @@ Leap\-Screen $\ast$ \hyperlink{interface_game_manager_a85cb30e21c987f66855a762c6
 \subsubsection{Detailed Description}
 Core Application Management Provides interfaces and controls the various inputs, controls and outputs 
 
-Definition at line 27 of file Game\-Manager.\-h.
-
-
-
 \subsubsection{Method Documentation}
+\hypertarget{interface_game_manager_a7071b8391346173da0beeac17ea27310}{\index{Game\-Manager@{Game\-Manager}!find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:@{find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:}}
+\index{find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:@{find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:}!GameManager@{Game\-Manager}}
+\paragraph[{find\-Pecentage\-Difference\-:with\-Min\-:with\-Value\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) find\-Pecentage\-Difference\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{max}
+\item[{withMin:(float)}]{min}
+\item[{withValue:(float)}]{value}
+\end{DoxyParamCaption}
+}}\label{d4/d94/interface_game_manager_a7071b8391346173da0beeac17ea27310}
+Finds the percentage of a number between two values If the number is greater or less than the range, that boundry of the range will be returned. 
+\begin{DoxyParams}{Parameters}
+{\em max} & is the top range value \\
+\hline
+{\em min} & is the bottom range value \\
+\hline
+{\em value} & is the number we are seeking the percentage from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the a percentage between 0 and 100\%
+\end{DoxyReturn}
+Find the percentage between two numbers 
+
+Referenced by opacity\-Percentage\-:.
+
 \hypertarget{interface_game_manager_a0acb835edfa002c4c66a92d02376bd0b}{\index{Game\-Manager@{Game\-Manager}!opacity\-Percentage\-:@{opacity\-Percentage\-:}}
 \index{opacity\-Percentage\-:@{opacity\-Percentage\-:}!GameManager@{Game\-Manager}}
 \paragraph[{opacity\-Percentage\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) opacity\-Percentage\-: 
@@ -71,84 +90,42 @@ Definition at line 27 of file Game\-Manager.\-h.
 \item[{(float)}]{value}
 \end{DoxyParamCaption}
 }}\label{d4/d94/interface_game_manager_a0acb835edfa002c4c66a92d02376bd0b}
+Determines the opacity based upon the Z axis coordinate 
+\begin{DoxyParams}{Parameters}
+{\em value} & is the Z axis coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the opacity value to set the brush at.
+\end{DoxyReturn}
 Return the Opacity value based on Z position 
-
-Definition at line 328 of file Game\-Manager.\-mm.
-
-
-\begin{DoxyCode}
-328                           :(float)value\{
-329     \textcolor{comment}{//NSLog(@"value %0.0f", value);}
-330     \textcolor{keywordflow}{if} (value < kOpMinRange)\{
-331         \textcolor{keywordflow}{return} kOpMax;
-332     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value > kOpMaxRange)\{
-333         \textcolor{keywordflow}{return} kOpMin;
-334     \}\textcolor{keywordflow}{else} \{
-335         
-336         \textcolor{keywordtype}{float} percentage = [\textcolor{keyword}{self} findPecentageDifference:kOpMaxRange withMin:kOpMinRange withValue:value];
-337         \textcolor{comment}{//NSLog(@"percentage %0.0f", percentage);}
-338         
-339         percentage = 100 - percentage;
-340         
-341         \textcolor{keywordflow}{return} percentage;
-342         
-343     \}
-344 
-345 \}
-\end{DoxyCode}
-
 
 \subsubsection{Member Data Documentation}
 \hypertarget{interface_game_manager_a880d3cc994cc208b57a97fac088c2781}{\index{Game\-Manager@{Game\-Manager}!current\-Point@{current\-Point}}
 \index{current\-Point@{current\-Point}!GameManager@{Game\-Manager}}
 \paragraph[{current\-Point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) current\-Point\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a880d3cc994cc208b57a97fac088c2781}
-color\-Label displays name of color in hash value 
-
-Definition at line 32 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{\index{Game\-Manager@{Game\-Manager}!current\-Pointable@{current\-Pointable}}
+color\-Label displays name of color in hash value \hypertarget{interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}{\index{Game\-Manager@{Game\-Manager}!current\-Pointable@{current\-Pointable}}
 \index{current\-Pointable@{current\-Pointable}!GameManager@{Game\-Manager}}
 \paragraph[{current\-Pointable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Leap\-Pointable$\ast$) current\-Pointable\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a9899e94be0e9364a59e5b76d5025d9f7}
-color\-Label displays name of color in hash value 
-
-Definition at line 31 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{\index{Game\-Manager@{Game\-Manager}!frames\-Since\-Last\-Found@{frames\-Since\-Last\-Found}}
+color\-Label displays name of color in hash value \hypertarget{interface_game_manager_a546c4660d830a79c27bc2a51da00df12}{\index{Game\-Manager@{Game\-Manager}!frames\-Since\-Last\-Found@{frames\-Since\-Last\-Found}}
 \index{frames\-Since\-Last\-Found@{frames\-Since\-Last\-Found}!GameManager@{Game\-Manager}}
 \paragraph[{frames\-Since\-Last\-Found}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) frames\-Since\-Last\-Found\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a546c4660d830a79c27bc2a51da00df12}
-frames\-Since\-Last\-Found number of frames since last finding a Leap\-Pointable 
-
-Definition at line 41 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{\index{Game\-Manager@{Game\-Manager}!game\-Settings@{game\-Settings}}
+frames\-Since\-Last\-Found number of frames since last finding a Leap\-Pointable \hypertarget{interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}{\index{Game\-Manager@{Game\-Manager}!game\-Settings@{game\-Settings}}
 \index{game\-Settings@{game\-Settings}!GameManager@{Game\-Manager}}
 \paragraph[{game\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Game\-Settings}$\ast$) game\-Settings\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a97ff3b8cd0cbc6baf6f5abe3bb3417ca}
-game\-Settings singleton to global seetings 
-
-Definition at line 36 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{\index{Game\-Manager@{Game\-Manager}!input\-Mode@{input\-Mode}}
+game\-Settings singleton to global seetings \hypertarget{interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}{\index{Game\-Manager@{Game\-Manager}!input\-Mode@{input\-Mode}}
 \index{input\-Mode@{input\-Mode}!GameManager@{Game\-Manager}}
 \paragraph[{input\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Input\-Mode) input\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a43f8cf09eea5b0766c73b0d2b258644c}
-color\-Label displays name of color in hash value 
-
-Definition at line 30 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}{\index{Game\-Manager@{Game\-Manager}!last\-Point@{last\-Point}}
+color\-Label displays name of color in hash value \hypertarget{interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}{\index{Game\-Manager@{Game\-Manager}!last\-Point@{last\-Point}}
 \index{last\-Point@{last\-Point}!GameManager@{Game\-Manager}}
 \paragraph[{last\-Point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Simple\-Point}$\ast$) last\-Point\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a4f2a6986ffdbc41d661e90deaee4551a}
-last\-Point is the last known point on the screen of the Leap\-Pointable 
-
-Definition at line 40 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{\index{Game\-Manager@{Game\-Manager}!last\-Tag@{last\-Tag}}
+last\-Point is the last known point on the screen of the Leap\-Pointable \hypertarget{interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}{\index{Game\-Manager@{Game\-Manager}!last\-Tag@{last\-Tag}}
 \index{last\-Tag@{last\-Tag}!GameManager@{Game\-Manager}}
 \paragraph[{last\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) last\-Tag\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a0b83b09829718f85c17d64f6ee06d441}
-last\-Tag is the last tag value tracked of a Leap\-Pointable 
-
-Definition at line 39 of file Game\-Manager.\-h.
-
-
+last\-Tag is the last tag value tracked of a Leap\-Pointable \hypertarget{interface_game_manager_a71f6112c6ebea5c0083db68cdb0e01d8}{\index{Game\-Manager@{Game\-Manager}!painting@{painting}}
+\index{painting@{painting}!GameManager@{Game\-Manager}}
+\paragraph[{painting}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) painting\hspace{0.3cm}{\ttfamily [protected]}}}\label{d4/d94/interface_game_manager_a71f6112c6ebea5c0083db68cdb0e01d8}
+painting indicates wether or not the application is painting at that moment 
 
 \subsubsection{Property Documentation}
 \hypertarget{interface_game_manager_a2a3a96f1202b13592f244cf1402b4051}{\index{Game\-Manager@{Game\-Manager}!background\-Layer@{background\-Layer}}
@@ -156,42 +133,34 @@ Definition at line 39 of file Game\-Manager.\-h.
 \paragraph[{background\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Background\-Layer}$\ast$) background\-Layer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_a2a3a96f1202b13592f244cf1402b4051}
 background\-Layer is the layer for setting up the background 
 
-Definition at line 48 of file Game\-Manager.\-h.
+Referenced by Game\-Scene\-::scene.
 
 \hypertarget{interface_game_manager_a4b089253ae3569099d28535b128f3436}{\index{Game\-Manager@{Game\-Manager}!controller@{controller}}
 \index{controller@{controller}!GameManager@{Game\-Manager}}
 \paragraph[{controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Leap\-Controller$\ast$) controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_a4b089253ae3569099d28535b128f3436}
-controller is the leap\-Controller 
-
-Definition at line 51 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a0ee5903be06e4a676ddde4c1f03530a7}{\index{Game\-Manager@{Game\-Manager}!controls\-Layer@{controls\-Layer}}
+controller is the leap\-Controller \hypertarget{interface_game_manager_a0ee5903be06e4a676ddde4c1f03530a7}{\index{Game\-Manager@{Game\-Manager}!controls\-Layer@{controls\-Layer}}
 \index{controls\-Layer@{controls\-Layer}!GameManager@{Game\-Manager}}
 \paragraph[{controls\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Controls\-Layer}$\ast$) controls\-Layer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_a0ee5903be06e4a676ddde4c1f03530a7}
 controls\-Layer is the layer for managing interface controls 
 
-Definition at line 49 of file Game\-Manager.\-h.
+Referenced by Game\-Scene\-::scene.
 
 \hypertarget{interface_game_manager_ae286fb2f9d31810d73c7231a574b56b0}{\index{Game\-Manager@{Game\-Manager}!hud\-Layer@{hud\-Layer}}
 \index{hud\-Layer@{hud\-Layer}!GameManager@{Game\-Manager}}
 \paragraph[{hud\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf H\-U\-D\-Layer}$\ast$) hud\-Layer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_ae286fb2f9d31810d73c7231a574b56b0}
 hud\-Layer displays the icons for tracking where a leap\-Pointable is pointing 
 
-Definition at line 46 of file Game\-Manager.\-h.
+Referenced by Game\-Scene\-::scene.
 
 \hypertarget{interface_game_manager_a85cb30e21c987f66855a762c6ba88096}{\index{Game\-Manager@{Game\-Manager}!leap\-Screen@{leap\-Screen}}
 \index{leap\-Screen@{leap\-Screen}!GameManager@{Game\-Manager}}
 \paragraph[{leap\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Leap\-Screen$\ast$) leap\-Screen\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_a85cb30e21c987f66855a762c6ba88096}
-leap\-Screen references the screen being used on the system 
-
-Definition at line 52 of file Game\-Manager.\-h.
-
-\hypertarget{interface_game_manager_a79a86ff991f39b3007d99ca61af21253}{\index{Game\-Manager@{Game\-Manager}!texture\-Scene@{texture\-Scene}}
+leap\-Screen references the screen being used on the system \hypertarget{interface_game_manager_a79a86ff991f39b3007d99ca61af21253}{\index{Game\-Manager@{Game\-Manager}!texture\-Scene@{texture\-Scene}}
 \index{texture\-Scene@{texture\-Scene}!GameManager@{Game\-Manager}}
 \paragraph[{texture\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sketch\-Render\-Texture\-Scene}$\ast$) texture\-Scene\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d4/d94/interface_game_manager_a79a86ff991f39b3007d99ca61af21253}
 texture\-Scene is the drawing layer 
 
-Definition at line 47 of file Game\-Manager.\-h.
+Referenced by Game\-Scene\-::scene.
 
 
 
