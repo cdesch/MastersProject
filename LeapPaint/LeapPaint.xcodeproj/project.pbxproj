@@ -84,7 +84,6 @@
 		2371B7A6173AAE6E00EAEB6B /* f2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B705173AAE6E00EAEB6B /* f2.png */; };
 		2371B7A7173AAE6E00EAEB6B /* FingerPaintingScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */; };
 		2371B7A8173AAE6E00EAEB6B /* GameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B709173AAE6E00EAEB6B /* GameManager.mm */; };
-		2371B7A9173AAE6E00EAEB6B /* GameManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B70B173AAE6E00EAEB6B /* GameManagerTests.m */; };
 		2371B7AA173AAE6E00EAEB6B /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B70D173AAE6E00EAEB6B /* GameScene.mm */; };
 		2371B7AB173AAE6E00EAEB6B /* GameSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B70F173AAE6E00EAEB6B /* GameSettings.mm */; };
 		2371B7AC173AAE6E00EAEB6B /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2371B711173AAE6E00EAEB6B /* GLES-Render.mm */; };
@@ -152,6 +151,13 @@
 		2371B7EA173AAE6E00EAEB6B /* tintOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2371B758173AAE6E00EAEB6B /* tintOverlay.png */; };
 		2371B7EB173AAE6E00EAEB6B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B75A173AAE6E00EAEB6B /* Utility.m */; };
 		2371B7EC173AAE6E00EAEB6B /* wooden-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2371B75B173AAE6E00EAEB6B /* wooden-bg.jpg */; };
+		2371B7FD173ABE5400EAEB6B /* GameManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F0173ABE5400EAEB6B /* GameManagerTests.m */; };
+		2371B7FE173ABE5400EAEB6B /* GameSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F2173ABE5400EAEB6B /* GameSceneTests.m */; };
+		2371B7FF173ABE5400EAEB6B /* GameSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F4173ABE5400EAEB6B /* GameSettingsTests.m */; };
+		2371B800173ABE5400EAEB6B /* LeapPuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F6173ABE5400EAEB6B /* LeapPuzzTests.m */; };
+		2371B801173ABE5400EAEB6B /* LPToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7F8173ABE5400EAEB6B /* LPToolTests.m */; };
+		2371B802173ABE5400EAEB6B /* SimplePointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7FA173ABE5400EAEB6B /* SimplePointTests.m */; };
+		2371B803173ABE5400EAEB6B /* UtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371B7FC173ABE5400EAEB6B /* UtilityTests.m */; };
 		239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
 		239B35171739EDEE00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35151739EDEE00CB0EC6 /* InfoPlist.strings */; };
 		239B35191739EDEE00CB0EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35181739EDEE00CB0EC6 /* main.m */; };
@@ -283,8 +289,6 @@
 		2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FingerPaintingScene.mm; sourceTree = "<group>"; };
 		2371B708173AAE6E00EAEB6B /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		2371B709173AAE6E00EAEB6B /* GameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameManager.mm; sourceTree = "<group>"; };
-		2371B70A173AAE6E00EAEB6B /* GameManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManagerTests.h; sourceTree = "<group>"; };
-		2371B70B173AAE6E00EAEB6B /* GameManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManagerTests.m; sourceTree = "<group>"; };
 		2371B70C173AAE6E00EAEB6B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2371B70D173AAE6E00EAEB6B /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		2371B70E173AAE6E00EAEB6B /* GameSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettings.h; sourceTree = "<group>"; };
@@ -364,6 +368,20 @@
 		2371B759173AAE6E00EAEB6B /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		2371B75A173AAE6E00EAEB6B /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		2371B75B173AAE6E00EAEB6B /* wooden-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wooden-bg.jpg"; sourceTree = "<group>"; };
+		2371B7EF173ABE5400EAEB6B /* GameManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManagerTests.h; sourceTree = "<group>"; };
+		2371B7F0173ABE5400EAEB6B /* GameManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManagerTests.m; sourceTree = "<group>"; };
+		2371B7F1173ABE5400EAEB6B /* GameSceneTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneTests.h; sourceTree = "<group>"; };
+		2371B7F2173ABE5400EAEB6B /* GameSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneTests.m; sourceTree = "<group>"; };
+		2371B7F3173ABE5400EAEB6B /* GameSettingsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingsTests.h; sourceTree = "<group>"; };
+		2371B7F4173ABE5400EAEB6B /* GameSettingsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettingsTests.m; sourceTree = "<group>"; };
+		2371B7F5173ABE5400EAEB6B /* LeapPuzzTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapPuzzTests.h; sourceTree = "<group>"; };
+		2371B7F6173ABE5400EAEB6B /* LeapPuzzTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeapPuzzTests.m; sourceTree = "<group>"; };
+		2371B7F7173ABE5400EAEB6B /* LPToolTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPToolTests.h; sourceTree = "<group>"; };
+		2371B7F8173ABE5400EAEB6B /* LPToolTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPToolTests.m; sourceTree = "<group>"; };
+		2371B7F9173ABE5400EAEB6B /* SimplePointTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePointTests.h; sourceTree = "<group>"; };
+		2371B7FA173ABE5400EAEB6B /* SimplePointTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePointTests.m; sourceTree = "<group>"; };
+		2371B7FB173ABE5400EAEB6B /* UtilityTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityTests.h; sourceTree = "<group>"; };
+		2371B7FC173ABE5400EAEB6B /* UtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityTests.m; sourceTree = "<group>"; };
 		239B35091739EDEE00CB0EC6 /* LeapPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239B350C1739EDEE00CB0EC6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		239B350F1739EDEE00CB0EC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -692,8 +710,6 @@
 				2371B707173AAE6E00EAEB6B /* FingerPaintingScene.mm */,
 				2371B708173AAE6E00EAEB6B /* GameManager.h */,
 				2371B709173AAE6E00EAEB6B /* GameManager.mm */,
-				2371B70A173AAE6E00EAEB6B /* GameManagerTests.h */,
-				2371B70B173AAE6E00EAEB6B /* GameManagerTests.m */,
 				2371B70C173AAE6E00EAEB6B /* GameScene.h */,
 				2371B70D173AAE6E00EAEB6B /* GameScene.mm */,
 				2371B70E173AAE6E00EAEB6B /* GameSettings.h */,
@@ -745,6 +761,20 @@
 		239B352F1739EDEF00CB0EC6 /* LeapPaintTests */ = {
 			isa = PBXGroup;
 			children = (
+				2371B7EF173ABE5400EAEB6B /* GameManagerTests.h */,
+				2371B7F0173ABE5400EAEB6B /* GameManagerTests.m */,
+				2371B7F1173ABE5400EAEB6B /* GameSceneTests.h */,
+				2371B7F2173ABE5400EAEB6B /* GameSceneTests.m */,
+				2371B7F3173ABE5400EAEB6B /* GameSettingsTests.h */,
+				2371B7F4173ABE5400EAEB6B /* GameSettingsTests.m */,
+				2371B7F5173ABE5400EAEB6B /* LeapPuzzTests.h */,
+				2371B7F6173ABE5400EAEB6B /* LeapPuzzTests.m */,
+				2371B7F7173ABE5400EAEB6B /* LPToolTests.h */,
+				2371B7F8173ABE5400EAEB6B /* LPToolTests.m */,
+				2371B7F9173ABE5400EAEB6B /* SimplePointTests.h */,
+				2371B7FA173ABE5400EAEB6B /* SimplePointTests.m */,
+				2371B7FB173ABE5400EAEB6B /* UtilityTests.h */,
+				2371B7FC173ABE5400EAEB6B /* UtilityTests.m */,
 				239B35351739EDEF00CB0EC6 /* LeapPaintTests.h */,
 				239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */,
 				239B35301739EDEF00CB0EC6 /* Supporting Files */,
@@ -1051,7 +1081,6 @@
 				2371B79D173AAE6E00EAEB6B /* DrawScene.mm in Sources */,
 				2371B7A7173AAE6E00EAEB6B /* FingerPaintingScene.mm in Sources */,
 				2371B7A8173AAE6E00EAEB6B /* GameManager.mm in Sources */,
-				2371B7A9173AAE6E00EAEB6B /* GameManagerTests.m in Sources */,
 				2371B7AA173AAE6E00EAEB6B /* GameScene.mm in Sources */,
 				2371B7AB173AAE6E00EAEB6B /* GameSettings.mm in Sources */,
 				2371B7AC173AAE6E00EAEB6B /* GLES-Render.mm in Sources */,
@@ -1085,6 +1114,13 @@
 			files = (
 				239B35371739EDEF00CB0EC6 /* LeapPaintTests.m in Sources */,
 				239B35631739F10F00CB0EC6 /* LeapObjectiveC.mm in Sources */,
+				2371B7FD173ABE5400EAEB6B /* GameManagerTests.m in Sources */,
+				2371B7FE173ABE5400EAEB6B /* GameSceneTests.m in Sources */,
+				2371B7FF173ABE5400EAEB6B /* GameSettingsTests.m in Sources */,
+				2371B800173ABE5400EAEB6B /* LeapPuzzTests.m in Sources */,
+				2371B801173ABE5400EAEB6B /* LPToolTests.m in Sources */,
+				2371B802173ABE5400EAEB6B /* SimplePointTests.m in Sources */,
+				2371B803173ABE5400EAEB6B /* UtilityTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

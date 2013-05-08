@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 12:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2013 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -16,20 +16,19 @@ kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
  polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
 lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
 welsh, loaded.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -52,9 +51,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -73,7 +72,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count91
+\c@NAT@ctr=\count90
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -98,21 +97,21 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count92
+\Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count93
+\c@tracingmulticols=\count92
 \mult@box=\box26
 \multicol@leftmargin=\dimen113
-\c@unbalance=\count94
-\c@collectmore=\count95
-\doublecol@number=\count96
-\multicoltolerance=\count97
-\multicolpretolerance=\count98
+\c@unbalance=\count93
+\c@collectmore=\count94
+\doublecol@number=\count95
+\multicoltolerance=\count96
+\multicolpretolerance=\count97
 \full@width=\dimen114
 \page@free=\dimen115
 \premulticols=\dimen116
@@ -142,41 +141,41 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count99
-\c@finalcolumnbadness=\count100
+\c@columnbadness=\count98
+\c@finalcolumnbadness=\count99
 \last@try=\dimen118
 \multicolovershoot=\dimen119
 \multicolundershoot=\dimen120
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
-\multicol@sort@counter=\count101
+\multicol@sort@counter=\count100
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count102
+\c@float@type=\count101
 \float@exts=\toks16
 \float@box=\box52
 \@float@everytoks=\toks17
 \@floatcapt=\box53
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count103
+\lst@mode=\count102
 \lst@gtempboxa=\box54
 \lst@token=\toks18
-\lst@length=\count104
+\lst@length=\count103
 \lst@currlwidth=\dimen121
-\lst@column=\count105
-\lst@pos=\count106
+\lst@column=\count104
+\lst@pos=\count105
 \lst@lostspace=\dimen122
 \lst@width=\dimen123
-\lst@newlines=\count107
-\lst@lineno=\count108
+\lst@newlines=\count106
+\lst@lineno=\count107
 \lst@maxwidth=\dimen124
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count109
-\lst@skipnumbers=\count110
+\c@lstnumber=\count108
+\lst@skipnumbers=\count109
 \lst@framebox=\box55
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.cfg
@@ -218,7 +217,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \minrowclearance=\skip49
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count111
+\rownum=\count110
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -363,13 +362,13 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen127
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count114
+\Hy@SavedSpaceFactor=\count113
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -396,14 +395,14 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count115
+\c@Hy@tempcnt=\count114
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4653.
-\Fld@menulength=\count116
+\Fld@menulength=\count115
 \Field@Width=\dimen128
 \Fld@charsize=\dimen129
 Package hyperref Info: Hyper figures OFF on input line 5773.
@@ -415,17 +414,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5798.
 Package hyperref Info: PDF/A mode OFF on input line 5803.
 LaTeX Info: Redefining \ref on input line 5843.
 LaTeX Info: Redefining \pageref on input line 5847.
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+\Hy@abspage=\count116
+\c@Item=\count117
+\c@Hfootnote=\count118
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
-\Fld@listcount=\count120
-\c@bookmark@seq@number=\count121
+\Fld@listcount=\count119
+\c@bookmark@seq@number=\count120
 \Hy@SectionHShift=\skip50
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
@@ -783,86 +782,83 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 43.
+Package tocloft Info: The document has section divisions on input line 43.
 \cftparskip=\skip51
 \cftbeforetoctitleskip=\skip52
 \cftaftertoctitleskip=\skip53
 \cftbeforepartskip=\skip54
 \cftpartnumwidth=\skip55
 \cftpartindent=\skip56
-\cftbeforechapskip=\skip57
-\cftchapindent=\skip58
-\cftchapnumwidth=\skip59
-\cftbeforesecskip=\skip60
-\cftsecindent=\skip61
-\cftsecnumwidth=\skip62
-\cftbeforesubsecskip=\skip63
-\cftsubsecindent=\skip64
-\cftsubsecnumwidth=\skip65
-\cftbeforesubsubsecskip=\skip66
-\cftsubsubsecindent=\skip67
-\cftsubsubsecnumwidth=\skip68
-\cftbeforeparaskip=\skip69
-\cftparaindent=\skip70
-\cftparanumwidth=\skip71
-\cftbeforesubparaskip=\skip72
-\cftsubparaindent=\skip73
-\cftsubparanumwidth=\skip74
-\cftbeforeloftitleskip=\skip75
-\cftafterloftitleskip=\skip76
-\cftbeforefigskip=\skip77
-\cftfigindent=\skip78
-\cftfignumwidth=\skip79
-\c@lofdepth=\count122
-\c@lotdepth=\count123
-\cftbeforelottitleskip=\skip80
-\cftafterlottitleskip=\skip81
-\cftbeforetabskip=\skip82
-\cfttabindent=\skip83
-\cfttabnumwidth=\skip84
+\cftbeforesecskip=\skip57
+\cftsecindent=\skip58
+\cftsecnumwidth=\skip59
+\cftbeforesubsecskip=\skip60
+\cftsubsecindent=\skip61
+\cftsubsecnumwidth=\skip62
+\cftbeforesubsubsecskip=\skip63
+\cftsubsubsecindent=\skip64
+\cftsubsubsecnumwidth=\skip65
+\cftbeforeparaskip=\skip66
+\cftparaindent=\skip67
+\cftparanumwidth=\skip68
+\cftbeforesubparaskip=\skip69
+\cftsubparaindent=\skip70
+\cftsubparanumwidth=\skip71
+\cftbeforeloftitleskip=\skip72
+\cftafterloftitleskip=\skip73
+\cftbeforefigskip=\skip74
+\cftfigindent=\skip75
+\cftfignumwidth=\skip76
+\c@lofdepth=\count121
+\c@lotdepth=\count122
+\cftbeforelottitleskip=\skip77
+\cftafterlottitleskip=\skip78
+\cftbeforetabskip=\skip79
+\cfttabindent=\skip80
+\cfttabnumwidth=\skip81
 )
 (./doxygen.sty
 Package: doxygen 
  (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count124
-\calc@Bcount=\count125
+\calc@Acount=\count123
+\calc@Bcount=\count124
 \calc@Adimen=\dimen130
 \calc@Bdimen=\dimen131
-\calc@Askip=\skip85
-\calc@Bskip=\skip86
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count126
-\calc@Cskip=\skip87
+\calc@Ccount=\count125
+\calc@Cskip=\skip84
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip88
-\f@ncyO@elh=\skip89
-\f@ncyO@erh=\skip90
-\f@ncyO@olh=\skip91
-\f@ncyO@orh=\skip92
-\f@ncyO@elf=\skip93
-\f@ncyO@erf=\skip94
-\f@ncyO@olf=\skip95
-\f@ncyO@orf=\skip96
+\fancy@headwidth=\skip85
+\f@ncyO@elh=\skip86
+\f@ncyO@erh=\skip87
+\f@ncyO@olh=\skip88
+\f@ncyO@orh=\skip89
+\f@ncyO@elf=\skip90
+\f@ncyO@erf=\skip91
+\f@ncyO@olf=\skip92
+\f@ncyO@orf=\skip93
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip97
-\LTright=\skip98
-\LTpre=\skip99
-\LTpost=\skip100
-\LTchunksize=\count127
+\LTleft=\skip94
+\LTright=\skip95
+\LTpre=\skip96
+\LTpost=\skip97
+\LTchunksize=\count126
 \LTcapwidth=\dimen132
 \LT@head=\box56
 \LT@firsthead=\box57
 \LT@foot=\box58
 \LT@lastfoot=\box59
-\LT@cols=\count128
-\LT@rows=\count129
-\c@LT@tables=\count130
-\c@LT@chunks=\count131
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
 \LT@p@ftn=\toks24
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty
@@ -873,18 +869,18 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/xtab/xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
-\c@tracingst=\count132
+\c@tracingst=\count131
 \PWSTcapht=\dimen133
 \ST@wd=\dimen134
-\ST@rightskip=\skip101
-\ST@leftskip=\skip102
-\ST@parfillskip=\skip103
-\c@PWSTtable=\count133
-\PWSTlastpage=\count134
-\PWSTpenultimate=\count135
-\PWSTcurpage=\count136
-\PWSTtempc=\count137
-\PWSTlines=\count138
+\ST@rightskip=\skip98
+\ST@leftskip=\skip99
+\ST@parfillskip=\skip100
+\c@PWSTtable=\count132
+\PWSTlastpage=\count133
+\PWSTpenultimate=\count134
+\PWSTcurpage=\count135
+\PWSTtempc=\count136
+\PWSTlines=\count137
 \PWST@lastht=\dimen135
 \PWST@generalht=\dimen136
 \PWST@ht=\dimen137
@@ -903,10 +899,33 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 (/usr/local/texlive/2012/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen148
 )
-\tmplength=\skip104
-\xrefbox=\box61
-\xreflength=\skip105
 
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 33.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 34.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 35.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 39.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 40.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 41.
+
+\tmplength=\skip101
+\xrefbox=\box61
+\xreflength=\skip102
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -968,7 +987,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
 * \paperwidth=614.295pt
@@ -977,36 +996,36 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 * \textheight=652.70622pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-31.2056pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
+\scratchcounter=\count138
 \scratchdimen=\dimen149
 \scratchbox=\box62
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count142
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen150
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1023,7 +1042,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count145
+\c@lstlisting=\count144
 \AtBeginShipoutBox=\box63
 Package backref Info: ** backref set up for natbib ** on input line 48.
 Package hyperref Info: Link coloring ON on input line 48.
@@ -1034,7 +1053,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count145
 )
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
@@ -1054,23 +1073,18 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 57.
  [1
 
-
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 62.
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 62.
+(Font)              scaled to size 12.9599pt on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 61.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 62.
+(Font)              scaled to size 12.9599pt on input line 61.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1111,15 +1125,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
- [1
-
-]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 65.
- [2]
-[3] [4]
+(Font)              scaled to size 6.29996pt on input line 68.
+ [1] [2]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1134,27 +1144,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [5] [6
+Package hyperref Info: Option `pageanchor' set `true' on input line 63.
 
-]
-Package hyperref Info: Option `pageanchor' set `true' on input line 65.
-
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
-LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 66.
 (./index.tex
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 1.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 5.
+(Font)              scaled to size 8.99994pt on input line 5.
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 9.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1phv.fd
@@ -1162,29 +1160,13 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 9.
- [1
-
-]) [2]
-Chapter 2.
+ [1])
 (./hierarchy.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
- [3
-
-]) [4]
-Chapter 3.
-(./annotated.tex) [5
-
-] [6
-
-]
-Chapter 4.
+(Font)              scaled to size 10.79993pt on input line 1.
+ [2]) (./annotated.tex [3] [4])
 (./dd/d52/interface_app_delegate.tex
-<dd/d52/interface_app_delegate.pdf, id=970, 501.875pt x 122.4073pt>
+<dd/d52/interface_app_delegate.pdf, id=598, 501.875pt x 122.4073pt>
 File: dd/d52/interface_app_delegate.pdf Graphic file (type pdf)
 
 <use dd/d52/interface_app_delegate.pdf>
@@ -1193,32 +1175,25 @@ Package pdftex.def Info: dd/d52/interface_app_delegate.pdf used on input line 7
 (pdftex.def)             Requested size: 233.31584pt x 56.9055pt.
 )
 (./d0/d09/interface_background_layer.tex
-<d0/d09/interface_background_layer.pdf, id=973, 501.875pt x 331.81966pt>
+<d0/d09/interface_background_layer.pdf, id=599, 501.875pt x 331.81966pt>
 File: d0/d09/interface_background_layer.pdf Graphic file (type pdf)
 
 <use d0/d09/interface_background_layer.pdf>
 Package pdftex.def Info: d0/d09/interface_background_layer.pdf used on input li
 ne 11.
 (pdftex.def)             Requested size: 86.0681pt x 56.9055pt.
- [7 <./dd/d52/interface_app_delegate.pdf> <./d0/d09/interface_background_layer.
-pdf>])
+)
 (./d5/d83/interface_brush_selection_layer.tex
-<d5/d83/interface_brush_selection_layer.pdf, id=995, 501.875pt x 290.94696pt>
+<d5/d83/interface_brush_selection_layer.pdf, id=600, 501.875pt x 290.94696pt>
 File: d5/d83/interface_brush_selection_layer.pdf Graphic file (type pdf)
 
 <use d5/d83/interface_brush_selection_layer.pdf>
 Package pdftex.def Info: d5/d83/interface_brush_selection_layer.pdf used on inp
 ut line 7.
 (pdftex.def)             Requested size: 98.16005pt x 56.9055pt.
-)
+ [5 <./dd/d52/interface_app_delegate.pdf> <./d0/d09/interface_background_layer.
+pdf>])
 (./d7/dd2/protocol_brush_selection_layer_delegate-p.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1236,7 +1211,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
 
-<d7/dd2/protocol_brush_selection_layer_delegate-p.pdf, id=999, 501.875pt x 298.
+<d7/dd2/protocol_brush_selection_layer_delegate-p.pdf, id=621, 501.875pt x 298.
 14386pt>
 File: d7/dd2/protocol_brush_selection_layer_delegate-p.pdf Graphic file (type p
 df)
@@ -1244,18 +1219,16 @@ df)
 Package pdftex.def Info: d7/dd2/protocol_brush_selection_layer_delegate-p.pdf u
 sed on input line 7.
 (pdftex.def)             Requested size: 143.68678pt x 85.35826pt.
- [8 <./d5/d83/interface_brush_selection_layer.pdf> <./d7/dd2/protocol_brush_sel
+ [6 <./d5/d83/interface_brush_selection_layer.pdf> <./d7/dd2/protocol_brush_sel
 ection_layer_delegate-p.pdf>]) (./d1/d1a/interface_controls_layer.tex
-<d1/d1a/interface_controls_layer.pdf, id=1025, 501.875pt x 149.06691pt>
+<d1/d1a/interface_controls_layer.pdf, id=644, 501.875pt x 149.06691pt>
 File: d1/d1a/interface_controls_layer.pdf Graphic file (type pdf)
 
 <use d1/d1a/interface_controls_layer.pdf>
 Package pdftex.def Info: d1/d1a/interface_controls_layer.pdf used on input line
  11.
 (pdftex.def)             Requested size: 287.38889pt x 85.35826pt.
- [9 <./d1/d1a/interface_controls_layer.pdf>]
-LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 73.
+ [7 <./d1/d1a/interface_controls_layer.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 79.
 LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
@@ -1263,7 +1236,6 @@ LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
 
 LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
 (Font)              scaled to size 8.99994pt on input line 132.
- [10]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1272,7 +1244,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 Underfull \vbox (badness 10000) detected at line 137
  []
 
-[11]
+[8]
 Underfull \vbox (badness 10000) detected at line 218
  []
 
@@ -1285,7 +1257,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Warning: Font shape `OT1/pcr/bc/n' undefined
 (Font)              using `OT1/pcr/m/n' instead on input line 237.
 
-[12]) (./db/d3c/protocol_controls_layer_delegate-p.tex
+[9]) (./db/d3c/protocol_controls_layer_delegate-p.tex [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1303,87 +1275,88 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
 
-<db/d3c/protocol_controls_layer_delegate-p.pdf, id=1155, 501.875pt x 367.22194p
-t>
+<db/d3c/protocol_controls_layer_delegate-p.pdf, id=733, 501.875pt x 367.22194pt
+>
 File: db/d3c/protocol_controls_layer_delegate-p.pdf Graphic file (type pdf)
  <use db/d3c/protocol_controls_layer_delegate-p.pdf>
 Package pdftex.def Info: db/d3c/protocol_controls_layer_delegate-p.pdf used on 
 input line 11.
 (pdftex.def)             Requested size: 116.6541pt x 85.35826pt.
- [13 <./db/d3c/protocol_controls_layer_delegate-p.pdf>]) (./df/dce/interface_dr
-aw_scene.tex
-<df/dce/interface_draw_scene.pdf, id=1176, 501.875pt x 466.8642pt>
+)
+(./df/dce/interface_draw_scene.tex
+<df/dce/interface_draw_scene.pdf, id=734, 501.875pt x 466.8642pt>
 File: df/dce/interface_draw_scene.pdf Graphic file (type pdf)
 
 <use df/dce/interface_draw_scene.pdf>
 Package pdftex.def Info: df/dce/interface_draw_scene.pdf used on input line 7.
 (pdftex.def)             Requested size: 61.17198pt x 56.9055pt.
-)
+ [11 <./db/d3c/protocol_controls_layer_delegate-p.pdf> <./df/dce/interface_draw
+_scene.pdf>])
 (./dd/df0/interface_finger_painting_scene.tex
-<dd/df0/interface_finger_painting_scene.pdf, id=1180, 501.875pt x 145.47348pt>
+<dd/df0/interface_finger_painting_scene.pdf, id=763, 501.875pt x 145.47348pt>
 File: dd/df0/interface_finger_painting_scene.pdf Graphic file (type pdf)
 
 <use dd/df0/interface_finger_painting_scene.pdf>
 Package pdftex.def Info: dd/df0/interface_finger_painting_scene.pdf used on inp
 ut line 7.
 (pdftex.def)             Requested size: 196.32011pt x 56.9055pt.
- [14 <./df/dce/interface_draw_scene.pdf>]) (./d4/d94/interface_game_manager.tex
-
-<d4/d94/interface_game_manager.pdf, id=1209, 501.875pt x 91.80298pt>
+)
+(./d4/d94/interface_game_manager.tex
+<d4/d94/interface_game_manager.pdf, id=765, 501.875pt x 91.80298pt>
 File: d4/d94/interface_game_manager.pdf Graphic file (type pdf)
 
 <use d4/d94/interface_game_manager.pdf>
 Package pdftex.def Info: d4/d94/interface_game_manager.pdf used on input line 1
 1.
 (pdftex.def)             Requested size: 398.37608pt x 72.86676pt.
- [15 <./dd/df0/interface_finger_painting_scene.pdf> <./d4/d94/interface_game_ma
-nager.pdf>] [16] [17])
+ [12 <./dd/df0/interface_finger_painting_scene.pdf>] [13 <./d4/d94/interface_ga
+me_manager.pdf>] [14])
 (./d2/d7d/interface_game_manager_tests.tex
-<d2/d7d/interface_game_manager_tests.pdf, id=1331, 501.875pt x 304.16637pt>
+<d2/d7d/interface_game_manager_tests.pdf, id=854, 501.875pt x 304.16637pt>
 File: d2/d7d/interface_game_manager_tests.pdf Graphic file (type pdf)
 
 <use d2/d7d/interface_game_manager_tests.pdf>
 Package pdftex.def Info: d2/d7d/interface_game_manager_tests.pdf used on input 
 line 11.
 (pdftex.def)             Requested size: 93.89456pt x 56.9055pt.
- [18 <./d2/d7d/interface_game_manager_tests.pdf>]) (./d5/d01/interface_game_sce
+ [15 <./d2/d7d/interface_game_manager_tests.pdf>]) (./d5/d01/interface_game_sce
 ne.tex
-<d5/d01/interface_game_scene.pdf, id=1355, 501.875pt x 456.25455pt>
+<d5/d01/interface_game_scene.pdf, id=875, 501.875pt x 456.25455pt>
 File: d5/d01/interface_game_scene.pdf Graphic file (type pdf)
 
 <use d5/d01/interface_game_scene.pdf>
 Package pdftex.def Info: d5/d01/interface_game_scene.pdf used on input line 7.
 (pdftex.def)             Requested size: 62.58871pt x 56.9055pt.
 ) (./d5/def/interface_game_scene_tests.tex <d5/def/interface_game_scene_tests.p
-df, id=1358, 501.875pt x 343.16205pt>
+df, id=876, 501.875pt x 343.16205pt>
 File: d5/def/interface_game_scene_tests.pdf Graphic file (type pdf)
 
 <use d5/def/interface_game_scene_tests.pdf>
 Package pdftex.def Info: d5/def/interface_game_scene_tests.pdf used on input li
 ne 7.
 (pdftex.def)             Requested size: 83.21933pt x 56.9055pt.
- [19 <./d5/d01/interface_game_scene.pdf>]) (./d1/d0c/interface_game_settings.te
-x
-<d1/d0c/interface_game_settings.pdf, id=1377, 501.875pt x 418.23253pt>
+ [16 <./d5/d01/interface_game_scene.pdf> <./d5/def/interface_game_scene_tests.p
+df>])
+(./d1/d0c/interface_game_settings.tex
+<d1/d0c/interface_game_settings.pdf, id=895, 501.875pt x 418.23253pt>
 File: d1/d0c/interface_game_settings.pdf Graphic file (type pdf)
 
 <use d1/d0c/interface_game_settings.pdf>
 Package pdftex.def Info: d1/d0c/interface_game_settings.pdf used on input line 
 7.
 (pdftex.def)             Requested size: 68.2786pt x 56.9055pt.
- [20 <./d5/def/interface_game_scene_tests.pdf> <./d1/d0c/interface_game_setting
-s.pdf>])
-(./d9/ddc/interface_game_settings_tests.tex
-<d9/ddc/interface_game_settings_tests.pdf, id=1424, 501.875pt x 321.2pt>
+ [17 <./d1/d0c/interface_game_settings.pdf>]) (./d9/ddc/interface_game_settings
+_tests.tex
+<d9/ddc/interface_game_settings_tests.pdf, id=922, 501.875pt x 321.2pt>
 File: d9/ddc/interface_game_settings_tests.pdf Graphic file (type pdf)
 
 <use d9/ddc/interface_game_settings_tests.pdf>
 Package pdftex.def Info: d9/ddc/interface_game_settings_tests.pdf used on input
  line 11.
 (pdftex.def)             Requested size: 88.90921pt x 56.9055pt.
- [21 <./d9/ddc/interface_game_settings_tests.pdf>]) (./d7/da9/class_g_l_e_s_deb
+ [18 <./d9/ddc/interface_game_settings_tests.pdf>]) (./d7/da9/class_g_l_e_s_deb
 ug_draw.tex
-<d7/da9/class_g_l_e_s_debug_draw.pdf, id=1446, 501.875pt x 337.39049pt>
+<d7/da9/class_g_l_e_s_debug_draw.pdf, id=941, 501.875pt x 337.39049pt>
 File: d7/da9/class_g_l_e_s_debug_draw.pdf Graphic file (type pdf)
 
 <use d7/da9/class_g_l_e_s_debug_draw.pdf>
@@ -1408,26 +1381,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-[22 <./d7/da9/class_g_l_e_s_debug_draw.pdf>]
-<d4/db1/protocol_h_u_d_delegate-p.pdf, id=1474, 501.875pt x 547.49545pt>
+<d4/db1/protocol_h_u_d_delegate-p.pdf, id=942, 501.875pt x 547.49545pt>
 File: d4/db1/protocol_h_u_d_delegate-p.pdf Graphic file (type pdf)
 
 <use d4/db1/protocol_h_u_d_delegate-p.pdf>
 Package pdftex.def Info: d4/db1/protocol_h_u_d_delegate-p.pdf used on input lin
 e 11.
 (pdftex.def)             Requested size: 78.24164pt x 85.35826pt.
-) (./d3/d8a/interface_h_u_d_layer.tex <d3/d8a/interface_h_u_d_layer.pdf, id=147
-7, 501.875pt x 508.22873pt>
+ [19 <./d7/da9/class_g_l_e_s_debug_draw.pdf> <./d4/db1/protocol_h_u_d_delegate-
+p.pdf>])
+(./d3/d8a/interface_h_u_d_layer.tex
+<d3/d8a/interface_h_u_d_layer.pdf, id=968, 501.875pt x 508.22873pt>
 File: d3/d8a/interface_h_u_d_layer.pdf Graphic file (type pdf)
 
 <use d3/d8a/interface_h_u_d_layer.pdf>
 Package pdftex.def Info: d3/d8a/interface_h_u_d_layer.pdf used on input line 11
 .
 (pdftex.def)             Requested size: 56.18663pt x 56.9055pt.
- [23 <./d4/db1/protocol_h_u_d_delegate-p.pdf> <./d3/d8a/interface_h_u_d_layer.p
-df>] [24])
-(./d6/d93/interface_leap_paint_tests.tex [25]
-<d6/d93/interface_leap_paint_tests.pdf, id=1580, 501.875pt x 382.37857pt>
+ [20 <./d3/d8a/interface_h_u_d_layer.pdf>] [21]) (./d6/d93/interface_leap_paint
+_tests.tex
+<d6/d93/interface_leap_paint_tests.pdf, id=1031, 501.875pt x 382.37857pt>
 File: d6/d93/interface_leap_paint_tests.pdf Graphic file (type pdf)
 
 <use d6/d93/interface_leap_paint_tests.pdf>
@@ -1436,16 +1409,16 @@ ne 7.
 (pdftex.def)             Requested size: 74.68832pt x 56.9055pt.
 )
 (./da/da0/interface_leap_puzz_tests.tex
-<da/da0/interface_leap_puzz_tests.pdf, id=1583, 501.875pt x 386.06232pt>
+<da/da0/interface_leap_puzz_tests.pdf, id=1032, 501.875pt x 386.06232pt>
 File: da/da0/interface_leap_puzz_tests.pdf Graphic file (type pdf)
 
 <use da/da0/interface_leap_puzz_tests.pdf>
 Package pdftex.def Info: da/da0/interface_leap_puzz_tests.pdf used on input lin
 e 7.
 (pdftex.def)             Requested size: 73.97614pt x 56.9055pt.
-)
-(./d7/d50/interface_l_p_c_c_control_button_variable_size.tex
-<d7/d50/interface_l_p_c_c_control_button_variable_size.pdf, id=1586, 501.875pt 
+ [22 <./d6/d93/interface_leap_paint_tests.pdf>]) (./d7/d50/interface_l_p_c_c_co
+ntrol_button_variable_size.tex
+<d7/d50/interface_l_p_c_c_control_button_variable_size.pdf, id=1046, 501.875pt 
 x 199.74625pt>
 File: d7/d50/interface_l_p_c_c_control_button_variable_size.pdf Graphic file (t
 ype pdf)
@@ -1454,101 +1427,94 @@ Package pdftex.def Info: d7/d50/interface_l_p_c_c_control_button_variable_size.
 pdf used on input line 7.
 (pdftex.def)             Requested size: 142.9746pt x 56.9055pt.
 
-[26 <./d6/d93/interface_leap_paint_tests.pdf> <./da/da0/interface_leap_puzz_tes
-ts.pdf> <./d7/d50/interface_l_p_c_c_control_button_variable_size.pdf>])
-(./df/dbc/interface_l_p_line.tex
-<df/dbc/interface_l_p_line.pdf, id=1616, 501.875pt x 542.567pt>
+[23 <./da/da0/interface_leap_puzz_tests.pdf> <./d7/d50/interface_l_p_c_c_contro
+l_button_variable_size.pdf>]) (./df/dbc/interface_l_p_line.tex
+<df/dbc/interface_l_p_line.pdf, id=1065, 501.875pt x 542.567pt>
 File: df/dbc/interface_l_p_line.pdf Graphic file (type pdf)
 
 <use df/dbc/interface_l_p_line.pdf>
 Package pdftex.def Info: df/dbc/interface_l_p_line.pdf used on input line 7.
 (pdftex.def)             Requested size: 52.63333pt x 56.9055pt.
- [27 <./df/dbc/interface_l_p_line.pdf>])
-(./d3/d2e/interface_l_p_tool.tex
-<d3/d2e/interface_l_p_tool.pdf, id=1637, 501.875pt x 565.49268pt>
+) (./d3/d2e/interface_l_p_tool.tex
+<d3/d2e/interface_l_p_tool.pdf, id=1066, 501.875pt x 565.49268pt>
 File: d3/d2e/interface_l_p_tool.pdf Graphic file (type pdf)
 
 <use d3/d2e/interface_l_p_tool.pdf>
 Package pdftex.def Info: d3/d2e/interface_l_p_tool.pdf used on input line 11.
 (pdftex.def)             Requested size: 50.49675pt x 56.9055pt.
-) (./d1/d2b/interface_l_p_tool_tests.tex
-[28 <./d3/d2e/interface_l_p_tool.pdf>]
-<d1/d2b/interface_l_p_tool_tests.pdf, id=1664, 501.875pt x 427.12573pt>
+ [24 <./df/dbc/interface_l_p_line.pdf> <./d3/d2e/interface_l_p_tool.pdf>]) (./d
+1/d2b/interface_l_p_tool_tests.tex
+<d1/d2b/interface_l_p_tool_tests.pdf, id=1089, 501.875pt x 427.12573pt>
 File: d1/d2b/interface_l_p_tool_tests.pdf Graphic file (type pdf)
 
 <use d1/d2b/interface_l_p_tool_tests.pdf>
 Package pdftex.def Info: d1/d2b/interface_l_p_tool_tests.pdf used on input line
  11.
 (pdftex.def)             Requested size: 66.86186pt x 56.9055pt.
-) (./d9/dc7/interface_simple_point.tex <d9/dc7/interface_simple_point.pdf, id=1
-671, 501.875pt x 472.3547pt>
+ [25 <./d1/d2b/interface_l_p_tool_tests.pdf>]) (./d9/dc7/interface_simple_point
+.tex
+<d9/dc7/interface_simple_point.pdf, id=1106, 501.875pt x 472.3547pt>
 File: d9/dc7/interface_simple_point.pdf Graphic file (type pdf)
 
 <use d9/dc7/interface_simple_point.pdf>
 Package pdftex.def Info: d9/dc7/interface_simple_point.pdf used on input line 1
 1.
 (pdftex.def)             Requested size: 60.4598pt x 56.9055pt.
- [29 <./d1/d2b/interface_l_p_tool_tests.pdf> <./d9/dc7/interface_simple_point.p
-df>]
+
 Underfull \vbox (badness 10000) detected at line 59
  []
 
-
+[26 <./d9/dc7/interface_simple_point.pdf>]
 Underfull \vbox (badness 10000) detected at line 95
  []
 
 
-Overfull \vbox (21.74933pt too high) has occurred while \output is active []
-
-
-[30]
 Underfull \vbox (badness 10000) detected at line 131
  []
 
-
+[27]
 Underfull \vbox (badness 10000) detected at line 171
  []
 
-[31] [32]) (./d8/d8e/interface_simple_point_object.tex
-<d8/d8e/interface_simple_point_object.pdf, id=1764, 501.875pt x 329.0995pt>
+[28]) (./d8/d8e/interface_simple_point_object.tex
+<d8/d8e/interface_simple_point_object.pdf, id=1157, 501.875pt x 329.0995pt>
 File: d8/d8e/interface_simple_point_object.pdf Graphic file (type pdf)
 
 <use d8/d8e/interface_simple_point_object.pdf>
 Package pdftex.def Info: d8/d8e/interface_simple_point_object.pdf used on input
  line 11.
 (pdftex.def)             Requested size: 86.78029pt x 56.9055pt.
-)
-(./df/dbc/interface_simple_point_tests.tex [33 <./d8/d8e/interface_simple_point
-_object.pdf>]
-<df/dbc/interface_simple_point_tests.pdf, id=1788, 501.875pt x 352.1958pt>
+ [29 <./d8/d8e/interface_simple_point_object.pdf>]) (./df/dbc/interface_simple_
+point_tests.tex
+<df/dbc/interface_simple_point_tests.pdf, id=1175, 501.875pt x 352.1958pt>
 File: df/dbc/interface_simple_point_tests.pdf Graphic file (type pdf)
 
 <use df/dbc/interface_simple_point_tests.pdf>
 Package pdftex.def Info: df/dbc/interface_simple_point_tests.pdf used on input 
 line 11.
 (pdftex.def)             Requested size: 81.09041pt x 56.9055pt.
-)
-(./dc/d61/interface_sketch_render_texture_scene.tex
-<dc/d61/interface_sketch_render_texture_scene.pdf, id=1803, 501.875pt x 226.837
+ [30 <./df/dbc/interface_simple_point_tests.pdf>]) (./dc/d61/interface_sketch_r
+ender_texture_scene.tex
+<dc/d61/interface_sketch_render_texture_scene.pdf, id=1199, 501.875pt x 226.837
 46pt>
 File: dc/d61/interface_sketch_render_texture_scene.pdf Graphic file (type pdf)
  <use dc/d61/interface_sketch_render_texture_scene.pdf>
 Package pdftex.def Info: dc/d61/interface_sketch_render_texture_scene.pdf used 
 on input line 7.
 (pdftex.def)             Requested size: 125.89728pt x 56.9055pt.
- [34 <./df/dbc/interface_simple_point_tests.pdf>]) (./d3/dc7/interface_utility.
-tex
-<d3/dc7/interface_utility.pdf, id=1825, 501.875pt x 542.567pt>
+ [31 <./dc/d61/interface_sketch_render_texture_scene.pdf>]) (./d3/dc7/interface
+_utility.tex
+<d3/dc7/interface_utility.pdf, id=1232, 501.875pt x 542.567pt>
 File: d3/dc7/interface_utility.pdf Graphic file (type pdf)
 
 <use d3/dc7/interface_utility.pdf>
 Package pdftex.def Info: d3/dc7/interface_utility.pdf used on input line 11.
 (pdftex.def)             Requested size: 52.63333pt x 56.9055pt.
- [35 <./dc/d61/interface_sketch_render_texture_scene.pdf>]
+
 Underfull \vbox (badness 10000) detected at line 47
  []
 
-[36 <./d3/dc7/interface_utility.pdf>]
+[32 <./d3/dc7/interface_utility.pdf>]
 Underfull \vbox (badness 10000) detected at line 76
  []
 
@@ -1557,442 +1523,52 @@ Underfull \vbox (badness 10000) detected at line 101
  []
 
 ) (./dc/d82/interface_utility_tests.tex
-<dc/d82/interface_utility_tests.pdf, id=1888, 501.875pt x 427.12573pt>
+<dc/d82/interface_utility_tests.pdf, id=1252, 501.875pt x 427.12573pt>
 File: dc/d82/interface_utility_tests.pdf Graphic file (type pdf)
 
 <use dc/d82/interface_utility_tests.pdf>
 Package pdftex.def Info: dc/d82/interface_utility_tests.pdf used on input line 
 11.
 (pdftex.def)             Requested size: 66.86186pt x 56.9055pt.
- [37 <./dc/d82/interface_utility_tests.pdf>]) (./refman.ind [38] [39
+ [33]) (./refman.ind [34 <./dc/d82/interface_utility_tests.pdf>] [35
 
-] [40] [41
+] [36] [37
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 15387BB7E3A2BAA2BADE9885DB671B50;25067.
+(rerunfilecheck)             Checksum: 78E66021D1F2B646BED827BA42A83585;16029.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 12598 strings out of 493488
- 198051 string characters out of 3141326
- 286074 words of memory out of 3000000
- 15029 multiletter control sequences out of 15000+200000
- 81981 words of font info for 135 fonts, out of 3000000 for 9000
+ 12339 strings out of 493488
+ 191817 string characters out of 3141326
+ 284526 words of memory out of 3000000
+ 14905 multiletter control sequences out of 15000+200000
+ 62621 words of font info for 103 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,13n,58p,541b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{_utility_tests_8h_source_l00016} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_tests_8h_source} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_tests_8h_source_l00015} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8m_source_l00029} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8m_source_l00023} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8m_source} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8m_source_l00014} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8h_source} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_utility_8h_source_l00017} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_sketch_render_texture_scene_8h_source} has been re
-ferenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_sketch_render_texture_scene_8h_source_l00012} has 
-been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_tests_8h_source_l00019} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_tests_8h_source_l00020} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_tests_8h_source_l00018} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_tests_8h_source} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_tests_8h_source_l00016} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_object_8h_source_l00021} has been ref
-erenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_object_8h_source} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_object_8h_source_l00016} has been ref
-erenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source_l00025} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source_l00024} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source_l00023} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source_l00026} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source_l00074} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source_l00060} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source_l00031} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source_l00046} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8mm_source_l00018} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_simple_point_8h_source_l00018} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_tests_8h_source_l00014} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_tests_8h_source} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_tests_8h_source_l00013} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_8h_source_l00019} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_8h_source_l00018} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_8h_source} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_tool_8h_source_l00016} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_line_8h_source} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_line_8h_source_l00011} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_c_c_control_button_variable_size_8m_source} ha
-s been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_c_c_control_button_variable_size_8m_source_l00
-057} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_c_c_control_button_variable_size_8h_source} ha
-s been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_l_p_c_c_control_button_variable_size_8h_source_l00
-011} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_leap_puzz_tests_8h_source} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_leap_puzz_tests_8h_source_l00011} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_leap_paint_tests_8h_source} has been referenced bu
-t does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_leap_paint_tests_8h_source_l00011} has been refere
-nced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00052} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00031} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00032} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00037} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00043} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00039} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00036} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00038} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00034} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00047} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00044} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00030} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_h_u_d_layer_8h_source_l00020} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_g_l_e_s-_render_8h_source} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_g_l_e_s-_render_8h_source_l00043} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_tests_8h_source_l00018} has been ref
-erenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_tests_8h_source} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_tests_8h_source_l00016} has been ref
-erenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8h_source_l00042} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8h_source_l00041} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8h_source_l00040} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8mm_source} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8mm_source_l00023} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8h_source} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_settings_8h_source_l00035} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_scene_tests_8h_source} has been referenced bu
-t does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_scene_tests_8h_source_l00011} has been refere
-nced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_scene_8h_source} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_scene_8h_source_l00020} has been referenced b
-ut does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_tests_8h_source_l00016} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_tests_8h_source} has been referenced 
-but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_tests_8h_source_l00015} has been refe
-renced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00047} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00052} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00046} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00049} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00051} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00048} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00039} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00040} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00030} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00036} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00041} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00031} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00032} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8mm_source} has been referenced but d
-oes not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8mm_source_l00328} has been reference
-d but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_game_manager_8h_source_l00027} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_finger_painting_scene_8h_source} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_finger_painting_scene_8h_source_l00017} has been r
-eferenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_draw_scene_8h_source} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_draw_scene_8h_source_l00015} has been referenced b
-ut does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00019} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00047} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00040} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00042} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00041} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00043} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00037} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00044} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00045} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00038} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00036} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00095} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00150} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00503} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00142} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00492} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00440} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8mm_source_l00445} has been referen
-ced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_controls_layer_8h_source_l00034} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_brush_selection_layer_8h_source_l00012} has been r
-eferenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_brush_selection_layer_8h_source} has been referenc
-ed but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_brush_selection_layer_8h_source_l00018} has been r
-eferenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_background_layer_8h_source} has been referenced bu
-t does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_background_layer_8h_source_l00016} has been refere
-nced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_app_delegate_8h_source} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_app_delegate_8h_source_l00011} has been referenced
- but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2012/texmf-dist/fo
-nts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
-w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (49 pages, 274732 bytes).
+ 41i,13n,58p,521b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2012/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (40 pages, 253975 bytes).
 PDF statistics:
- 2249 PDF objects out of 2487 (max. 8388607)
- 2110 compressed objects within 22 object streams
- 553 named destinations out of 1000 (max. 500000)
- 1386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1576 PDF objects out of 1728 (max. 8388607)
+ 1453 compressed objects within 15 object streams
+ 420 named destinations out of 1000 (max. 500000)
+ 834 words of extra memory for PDF output out of 10000 (max. 10000000)
 

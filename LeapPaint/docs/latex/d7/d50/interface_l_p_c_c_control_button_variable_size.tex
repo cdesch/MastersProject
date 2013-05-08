@@ -1,4 +1,4 @@
-\hypertarget{interface_l_p_c_c_control_button_variable_size}{\section{L\-P\-C\-C\-Control\-Button\-Variable\-Size Class Reference}
+\hypertarget{interface_l_p_c_c_control_button_variable_size}{\subsection{L\-P\-C\-C\-Control\-Button\-Variable\-Size Class Reference}
 \label{d7/d50/interface_l_p_c_c_control_button_variable_size}\index{L\-P\-C\-C\-Control\-Button\-Variable\-Size@{L\-P\-C\-C\-Control\-Button\-Variable\-Size}}
 }
 Inheritance diagram for L\-P\-C\-C\-Control\-Button\-Variable\-Size\-:\begin{figure}[H]
@@ -7,54 +7,54 @@ Inheritance diagram for L\-P\-C\-C\-Control\-Button\-Variable\-Size\-:\begin{fig
 \includegraphics[height=2.000000cm]{d7/d50/interface_l_p_c_c_control_button_variable_size}
 \end{center}
 \end{figure}
-\subsection*{Instance Methods}
+\subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
 (C\-C\-Control\-Button $\ast$) -\/ \hyperlink{interface_l_p_c_c_control_button_variable_size_acd2df17edaf3d7dbd80e283a7ee35c52}{standard\-Button\-With\-Title\-:}
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsubsection{Detailed Description}
 
 
-Definition at line \hyperlink{_l_p_c_c_control_button_variable_size_8h_source_l00011}{11} of file \hyperlink{_l_p_c_c_control_button_variable_size_8h_source}{L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-h}.
+Definition at line 11 of file L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-h.
 
 
 
-\subsection{Method Documentation}
+\subsubsection{Method Documentation}
 \hypertarget{interface_l_p_c_c_control_button_variable_size_acd2df17edaf3d7dbd80e283a7ee35c52}{\index{L\-P\-C\-C\-Control\-Button\-Variable\-Size@{L\-P\-C\-C\-Control\-Button\-Variable\-Size}!standard\-Button\-With\-Title\-:@{standard\-Button\-With\-Title\-:}}
 \index{standard\-Button\-With\-Title\-:@{standard\-Button\-With\-Title\-:}!LPCCControlButtonVariableSize@{L\-P\-C\-C\-Control\-Button\-Variable\-Size}}
-\subsubsection[{standard\-Button\-With\-Title\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Button $\ast$) standard\-Button\-With\-Title\-: 
+\paragraph[{standard\-Button\-With\-Title\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Button $\ast$) standard\-Button\-With\-Title\-: 
 \begin{DoxyParamCaption}
 \item[{(N\-S\-String $\ast$)}]{title}
 \end{DoxyParamCaption}
 }}\label{d7/d50/interface_l_p_c_c_control_button_variable_size_acd2df17edaf3d7dbd80e283a7ee35c52}
 Creates and return a button with a default background and title color. Creates and return a button with a default background and title color. 
 
-Definition at line \hyperlink{_l_p_c_c_control_button_variable_size_8m_source_l00057}{57} of file \hyperlink{_l_p_c_c_control_button_variable_size_8m_source}{L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-m}.
+Definition at line 57 of file L\-P\-C\-C\-Control\-Button\-Variable\-Size.\-m.
 
 
 \begin{DoxyCode}
-00057                                             :(NSString *)title
-00058 \{
-00060     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
-00061     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
-00062     
-00063 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
-00064 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30]
+57                                             :(NSString *)title
+58 \{
+60     CCScale9Sprite *backgroundButton = [CCScale9Sprite spriteWithFile:@"button.png"];
+61     CCScale9Sprite *backgroundHighlightedButton = [CCScale9Sprite spriteWithFile:@"buttonHighlighted.png"];
+62     
+63 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+64 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"HelveticaNeue-Bold" fontSize:30]
       ;
-00065 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
-00066 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
-00067 \textcolor{preprocessor}{#endif}
-00068 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
-00069     
-00070     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:
+65 \textcolor{preprocessor}{#elif \_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED}
+66 \textcolor{preprocessor}{}    CCLabelTTF *titleButton = [CCLabelTTF labelWithString:title fontName:@"Marker Felt" fontSize:30];
+67 \textcolor{preprocessor}{#endif}
+68 \textcolor{preprocessor}{}    [titleButton setColor:ccc3(159, 168, 176)];
+69     
+70     CCControlButton *button = [CCControlButton buttonWithLabel:titleButton backgroundSprite:
       backgroundButton];
-00071     [button setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
-00072     [button setTitleColor:ccWHITE forState:CCControlStateHighlighted];
-00073     
-00074     \textcolor{keywordflow}{return} button;
-00075 \}
+71     [button setBackgroundSprite:backgroundHighlightedButton forState:CCControlStateHighlighted];
+72     [button setTitleColor:ccWHITE forState:CCControlStateHighlighted];
+73     
+74     \textcolor{keywordflow}{return} button;
+75 \}
 \end{DoxyCode}
 
 

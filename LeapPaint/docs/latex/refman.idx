@@ -1,167 +1,167 @@
-\indexentry{App\discretionary {-}{}{}Delegate@{App\discretionary {-}{}{}Delegate}|hyperpage}{7}
-\indexentry{Background\discretionary {-}{}{}Layer@{Background\discretionary {-}{}{}Layer}|hyperpage}{7}
-\indexentry{Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer@{Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}|hyperpage}{8}
-\indexentry{$<$\discretionary {-}{}{}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}|hyperpage}{8}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{9}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!collapse\discretionary {-}{}{}Panel@{collapse\discretionary {-}{}{}Panel}|hyperpage}{10}
-\indexentry{collapse\discretionary {-}{}{}Panel@{collapse\discretionary {-}{}{}Panel}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!expand\discretionary {-}{}{}Panel@{expand\discretionary {-}{}{}Panel}|hyperpage}{10}
-\indexentry{expand\discretionary {-}{}{}Panel@{expand\discretionary {-}{}{}Panel}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch@{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}|hyperpage}{10}
-\indexentry{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch@{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{10}
-\indexentry{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{11}
-\indexentry{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{11}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:@{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}|hyperpage}{11}
-\indexentry{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:@{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{11}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{11}
-\indexentry{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{11}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!color\discretionary {-}{}{}Label@{color\discretionary {-}{}{}Label}|hyperpage}{12}
-\indexentry{color\discretionary {-}{}{}Label@{color\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{12}
-\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!brush\discretionary {-}{}{}Selection@{brush\discretionary {-}{}{}Selection}|hyperpage}{12}
-\indexentry{brush\discretionary {-}{}{}Selection@{brush\discretionary {-}{}{}Selection}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!delegate@{delegate}|hyperpage}{12}
-\indexentry{delegate@{delegate}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!display\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}|hyperpage}{12}
-\indexentry{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}|hyperpage}{12}
-\indexentry{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Slider@{opacity\discretionary {-}{}{}Slider}|hyperpage}{12}
-\indexentry{opacity\discretionary {-}{}{}Slider@{opacity\discretionary {-}{}{}Slider}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{12}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control@{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}|hyperpage}{13}
-\indexentry{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control@{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{13}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!slider@{slider}|hyperpage}{13}
-\indexentry{slider@{slider}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{13}
-\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!switch\discretionary {-}{}{}Control@{switch\discretionary {-}{}{}Control}|hyperpage}{13}
-\indexentry{switch\discretionary {-}{}{}Control@{switch\discretionary {-}{}{}Control}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{13}
-\indexentry{$<$\discretionary {-}{}{}Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}|hyperpage}{13}
-\indexentry{Draw\discretionary {-}{}{}Scene@{Draw\discretionary {-}{}{}Scene}|hyperpage}{14}
-\indexentry{Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene@{Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene}|hyperpage}{14}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}|hyperpage}{16}
-\indexentry{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{16}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!current\discretionary {-}{}{}Point@{current\discretionary {-}{}{}Point}|hyperpage}{17}
-\indexentry{current\discretionary {-}{}{}Point@{current\discretionary {-}{}{}Point}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!current\discretionary {-}{}{}Pointable@{current\discretionary {-}{}{}Pointable}|hyperpage}{17}
-\indexentry{current\discretionary {-}{}{}Pointable@{current\discretionary {-}{}{}Pointable}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found@{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}|hyperpage}{17}
-\indexentry{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found@{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{17}
-\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{17}
-\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!last\discretionary {-}{}{}Point@{last\discretionary {-}{}{}Point}|hyperpage}{17}
-\indexentry{last\discretionary {-}{}{}Point@{last\discretionary {-}{}{}Point}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!last\discretionary {-}{}{}Tag@{last\discretionary {-}{}{}Tag}|hyperpage}{17}
-\indexentry{last\discretionary {-}{}{}Tag@{last\discretionary {-}{}{}Tag}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!background\discretionary {-}{}{}Layer@{background\discretionary {-}{}{}Layer}|hyperpage}{17}
-\indexentry{background\discretionary {-}{}{}Layer@{background\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!controller@{controller}|hyperpage}{17}
-\indexentry{controller@{controller}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!controls\discretionary {-}{}{}Layer@{controls\discretionary {-}{}{}Layer}|hyperpage}{18}
-\indexentry{controls\discretionary {-}{}{}Layer@{controls\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!hud\discretionary {-}{}{}Layer@{hud\discretionary {-}{}{}Layer}|hyperpage}{18}
-\indexentry{hud\discretionary {-}{}{}Layer@{hud\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!leap\discretionary {-}{}{}Screen@{leap\discretionary {-}{}{}Screen}|hyperpage}{18}
-\indexentry{leap\discretionary {-}{}{}Screen@{leap\discretionary {-}{}{}Screen}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
-\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!texture\discretionary {-}{}{}Scene@{texture\discretionary {-}{}{}Scene}|hyperpage}{18}
-\indexentry{texture\discretionary {-}{}{}Scene@{texture\discretionary {-}{}{}Scene}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
-\indexentry{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}|hyperpage}{18}
-\indexentry{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}!node@{node}|hyperpage}{19}
-\indexentry{node@{node}!GameManagerTests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}|hyperpage}{19}
-\indexentry{Game\discretionary {-}{}{}Scene@{Game\discretionary {-}{}{}Scene}|hyperpage}{19}
-\indexentry{Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests}|hyperpage}{19}
-\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}|hyperpage}{20}
-\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!shared\discretionary {-}{}{}Instance@{shared\discretionary {-}{}{}Instance}|hyperpage}{20}
-\indexentry{shared\discretionary {-}{}{}Instance@{shared\discretionary {-}{}{}Instance}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{20}
-\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode@{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}|hyperpage}{21}
-\indexentry{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode@{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{21}
-\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!eraser\discretionary {-}{}{}Mode@{eraser\discretionary {-}{}{}Mode}|hyperpage}{21}
-\indexentry{eraser\discretionary {-}{}{}Mode@{eraser\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{21}
-\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{21}
-\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{21}
-\indexentry{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}|hyperpage}{21}
-\indexentry{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{22}
-\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!GameSettingsTests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}|hyperpage}{22}
-\indexentry{G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw@{G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw}|hyperpage}{22}
-\indexentry{$<$\discretionary {-}{}{}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$}|hyperpage}{23}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{23}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!erase\discretionary {-}{}{}Mode@{erase\discretionary {-}{}{}Mode}|hyperpage}{24}
-\indexentry{erase\discretionary {-}{}{}Mode@{erase\discretionary {-}{}{}Mode}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{24}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{24}
-\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{24}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{24}
-\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{24}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Brush@{last\discretionary {-}{}{}Brush}|hyperpage}{24}
-\indexentry{last\discretionary {-}{}{}Brush@{last\discretionary {-}{}{}Brush}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{24}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Color@{last\discretionary {-}{}{}Color}|hyperpage}{25}
-\indexentry{last\discretionary {-}{}{}Color@{last\discretionary {-}{}{}Color}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Scale@{last\discretionary {-}{}{}Scale}|hyperpage}{25}
-\indexentry{last\discretionary {-}{}{}Scale@{last\discretionary {-}{}{}Scale}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!painting\discretionary {-}{}{}Indicator@{painting\discretionary {-}{}{}Indicator}|hyperpage}{25}
-\indexentry{painting\discretionary {-}{}{}Indicator@{painting\discretionary {-}{}{}Indicator}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!previous\discretionary {-}{}{}Color@{previous\discretionary {-}{}{}Color}|hyperpage}{25}
-\indexentry{previous\discretionary {-}{}{}Color@{previous\discretionary {-}{}{}Color}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!primary\discretionary {-}{}{}Tool@{primary\discretionary {-}{}{}Tool}|hyperpage}{25}
-\indexentry{primary\discretionary {-}{}{}Tool@{primary\discretionary {-}{}{}Tool}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}|hyperpage}{25}
-\indexentry{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!delegate@{delegate}|hyperpage}{25}
-\indexentry{delegate@{delegate}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{25}
-\indexentry{Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests@{Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests}|hyperpage}{26}
-\indexentry{Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests@{Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests}|hyperpage}{26}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}|hyperpage}{26}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}!standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:@{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}|hyperpage}{27}
-\indexentry{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:@{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}!LPCCControlButtonVariableSize@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}|hyperpage}{27}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Line@{L\discretionary {-}{}{}P\discretionary {-}{}{}Line}|hyperpage}{27}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{28}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}!tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{tool\discretionary {-}{}{}I\discretionary {-}{}{}D}|hyperpage}{28}
-\indexentry{tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{tool\discretionary {-}{}{}I\discretionary {-}{}{}D}!LPTool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{28}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}!updated@{updated}|hyperpage}{28}
-\indexentry{updated@{updated}!LPTool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{28}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}|hyperpage}{29}
-\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{29}
-\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!LPToolTests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}|hyperpage}{29}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}|hyperpage}{29}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}|hyperpage}{30}
-\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{30}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}|hyperpage}{30}
-\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{30}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}|hyperpage}{31}
-\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{31}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}|hyperpage}{31}
-\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{31}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!point@{point}|hyperpage}{32}
-\indexentry{point@{point}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{32}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!is3d@{is3d}|hyperpage}{32}
-\indexentry{is3d@{is3d}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{32}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!x@{x}|hyperpage}{32}
-\indexentry{x@{x}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{32}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!y@{y}|hyperpage}{32}
-\indexentry{y@{y}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{32}
-\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!z@{z}|hyperpage}{32}
-\indexentry{z@{z}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{32}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}|hyperpage}{33}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}!point@{point}|hyperpage}{33}
-\indexentry{point@{point}!SimplePointObject@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}|hyperpage}{33}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{34}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{34}
-\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{34}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!three\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}|hyperpage}{34}
-\indexentry{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{34}
-\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!two\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}|hyperpage}{34}
-\indexentry{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{34}
-\indexentry{Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene@{Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene}|hyperpage}{35}
-\indexentry{Utility@{Utility}|hyperpage}{36}
-\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}|hyperpage}{36}
-\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{36}
-\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}|hyperpage}{36}
-\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{36}
-\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}|hyperpage}{37}
-\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{37}
-\indexentry{Utility\discretionary {-}{}{}Tests@{Utility\discretionary {-}{}{}Tests}|hyperpage}{37}
-\indexentry{Utility\discretionary {-}{}{}Tests@{Utility\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{38}
-\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!UtilityTests@{Utility\discretionary {-}{}{}Tests}|hyperpage}{38}
+\indexentry{App\discretionary {-}{}{}Delegate@{App\discretionary {-}{}{}Delegate}|hyperpage}{5}
+\indexentry{Background\discretionary {-}{}{}Layer@{Background\discretionary {-}{}{}Layer}|hyperpage}{5}
+\indexentry{Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer@{Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer}|hyperpage}{6}
+\indexentry{$<$\discretionary {-}{}{}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}|hyperpage}{6}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{7}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!collapse\discretionary {-}{}{}Panel@{collapse\discretionary {-}{}{}Panel}|hyperpage}{8}
+\indexentry{collapse\discretionary {-}{}{}Panel@{collapse\discretionary {-}{}{}Panel}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{8}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!expand\discretionary {-}{}{}Panel@{expand\discretionary {-}{}{}Panel}|hyperpage}{8}
+\indexentry{expand\discretionary {-}{}{}Panel@{expand\discretionary {-}{}{}Panel}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{8}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch@{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}|hyperpage}{8}
+\indexentry{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch@{make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{8}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{8}
+\indexentry{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{8}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{8}
+\indexentry{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{8}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:@{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}|hyperpage}{9}
+\indexentry{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:@{update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{9}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}|hyperpage}{9}
+\indexentry{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:@{value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{9}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!color\discretionary {-}{}{}Label@{color\discretionary {-}{}{}Label}|hyperpage}{9}
+\indexentry{color\discretionary {-}{}{}Label@{color\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{9}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{9}
+\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{9}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!brush\discretionary {-}{}{}Selection@{brush\discretionary {-}{}{}Selection}|hyperpage}{10}
+\indexentry{brush\discretionary {-}{}{}Selection@{brush\discretionary {-}{}{}Selection}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!delegate@{delegate}|hyperpage}{10}
+\indexentry{delegate@{delegate}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!display\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}|hyperpage}{10}
+\indexentry{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}|hyperpage}{10}
+\indexentry{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label@{opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Slider@{opacity\discretionary {-}{}{}Slider}|hyperpage}{10}
+\indexentry{opacity\discretionary {-}{}{}Slider@{opacity\discretionary {-}{}{}Slider}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control@{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}|hyperpage}{10}
+\indexentry{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control@{opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!slider@{slider}|hyperpage}{10}
+\indexentry{slider@{slider}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{Controls\discretionary {-}{}{}Layer@{Controls\discretionary {-}{}{}Layer}!switch\discretionary {-}{}{}Control@{switch\discretionary {-}{}{}Control}|hyperpage}{10}
+\indexentry{switch\discretionary {-}{}{}Control@{switch\discretionary {-}{}{}Control}!ControlsLayer@{Controls\discretionary {-}{}{}Layer}|hyperpage}{10}
+\indexentry{$<$\discretionary {-}{}{}Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$}|hyperpage}{11}
+\indexentry{Draw\discretionary {-}{}{}Scene@{Draw\discretionary {-}{}{}Scene}|hyperpage}{11}
+\indexentry{Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene@{Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene}|hyperpage}{12}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}|hyperpage}{13}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}|hyperpage}{13}
+\indexentry{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:@{opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{13}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!current\discretionary {-}{}{}Point@{current\discretionary {-}{}{}Point}|hyperpage}{14}
+\indexentry{current\discretionary {-}{}{}Point@{current\discretionary {-}{}{}Point}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!current\discretionary {-}{}{}Pointable@{current\discretionary {-}{}{}Pointable}|hyperpage}{14}
+\indexentry{current\discretionary {-}{}{}Pointable@{current\discretionary {-}{}{}Pointable}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found@{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}|hyperpage}{14}
+\indexentry{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found@{frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{14}
+\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{14}
+\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!last\discretionary {-}{}{}Point@{last\discretionary {-}{}{}Point}|hyperpage}{14}
+\indexentry{last\discretionary {-}{}{}Point@{last\discretionary {-}{}{}Point}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!last\discretionary {-}{}{}Tag@{last\discretionary {-}{}{}Tag}|hyperpage}{14}
+\indexentry{last\discretionary {-}{}{}Tag@{last\discretionary {-}{}{}Tag}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{14}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!background\discretionary {-}{}{}Layer@{background\discretionary {-}{}{}Layer}|hyperpage}{15}
+\indexentry{background\discretionary {-}{}{}Layer@{background\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!controller@{controller}|hyperpage}{15}
+\indexentry{controller@{controller}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!controls\discretionary {-}{}{}Layer@{controls\discretionary {-}{}{}Layer}|hyperpage}{15}
+\indexentry{controls\discretionary {-}{}{}Layer@{controls\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!hud\discretionary {-}{}{}Layer@{hud\discretionary {-}{}{}Layer}|hyperpage}{15}
+\indexentry{hud\discretionary {-}{}{}Layer@{hud\discretionary {-}{}{}Layer}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!leap\discretionary {-}{}{}Screen@{leap\discretionary {-}{}{}Screen}|hyperpage}{15}
+\indexentry{leap\discretionary {-}{}{}Screen@{leap\discretionary {-}{}{}Screen}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!texture\discretionary {-}{}{}Scene@{texture\discretionary {-}{}{}Scene}|hyperpage}{15}
+\indexentry{texture\discretionary {-}{}{}Scene@{texture\discretionary {-}{}{}Scene}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}|hyperpage}{15}
+\indexentry{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}!node@{node}|hyperpage}{16}
+\indexentry{node@{node}!GameManagerTests@{Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests}|hyperpage}{16}
+\indexentry{Game\discretionary {-}{}{}Scene@{Game\discretionary {-}{}{}Scene}|hyperpage}{16}
+\indexentry{Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests}|hyperpage}{16}
+\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}|hyperpage}{17}
+\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!shared\discretionary {-}{}{}Instance@{shared\discretionary {-}{}{}Instance}|hyperpage}{17}
+\indexentry{shared\discretionary {-}{}{}Instance@{shared\discretionary {-}{}{}Instance}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{17}
+\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode@{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}|hyperpage}{18}
+\indexentry{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode@{depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!eraser\discretionary {-}{}{}Mode@{eraser\discretionary {-}{}{}Mode}|hyperpage}{18}
+\indexentry{eraser\discretionary {-}{}{}Mode@{eraser\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Settings@{Game\discretionary {-}{}{}Settings}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{18}
+\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!GameSettings@{Game\discretionary {-}{}{}Settings}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{18}
+\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!GameSettingsTests@{Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests}|hyperpage}{18}
+\indexentry{G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw@{G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw}|hyperpage}{19}
+\indexentry{$<$\discretionary {-}{}{}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$@{$<$\discretionary {-}{}{}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$}|hyperpage}{19}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{20}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!erase\discretionary {-}{}{}Mode@{erase\discretionary {-}{}{}Mode}|hyperpage}{21}
+\indexentry{erase\discretionary {-}{}{}Mode@{erase\discretionary {-}{}{}Mode}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}|hyperpage}{21}
+\indexentry{game\discretionary {-}{}{}Settings@{game\discretionary {-}{}{}Settings}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}|hyperpage}{21}
+\indexentry{input\discretionary {-}{}{}Mode@{input\discretionary {-}{}{}Mode}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Brush@{last\discretionary {-}{}{}Brush}|hyperpage}{21}
+\indexentry{last\discretionary {-}{}{}Brush@{last\discretionary {-}{}{}Brush}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Color@{last\discretionary {-}{}{}Color}|hyperpage}{21}
+\indexentry{last\discretionary {-}{}{}Color@{last\discretionary {-}{}{}Color}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!last\discretionary {-}{}{}Scale@{last\discretionary {-}{}{}Scale}|hyperpage}{21}
+\indexentry{last\discretionary {-}{}{}Scale@{last\discretionary {-}{}{}Scale}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!painting\discretionary {-}{}{}Indicator@{painting\discretionary {-}{}{}Indicator}|hyperpage}{21}
+\indexentry{painting\discretionary {-}{}{}Indicator@{painting\discretionary {-}{}{}Indicator}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!previous\discretionary {-}{}{}Color@{previous\discretionary {-}{}{}Color}|hyperpage}{21}
+\indexentry{previous\discretionary {-}{}{}Color@{previous\discretionary {-}{}{}Color}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{21}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!primary\discretionary {-}{}{}Tool@{primary\discretionary {-}{}{}Tool}|hyperpage}{22}
+\indexentry{primary\discretionary {-}{}{}Tool@{primary\discretionary {-}{}{}Tool}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{22}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}|hyperpage}{22}
+\indexentry{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{22}
+\indexentry{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}!delegate@{delegate}|hyperpage}{22}
+\indexentry{delegate@{delegate}!HUDLayer@{H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer}|hyperpage}{22}
+\indexentry{Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests@{Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests}|hyperpage}{22}
+\indexentry{Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests@{Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests}|hyperpage}{22}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}|hyperpage}{23}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}!standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:@{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}|hyperpage}{23}
+\indexentry{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:@{standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}!LPCCControlButtonVariableSize@{L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size}|hyperpage}{23}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Line@{L\discretionary {-}{}{}P\discretionary {-}{}{}Line}|hyperpage}{24}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{24}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}!tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{tool\discretionary {-}{}{}I\discretionary {-}{}{}D}|hyperpage}{25}
+\indexentry{tool\discretionary {-}{}{}I\discretionary {-}{}{}D@{tool\discretionary {-}{}{}I\discretionary {-}{}{}D}!LPTool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{25}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}!updated@{updated}|hyperpage}{25}
+\indexentry{updated@{updated}!LPTool@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool}|hyperpage}{25}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}|hyperpage}{25}
+\indexentry{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{25}
+\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!LPToolTests@{L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests}|hyperpage}{25}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}|hyperpage}{26}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}|hyperpage}{26}
+\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{26}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}|hyperpage}{27}
+\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{27}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}|hyperpage}{27}
+\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{27}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}|hyperpage}{28}
+\indexentry{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:@{init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{28}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!point@{point}|hyperpage}{28}
+\indexentry{point@{point}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{28}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!is3d@{is3d}|hyperpage}{29}
+\indexentry{is3d@{is3d}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{29}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!x@{x}|hyperpage}{29}
+\indexentry{x@{x}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{29}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!y@{y}|hyperpage}{29}
+\indexentry{y@{y}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{29}
+\indexentry{Simple\discretionary {-}{}{}Point@{Simple\discretionary {-}{}{}Point}!z@{z}|hyperpage}{29}
+\indexentry{z@{z}!SimplePoint@{Simple\discretionary {-}{}{}Point}|hyperpage}{29}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}|hyperpage}{29}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}!point@{point}|hyperpage}{30}
+\indexentry{point@{point}!SimplePointObject@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object}|hyperpage}{30}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{30}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{30}
+\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{30}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!three\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}|hyperpage}{31}
+\indexentry{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{31}
+\indexentry{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}!two\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}|hyperpage}{31}
+\indexentry{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point@{two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}!SimplePointTests@{Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests}|hyperpage}{31}
+\indexentry{Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene@{Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene}|hyperpage}{31}
+\indexentry{Utility@{Utility}|hyperpage}{32}
+\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}|hyperpage}{32}
+\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{32}
+\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}|hyperpage}{33}
+\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{33}
+\indexentry{Utility@{Utility}!get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}|hyperpage}{33}
+\indexentry{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:@{get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}!Utility@{Utility}|hyperpage}{33}
+\indexentry{Utility\discretionary {-}{}{}Tests@{Utility\discretionary {-}{}{}Tests}|hyperpage}{33}
+\indexentry{Utility\discretionary {-}{}{}Tests@{Utility\discretionary {-}{}{}Tests}!test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}|hyperpage}{34}
+\indexentry{test\discretionary {-}{}{}Name@{test\discretionary {-}{}{}Name}!UtilityTests@{Utility\discretionary {-}{}{}Tests}|hyperpage}{34}

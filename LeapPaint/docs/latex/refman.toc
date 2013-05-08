@@ -1,155 +1,155 @@
-\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
-\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}App\discretionary {-}{}{}Delegate Class Reference}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Background\discretionary {-}{}{}Layer Class Reference}{7}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer Class Reference}{8}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{8}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}$<$Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$ Protocol Reference}{8}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{9}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Controls\discretionary {-}{}{}Layer Class Reference}{9}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{10}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Method Documentation}{10}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}collapse\discretionary {-}{}{}Panel}{10}{subsubsection.4.5.2.1}
-\contentsline {subsubsection}{\numberline {4.5.2.2}expand\discretionary {-}{}{}Panel}{10}{subsubsection.4.5.2.2}
-\contentsline {subsubsection}{\numberline {4.5.2.3}make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}{10}{subsubsection.4.5.2.3}
-\contentsline {subsubsection}{\numberline {4.5.2.4}opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{11}{subsubsection.4.5.2.4}
-\contentsline {subsubsection}{\numberline {4.5.2.5}switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{11}{subsubsection.4.5.2.5}
-\contentsline {subsubsection}{\numberline {4.5.2.6}update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}{11}{subsubsection.4.5.2.6}
-\contentsline {subsubsection}{\numberline {4.5.2.7}value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{11}{subsubsection.4.5.2.7}
-\contentsline {subsection}{\numberline {4.5.3}Member Data Documentation}{12}{subsection.4.5.3}
-\contentsline {subsubsection}{\numberline {4.5.3.1}color\discretionary {-}{}{}Label}{12}{subsubsection.4.5.3.1}
-\contentsline {subsubsection}{\numberline {4.5.3.2}game\discretionary {-}{}{}Settings}{12}{subsubsection.4.5.3.2}
-\contentsline {subsection}{\numberline {4.5.4}Property Documentation}{12}{subsection.4.5.4}
-\contentsline {subsubsection}{\numberline {4.5.4.1}brush\discretionary {-}{}{}Selection}{12}{subsubsection.4.5.4.1}
-\contentsline {subsubsection}{\numberline {4.5.4.2}delegate}{12}{subsubsection.4.5.4.2}
-\contentsline {subsubsection}{\numberline {4.5.4.3}display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}{12}{subsubsection.4.5.4.3}
-\contentsline {subsubsection}{\numberline {4.5.4.4}opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}{12}{subsubsection.4.5.4.4}
-\contentsline {subsubsection}{\numberline {4.5.4.5}opacity\discretionary {-}{}{}Slider}{13}{subsubsection.4.5.4.5}
-\contentsline {subsubsection}{\numberline {4.5.4.6}opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}{13}{subsubsection.4.5.4.6}
-\contentsline {subsubsection}{\numberline {4.5.4.7}slider}{13}{subsubsection.4.5.4.7}
-\contentsline {subsubsection}{\numberline {4.5.4.8}switch\discretionary {-}{}{}Control}{13}{subsubsection.4.5.4.8}
-\contentsline {section}{\numberline {4.6}$<$Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$ Protocol Reference}{13}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{14}{subsection.4.6.1}
-\contentsline {section}{\numberline {4.7}Draw\discretionary {-}{}{}Scene Class Reference}{14}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{14}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene Class Reference}{14}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{15}{subsection.4.8.1}
-\contentsline {section}{\numberline {4.9}Game\discretionary {-}{}{}Manager Class Reference}{15}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{16}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Method Documentation}{16}{subsection.4.9.2}
-\contentsline {subsubsection}{\numberline {4.9.2.1}opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}{16}{subsubsection.4.9.2.1}
-\contentsline {subsection}{\numberline {4.9.3}Member Data Documentation}{17}{subsection.4.9.3}
-\contentsline {subsubsection}{\numberline {4.9.3.1}current\discretionary {-}{}{}Point}{17}{subsubsection.4.9.3.1}
-\contentsline {subsubsection}{\numberline {4.9.3.2}current\discretionary {-}{}{}Pointable}{17}{subsubsection.4.9.3.2}
-\contentsline {subsubsection}{\numberline {4.9.3.3}frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}{17}{subsubsection.4.9.3.3}
-\contentsline {subsubsection}{\numberline {4.9.3.4}game\discretionary {-}{}{}Settings}{17}{subsubsection.4.9.3.4}
-\contentsline {subsubsection}{\numberline {4.9.3.5}input\discretionary {-}{}{}Mode}{17}{subsubsection.4.9.3.5}
-\contentsline {subsubsection}{\numberline {4.9.3.6}last\discretionary {-}{}{}Point}{17}{subsubsection.4.9.3.6}
-\contentsline {subsubsection}{\numberline {4.9.3.7}last\discretionary {-}{}{}Tag}{17}{subsubsection.4.9.3.7}
-\contentsline {subsection}{\numberline {4.9.4}Property Documentation}{17}{subsection.4.9.4}
-\contentsline {subsubsection}{\numberline {4.9.4.1}background\discretionary {-}{}{}Layer}{17}{subsubsection.4.9.4.1}
-\contentsline {subsubsection}{\numberline {4.9.4.2}controller}{18}{subsubsection.4.9.4.2}
-\contentsline {subsubsection}{\numberline {4.9.4.3}controls\discretionary {-}{}{}Layer}{18}{subsubsection.4.9.4.3}
-\contentsline {subsubsection}{\numberline {4.9.4.4}hud\discretionary {-}{}{}Layer}{18}{subsubsection.4.9.4.4}
-\contentsline {subsubsection}{\numberline {4.9.4.5}leap\discretionary {-}{}{}Screen}{18}{subsubsection.4.9.4.5}
-\contentsline {subsubsection}{\numberline {4.9.4.6}texture\discretionary {-}{}{}Scene}{18}{subsubsection.4.9.4.6}
-\contentsline {section}{\numberline {4.10}Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests Class Reference}{18}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{19}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Member Data Documentation}{19}{subsection.4.10.2}
-\contentsline {subsubsection}{\numberline {4.10.2.1}node}{19}{subsubsection.4.10.2.1}
-\contentsline {section}{\numberline {4.11}Game\discretionary {-}{}{}Scene Class Reference}{19}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{19}{subsection.4.11.1}
-\contentsline {section}{\numberline {4.12}Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests Class Reference}{19}{section.4.12}
-\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{20}{subsection.4.12.1}
-\contentsline {section}{\numberline {4.13}Game\discretionary {-}{}{}Settings Class Reference}{20}{section.4.13}
-\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{20}{subsection.4.13.1}
-\contentsline {subsection}{\numberline {4.13.2}Method Documentation}{20}{subsection.4.13.2}
-\contentsline {subsubsection}{\numberline {4.13.2.1}shared\discretionary {-}{}{}Instance}{20}{subsubsection.4.13.2.1}
-\contentsline {subsection}{\numberline {4.13.3}Property Documentation}{21}{subsection.4.13.3}
-\contentsline {subsubsection}{\numberline {4.13.3.1}depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}{21}{subsubsection.4.13.3.1}
-\contentsline {subsubsection}{\numberline {4.13.3.2}eraser\discretionary {-}{}{}Mode}{21}{subsubsection.4.13.3.2}
-\contentsline {subsubsection}{\numberline {4.13.3.3}input\discretionary {-}{}{}Mode}{21}{subsubsection.4.13.3.3}
-\contentsline {section}{\numberline {4.14}Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests Class Reference}{21}{section.4.14}
-\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{22}{subsection.4.14.1}
-\contentsline {subsection}{\numberline {4.14.2}Member Data Documentation}{22}{subsection.4.14.2}
-\contentsline {subsubsection}{\numberline {4.14.2.1}game\discretionary {-}{}{}Settings}{22}{subsubsection.4.14.2.1}
-\contentsline {section}{\numberline {4.15}G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw Class Reference}{22}{section.4.15}
-\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{22}{subsection.4.15.1}
-\contentsline {section}{\numberline {4.16}$<$H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$ Protocol Reference}{23}{section.4.16}
-\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{23}{subsection.4.16.1}
-\contentsline {section}{\numberline {4.17}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer Class Reference}{23}{section.4.17}
-\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{24}{subsection.4.17.1}
-\contentsline {subsection}{\numberline {4.17.2}Member Data Documentation}{24}{subsection.4.17.2}
-\contentsline {subsubsection}{\numberline {4.17.2.1}erase\discretionary {-}{}{}Mode}{24}{subsubsection.4.17.2.1}
-\contentsline {subsubsection}{\numberline {4.17.2.2}game\discretionary {-}{}{}Settings}{24}{subsubsection.4.17.2.2}
-\contentsline {subsubsection}{\numberline {4.17.2.3}input\discretionary {-}{}{}Mode}{24}{subsubsection.4.17.2.3}
-\contentsline {subsubsection}{\numberline {4.17.2.4}last\discretionary {-}{}{}Brush}{25}{subsubsection.4.17.2.4}
-\contentsline {subsubsection}{\numberline {4.17.2.5}last\discretionary {-}{}{}Color}{25}{subsubsection.4.17.2.5}
-\contentsline {subsubsection}{\numberline {4.17.2.6}last\discretionary {-}{}{}Scale}{25}{subsubsection.4.17.2.6}
-\contentsline {subsubsection}{\numberline {4.17.2.7}painting\discretionary {-}{}{}Indicator}{25}{subsubsection.4.17.2.7}
-\contentsline {subsubsection}{\numberline {4.17.2.8}previous\discretionary {-}{}{}Color}{25}{subsubsection.4.17.2.8}
-\contentsline {subsubsection}{\numberline {4.17.2.9}primary\discretionary {-}{}{}Tool}{25}{subsubsection.4.17.2.9}
-\contentsline {subsubsection}{\numberline {4.17.2.10}primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{subsubsection.4.17.2.10}
-\contentsline {subsection}{\numberline {4.17.3}Property Documentation}{25}{subsection.4.17.3}
-\contentsline {subsubsection}{\numberline {4.17.3.1}delegate}{25}{subsubsection.4.17.3.1}
-\contentsline {section}{\numberline {4.18}Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests Class Reference}{26}{section.4.18}
-\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{26}{subsection.4.18.1}
-\contentsline {section}{\numberline {4.19}Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests Class Reference}{26}{section.4.19}
-\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{26}{subsection.4.19.1}
-\contentsline {section}{\numberline {4.20}L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size Class Reference}{26}{section.4.20}
-\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{27}{subsection.4.20.1}
-\contentsline {subsection}{\numberline {4.20.2}Method Documentation}{27}{subsection.4.20.2}
-\contentsline {subsubsection}{\numberline {4.20.2.1}standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}{27}{subsubsection.4.20.2.1}
-\contentsline {section}{\numberline {4.21}L\discretionary {-}{}{}P\discretionary {-}{}{}Line Class Reference}{27}{section.4.21}
-\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{28}{subsection.4.21.1}
-\contentsline {section}{\numberline {4.22}L\discretionary {-}{}{}P\discretionary {-}{}{}Tool Class Reference}{28}{section.4.22}
-\contentsline {subsection}{\numberline {4.22.1}Detailed Description}{28}{subsection.4.22.1}
-\contentsline {subsection}{\numberline {4.22.2}Property Documentation}{28}{subsection.4.22.2}
-\contentsline {subsubsection}{\numberline {4.22.2.1}tool\discretionary {-}{}{}I\discretionary {-}{}{}D}{28}{subsubsection.4.22.2.1}
-\contentsline {subsubsection}{\numberline {4.22.2.2}updated}{28}{subsubsection.4.22.2.2}
-\contentsline {section}{\numberline {4.23}L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests Class Reference}{29}{section.4.23}
-\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{29}{subsection.4.23.1}
-\contentsline {subsection}{\numberline {4.23.2}Member Data Documentation}{29}{subsection.4.23.2}
-\contentsline {subsubsection}{\numberline {4.23.2.1}test\discretionary {-}{}{}Name}{29}{subsubsection.4.23.2.1}
-\contentsline {section}{\numberline {4.24}Simple\discretionary {-}{}{}Point Class Reference}{29}{section.4.24}
-\contentsline {subsection}{\numberline {4.24.1}Detailed Description}{30}{subsection.4.24.1}
-\contentsline {subsection}{\numberline {4.24.2}Method Documentation}{30}{subsection.4.24.2}
-\contentsline {subsubsection}{\numberline {4.24.2.1}init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}{30}{subsubsection.4.24.2.1}
-\contentsline {subsubsection}{\numberline {4.24.2.2}init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}{30}{subsubsection.4.24.2.2}
-\contentsline {subsubsection}{\numberline {4.24.2.3}init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}{31}{subsubsection.4.24.2.3}
-\contentsline {subsubsection}{\numberline {4.24.2.4}init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}{31}{subsubsection.4.24.2.4}
-\contentsline {subsubsection}{\numberline {4.24.2.5}point}{32}{subsubsection.4.24.2.5}
-\contentsline {subsection}{\numberline {4.24.3}Property Documentation}{32}{subsection.4.24.3}
-\contentsline {subsubsection}{\numberline {4.24.3.1}is3d}{32}{subsubsection.4.24.3.1}
-\contentsline {subsubsection}{\numberline {4.24.3.2}x}{32}{subsubsection.4.24.3.2}
-\contentsline {subsubsection}{\numberline {4.24.3.3}y}{32}{subsubsection.4.24.3.3}
-\contentsline {subsubsection}{\numberline {4.24.3.4}z}{33}{subsubsection.4.24.3.4}
-\contentsline {section}{\numberline {4.25}Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object Class Reference}{33}{section.4.25}
-\contentsline {subsection}{\numberline {4.25.1}Detailed Description}{33}{subsection.4.25.1}
-\contentsline {subsection}{\numberline {4.25.2}Property Documentation}{33}{subsection.4.25.2}
-\contentsline {subsubsection}{\numberline {4.25.2.1}point}{33}{subsubsection.4.25.2.1}
-\contentsline {section}{\numberline {4.26}Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests Class Reference}{34}{section.4.26}
-\contentsline {subsection}{\numberline {4.26.1}Detailed Description}{34}{subsection.4.26.1}
-\contentsline {subsection}{\numberline {4.26.2}Member Data Documentation}{34}{subsection.4.26.2}
-\contentsline {subsubsection}{\numberline {4.26.2.1}test\discretionary {-}{}{}Name}{34}{subsubsection.4.26.2.1}
-\contentsline {subsubsection}{\numberline {4.26.2.2}three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}{34}{subsubsection.4.26.2.2}
-\contentsline {subsubsection}{\numberline {4.26.2.3}two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}{34}{subsubsection.4.26.2.3}
-\contentsline {section}{\numberline {4.27}Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene Class Reference}{35}{section.4.27}
-\contentsline {subsection}{\numberline {4.27.1}Detailed Description}{35}{subsection.4.27.1}
-\contentsline {section}{\numberline {4.28}Utility Class Reference}{36}{section.4.28}
-\contentsline {subsection}{\numberline {4.28.1}Detailed Description}{36}{subsection.4.28.1}
-\contentsline {subsection}{\numberline {4.28.2}Method Documentation}{36}{subsection.4.28.2}
-\contentsline {subsubsection}{\numberline {4.28.2.1}get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}{36}{subsubsection.4.28.2.1}
-\contentsline {subsubsection}{\numberline {4.28.2.2}get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}{36}{subsubsection.4.28.2.2}
-\contentsline {subsubsection}{\numberline {4.28.2.3}get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}{37}{subsubsection.4.28.2.3}
-\contentsline {section}{\numberline {4.29}Utility\discretionary {-}{}{}Tests Class Reference}{37}{section.4.29}
-\contentsline {subsection}{\numberline {4.29.1}Detailed Description}{38}{subsection.4.29.1}
-\contentsline {subsection}{\numberline {4.29.2}Member Data Documentation}{38}{subsection.4.29.2}
-\contentsline {subsubsection}{\numberline {4.29.2.1}test\discretionary {-}{}{}Name}{38}{subsubsection.4.29.2.1}
-\contentsline {part}{Index}{38}{subsubsection.4.29.2.1}
+\contentsline {section}{\numberline {1}Main Page}{1}{section.1}
+\contentsline {section}{\numberline {2}Hierarchical Index}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Class Hierarchy}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}Class Index}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Class List}{4}{subsection.3.1}
+\contentsline {section}{\numberline {4}Class Documentation}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}App\discretionary {-}{}{}Delegate Class Reference}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Detailed Description}{5}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Background\discretionary {-}{}{}Layer Class Reference}{5}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Detailed Description}{5}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer Class Reference}{6}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Detailed Description}{6}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.4}$<$Brush\discretionary {-}{}{}Selection\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$ Protocol Reference}{6}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Detailed Description}{6}{subsubsection.4.4.1}
+\contentsline {subsection}{\numberline {4.5}Controls\discretionary {-}{}{}Layer Class Reference}{7}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Detailed Description}{7}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Method Documentation}{8}{subsubsection.4.5.2}
+\contentsline {paragraph}{\numberline {4.5.2.1}collapse\discretionary {-}{}{}Panel}{8}{paragraph.4.5.2.1}
+\contentsline {paragraph}{\numberline {4.5.2.2}expand\discretionary {-}{}{}Panel}{8}{paragraph.4.5.2.2}
+\contentsline {paragraph}{\numberline {4.5.2.3}make\discretionary {-}{}{}Control\discretionary {-}{}{}Switch}{8}{paragraph.4.5.2.3}
+\contentsline {paragraph}{\numberline {4.5.2.4}opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{8}{paragraph.4.5.2.4}
+\contentsline {paragraph}{\numberline {4.5.2.5}switch\discretionary {-}{}{}Value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{8}{paragraph.4.5.2.5}
+\contentsline {paragraph}{\numberline {4.5.2.6}update\discretionary {-}{}{}Opacity\discretionary {-}{}{}Slider\discretionary {-}{}{}:}{9}{paragraph.4.5.2.6}
+\contentsline {paragraph}{\numberline {4.5.2.7}value\discretionary {-}{}{}Changed\discretionary {-}{}{}:}{9}{paragraph.4.5.2.7}
+\contentsline {subsubsection}{\numberline {4.5.3}Member Data Documentation}{9}{subsubsection.4.5.3}
+\contentsline {paragraph}{\numberline {4.5.3.1}color\discretionary {-}{}{}Label}{9}{paragraph.4.5.3.1}
+\contentsline {paragraph}{\numberline {4.5.3.2}game\discretionary {-}{}{}Settings}{9}{paragraph.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.4}Property Documentation}{10}{subsubsection.4.5.4}
+\contentsline {paragraph}{\numberline {4.5.4.1}brush\discretionary {-}{}{}Selection}{10}{paragraph.4.5.4.1}
+\contentsline {paragraph}{\numberline {4.5.4.2}delegate}{10}{paragraph.4.5.4.2}
+\contentsline {paragraph}{\numberline {4.5.4.3}display\discretionary {-}{}{}Value\discretionary {-}{}{}Label}{10}{paragraph.4.5.4.3}
+\contentsline {paragraph}{\numberline {4.5.4.4}opacitydisplay\discretionary {-}{}{}Value\discretionary {-}{}{}Label}{10}{paragraph.4.5.4.4}
+\contentsline {paragraph}{\numberline {4.5.4.5}opacity\discretionary {-}{}{}Slider}{10}{paragraph.4.5.4.5}
+\contentsline {paragraph}{\numberline {4.5.4.6}opacity\discretionary {-}{}{}Switch\discretionary {-}{}{}Control}{10}{paragraph.4.5.4.6}
+\contentsline {paragraph}{\numberline {4.5.4.7}slider}{10}{paragraph.4.5.4.7}
+\contentsline {paragraph}{\numberline {4.5.4.8}switch\discretionary {-}{}{}Control}{10}{paragraph.4.5.4.8}
+\contentsline {subsection}{\numberline {4.6}$<$Controls\discretionary {-}{}{}Layer\discretionary {-}{}{}Delegate$>$ Protocol Reference}{11}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Detailed Description}{11}{subsubsection.4.6.1}
+\contentsline {subsection}{\numberline {4.7}Draw\discretionary {-}{}{}Scene Class Reference}{11}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Detailed Description}{12}{subsubsection.4.7.1}
+\contentsline {subsection}{\numberline {4.8}Finger\discretionary {-}{}{}Painting\discretionary {-}{}{}Scene Class Reference}{12}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Detailed Description}{12}{subsubsection.4.8.1}
+\contentsline {subsection}{\numberline {4.9}Game\discretionary {-}{}{}Manager Class Reference}{13}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Detailed Description}{13}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}Method Documentation}{13}{subsubsection.4.9.2}
+\contentsline {paragraph}{\numberline {4.9.2.1}opacity\discretionary {-}{}{}Percentage\discretionary {-}{}{}:}{13}{paragraph.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.3}Member Data Documentation}{14}{subsubsection.4.9.3}
+\contentsline {paragraph}{\numberline {4.9.3.1}current\discretionary {-}{}{}Point}{14}{paragraph.4.9.3.1}
+\contentsline {paragraph}{\numberline {4.9.3.2}current\discretionary {-}{}{}Pointable}{14}{paragraph.4.9.3.2}
+\contentsline {paragraph}{\numberline {4.9.3.3}frames\discretionary {-}{}{}Since\discretionary {-}{}{}Last\discretionary {-}{}{}Found}{14}{paragraph.4.9.3.3}
+\contentsline {paragraph}{\numberline {4.9.3.4}game\discretionary {-}{}{}Settings}{14}{paragraph.4.9.3.4}
+\contentsline {paragraph}{\numberline {4.9.3.5}input\discretionary {-}{}{}Mode}{14}{paragraph.4.9.3.5}
+\contentsline {paragraph}{\numberline {4.9.3.6}last\discretionary {-}{}{}Point}{14}{paragraph.4.9.3.6}
+\contentsline {paragraph}{\numberline {4.9.3.7}last\discretionary {-}{}{}Tag}{14}{paragraph.4.9.3.7}
+\contentsline {subsubsection}{\numberline {4.9.4}Property Documentation}{15}{subsubsection.4.9.4}
+\contentsline {paragraph}{\numberline {4.9.4.1}background\discretionary {-}{}{}Layer}{15}{paragraph.4.9.4.1}
+\contentsline {paragraph}{\numberline {4.9.4.2}controller}{15}{paragraph.4.9.4.2}
+\contentsline {paragraph}{\numberline {4.9.4.3}controls\discretionary {-}{}{}Layer}{15}{paragraph.4.9.4.3}
+\contentsline {paragraph}{\numberline {4.9.4.4}hud\discretionary {-}{}{}Layer}{15}{paragraph.4.9.4.4}
+\contentsline {paragraph}{\numberline {4.9.4.5}leap\discretionary {-}{}{}Screen}{15}{paragraph.4.9.4.5}
+\contentsline {paragraph}{\numberline {4.9.4.6}texture\discretionary {-}{}{}Scene}{15}{paragraph.4.9.4.6}
+\contentsline {subsection}{\numberline {4.10}Game\discretionary {-}{}{}Manager\discretionary {-}{}{}Tests Class Reference}{15}{subsection.4.10}
+\contentsline {subsubsection}{\numberline {4.10.1}Detailed Description}{16}{subsubsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.2}Member Data Documentation}{16}{subsubsection.4.10.2}
+\contentsline {paragraph}{\numberline {4.10.2.1}node}{16}{paragraph.4.10.2.1}
+\contentsline {subsection}{\numberline {4.11}Game\discretionary {-}{}{}Scene Class Reference}{16}{subsection.4.11}
+\contentsline {subsubsection}{\numberline {4.11.1}Detailed Description}{16}{subsubsection.4.11.1}
+\contentsline {subsection}{\numberline {4.12}Game\discretionary {-}{}{}Scene\discretionary {-}{}{}Tests Class Reference}{16}{subsection.4.12}
+\contentsline {subsubsection}{\numberline {4.12.1}Detailed Description}{17}{subsubsection.4.12.1}
+\contentsline {subsection}{\numberline {4.13}Game\discretionary {-}{}{}Settings Class Reference}{17}{subsection.4.13}
+\contentsline {subsubsection}{\numberline {4.13.1}Detailed Description}{17}{subsubsection.4.13.1}
+\contentsline {subsubsection}{\numberline {4.13.2}Method Documentation}{17}{subsubsection.4.13.2}
+\contentsline {paragraph}{\numberline {4.13.2.1}shared\discretionary {-}{}{}Instance}{17}{paragraph.4.13.2.1}
+\contentsline {subsubsection}{\numberline {4.13.3}Property Documentation}{18}{subsubsection.4.13.3}
+\contentsline {paragraph}{\numberline {4.13.3.1}depth\discretionary {-}{}{}Opacity\discretionary {-}{}{}Mode}{18}{paragraph.4.13.3.1}
+\contentsline {paragraph}{\numberline {4.13.3.2}eraser\discretionary {-}{}{}Mode}{18}{paragraph.4.13.3.2}
+\contentsline {paragraph}{\numberline {4.13.3.3}input\discretionary {-}{}{}Mode}{18}{paragraph.4.13.3.3}
+\contentsline {subsection}{\numberline {4.14}Game\discretionary {-}{}{}Settings\discretionary {-}{}{}Tests Class Reference}{18}{subsection.4.14}
+\contentsline {subsubsection}{\numberline {4.14.1}Detailed Description}{18}{subsubsection.4.14.1}
+\contentsline {subsubsection}{\numberline {4.14.2}Member Data Documentation}{18}{subsubsection.4.14.2}
+\contentsline {paragraph}{\numberline {4.14.2.1}game\discretionary {-}{}{}Settings}{18}{paragraph.4.14.2.1}
+\contentsline {subsection}{\numberline {4.15}G\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}Debug\discretionary {-}{}{}Draw Class Reference}{19}{subsection.4.15}
+\contentsline {subsubsection}{\numberline {4.15.1}Detailed Description}{19}{subsubsection.4.15.1}
+\contentsline {subsection}{\numberline {4.16}$<$H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Delegate$>$ Protocol Reference}{19}{subsection.4.16}
+\contentsline {subsubsection}{\numberline {4.16.1}Detailed Description}{20}{subsubsection.4.16.1}
+\contentsline {subsection}{\numberline {4.17}H\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}Layer Class Reference}{20}{subsection.4.17}
+\contentsline {subsubsection}{\numberline {4.17.1}Detailed Description}{21}{subsubsection.4.17.1}
+\contentsline {subsubsection}{\numberline {4.17.2}Member Data Documentation}{21}{subsubsection.4.17.2}
+\contentsline {paragraph}{\numberline {4.17.2.1}erase\discretionary {-}{}{}Mode}{21}{paragraph.4.17.2.1}
+\contentsline {paragraph}{\numberline {4.17.2.2}game\discretionary {-}{}{}Settings}{21}{paragraph.4.17.2.2}
+\contentsline {paragraph}{\numberline {4.17.2.3}input\discretionary {-}{}{}Mode}{21}{paragraph.4.17.2.3}
+\contentsline {paragraph}{\numberline {4.17.2.4}last\discretionary {-}{}{}Brush}{21}{paragraph.4.17.2.4}
+\contentsline {paragraph}{\numberline {4.17.2.5}last\discretionary {-}{}{}Color}{21}{paragraph.4.17.2.5}
+\contentsline {paragraph}{\numberline {4.17.2.6}last\discretionary {-}{}{}Scale}{21}{paragraph.4.17.2.6}
+\contentsline {paragraph}{\numberline {4.17.2.7}painting\discretionary {-}{}{}Indicator}{21}{paragraph.4.17.2.7}
+\contentsline {paragraph}{\numberline {4.17.2.8}previous\discretionary {-}{}{}Color}{21}{paragraph.4.17.2.8}
+\contentsline {paragraph}{\numberline {4.17.2.9}primary\discretionary {-}{}{}Tool}{22}{paragraph.4.17.2.9}
+\contentsline {paragraph}{\numberline {4.17.2.10}primary\discretionary {-}{}{}Tool\discretionary {-}{}{}I\discretionary {-}{}{}D}{22}{paragraph.4.17.2.10}
+\contentsline {subsubsection}{\numberline {4.17.3}Property Documentation}{22}{subsubsection.4.17.3}
+\contentsline {paragraph}{\numberline {4.17.3.1}delegate}{22}{paragraph.4.17.3.1}
+\contentsline {subsection}{\numberline {4.18}Leap\discretionary {-}{}{}Paint\discretionary {-}{}{}Tests Class Reference}{22}{subsection.4.18}
+\contentsline {subsubsection}{\numberline {4.18.1}Detailed Description}{22}{subsubsection.4.18.1}
+\contentsline {subsection}{\numberline {4.19}Leap\discretionary {-}{}{}Puzz\discretionary {-}{}{}Tests Class Reference}{22}{subsection.4.19}
+\contentsline {subsubsection}{\numberline {4.19.1}Detailed Description}{23}{subsubsection.4.19.1}
+\contentsline {subsection}{\numberline {4.20}L\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}C\discretionary {-}{}{}Control\discretionary {-}{}{}Button\discretionary {-}{}{}Variable\discretionary {-}{}{}Size Class Reference}{23}{subsection.4.20}
+\contentsline {subsubsection}{\numberline {4.20.1}Detailed Description}{23}{subsubsection.4.20.1}
+\contentsline {subsubsection}{\numberline {4.20.2}Method Documentation}{23}{subsubsection.4.20.2}
+\contentsline {paragraph}{\numberline {4.20.2.1}standard\discretionary {-}{}{}Button\discretionary {-}{}{}With\discretionary {-}{}{}Title\discretionary {-}{}{}:}{23}{paragraph.4.20.2.1}
+\contentsline {subsection}{\numberline {4.21}L\discretionary {-}{}{}P\discretionary {-}{}{}Line Class Reference}{24}{subsection.4.21}
+\contentsline {subsubsection}{\numberline {4.21.1}Detailed Description}{24}{subsubsection.4.21.1}
+\contentsline {subsection}{\numberline {4.22}L\discretionary {-}{}{}P\discretionary {-}{}{}Tool Class Reference}{24}{subsection.4.22}
+\contentsline {subsubsection}{\numberline {4.22.1}Detailed Description}{25}{subsubsection.4.22.1}
+\contentsline {subsubsection}{\numberline {4.22.2}Property Documentation}{25}{subsubsection.4.22.2}
+\contentsline {paragraph}{\numberline {4.22.2.1}tool\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{paragraph.4.22.2.1}
+\contentsline {paragraph}{\numberline {4.22.2.2}updated}{25}{paragraph.4.22.2.2}
+\contentsline {subsection}{\numberline {4.23}L\discretionary {-}{}{}P\discretionary {-}{}{}Tool\discretionary {-}{}{}Tests Class Reference}{25}{subsection.4.23}
+\contentsline {subsubsection}{\numberline {4.23.1}Detailed Description}{25}{subsubsection.4.23.1}
+\contentsline {subsubsection}{\numberline {4.23.2}Member Data Documentation}{25}{subsubsection.4.23.2}
+\contentsline {paragraph}{\numberline {4.23.2.1}test\discretionary {-}{}{}Name}{25}{paragraph.4.23.2.1}
+\contentsline {subsection}{\numberline {4.24}Simple\discretionary {-}{}{}Point Class Reference}{26}{subsection.4.24}
+\contentsline {subsubsection}{\numberline {4.24.1}Detailed Description}{26}{subsubsection.4.24.1}
+\contentsline {subsubsection}{\numberline {4.24.2}Method Documentation}{26}{subsubsection.4.24.2}
+\contentsline {paragraph}{\numberline {4.24.2.1}init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:}{26}{paragraph.4.24.2.1}
+\contentsline {paragraph}{\numberline {4.24.2.2}init\discretionary {-}{}{}With\discretionary {-}{}{}Position\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}{27}{paragraph.4.24.2.2}
+\contentsline {paragraph}{\numberline {4.24.2.3}init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:}{27}{paragraph.4.24.2.3}
+\contentsline {paragraph}{\numberline {4.24.2.4}init\discretionary {-}{}{}With\discretionary {-}{}{}X\discretionary {-}{}{}:with\discretionary {-}{}{}Y\discretionary {-}{}{}:with\discretionary {-}{}{}Z\discretionary {-}{}{}:}{28}{paragraph.4.24.2.4}
+\contentsline {paragraph}{\numberline {4.24.2.5}point}{28}{paragraph.4.24.2.5}
+\contentsline {subsubsection}{\numberline {4.24.3}Property Documentation}{29}{subsubsection.4.24.3}
+\contentsline {paragraph}{\numberline {4.24.3.1}is3d}{29}{paragraph.4.24.3.1}
+\contentsline {paragraph}{\numberline {4.24.3.2}x}{29}{paragraph.4.24.3.2}
+\contentsline {paragraph}{\numberline {4.24.3.3}y}{29}{paragraph.4.24.3.3}
+\contentsline {paragraph}{\numberline {4.24.3.4}z}{29}{paragraph.4.24.3.4}
+\contentsline {subsection}{\numberline {4.25}Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Object Class Reference}{29}{subsection.4.25}
+\contentsline {subsubsection}{\numberline {4.25.1}Detailed Description}{30}{subsubsection.4.25.1}
+\contentsline {subsubsection}{\numberline {4.25.2}Property Documentation}{30}{subsubsection.4.25.2}
+\contentsline {paragraph}{\numberline {4.25.2.1}point}{30}{paragraph.4.25.2.1}
+\contentsline {subsection}{\numberline {4.26}Simple\discretionary {-}{}{}Point\discretionary {-}{}{}Tests Class Reference}{30}{subsection.4.26}
+\contentsline {subsubsection}{\numberline {4.26.1}Detailed Description}{30}{subsubsection.4.26.1}
+\contentsline {subsubsection}{\numberline {4.26.2}Member Data Documentation}{30}{subsubsection.4.26.2}
+\contentsline {paragraph}{\numberline {4.26.2.1}test\discretionary {-}{}{}Name}{30}{paragraph.4.26.2.1}
+\contentsline {paragraph}{\numberline {4.26.2.2}three\discretionary {-}{}{}Value\discretionary {-}{}{}Point}{31}{paragraph.4.26.2.2}
+\contentsline {paragraph}{\numberline {4.26.2.3}two\discretionary {-}{}{}Value\discretionary {-}{}{}Point}{31}{paragraph.4.26.2.3}
+\contentsline {subsection}{\numberline {4.27}Sketch\discretionary {-}{}{}Render\discretionary {-}{}{}Texture\discretionary {-}{}{}Scene Class Reference}{31}{subsection.4.27}
+\contentsline {subsubsection}{\numberline {4.27.1}Detailed Description}{32}{subsubsection.4.27.1}
+\contentsline {subsection}{\numberline {4.28}Utility Class Reference}{32}{subsection.4.28}
+\contentsline {subsubsection}{\numberline {4.28.1}Detailed Description}{32}{subsubsection.4.28.1}
+\contentsline {subsubsection}{\numberline {4.28.2}Method Documentation}{32}{subsubsection.4.28.2}
+\contentsline {paragraph}{\numberline {4.28.2.1}get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Between\discretionary {-}{}{}:to\discretionary {-}{}{}:}{32}{paragraph.4.28.2.1}
+\contentsline {paragraph}{\numberline {4.28.2.2}get\discretionary {-}{}{}Random\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}{33}{paragraph.4.28.2.2}
+\contentsline {paragraph}{\numberline {4.28.2.3}get\discretionary {-}{}{}Random\discretionary {-}{}{}Uniform\discretionary {-}{}{}Number\discretionary {-}{}{}Under\discretionary {-}{}{}:}{33}{paragraph.4.28.2.3}
+\contentsline {subsection}{\numberline {4.29}Utility\discretionary {-}{}{}Tests Class Reference}{33}{subsection.4.29}
+\contentsline {subsubsection}{\numberline {4.29.1}Detailed Description}{34}{subsubsection.4.29.1}
+\contentsline {subsubsection}{\numberline {4.29.2}Member Data Documentation}{34}{subsubsection.4.29.2}
+\contentsline {paragraph}{\numberline {4.29.2.1}test\discretionary {-}{}{}Name}{34}{paragraph.4.29.2.1}
+\contentsline {part}{Index}{34}{paragraph.4.29.2.1}

@@ -1,4 +1,4 @@
-\hypertarget{interface_utility}{\section{Utility Class Reference}
+\hypertarget{interface_utility}{\subsection{Utility Class Reference}
 \label{d3/dc7/interface_utility}\index{Utility@{Utility}}
 }
 
@@ -11,7 +11,7 @@ Inheritance diagram for Utility\-:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{d3/dc7/interface_utility}
 \end{center}
 \end{figure}
-\subsection*{Class Methods}
+\subsubsection*{Class Methods}
 \begin{DoxyCompactItemize}
 \item 
 (int) + \hyperlink{interface_utility_a1fadf871f2de27c45caf4497a769f3d8}{get\-Random\-Number\-Between\-:to\-:}
@@ -22,17 +22,17 @@ Inheritance diagram for Utility\-:\begin{figure}[H]
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsubsection{Detailed Description}
 \hyperlink{interface_utility}{Utility} class provides common usage function throughout the application. 
 
-Definition at line \hyperlink{_utility_8h_source_l00017}{17} of file \hyperlink{_utility_8h_source}{Utility.\-h}.
+Definition at line 17 of file Utility.\-h.
 
 
 
-\subsection{Method Documentation}
+\subsubsection{Method Documentation}
 \hypertarget{interface_utility_a1fadf871f2de27c45caf4497a769f3d8}{\index{Utility@{Utility}!get\-Random\-Number\-Between\-:to\-:@{get\-Random\-Number\-Between\-:to\-:}}
 \index{get\-Random\-Number\-Between\-:to\-:@{get\-Random\-Number\-Between\-:to\-:}!Utility@{Utility}}
-\subsubsection[{get\-Random\-Number\-Between\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Number\-Between\-: 
+\paragraph[{get\-Random\-Number\-Between\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Number\-Between\-: 
 \begin{DoxyParamCaption}
 \item[{(int)}]{from}
 \item[{to:(int)}]{to}
@@ -50,21 +50,21 @@ a random number between the from and to parameters
 \end{DoxyReturn}
 returns random number within a range with defined upper and lower bounds 
 
-Definition at line \hyperlink{_utility_8m_source_l00014}{14} of file \hyperlink{_utility_8m_source}{Utility.\-m}.
+Definition at line 14 of file Utility.\-m.
 
 
 \begin{DoxyCode}
-00014                              :(int)from to:(\textcolor{keywordtype}{int})to \{
-00015     
-00016     \textcolor{comment}{//Check that one isn't greater than the other}
-00017     \textcolor{comment}{//if so, flip them}
-00018     
-00019     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})from + arc4random() % (to-from+1);
-00020 \}
+14                              :(int)from to:(\textcolor{keywordtype}{int})to \{
+15     
+16     \textcolor{comment}{//Check that one isn't greater than the other}
+17     \textcolor{comment}{//if so, flip them}
+18     
+19     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})from + arc4random() % (to-from+1);
+20 \}
 \end{DoxyCode}
 \hypertarget{interface_utility_a7af585df1742d836af6bc5b0eaf09cd3}{\index{Utility@{Utility}!get\-Random\-Number\-Under\-:@{get\-Random\-Number\-Under\-:}}
 \index{get\-Random\-Number\-Under\-:@{get\-Random\-Number\-Under\-:}!Utility@{Utility}}
-\subsubsection[{get\-Random\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Number\-Under\-: 
+\paragraph[{get\-Random\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Number\-Under\-: 
 \begin{DoxyParamCaption}
 \item[{(int)}]{to}
 \end{DoxyParamCaption}
@@ -79,17 +79,17 @@ a random number between 0 and to parameters
 \end{DoxyReturn}
 Returns a random number from 0 to an upper bound 
 
-Definition at line \hyperlink{_utility_8m_source_l00023}{23} of file \hyperlink{_utility_8m_source}{Utility.\-m}.
+Definition at line 23 of file Utility.\-m.
 
 
 \begin{DoxyCode}
-00023                            :(int)to\{
-00024     \textcolor{keywordflow}{return} (arc4random() % to);
-00025 \}
+23                            :(int)to\{
+24     \textcolor{keywordflow}{return} (arc4random() % to);
+25 \}
 \end{DoxyCode}
 \hypertarget{interface_utility_a18dd8a4d335aacab117cfefa4fffb06c}{\index{Utility@{Utility}!get\-Random\-Uniform\-Number\-Under\-:@{get\-Random\-Uniform\-Number\-Under\-:}}
 \index{get\-Random\-Uniform\-Number\-Under\-:@{get\-Random\-Uniform\-Number\-Under\-:}!Utility@{Utility}}
-\subsubsection[{get\-Random\-Uniform\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Uniform\-Number\-Under\-: 
+\paragraph[{get\-Random\-Uniform\-Number\-Under\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) get\-Random\-Uniform\-Number\-Under\-: 
 \begin{DoxyParamCaption}
 \item[{(int)}]{to}
 \end{DoxyParamCaption}
@@ -104,17 +104,17 @@ a random number between 0 and to parameters
 \end{DoxyReturn}
 Returns a Uniform Random Number from 0 to an upper bound 
 
-Definition at line \hyperlink{_utility_8m_source_l00029}{29} of file \hyperlink{_utility_8m_source}{Utility.\-m}.
+Definition at line 29 of file Utility.\-m.
 
 
 \begin{DoxyCode}
-00029                                   :(int)to\{
-00030     \textcolor{comment}{//Check if uniform available}
-00031     \textcolor{keywordflow}{if} (arc4random\_uniform != NULL)
-00032         \textcolor{keywordflow}{return}  arc4random\_uniform (to);
-00033     \textcolor{keywordflow}{else}
-00034         \textcolor{keywordflow}{return}  (arc4random() % to);
-00035 \}
+29                                   :(int)to\{
+30     \textcolor{comment}{//Check if uniform available}
+31     \textcolor{keywordflow}{if} (arc4random\_uniform != NULL)
+32         \textcolor{keywordflow}{return}  arc4random\_uniform (to);
+33     \textcolor{keywordflow}{else}
+34         \textcolor{keywordflow}{return}  (arc4random() % to);
+35 \}
 \end{DoxyCode}
 
 

@@ -1,4 +1,4 @@
-\hypertarget{interface_controls_layer}{\section{Controls\-Layer Class Reference}
+\hypertarget{interface_controls_layer}{\subsection{Controls\-Layer Class Reference}
 \label{d1/d1a/interface_controls_layer}\index{Controls\-Layer@{Controls\-Layer}}
 }
 
@@ -11,7 +11,7 @@ Inheritance diagram for Controls\-Layer\-:\begin{figure}[H]
 \includegraphics[height=3.000000cm]{d1/d1a/interface_controls_layer}
 \end{center}
 \end{figure}
-\subsection*{Instance Methods}
+\subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
 (void) -\/ \hyperlink{interface_controls_layer_a883bebd74a6a657ded8e74a33ea13228}{value\-Changed\-:}
@@ -28,14 +28,14 @@ Inheritance diagram for Controls\-Layer\-:\begin{figure}[H]
 \item 
 (void) -\/ \hyperlink{interface_controls_layer_a5d92a7806c63fd37b54b6071dfdc611b}{update\-Opacity\-Slider\-:}
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\subsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 C\-C\-Label\-T\-T\-F $\ast$ \hyperlink{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{color\-Label}
 \item 
 \hyperlink{interface_game_settings}{Game\-Settings} $\ast$ \hyperlink{interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}{game\-Settings}
 \end{DoxyCompactItemize}
-\subsection*{Properties}
+\subsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 C\-C\-Control\-Slider $\ast$ \hyperlink{interface_controls_layer_a599701380c37caf4e656efaa860469a3}{slider}
@@ -56,76 +56,76 @@ C\-C\-Control\-Switch $\ast$ \hyperlink{interface_controls_layer_a8997cfae8a4f6b
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsubsection{Detailed Description}
 Controls Layer User inferface controls for operating buttons, switches, sliders 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00034}{34} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 34 of file Controls\-Layer.\-h.
 
 
 
-\subsection{Method Documentation}
+\subsubsection{Method Documentation}
 \hypertarget{interface_controls_layer_afddcb3b6b63d05a784b18cb129ec5643}{\index{Controls\-Layer@{Controls\-Layer}!collapse\-Panel@{collapse\-Panel}}
 \index{collapse\-Panel@{collapse\-Panel}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{collapse\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collapse\-Panel 
+\paragraph[{collapse\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collapse\-Panel 
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 }}\label{d1/d1a/interface_controls_layer_afddcb3b6b63d05a784b18cb129ec5643}
 Collapses Brushes Panel 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00445}{445} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 445 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00445                      \{
-00446     
-00447 \}
+445                      \{
+446     
+447 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a9891f37671f87b622eb28a252e2e5190}{\index{Controls\-Layer@{Controls\-Layer}!expand\-Panel@{expand\-Panel}}
 \index{expand\-Panel@{expand\-Panel}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{expand\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) expand\-Panel 
+\paragraph[{expand\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) expand\-Panel 
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 }}\label{d1/d1a/interface_controls_layer_a9891f37671f87b622eb28a252e2e5190}
 Expands brushes panel 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00440}{440} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 440 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00440                    \{
-00441     
-00442     
-00443 \}
+440                    \{
+441     
+442     
+443 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a17c02c66db2aa779b9b7af552eb43a46}{\index{Controls\-Layer@{Controls\-Layer}!make\-Control\-Switch@{make\-Control\-Switch}}
 \index{make\-Control\-Switch@{make\-Control\-Switch}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{make\-Control\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch $\ast$) make\-Control\-Switch 
+\paragraph[{make\-Control\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch $\ast$) make\-Control\-Switch 
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 }}\label{d1/d1a/interface_controls_layer_a17c02c66db2aa779b9b7af552eb43a46}
 Creates and returns a new C\-C\-Control\-Switch. 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00492}{492} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 492 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00493 \{
-00494     \textcolor{keywordflow}{return} [CCControlSwitch switchWithMaskSprite:[CCSprite spriteWithFile:@"switch-mask.png"]
-00495                                         onSprite:[CCSprite spriteWithFile:@"switch-on.png"]
-00496                                        offSprite:[CCSprite spriteWithFile:@"switch-off.png"]
-00497                                      thumbSprite:[CCSprite spriteWithFile:@"switch-thumb.png"]
-00498                                          onLabel:[CCLabelTTF labelWithString:@"On" fontName:@"Arial-BoldMT"
+493 \{
+494     \textcolor{keywordflow}{return} [CCControlSwitch switchWithMaskSprite:[CCSprite spriteWithFile:@"switch-mask.png"]
+495                                         onSprite:[CCSprite spriteWithFile:@"switch-on.png"]
+496                                        offSprite:[CCSprite spriteWithFile:@"switch-off.png"]
+497                                      thumbSprite:[CCSprite spriteWithFile:@"switch-thumb.png"]
+498                                          onLabel:[CCLabelTTF labelWithString:@"On" fontName:@"Arial-BoldMT"
        fontSize:16]
-00499                                         offLabel:[CCLabelTTF labelWithString:@"Off" fontName:@"Arial-BoldMT
+499                                         offLabel:[CCLabelTTF labelWithString:@"Off" fontName:@"Arial-BoldMT
       " fontSize:16]];
-00500 \}
+500 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a83c9c1fd8899606cca2535589c0f0b45}{\index{Controls\-Layer@{Controls\-Layer}!opacity\-Slider\-Changed\-:@{opacity\-Slider\-Changed\-:}}
 \index{opacity\-Slider\-Changed\-:@{opacity\-Slider\-Changed\-:}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{opacity\-Slider\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) opacity\-Slider\-Changed\-: 
+\paragraph[{opacity\-Slider\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) opacity\-Slider\-Changed\-: 
 \begin{DoxyParamCaption}
 \item[{(C\-C\-Control\-Slider $\ast$)}]{sender}
 \end{DoxyParamCaption}
@@ -137,76 +137,76 @@ Does something
 \end{DoxyParams}
 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00142}{142} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 142 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00142                             :(CCControlSlider *)sender
-00143 \{
-00144     
-00145     \textcolor{comment}{// Change value of label.}
-00146     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
-00147     [\textcolor{keyword}{self}.delegate changeOpacityControl:sender.value];
-00148 \}
+142                             :(CCControlSlider *)sender
+143 \{
+144     
+145     \textcolor{comment}{// Change value of label.}
+146     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
+147     [\textcolor{keyword}{self}.delegate changeOpacityControl:sender.value];
+148 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a02affb06b2d595b54d10b3593a8370f2}{\index{Controls\-Layer@{Controls\-Layer}!switch\-Value\-Changed\-:@{switch\-Value\-Changed\-:}}
 \index{switch\-Value\-Changed\-:@{switch\-Value\-Changed\-:}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{switch\-Value\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) switch\-Value\-Changed\-: 
+\paragraph[{switch\-Value\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) switch\-Value\-Changed\-: 
 \begin{DoxyParamCaption}
 \item[{(C\-C\-Control\-Switch $\ast$)}]{sender}
 \end{DoxyParamCaption}
 }}\label{d1/d1a/interface_controls_layer_a02affb06b2d595b54d10b3593a8370f2}
 Callback for the change value. 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00503}{503} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 503 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00503                           :(CCControlSwitch *)sender
-00504 \{
-00505     \textcolor{keywordflow}{if} ([sender isOn])
-00506     \{
-00507         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
-00508         
-00509         [\textcolor{keyword}{self}.delegate eraserMode:true];
-00510     \} \textcolor{keywordflow}{else}
-00511     \{
-00512         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
-00513         [\textcolor{keyword}{self}.delegate eraserMode:false];
-00514     \}
-00515 \}
+503                           :(CCControlSwitch *)sender
+504 \{
+505     \textcolor{keywordflow}{if} ([sender isOn])
+506     \{
+507         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
+508         
+509         [\textcolor{keyword}{self}.delegate eraserMode:true];
+510     \} \textcolor{keywordflow}{else}
+511     \{
+512         \hyperlink{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{displayValueLabel}.string    = \textcolor{stringliteral}{@"Eraser"};
+513         [\textcolor{keyword}{self}.delegate eraserMode:false];
+514     \}
+515 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a5d92a7806c63fd37b54b6071dfdc611b}{\index{Controls\-Layer@{Controls\-Layer}!update\-Opacity\-Slider\-:@{update\-Opacity\-Slider\-:}}
 \index{update\-Opacity\-Slider\-:@{update\-Opacity\-Slider\-:}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{update\-Opacity\-Slider\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Opacity\-Slider\-: 
+\paragraph[{update\-Opacity\-Slider\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Opacity\-Slider\-: 
 \begin{DoxyParamCaption}
 \item[{(float)}]{value}
 \end{DoxyParamCaption}
 }}\label{d1/d1a/interface_controls_layer_a5d92a7806c63fd37b54b6071dfdc611b}
 Callback for opacity changing with the slider 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00150}{150} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 150 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00150                            :(float)value\{
-00151     
-00152     
-00153     \textcolor{comment}{//ensure the value is within its bounds}
-00154     \textcolor{keywordflow}{if}(value > \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.maximumValue)\{
-00155         \textcolor{comment}{//Max Value}
-00156         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.maximumValue;
-00157     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value < \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.minimumValue)\{
-00158         \textcolor{comment}{//Min Value}
-00159         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.minimumValue;
-00160     \}\textcolor{keywordflow}{else}\{
-00161         \textcolor{keyword}{self}.opacitySlider.value = value;
-00162     \}
-00163 \}
+150                            :(float)value\{
+151     
+152     
+153     \textcolor{comment}{//ensure the value is within its bounds}
+154     \textcolor{keywordflow}{if}(value > \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.maximumValue)\{
+155         \textcolor{comment}{//Max Value}
+156         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.maximumValue;
+157     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(value < \textcolor{keyword}{self}.\hyperlink{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{opacitySlider}.minimumValue)\{
+158         \textcolor{comment}{//Min Value}
+159         \textcolor{keyword}{self}.opacitySlider.value = \textcolor{keyword}{self}.opacitySlider.minimumValue;
+160     \}\textcolor{keywordflow}{else}\{
+161         \textcolor{keyword}{self}.opacitySlider.value = value;
+162     \}
+163 \}
 \end{DoxyCode}
 \hypertarget{interface_controls_layer_a883bebd74a6a657ded8e74a33ea13228}{\index{Controls\-Layer@{Controls\-Layer}!value\-Changed\-:@{value\-Changed\-:}}
 \index{value\-Changed\-:@{value\-Changed\-:}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{value\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) value\-Changed\-: 
+\paragraph[{value\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) value\-Changed\-: 
 \begin{DoxyParamCaption}
 \item[{(C\-C\-Control\-Slider $\ast$)}]{sender}
 \end{DoxyParamCaption}
@@ -218,102 +218,102 @@ Does something
 \end{DoxyParams}
 
 
-Definition at line \hyperlink{_controls_layer_8mm_source_l00095}{95} of file \hyperlink{_controls_layer_8mm_source}{Controls\-Layer.\-mm}.
+Definition at line 95 of file Controls\-Layer.\-mm.
 
 
 \begin{DoxyCode}
-00095                     :(CCControlSlider *)sender
-00096 \{
-00097     \textcolor{comment}{// Change value of label.}
-00098     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
-00099     [\textcolor{keyword}{self}.delegate changeThicknessControl:sender.value];
-00100 \}
+95                     :(CCControlSlider *)sender
+96 \{
+97     \textcolor{comment}{// Change value of label.}
+98     \textcolor{comment}{//NSLog(@"slider value %@", [NSString stringWithFormat:@"Slider value = %.02f", sender.value]);}
+99     [\textcolor{keyword}{self}.delegate changeThicknessControl:sender.value];
+100 \}
 \end{DoxyCode}
 
 
-\subsection{Member Data Documentation}
+\subsubsection{Member Data Documentation}
 \hypertarget{interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}{\index{Controls\-Layer@{Controls\-Layer}!color\-Label@{color\-Label}}
 \index{color\-Label@{color\-Label}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{color\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F$\ast$) color\-Label\hspace{0.3cm}{\ttfamily [protected]}}}\label{d1/d1a/interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}
+\paragraph[{color\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F$\ast$) color\-Label\hspace{0.3cm}{\ttfamily [protected]}}}\label{d1/d1a/interface_controls_layer_aa3d424dcbfa618632f97478ee61148cb}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00036}{36} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 36 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}{\index{Controls\-Layer@{Controls\-Layer}!game\-Settings@{game\-Settings}}
 \index{game\-Settings@{game\-Settings}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{game\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Game\-Settings}$\ast$) game\-Settings\hspace{0.3cm}{\ttfamily [protected]}}}\label{d1/d1a/interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}
+\paragraph[{game\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Game\-Settings}$\ast$) game\-Settings\hspace{0.3cm}{\ttfamily [protected]}}}\label{d1/d1a/interface_controls_layer_a6fb04c60ed1bfab11e2940a025b4927e}
 game\-Settings global reference to shared settings instance 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00038}{38} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 38 of file Controls\-Layer.\-h.
 
 
 
-\subsection{Property Documentation}
+\subsubsection{Property Documentation}
 \hypertarget{interface_controls_layer_a56c514c5fde8025a9de19c4b8225478b}{\index{Controls\-Layer@{Controls\-Layer}!brush\-Selection@{brush\-Selection}}
 \index{brush\-Selection@{brush\-Selection}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{brush\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Brush\-Selection\-Layer}$\ast$) brush\-Selection\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a56c514c5fde8025a9de19c4b8225478b}
+\paragraph[{brush\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Brush\-Selection\-Layer}$\ast$) brush\-Selection\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a56c514c5fde8025a9de19c4b8225478b}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00045}{45} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 45 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_aebfe5471226d1bc0afef5d662219f913}{\index{Controls\-Layer@{Controls\-Layer}!delegate@{delegate}}
 \index{delegate@{delegate}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf Controls\-Layer\-Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}}\label{d1/d1a/interface_controls_layer_aebfe5471226d1bc0afef5d662219f913}
+\paragraph[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf Controls\-Layer\-Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}}\label{d1/d1a/interface_controls_layer_aebfe5471226d1bc0afef5d662219f913}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00044}{44} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 44 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}{\index{Controls\-Layer@{Controls\-Layer}!display\-Value\-Label@{display\-Value\-Label}}
 \index{display\-Value\-Label@{display\-Value\-Label}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{display\-Value\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F $\ast$) display\-Value\-Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}
+\paragraph[{display\-Value\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F $\ast$) display\-Value\-Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_ab9f12f7a90a0bf6ae1abaeb4d4c4e378}
 display\-Value\-Label displays coordinate
 
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00037}{37} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 37 of file Controls\-Layer.\-h.
 
 
 
-Referenced by \hyperlink{_controls_layer_8mm_source_l00503}{switch\-Value\-Changed\-:}.
+Referenced by switch\-Value\-Changed\-:.
 
 \hypertarget{interface_controls_layer_a1a60fd6edd83a2789b575845390a44be}{\index{Controls\-Layer@{Controls\-Layer}!opacitydisplay\-Value\-Label@{opacitydisplay\-Value\-Label}}
 \index{opacitydisplay\-Value\-Label@{opacitydisplay\-Value\-Label}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{opacitydisplay\-Value\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F$\ast$) opacitydisplay\-Value\-Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a1a60fd6edd83a2789b575845390a44be}
+\paragraph[{opacitydisplay\-Value\-Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Label\-T\-T\-F$\ast$) opacitydisplay\-Value\-Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a1a60fd6edd83a2789b575845390a44be}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00043}{43} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 43 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}{\index{Controls\-Layer@{Controls\-Layer}!opacity\-Slider@{opacity\-Slider}}
 \index{opacity\-Slider@{opacity\-Slider}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{opacity\-Slider}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Slider$\ast$) opacity\-Slider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}
+\paragraph[{opacity\-Slider}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Slider$\ast$) opacity\-Slider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_aff48213936f8ff3b2aa2f44d5125fc6f}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00041}{41} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 41 of file Controls\-Layer.\-h.
 
 
 
-Referenced by \hyperlink{_controls_layer_8mm_source_l00150}{update\-Opacity\-Slider\-:}.
+Referenced by update\-Opacity\-Slider\-:.
 
 \hypertarget{interface_controls_layer_ad2bbac273b79a99c46e66c61ea66c88b}{\index{Controls\-Layer@{Controls\-Layer}!opacity\-Switch\-Control@{opacity\-Switch\-Control}}
 \index{opacity\-Switch\-Control@{opacity\-Switch\-Control}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{opacity\-Switch\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch$\ast$) opacity\-Switch\-Control\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_ad2bbac273b79a99c46e66c61ea66c88b}
+\paragraph[{opacity\-Switch\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch$\ast$) opacity\-Switch\-Control\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_ad2bbac273b79a99c46e66c61ea66c88b}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00042}{42} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 42 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_a599701380c37caf4e656efaa860469a3}{\index{Controls\-Layer@{Controls\-Layer}!slider@{slider}}
 \index{slider@{slider}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{slider}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Slider$\ast$) slider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a599701380c37caf4e656efaa860469a3}
+\paragraph[{slider}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Slider$\ast$) slider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a599701380c37caf4e656efaa860469a3}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00040}{40} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 40 of file Controls\-Layer.\-h.
 
 \hypertarget{interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}{\index{Controls\-Layer@{Controls\-Layer}!switch\-Control@{switch\-Control}}
 \index{switch\-Control@{switch\-Control}!ControlsLayer@{Controls\-Layer}}
-\subsubsection[{switch\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch$\ast$) switch\-Control\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}
+\paragraph[{switch\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-Control\-Switch$\ast$) switch\-Control\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}}\label{d1/d1a/interface_controls_layer_a8997cfae8a4f6bcfb8c53d8cab6bb480}
 color\-Label displays name of color in hash value 
 
-Definition at line \hyperlink{_controls_layer_8h_source_l00047}{47} of file \hyperlink{_controls_layer_8h_source}{Controls\-Layer.\-h}.
+Definition at line 47 of file Controls\-Layer.\-h.
 
 
 
