@@ -17,10 +17,10 @@
 		239B352C1739EDEF00CB0EC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B350C1739EDEE00CB0EC6 /* Cocoa.framework */; };
 		239B35341739EDEF00CB0EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239B35321739EDEF00CB0EC6 /* InfoPlist.strings */; };
 		239B35371739EDEF00CB0EC6 /* LeapPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */; };
-		239B354F1739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */; };
-		239B35501739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */; };
-		239B35521739F03800CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35511739F03800CB0EC6 /* libLeap.dylib */; };
-		239B35531739F03800CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35511739F03800CB0EC6 /* libLeap.dylib */; };
+		239B35621739F10F00CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B35601739F10F00CB0EC6 /* LeapObjectiveC.mm */; };
+		239B35631739F10F00CB0EC6 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239B35601739F10F00CB0EC6 /* LeapObjectiveC.mm */; };
+		239B35641739F10F00CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35611739F10F00CB0EC6 /* libLeap.dylib */; };
+		239B35651739F10F00CB0EC6 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B35611739F10F00CB0EC6 /* libLeap.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,11 @@
 		239B35331739EDEF00CB0EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		239B35351739EDEF00CB0EC6 /* LeapPaintTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapPaintTests.h; sourceTree = "<group>"; };
 		239B35361739EDEF00CB0EC6 /* LeapPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeapPaintTests.m; sourceTree = "<group>"; };
-		239B354B1739F03200CB0EC6 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
-		239B354C1739F03200CB0EC6 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
-		239B354D1739F03200CB0EC6 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
-		239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
-		239B35511739F03800CB0EC6 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		239B355D1739F10F00CB0EC6 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = ../../libs/LeapSDK/include/Leap.h; sourceTree = "<group>"; };
+		239B355E1739F10F00CB0EC6 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = ../../libs/LeapSDK/include/LeapMath.h; sourceTree = "<group>"; };
+		239B355F1739F10F00CB0EC6 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = ../../libs/LeapSDK/include/LeapObjectiveC.h; sourceTree = "<group>"; };
+		239B35601739F10F00CB0EC6 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = ../../libs/LeapSDK/include/LeapObjectiveC.mm; sourceTree = "<group>"; };
+		239B35611739F10F00CB0EC6 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../../libs/LeapSDK/lib/libLeap.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239B350D1739EDEE00CB0EC6 /* Cocoa.framework in Frameworks */,
-				239B35521739F03800CB0EC6 /* libLeap.dylib in Frameworks */,
+				239B35641739F10F00CB0EC6 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 			files = (
 				239B352B1739EDEF00CB0EC6 /* SenTestingKit.framework in Frameworks */,
 				239B352C1739EDEF00CB0EC6 /* Cocoa.framework in Frameworks */,
-				239B35531739F03800CB0EC6 /* libLeap.dylib in Frameworks */,
+				239B35651739F10F00CB0EC6 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,6 @@
 		239B35001739EDEE00CB0EC6 = {
 			isa = PBXGroup;
 			children = (
-				239B35511739F03800CB0EC6 /* libLeap.dylib */,
 				239B35121739EDEE00CB0EC6 /* LeapPaint */,
 				239B352F1739EDEF00CB0EC6 /* LeapPaintTests */,
 				239B350B1739EDEE00CB0EC6 /* Frameworks */,
@@ -126,10 +125,11 @@
 		239B35121739EDEE00CB0EC6 /* LeapPaint */ = {
 			isa = PBXGroup;
 			children = (
-				239B354B1739F03200CB0EC6 /* Leap.h */,
-				239B354C1739F03200CB0EC6 /* LeapMath.h */,
-				239B354D1739F03200CB0EC6 /* LeapObjectiveC.h */,
-				239B354E1739F03200CB0EC6 /* LeapObjectiveC.mm */,
+				239B355D1739F10F00CB0EC6 /* Leap.h */,
+				239B355E1739F10F00CB0EC6 /* LeapMath.h */,
+				239B355F1739F10F00CB0EC6 /* LeapObjectiveC.h */,
+				239B35601739F10F00CB0EC6 /* LeapObjectiveC.mm */,
+				239B35611739F10F00CB0EC6 /* libLeap.dylib */,
 				239B351E1739EDEE00CB0EC6 /* AppDelegate.h */,
 				239B351F1739EDEE00CB0EC6 /* AppDelegate.m */,
 				239B35211739EDEE00CB0EC6 /* MainMenu.xib */,
@@ -293,7 +293,7 @@
 			files = (
 				239B35191739EDEE00CB0EC6 /* main.m in Sources */,
 				239B35201739EDEE00CB0EC6 /* AppDelegate.m in Sources */,
-				239B354F1739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */,
+				239B35621739F10F00CB0EC6 /* LeapObjectiveC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239B35371739EDEF00CB0EC6 /* LeapPaintTests.m in Sources */,
-				239B35501739F03200CB0EC6 /* LeapObjectiveC.mm in Sources */,
+				239B35631739F10F00CB0EC6 /* LeapObjectiveC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
