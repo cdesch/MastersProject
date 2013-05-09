@@ -16,7 +16,6 @@
 \usepackage{pdfpages}
 %\usepackage{showframe}  
 
-
 %\usepackage{subcaption}
  % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
@@ -183,16 +182,26 @@ I would like to express my sincerest gratitude to my supervisor Dr. Jerry Fails 
 
 \includepdf[pages=2-last,
 	    pagecommand={\thispagestyle{empty}},
-            %width=\textwidth,
-            %height=\textheight, 
+            width=\textwidth+ \marginparwidth +\marginparwidth,
+            height=\textheight , 
 	    noautoscale,   
 	    fitpaper=true,
             %offset=0pt 0pt,     %letter, oneside    => misaligned by .x pt
-            offset=70pt 0pt,  %letter, twoside    => misaligned by .x pt
+            offset=70pt -70pt,  %letter, twoside    => misaligned by .x pt
             %offset=0pt 0pt,    %a4paper, oneside   => misaligned by 1.x pt
             %offset=-25pt 0pt,  %a4paper, twoside   => misaligned by 1.x pt
             ]{/Users/cj/Desktop/MastersProject/LeapPaint/docs/latex/refman.pdf}
-
+\includepdf[pages=-,
+	    pagecommand={\thispagestyle{empty}},
+            width=\textwidth,
+            height=\textheight, 
+	    noautoscale,   
+	    fitpaper=true,
+            %offset=0pt 0pt,     %letter, oneside    => misaligned by .x pt
+           % offset=70pt 0pt,  %letter, twoside    => misaligned by .x pt
+            %offset=0pt 0pt,    %a4paper, oneside   => misaligned by 1.x pt
+            %offset=-25pt 0pt,  %a4paper, twoside   => misaligned by 1.x pt
+            ]{/Users/cj/Desktop/MastersProject/LeapPaint/LeapPaint/code.pdf}
 
 %include each project
 

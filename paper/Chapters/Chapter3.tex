@@ -13,9 +13,9 @@
 %\subsection{Outcomes, Developments and Improvements}
 
 
-The initial sessions centered around introduction of the LeapMotion exploring how it could be used with existing interfaces and designing new interfaces. In the later sessions the application and interface begin to take form and requirements will begin to solidify. 
+%Throughout the project nine session were spent The initial sessions centered around introduction of the LeapMotion exploring how it could be used with existing interfaces and designing new interfaces. In the later sessions the application and interface begin to take form and requirements will begin to solidify. 
 
-The initial sessions with the KidsTeam centered mostly around the introduction of the LeapMotion. The purpose was to help the children become comfortable with the technology through both brief explanation of how it works and independent exploration. It was important that the children spent time interacting with the technology as early on in the sessions as possible. The more comfortable the children were with using the LeapMotion, the more realistic their creations could be for the interface. 
+Throughout the project nine session were spent with KidsTeam. The initial sessions with the KidsTeam centered mostly around the introduction of the LeapMotion. The purpose was to help the children become comfortable with the technology through both brief explanation of how it works and independent exploration. It was important that the children spent time interacting with the technology as early on in the sessions as possible. The more comfortable the children were with using the LeapMotion, the more realistic their creations could be for the interface. 
 
 Later sessions focused on reviewing and improving the application. The application will not be able to make too many drastic design or architectural changes in these later phases.
 %Febuary 5th
@@ -76,7 +76,7 @@ Use case include some of the following control operations
 In concept this idea seemed to be an ideal and natural way of interacting with the system but faced several challenges. When the thumb became flush with the hand the LeapMotion could no longer detect it as a finger. This unique challenge was difficult because by the thumb could not be accounted for in all cases. An option might be to use the thumbs absence as a trigger although this is prone to many false positive\footnote{False positive indicates a given condition is present when it is not.} when the user's hands where on the boarder line of the LeapMotions visibility range or has lost track of the thumb due to occlusion\footnote{Occlusion occurs when the a surface is hidden by blocking the line of sight.}. Reversing the actions and performing the opposite gesture did not feel natural. Holding the thumb closely to the rest of the hand is not relaxed state and also did not mimic the act of grasping something or triggering an action as people are more commonly used to. 
 
 
-\subsection{Unity Testing}
+\subsection{Unity 3D Engine Testing}
 Touching two or more fingers together rendered them not recognizable by the LeapMotion and thus would not allow pinch gesture to be used. Alternatives might be calculating when two fingers are close to each other although the LeapMotion cannot differentiate the fingers into which is the index, middle, ring, pinky, and thumb fingers. The application would have to assume any two fingers were performing the gesture and would not allow for the natural separation between fingers unless all fingers were kept folded tight into the hand until needed. 
 
 To observe this behavior a separate project was setup using the Unity 3D Engine to track the different pointers and their interactions in 3D space.\cite{unity}
@@ -157,25 +157,19 @@ To help the children determine whether they were drawing or not a ring indicator
 The children were tasked with testing the painting application for the last time using the sticky notes~\ref{sec:stickynotes} review technique. Testing for new features which included a depth opacity control. The opacity of the brush would become greater the closer the pointer was to the monitor simulating how a paintbrush or marker makes a darker line when pressed harder to paper. 
 
 The children preferred the method of using depth to control the opacity over performing the manual adjustments with the mouse. 
+\begin{figure}
+\centering     %%% not \center
+\subfigure[]{\label{fig:car}\includegraphics[width=60mm]{compare1}}
+\subfigure[]{\label{fig:pan}\includegraphics[width=60mm]{compare2}}
+\caption{Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)}
+\label{fig:comparisondrawing}
+\end{figure}
 
 %April 15th
 \section{Session 9: Usability Comparison}\label{session9}
 The last session compared the LeapPaint application with a three different methods of drawing with different interfaces. The children were given the task of drawing the same picture of their choice on each system. Each child was given 10 minutes of time to attempt to reproduce a drawing by hand drawing using markers, Microsoft Paint using a mouse and keyboard, SimpleDraw on the iPad's touch interface and with LeapPaint using the LeapMotion. 
 
-The resulting drawings were mixed in comparison but showed that the drawing ability in the application may be related to the amount of time the child has had using the application. 
+The resulting drawings were mixed in comparison but showed that the drawing ability in the application may be related to the amount of time the child has had using the application. Drawing comparisons can be seen in Figure~\ref{fig:comparisondrawing} by two different children. 
 
-\begin{figure}
-\centering
-\includegraphics[height=2in, width=2.5in]{compare1}
 
-\caption{Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)}
-\label{fig:compare1}
-\end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[height=2in, width=2.5in]{compare2}
-
-\caption{Drawings done by hand (top left), in Microsoft Paint (top right), on the iPad (bottom left) and with the LeapMotion (bottom right)}
-\label{fig:compare2}
-\end{figure}
