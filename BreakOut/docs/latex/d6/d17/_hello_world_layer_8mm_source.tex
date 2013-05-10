@@ -1,0 +1,577 @@
+\hypertarget{_hello_world_layer_8mm}{\section{Hello\-World\-Layer.\-mm}
+\label{d6/d17/_hello_world_layer_8mm}\index{Break\-Out/\-Hello\-World\-Layer.\-mm@{Break\-Out/\-Hello\-World\-Layer.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  HelloWorldLayer.mm}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/3/13.}
+00006 \textcolor{comment}{//  Copyright \_\_MyCompanyName\_\_ 2013. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{comment}{// Import the interfaces}
+00010 \textcolor{preprocessor}{#import "HelloWorldLayer.h"}
+00011 \textcolor{preprocessor}{#import "PhysicsSprite.h"}
+00012 \textcolor{comment}{//Pixel to metres ratio. Box2D uses metres as the unit for measurement.}
+00013 \textcolor{comment}{//This ratio defines how many pixels correspond to 1 Box2D "metre"}
+00014 \textcolor{comment}{//Box2D is optimized for objects of 1x1 metre therefore it makes sense}
+00015 \textcolor{comment}{//to define the ratio so that your most common object type is 1x1 metre.}
+00016 \textcolor{preprocessor}{#define PTM\_RATIO 32}
+00017 \textcolor{preprocessor}{}
+00018 \textcolor{keyword}{enum} \{
+00019     kTagParentNode = 1,
+00020 \};
+00021 
+00022 
+00023 
+00024 \textcolor{preprocessor}{#pragma mark - HelloWorldLayer}
+00025 \textcolor{preprocessor}{}
+\hypertarget{_hello_world_layer_8mm_source_l00026}{}\hyperlink{category_hello_world_layer_07_08}{00026} \textcolor{keyword}{@interface }\hyperlink{interface_hello_world_layer}{HelloWorldLayer}()
+00027 -(void) initPhysics;
+00028 -(void) addNewSpriteAtPosition:(CGPoint)p;
+00029 -(void) createResetButton;
+00030 \textcolor{keyword}{@end}
+00031 
+00032 \textcolor{keyword}{@implementation }\hyperlink{interface_hello_world_layer}{HelloWorldLayer}
+00033 
+00034 -(id) init
+00035 \{
+00036     \textcolor{keywordflow}{if}( (\textcolor{keyword}{self}=[super init])) \{
+00037         
+00038         \textcolor{comment}{// enable events}
+00039         
+00040 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00041 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isTouchEnabled = YES;
+00042         \textcolor{keyword}{self}.isAccelerometerEnabled = YES;
+00043 \textcolor{preprocessor}{#elif defined(\_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED)}
+00044 \textcolor{preprocessor}{}        \textcolor{keyword}{self}.isMouseEnabled = YES;
+00045 \textcolor{preprocessor}{#endif}
+00046 \textcolor{preprocessor}{}        CGSize s = [CCDirector sharedDirector].winSize;
+00047         
+00048         \textcolor{comment}{// init physics}
+00049         [\textcolor{keyword}{self} initPhysics];
+00050         
+00051         \textcolor{comment}{// create reset button}
+00052         [\textcolor{keyword}{self} createResetButton];
+00053         
+00054         \textcolor{comment}{//Set up sprite}
+00055         
+00056 \textcolor{preprocessor}{#if 1}
+00057 \textcolor{preprocessor}{}        \textcolor{comment}{// Use batch node. Faster}
+00058         CCSpriteBatchNode *parent = [CCSpriteBatchNode batchNodeWithFile:@"blocks.png" capacity:100];
+00059         spriteTexture\_ = [parent texture];
+00060 \textcolor{preprocessor}{#else}
+00061 \textcolor{preprocessor}{}        \textcolor{comment}{// doesn't use batch node. Slower}
+00062         spriteTexture\_ = [[CCTextureCache sharedTextureCache] addImage:@"blocks.png"];
+00063         CCNode *parent = [CCNode node];
+00064 \textcolor{preprocessor}{#endif}
+00065 \textcolor{preprocessor}{}        [\textcolor{keyword}{self} addChild:parent z:0 tag:kTagParentNode];
+00066         
+00067         
+00068         [\textcolor{keyword}{self} addNewSpriteAtPosition:ccp(s.width/2, s.height/2)];
+00069         
+00070         CCLabelTTF *label = [CCLabelTTF labelWithString:@"LeapPuzz" fontName:@"Marker Felt" fontSize:32];
+00071         [\textcolor{keyword}{self} addChild:label z:0];
+00072         [label setColor:ccc3(0,0,255)];
+00073         label.position = ccp( s.width/2, s.height-50);
+00074         
+00075         [\textcolor{keyword}{self} scheduleUpdate];
+00076         
+00077         trackableList = [[NSMutableDictionary alloc] init];
+00078         
+00079         [\textcolor{keyword}{self} run];
+00080         
+00081 
+00082     \}
+00083     \textcolor{keywordflow}{return} \textcolor{keyword}{self};
+00084 \}
+00085 
+00086 - (void)run
+00087 \{
+00088     controller = [[LeapController alloc] init];
+00089     [controller addDelegate:self];
+00090     NSLog(\textcolor{stringliteral}{@"running"});
+00091 \}
+00092 
+00093 \textcolor{preprocessor}{#pragma mark - SampleDelegate Callbacks}
+00094 \textcolor{preprocessor}{}
+00095 - (void)onInit:(LeapController *)aController
+00096 \{
+00097     NSLog(\textcolor{stringliteral}{@"Initialized"});
+00098 \}
+00099 
+00100 - (void)onConnect:(LeapController *)aController
+00101 \{
+00102     NSLog(\textcolor{stringliteral}{@"Connected"});
+00103 \}
+00104 
+00105 - (void)onDisconnect:(LeapController *)aController
+00106 \{
+00107     NSLog(\textcolor{stringliteral}{@"Disconnected"});
+00108 \}
+00109 
+00110 - (void)onExit:(LeapController *)aController
+00111 \{
+00112     NSLog(\textcolor{stringliteral}{@"Exited"});
+00113 \}
+00114 
+00115 - (void)onFrame:(LeapController *)aController
+00116 \{
+00117     \textcolor{comment}{// Get the most recent frame and report some basic information}
+00118     LeapFrame *frame = [aController frame:0];
+00119     \textcolor{comment}{/*}
+00120 \textcolor{comment}{    NSLog(@"Frame id: %lld, timestamp: %lld, hands: %ld, fingers: %ld, tools: %ld",}
+00121 \textcolor{comment}{          [frame id], [frame timestamp], [[frame hands] count],}
+00122 \textcolor{comment}{          [[frame fingers] count], [[frame tools] count]);}
+00123 \textcolor{comment}{    }
+00124 \textcolor{comment}{     */}
+00125     \textcolor{keywordflow}{if} ([[frame hands] count] != 0) \{
+00126         \textcolor{comment}{// Get the first hand}
+00127         LeapHand *hand = [[frame hands] objectAtIndex:0];
+00128 
+00129         
+00130         \textcolor{comment}{// Check if the hand has any fingers}
+00131         NSArray *fingers = [hand fingers];
+00132         
+00133         \textcolor{keywordflow}{if} ([fingers count] != 0) \{
+00134             
+00135             \textcolor{comment}{// Calculate the hand's average finger tip position}
+00136             LeapVector *avgPos = [[LeapVector alloc] init];
+00137             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < [fingers count]; i++) \{
+00138                 LeapFinger *finger = [fingers objectAtIndex:i];
+00139                 avgPos = [avgPos plus:[finger tipPosition]];
+00140                 
+00141                 
+00142                 NSString* fingerID = [NSString stringWithFormat:@"%d", finger.id];
+00143                 
+00144                 \textcolor{comment}{//Check if the Finger ID exists in the list already}
+00145                 \textcolor{keywordflow}{if} ([trackableList objectForKey:fingerID]) \{
+00146                     
+00147                     \textcolor{comment}{//If it does exist update the position on the screen}
+00148                     RedDot* sprite = [trackableList objectForKey:fingerID];
+00149                     sprite.position = [\textcolor{keyword}{self} covertLeapCoordinates:CGPointMake(finger.tipPosition.x, finger.
+      tipPosition.y)];
+00150                     sprite.updated = TRUE;
+00151                     
+00152                     
+00153                 \}\textcolor{keywordflow}{else}\{
+00154                     
+00155                     NSLog(\textcolor{stringliteral}{@"x %0.0f y %0.0f z %0.0f"}, finger.tipPosition.x, finger.tipPosition.y, finger.
+      tipPosition.z);
+00156                    \textcolor{comment}{// CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];}
+00157                     \textcolor{comment}{//CGPoint mouseLocation = [self convertToNodeSpace:point];}
+00158                 
+00159                     \textcolor{comment}{//Add it to the dictionary}
+00160                     RedDot* redDot = [\textcolor{keyword}{self} addRedDot:CGPointMake(finger.tipPosition.x, finger.tipPosition.y
+      ) finger:fingerID];
+00161                     [trackableList setObject:redDot forKey:fingerID];
+00162                 \}
+00163             \}
+00164             
+00165             avgPos = [avgPos divide:[fingers count]];
+00166             
+00167             \textcolor{comment}{//NSLog(@"Hand has %ld fingers, average finger tip position %@", [fingers count], avgPos);}
+00168             \textcolor{keywordflow}{for} (LeapFinger* finger in fingers)\{
+00169                 
+00170                 \textcolor{comment}{//NSLog(@"Finger ID %d %ld", finger.id, (unsigned long)[finger hash]);}
+00171             \}
+00172             
+00173         \}
+00174         
+00175         \textcolor{comment}{//}
+00176         [\textcolor{keyword}{self} checkFingerExists];
+00177         
+00178         \textcolor{comment}{// Get the hand's sphere radius and palm position}
+00179         \textcolor{comment}{/*}
+00180 \textcolor{comment}{        NSLog(@"Hand sphere radius: %f mm, palm position: %@",}
+00181 \textcolor{comment}{              [hand sphereRadius], [hand palmPosition]);}
+00182 \textcolor{comment}{        */}
+00183         \textcolor{comment}{// Get the hand's normal vector and direction}
+00184         \textcolor{keyword}{const} LeapVector *normal = [hand palmNormal];
+00185         \textcolor{keyword}{const} LeapVector *direction = [hand direction];
+00186         
+00187         \textcolor{comment}{/*}
+00188 \textcolor{comment}{        // Calculate the hand's pitch, roll, and yaw angles}
+00189 \textcolor{comment}{        NSLog(@"Hand pitch: %f degrees, roll: %f degrees, yaw: %f degrees\(\backslash\)n",}
+00190 \textcolor{comment}{              [direction pitch] * LEAP\_RAD\_TO\_DEG,}
+00191 \textcolor{comment}{              [normal roll] * LEAP\_RAD\_TO\_DEG,}
+00192 \textcolor{comment}{              [direction yaw] * LEAP\_RAD\_TO\_DEG);}
+00193 \textcolor{comment}{         */}
+00194     \}
+00195 \}
+00196 
+00197 
+00198 - (void)moveRedDot\{
+00199     
+00200 
+00201 \}
+00202 
+00203 \textcolor{comment}{//Cycle through all the trackable dots and check if the fingers still exist.}
+00204 \textcolor{comment}{//If they don't, delete them.}
+00205 - (void)checkFingerExists\{
+00206     
+00207     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{id} key in [trackableList allKeys]) \{
+00208         RedDot* sprite = [trackableList objectForKey:key];
+00209         \textcolor{keywordflow}{if} (sprite.updated) \{
+00210             sprite.updated = FALSE;
+00211             \textcolor{keywordflow}{return};
+00212         \}\textcolor{keywordflow}{else}\{
+00213             CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00214             [trackableList removeObjectForKey:key];
+00215             [parent removeChild:sprite cleanup:YES];
+00216             
+00217         \}
+00218     \}
+00219 \}
+00220 
+00221 
+00222 \textcolor{preprocessor}{#pragma mark -}
+00223 \textcolor{preprocessor}{}
+00224 -(void) createResetButton
+00225 \{
+00226     CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender)\{
+00227         CCScene *s = [CCScene node];
+00228         id child = [\hyperlink{interface_hello_world_layer}{HelloWorldLayer} node];
+00229         [s addChild:child];
+00230         [[CCDirector sharedDirector] replaceScene: s];
+00231     \}];
+00232     
+00233     CCMenu *menu = [CCMenu menuWithItems:reset, nil];
+00234     
+00235     CGSize s = [[CCDirector sharedDirector] winSize];
+00236     
+00237     menu.position = ccp(s.width/2, 30);
+00238     [\textcolor{keyword}{self} addChild: menu z:-1]; 
+00239     
+00240 \}
+00241 
+00242 -(void) initPhysics
+00243 \{
+00244     
+00245     CGSize s = [[CCDirector sharedDirector] winSize];
+00246     
+00247     \textcolor{comment}{//Gravity}
+00248     b2Vec2 gravity;
+00249     gravity.Set(0.0f, 0.0f);
+00250     world = \textcolor{keyword}{new} b2World(gravity);
+00251     
+00252     
+00253     \textcolor{comment}{// Do we want to let bodies sleep?}
+00254     world->SetAllowSleeping(\textcolor{keyword}{true});
+00255     
+00256     world->SetContinuousPhysics(\textcolor{keyword}{true});
+00257     
+00258     m\_debugDraw = \textcolor{keyword}{new} \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw}( PTM\_RATIO );
+00259     world->SetDebugDraw(m\_debugDraw);
+00260     
+00261     \_world = world;
+00262     
+00263     uint32 flags = 0;
+00264     flags += b2Draw::e\_shapeBit;
+00265     \textcolor{comment}{//      flags += b2Draw::e\_jointBit;}
+00266     \textcolor{comment}{//      flags += b2Draw::e\_aabbBit;}
+00267     \textcolor{comment}{//      flags += b2Draw::e\_pairBit;}
+00268     \textcolor{comment}{//      flags += b2Draw::e\_centerOfMassBit;}
+00269     m\_debugDraw->SetFlags(flags);       
+00270     
+00271     
+00272     \textcolor{comment}{// Define the ground body.}
+00273     b2BodyDef groundBodyDef;
+00274     groundBodyDef.position.Set(0, 0); \textcolor{comment}{// bottom-left corner}
+00275     
+00276     \textcolor{comment}{// Call the body factory which allocates memory for the ground body}
+00277     \textcolor{comment}{// from a pool and creates the ground box shape (also from a pool).}
+00278     \textcolor{comment}{// The body is also added to the world.}
+00279     b2Body* groundBody = world->CreateBody(&groundBodyDef);
+00280     
+00281     \textcolor{comment}{// Define the ground box shape.}
+00282     b2EdgeShape groundBox;      
+00283     
+00284     \textcolor{comment}{// bottom}
+00285     
+00286     groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM\_RATIO,0));
+00287     groundBody->CreateFixture(&groundBox,0);
+00288     
+00289     \textcolor{comment}{// top}
+00290     groundBox.Set(b2Vec2(0,s.height/PTM\_RATIO), b2Vec2(s.width/PTM\_RATIO,s.height/PTM\_RATIO));
+00291     groundBody->CreateFixture(&groundBox,0);
+00292     
+00293     \textcolor{comment}{// left}
+00294     groundBox.Set(b2Vec2(0,s.height/PTM\_RATIO), b2Vec2(0,0));
+00295     groundBody->CreateFixture(&groundBox,0);
+00296     
+00297     \textcolor{comment}{// right}
+00298     groundBox.Set(b2Vec2(s.width/PTM\_RATIO,s.height/PTM\_RATIO), b2Vec2(s.width/PTM\_RATIO,0));
+00299     groundBody->CreateFixture(&groundBox,0);
+00300     
+00301     \_groundBody = groundBody;
+00302 \}
+00303 
+00304 -(void) draw
+00305 \{
+00306     \textcolor{comment}{//}
+00307     \textcolor{comment}{// IMPORTANT:}
+00308     \textcolor{comment}{// This is only for debug purposes}
+00309     \textcolor{comment}{// It is recommend to disable it}
+00310     \textcolor{comment}{//}
+00311     [\textcolor{keyword}{super} draw];
+00312     
+00313     ccGLEnableVertexAttribs( kCCVertexAttribFlag\_Position );
+00314     
+00315     kmGLPushMatrix();
+00316     
+00317     world->DrawDebugData(); 
+00318     
+00319     kmGLPopMatrix();
+00320 \}
+00321 
+00322 - (RedDot*)addRedDot:(CGPoint)p finger:(NSString*)fingerID\{
+00323     CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00324     \textcolor{keywordtype}{int} idx = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00325     \textcolor{keywordtype}{int} idy = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00326     
+00327     \textcolor{comment}{//RedDot *sprite = [RedDot spriteWithFile:@"redcrosshair.png"];}
+00328     RedDot *sprite = [RedDot spriteWithTexture:spriteTexture\_ rect:CGRectMake(32 * idx,32 * idy,32,32)];        
+00329     [parent addChild:sprite];
+00330     sprite.updated = TRUE;
+00331     sprite.fingerID = fingerID;
+00332     sprite.position = ccp( p.x, p.y);
+00333     
+00334     \textcolor{keywordflow}{return} sprite;
+00335 \}
+00336 
+00337 - (CGPoint)covertLeapCoordinates:(CGPoint)p\{
+00338 
+00339     CGSize s = [[CCDirector sharedDirector] winSize];
+00340     \textcolor{keywordtype}{float} screenCenter = 0.0f;
+00341     \textcolor{keywordtype}{float} xScale = 1.75f;
+00342     \textcolor{keywordtype}{float} yScale = 1.25f;
+00343     \textcolor{keywordflow}{return} CGPointMake((s.width/2)+ (( p.x - screenCenter) * xScale), p.y * yScale);
+00344 \}
+00345 
+00346 -(void) addNewSpriteAtPosition:(CGPoint)p
+00347 \{
+00348     CCLOG(\textcolor{stringliteral}{@"Add sprite %0.2f x %02.f"},p.x,p.y);
+00349     CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00350     
+00351     \textcolor{comment}{//We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is}
+00352     \textcolor{comment}{//just randomly picking one of the images}
+00353     \textcolor{keywordtype}{int} idx = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00354     \textcolor{keywordtype}{int} idy = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00355     \hyperlink{interface_physics_sprite}{PhysicsSprite} *sprite = [\hyperlink{interface_physics_sprite}{PhysicsSprite} spriteWithTexture:spriteTexture\_ rect:
+      CGRectMake(32 * idx,32 * idy,32,32)];                        
+00356     [parent addChild:sprite];
+00357     sprite.position = [\textcolor{keyword}{self} covertLeapCoordinates:p];
+00358     \textcolor{comment}{//sprite.position = ccp( p.x, p.y);}
+00359     
+00360     \textcolor{comment}{// Define the dynamic body.}
+00361     \textcolor{comment}{//Set up a 1m squared box in the physics world}
+00362     b2BodyDef bodyDef;
+00363     bodyDef.type = b2\_dynamicBody;
+00364     bodyDef.position.Set(p.x/PTM\_RATIO, p.y/PTM\_RATIO);
+00365 
+00366     \textcolor{comment}{//bodyDef.userData  = (void *) CFBridgingRetain(sprite);}
+00367     bodyDef.userData  = (\_\_bridge \textcolor{keywordtype}{void} *)sprite;
+00368     b2Body *body = world->CreateBody(&bodyDef);
+00369     
+00370     \textcolor{comment}{// Define another box shape for our dynamic body.}
+00371     b2PolygonShape dynamicBox;
+00372     dynamicBox.SetAsBox(.5f, .5f);\textcolor{comment}{//These are mid points for our 1m box}
+00373     
+00374     \textcolor{comment}{// Define the dynamic body fixture.}
+00375     b2FixtureDef fixtureDef;
+00376     fixtureDef.shape = &dynamicBox; 
+00377     fixtureDef.density = 1.0f;
+00378     fixtureDef.friction = 0.3f;
+00379     body->CreateFixture(&fixtureDef);
+00380     
+00381     [sprite setPhysicsBody:body];
+00382 \}
+00383 
+00384 -(void) addPieceAtPosition:(CGPoint)p
+00385 \{
+00386     CCLOG(\textcolor{stringliteral}{@"Add sprite %0.2f x %02.f"},p.x,p.y);
+00387     CCNode *parent = [\textcolor{keyword}{self} getChildByTag:kTagParentNode];
+00388     
+00389     \textcolor{comment}{//We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is}
+00390     \textcolor{comment}{//just randomly picking one of the images}
+00391     \textcolor{keywordtype}{int} idx = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00392     \textcolor{keywordtype}{int} idy = (CCRANDOM\_0\_1() > .5 ? 0:1);
+00393     \hyperlink{interface_physics_sprite}{PhysicsSprite} *sprite = [\hyperlink{interface_physics_sprite}{PhysicsSprite} spriteWithTexture:spriteTexture\_ rect:
+      CGRectMake(32 * idx,32 * idy,32,32)];
+00394     [parent addChild:sprite];
+00395     
+00396     sprite.position = ccp( p.x, p.y);
+00397     
+00398     \textcolor{comment}{// Define the dynamic body.}
+00399     \textcolor{comment}{//Set up a 1m squared box in the physics world}
+00400     b2BodyDef bodyDef;
+00401     bodyDef.type = b2\_dynamicBody;
+00402     bodyDef.position.Set(p.x/PTM\_RATIO, p.y/PTM\_RATIO);
+00403     b2Body *body = world->CreateBody(&bodyDef);
+00404     
+00405     \textcolor{comment}{// Define another box shape for our dynamic body.}
+00406     b2PolygonShape dynamicBox;
+00407     dynamicBox.SetAsBox(.5f, .5f);\textcolor{comment}{//These are mid points for our 1m box}
+00408     
+00409     \textcolor{comment}{// Define the dynamic body fixture.}
+00410     b2FixtureDef fixtureDef;
+00411     fixtureDef.shape = &dynamicBox;
+00412     fixtureDef.density = 1.0f;
+00413     fixtureDef.friction = 0.3f;
+00414     body->CreateFixture(&fixtureDef);
+00415     
+00416     [sprite setPhysicsBody:body];
+00417 \}
+00418 
+00419 -(void) update: (ccTime) dt
+00420 \{
+00421     \textcolor{comment}{//It is recommended that a fixed time step is used with Box2D for stability}
+00422     \textcolor{comment}{//of the simulation, however, we are using a variable time step here.}
+00423     \textcolor{comment}{//You need to make an informed choice, the following URL is useful}
+00424     \textcolor{comment}{//http://gafferongames.com/game-physics/fix-your-timestep/}
+00425     
+00426     int32 velocityIterations = 8;
+00427     int32 positionIterations = 1;
+00428     
+00429     \textcolor{comment}{// Instruct the world to perform a single step of simulation. It is}
+00430     \textcolor{comment}{// generally best to keep the time step and iterations fixed.}
+00431     world->Step(dt, velocityIterations, positionIterations);    
+00432 \}
+00433 
+00434 \textcolor{preprocessor}{#ifdef \_\_IPHONE\_OS\_VERSION\_MAX\_ALLOWED}
+00435 \textcolor{preprocessor}{}
+00436 - (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+00437 \{
+00438     \textcolor{comment}{//Add a new body/atlas sprite at the touched location}
+00439     \textcolor{keywordflow}{for}( UITouch *touch in touches ) \{
+00440         CGPoint location = [touch locationInView: [touch view]];
+00441         
+00442         location = [[CCDirector sharedDirector] convertToGL: location];
+00443         
+00444         [\textcolor{keyword}{self} addNewSpriteAtPosition: location];
+00445         
+00446         
+00447     \}
+00448 \}
+00449 
+00450 \textcolor{preprocessor}{#elif defined(\_\_MAC\_OS\_X\_VERSION\_MAX\_ALLOWED)}
+00451 \textcolor{preprocessor}{}\textcolor{comment}{/*}
+00452 \textcolor{comment}{- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event \{}
+00453 \textcolor{comment}{    CGPoint touchLocation = [self convertTouchToNodeSpace:touch];}
+00454 \textcolor{comment}{    [self selectSpriteForTouch:touchLocation];}
+00455 \textcolor{comment}{    return TRUE;}
+00456 \textcolor{comment}{\}}
+00457 \textcolor{comment}{ */}
+00458 
+00459 
+00460 
+00461 
+00462 \textcolor{preprocessor}{#pragma mark - Touch Handling}
+00463 \textcolor{preprocessor}{}
+00464 - (BOOL) ccMouseDown:(NSEvent *)event\{
+00465     
+00466     \textcolor{keywordflow}{if} (\_mouseJoint != NULL) \textcolor{keywordflow}{return} NO;
+00467     
+00468 
+00469     CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00470     CGPoint mouseLocation = [\textcolor{keyword}{self} convertToNodeSpace:point];
+00471     CGPoint translation = (mouseLocation);
+00472     CGPoint location = translation;
+00473     \textcolor{comment}{//location = [[CCDirector sharedDirector] convertToGL:location];}
+00474     b2Vec2 locationWorld = b2Vec2(location.x/PTM\_RATIO, location.y/PTM\_RATIO);
+00475     
+00476     
+00477     \textcolor{comment}{// Loop through all of the Box2D bodies in our Box2D world..}
+00478     \textcolor{keywordflow}{for}(b2Body *b = \_world->GetBodyList(); b; b=b->GetNext()) \{
+00479         
+00480         
+00481         \textcolor{comment}{// See if there's any user data attached to the Box2D body}
+00482         \textcolor{comment}{// There should be, since we set it in addBoxBodyForSprite}
+00483         
+00484         \textcolor{keywordflow}{if} (b->GetUserData() != NULL) \{
+00485             \textcolor{comment}{// We know that the user data is a sprite since we set}
+00486             \textcolor{comment}{// it that way, so cast it...}
+00487             
+00488             \textcolor{comment}{//PhysicsSprite *sprite = (PhysicsSprite *)CFBridgingRelease(b->GetUserData());}
+00489             
+00490             
+00491             \textcolor{keywordflow}{for}(b2Fixture *fixture = b->GetFixtureList(); fixture; fixture=fixture->GetNext()) \{
+00492                 
+00493                 \textcolor{keywordflow}{if}(fixture->TestPoint(locationWorld))\{
+00494                     \textcolor{comment}{//NSLog(@"Touched itemType %d", sprite.itemType);}
+00495                     b2MouseJointDef md;
+00496                     md.bodyA = \_groundBody;
+00497                     md.bodyB = b;
+00498                     md.target = locationWorld;
+00499                     md.collideConnected = \textcolor{keyword}{true};
+00500                     md.maxForce = 1000.0f * b->GetMass();
+00501                     
+00502                     \_mouseJoint = (b2MouseJoint *)\_world->CreateJoint(&md);
+00503                     b->SetAwake(\textcolor{keyword}{true});
+00504                 \}\textcolor{keywordflow}{else}\{
+00505                     \textcolor{comment}{//NSLog(@"NOT TOUCHED");}
+00506                 \}
+00507             \}
+00508         \}
+00509     \}
+00510     \textcolor{keywordflow}{return} YES;
+00511 \}
+00512 
+00513 - (BOOL)ccMouseDragged:(NSEvent *)event \{
+00514     
+00515     \textcolor{keywordflow}{if} (\_mouseJoint == NULL) \textcolor{keywordflow}{return} NO;
+00516     
+00517 
+00518     CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00519     CGPoint mouseLocation = [\textcolor{keyword}{self} convertToNodeSpace:point];
+00520     CGPoint translation = (mouseLocation);
+00521     CGPoint location = translation;
+00522     \textcolor{comment}{//location = [[CCDirector sharedDirector] convertToGL:location];}
+00523     b2Vec2 locationWorld = b2Vec2(location.x/PTM\_RATIO, location.y/PTM\_RATIO);
+00524     
+00525     \_mouseJoint->SetTarget(locationWorld);
+00526     
+00527     \textcolor{keywordflow}{return} YES;
+00528     
+00529 \}
+00530 
+00531 - (BOOL)ccMouseUp:(NSEvent *)event\{
+00532     \textcolor{keywordflow}{if} (\_mouseJoint) \{
+00533         \_world->DestroyJoint(\_mouseJoint);
+00534         \_mouseJoint = NULL;
+00535         
+00536         \textcolor{comment}{//Check for any dangling mouse joints}
+00537         \textcolor{keywordflow}{if}(\_world->GetJointCount() > 0)\{
+00538             \textcolor{comment}{//NSLog(@"Found %d Extra Joints", \_world->GetJointCount() );}
+00539             \textcolor{keywordflow}{for}(b2Joint *b = \_world->GetJointList(); b; b=b->GetNext()) \{
+00540                 \textcolor{comment}{//NSLog(@"Destproying the Dangling Joint");}
+00541                 \textcolor{comment}{//Should check type first}
+00542                 \textcolor{keywordflow}{if}(b)\{
+00543                     \_world->DestroyJoint(b);
+00544                     b = NULL;
+00545                     \textcolor{keywordflow}{return} YES;
+00546                 \}
+00547             \}
+00548         \}
+00549     \}\textcolor{keywordflow}{else}\{
+00550         
+00551         
+00552         CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00553         CGPoint mouseLocation = [\textcolor{keyword}{self} convertToNodeSpace:point];
+00554         CGPoint translation = (mouseLocation);
+00555         CGPoint location = translation;
+00556     
+00557         
+00558         [\textcolor{keyword}{self} addNewSpriteAtPosition: location];
+00559         
+00560     \}
+00561     \textcolor{keywordflow}{return} YES;
+00562 \}
+00563 
+00564 \textcolor{preprocessor}{#endif}
+00565 \textcolor{preprocessor}{}
+00566 \textcolor{keyword}{@end}
+\end{DoxyCode}

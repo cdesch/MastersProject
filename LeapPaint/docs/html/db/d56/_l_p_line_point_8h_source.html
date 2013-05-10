@@ -98,25 +98,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html">   16</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d6/dab/interface_l_p_line_point.html">LPLinePoint</a> : NSObject{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#abc1309a6c53c6ca75ead346c748b3f7b">   21</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> x; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#ad03af34f7646b5e17a9d5a70a82ce36e">   22</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> y; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#aa4cb4e74747c8c5e7b61e3de32c8da2c">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> width; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (id)initWithPosition:(CGPoint)p;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (id)initWithPosition:(CGPoint)p withWidth:(<span class="keywordtype">float</span>)wVal;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal withWidth:(<span class="keywordtype">float</span>)wVal;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (CGPoint)point;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html">   16</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d6/dab/interface_l_p_line_point.html">LPLinePoint</a> : NSObject</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#abc1309a6c53c6ca75ead346c748b3f7b">   18</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d6/dab/interface_l_p_line_point.html#abc1309a6c53c6ca75ead346c748b3f7b">x</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#ad03af34f7646b5e17a9d5a70a82ce36e">   19</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d6/dab/interface_l_p_line_point.html#ad03af34f7646b5e17a9d5a70a82ce36e">y</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="../../d6/dab/interface_l_p_line_point.html#aa4cb4e74747c8c5e7b61e3de32c8da2c">   20</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d6/dab/interface_l_p_line_point.html#aa4cb4e74747c8c5e7b61e3de32c8da2c">width</a>; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (id)initWithPosition:(CGPoint)p;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (id)initWithPosition:(CGPoint)p withWidth:(<span class="keywordtype">float</span>)wVal;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal withWidth:(<span class="keywordtype">float</span>)wVal;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (CGPoint)<a class="code" href="../../d6/dab/interface_l_p_line_point.html#a6cb916c0bd397a0580a4b506b3322b69">point</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 15:12:16 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2013 00:11:00 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

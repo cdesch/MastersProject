@@ -1,0 +1,81 @@
+\hypertarget{_g_l_e_s-_render_8h}{\section{G\-L\-E\-S-\/\-Render.h}
+\label{dc/d04/_g_l_e_s-_render_8h}\index{Break\-Out/\-G\-L\-E\-S-\/\-Render.\-h@{Break\-Out/\-G\-L\-E\-S-\/\-Render.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{* Copyright (c) 2006-2007 Erin Catto http://www.gphysics.com}
+00003 \textcolor{comment}{*}
+00004 \textcolor{comment}{* iPhone port by Simon Oliver - http://www.simonoliver.com - http://www.handcircus.com}
+00005 \textcolor{comment}{*}
+00006 \textcolor{comment}{* This software is provided 'as-is', without any express or implied}
+00007 \textcolor{comment}{* warranty.  In no event will the authors be held liable for any damages}
+00008 \textcolor{comment}{* arising from the use of this software.}
+00009 \textcolor{comment}{* Permission is granted to anyone to use this software for any purpose,}
+00010 \textcolor{comment}{* including commercial applications, and to alter it and redistribute it}
+00011 \textcolor{comment}{* freely, subject to the following restrictions:}
+00012 \textcolor{comment}{* 1. The origin of this software must not be misrepresented; you must not}
+00013 \textcolor{comment}{* claim that you wrote the original software. If you use this software}
+00014 \textcolor{comment}{* in a product, an acknowledgment in the product documentation would be}
+00015 \textcolor{comment}{* appreciated but is not required.}
+00016 \textcolor{comment}{* 2. Altered source versions must be plainly marked as such, and must not be}
+00017 \textcolor{comment}{* misrepresented as being the original software.}
+00018 \textcolor{comment}{* 3. This notice may not be removed or altered from any source distribution.}
+00019 \textcolor{comment}{*/}
+00020 
+00021 \textcolor{comment}{//}
+00022 \textcolor{comment}{// File modified for cocos2d integration}
+00023 \textcolor{comment}{// http://www.cocos2d-iphone.org}
+00024 \textcolor{comment}{//}
+00025 
+00026 \textcolor{preprocessor}{#ifndef GLES\_RENDER\_H}
+00027 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define GLES\_RENDER\_H}
+00028 \textcolor{preprocessor}{}
+00029 \textcolor{preprocessor}{#import "cocos2d.h"}
+00030 
+00031 \textcolor{preprocessor}{#ifdef \_\_CC\_PLATFORM\_IOS}
+00032 \textcolor{preprocessor}{}\textcolor{preprocessor}{#import <OpenGLES/EAGL.h>}
+00033 \textcolor{preprocessor}{#elif defined(\_\_CC\_PLATFORM\_MAC)}
+00034 \textcolor{preprocessor}{}\textcolor{preprocessor}{#import <OpenGL/OpenGL.h>}
+00035 \textcolor{preprocessor}{#endif}
+00036 \textcolor{preprocessor}{}
+00037 \textcolor{preprocessor}{#include "Box2D.h"}
+00038 
+00039 \textcolor{keyword}{struct }b2AABB;
+00040 
+00041 \textcolor{comment}{// This class implements debug drawing callbacks that are invoked}
+00042 \textcolor{comment}{// inside b2World::Step.}
+\hypertarget{_g_l_e_s-_render_8h_source_l00043}{}\hyperlink{class_g_l_e_s_debug_draw}{00043} \textcolor{keyword}{class }\hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw} : \textcolor{keyword}{public} b2Draw
+00044 \{
+00045     float32 mRatio;
+00046     CCGLProgram *mShaderProgram;
+00047     GLint       mColorLocation;
+00048 
+00049     \textcolor{keywordtype}{void} initShader( \textcolor{keywordtype}{void} );
+00050 \textcolor{keyword}{public}:
+00051     \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw}();
+00052 
+00053     \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw}( float32 ratio );
+00054 
+00055     \textcolor{keywordtype}{void} DrawPolygon(\textcolor{keyword}{const} b2Vec2* vertices, int32 vertexCount, \textcolor{keyword}{const} b2Color& color);
+00056 
+00057     \textcolor{keywordtype}{void} DrawSolidPolygon(\textcolor{keyword}{const} b2Vec2* vertices, int32 vertexCount, \textcolor{keyword}{const} b2Color& color);
+00058 
+00059     \textcolor{keywordtype}{void} DrawCircle(\textcolor{keyword}{const} b2Vec2& center, float32 radius, \textcolor{keyword}{const} b2Color& color);
+00060 
+00061     \textcolor{keywordtype}{void} DrawSolidCircle(\textcolor{keyword}{const} b2Vec2& center, float32 radius, \textcolor{keyword}{const} b2Vec2& axis, \textcolor{keyword}{const} b2Color& color);
+00062 
+00063     \textcolor{keywordtype}{void} DrawSegment(\textcolor{keyword}{const} b2Vec2& p1, \textcolor{keyword}{const} b2Vec2& p2, \textcolor{keyword}{const} b2Color& color);
+00064 
+00065     \textcolor{keywordtype}{void} DrawTransform(\textcolor{keyword}{const} b2Transform& xf);
+00066 
+00067     \textcolor{keywordtype}{void} DrawPoint(\textcolor{keyword}{const} b2Vec2& p, float32 size, \textcolor{keyword}{const} b2Color& color);
+00068 
+00069     \textcolor{keywordtype}{void} DrawString(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \textcolor{keywordtype}{string}, ...);
+00070 
+00071     \textcolor{keywordtype}{void} DrawAABB(b2AABB* aabb, \textcolor{keyword}{const} b2Color& color);
+00072 \};
+00073 
+00074 
+00075 \textcolor{preprocessor}{#endif // GLES\_RENDER\_H}
+\end{DoxyCode}

@@ -73,7 +73,7 @@ Use case include some of the following control operations
 \end{itemize}
 
 \subsection{Implementation Challenges}
-In concept this idea seemed to be an ideal and natural way of interacting with the system but faced several challenges. When the thumb became flush with the hand the LeapMotion could no longer detect it as a finger. Additionally, there were several instances of occulsion occuring, for example when the hand was positioned with the thumb pointing upward the line of sight from the camera to the thumb was blocked. This unique challenge was difficult because the thumb could not be accounted for in all cases. An option might be to use the thumb's absence as a trigger although this is prone to many false positives\footnote{False positive indicates a given condition is present when it is not.} when the user's hands were on the boarder line of the LeapMotions visibility range or has lost track of the thumb due to occlusion\footnote{Occlusion occurs when the a surface is hidden by blocking the line of sight.}. Reversing the actions and performing the opposite gesture did not feel natural. Holding the thumb closely to the rest of the hand is not relaxed state and also did not mimic the act of grasping something or triggering an action as people are more commonly used to. 
+In concept this idea seemed to be an ideal and natural way of interacting with the system but faced several challenges. When the thumb became flush with the hand the LeapMotion could no longer detect it as a finger. Additionally, there were several instances of occlusion occurring, for example when the hand was positioned with the thumb pointing upward the line of sight from the camera to the thumb was blocked. This unique challenge was difficult because the thumb could not be accounted for in all cases. An option might be to use the thumb's absence as a trigger although this is prone to many false positives\footnote{False positive indicates a given condition is present when it is not.} when the user's hands were on the boarder line of the LeapMotions visibility range or has lost track of the thumb due to occlusion\footnote{Occlusion occurs when the a surface is hidden by blocking the line of sight.}. Reversing the actions and performing the opposite gesture did not feel natural. Holding the thumb closely to the rest of the hand is not relaxed state and also did not mimic the act of grasping something or triggering an action as people are more commonly used to. 
 
 
 \subsection{Unity 3D Engine Testing}
@@ -130,7 +130,7 @@ Gestures developed by the children were fairly consistent to previous session in
 This session reinforced the idea that the LeapMotion cannot be a dedicated device but a supplemental device.
 
 %March 19th 
-\section{Session 6: Testing}\label{session6}
+\section{Session 6: Testing Paint Prototype}\label{session6}
 
 
 The children were tasked with testing the painting prototype application dubbed LeapPaint using the sticky notes exercise ~\ref{sec:stickynotes} review technique. This early prototype focused on adding a HUD to display the cursor and did not have all of the features in the initial requirements. Testing was focused on the interactions with the cursor. The While not testing they designed their own brushes, shapes and tools to be included in the next iteration of the tool. The overall consensus from this session was to implement better accuracy of the tool which required redesigning how the coordinate systems were translated from LeapMotion space into the application. 
@@ -138,7 +138,7 @@ The children were tasked with testing the painting prototype application dubbed 
 %Go into coordinate systems here performing a vector  triagulation 
 
 %April 2nd
-\section{Session 7: Testing}\label{session7}
+\section{Session 7: Testing Improved Paint}\label{session7}
 
 
 The children were tasked with testing the painting application with the fixes based on the last session and providing feedback using the sticky notes~\ref{sec:stickynotes} review technique. The new features focused on testing in the application were changing colors, erasing and an experimental method of triggering the drawing action. 
@@ -152,7 +152,7 @@ To help the children determine whether they were drawing or not a ring indicator
 
 
 %April 9th Testing and review of the application with sticky notes
-\section{Session 8: Testing}\label{session8}
+\section{Session 8: Final Testing}\label{session8}
 
 The children were tasked with testing the painting application for the last time using the sticky notes~\ref{sec:stickynotes} review technique. Testing for new features which included a depth opacity control. The opacity of the brush would become greater the closer the pointer was to the monitor simulating how a paintbrush or marker makes a darker line when pressed harder to paper. 
 

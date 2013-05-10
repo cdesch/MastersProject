@@ -1,0 +1,33 @@
+\hypertarget{_physics_sprite_8h}{\section{Physics\-Sprite.\-h}
+\label{de/d3b/_physics_sprite_8h}\index{Break\-Out/\-Physics\-Sprite.\-h@{Break\-Out/\-Physics\-Sprite.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  PhysicsSprite.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/8/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import <Foundation/Foundation.h>}
+00010 \textcolor{preprocessor}{#import "cocos2d.h"}
+00011 \textcolor{preprocessor}{#import "Box2D.h"}
+00012 \textcolor{preprocessor}{#import "GLES-Render.h"}
+00013 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00014 
+00015 
+\hypertarget{_physics_sprite_8h_source_l00016}{}\hyperlink{interface_physics_sprite}{00016} \textcolor{keyword}{@interface }\hyperlink{interface_physics_sprite}{PhysicsSprite} :  CCSprite <CCMouseEventDelegate>
+00017 \{   CGPoint target;
+00018     uint ticker;
+00019     \textcolor{keywordtype}{bool} hasTarget;
+00020     b2Body *body\_;  \textcolor{comment}{// strong ref}
+00021 \}
+00022 
+00023 -(void) setPhysicsBody:(b2Body*)body;
+00024 -(void) setTarget:(CGPoint)p;
+00025 -(void) delTarget;
+00026 
+00027 \textcolor{keyword}{@end}
+\end{DoxyCode}

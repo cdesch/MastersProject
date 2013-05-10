@@ -1,0 +1,36 @@
+\hypertarget{_hello_world_scene_8h}{\section{Hello\-World\-Scene.\-h}
+\label{d9/db2/_hello_world_scene_8h}\index{Break\-Out/\-Hello\-World\-Scene.\-h@{Break\-Out/\-Hello\-World\-Scene.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  HelloWorldScene.h}
+00003 \textcolor{comment}{//  Cocos2DBreakout2}
+00004 \textcolor{comment}{//}
+00005 
+00006 
+00007 \textcolor{preprocessor}{#import "cocos2d.h"}
+00008 \textcolor{preprocessor}{#import "Box2D.h"}
+00009 \textcolor{preprocessor}{#import "MyContactListener.h"}
+00010 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00011 
+\hypertarget{_hello_world_scene_8h_source_l00012}{}\hyperlink{interface_hello_world}{00012} \textcolor{keyword}{@interface }\hyperlink{interface_hello_world}{HelloWorld} : CCLayer <LeapDelegate>\{
+00013     b2World *\_world;
+00014     b2Body *\_groundBody;
+00015     b2Body *\_paddleBody;    
+00016     b2Fixture *\_paddleFixture;
+00017     b2Fixture *\_ballFixture;
+00018     b2Fixture *\_bottomFixture;
+00019     b2MouseJoint *\_mouseJoint;
+00020     b2MouseJoint *\_fingerJoint;
+00021     MyContactListener *\_contactListener;
+00022     
+00023     LeapController *controller;
+00024     NSMutableDictionary* trackableList;
+00025     BOOL fingerTracked;
+00026 \}
+00027 
+00028 + (id) scene;
+00029 
+00030 \textcolor{keyword}{@end}
+\end{DoxyCode}

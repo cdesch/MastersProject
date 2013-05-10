@@ -1,10 +1,10 @@
 % Appendix B
 
-\chapter{Specification} % Main appendix title
+\chapter{Quartz2DPaint} % Main appendix title
 
 \label{AppendixB} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\lhead{Appendix B. \emph{Specification}} % This is for the header on each page - perhaps a shortened title
+\lhead{Appendix B. \emph{Quartz2DPaint}} % This is for the header on each page - perhaps a shortened title
 
 %Write your Appendix content here.
 \includepdf[pages=2-last,
@@ -17,5 +17,16 @@
             offset=70pt -70pt,  %letter, twoside    => misaligned by .x pt
             %offset=0pt 0pt,    %a4paper, oneside   => misaligned by 1.x pt
             %offset=-25pt 0pt,  %a4paper, twoside   => misaligned by 1.x pt
-            ]{/Users/cj/Desktop/MastersProject/LeapPaint/docs/latex/refman.pdf}
+            ]{/Users/cj/Desktop/MastersProject/Quartz2DPaint/docs/latex/refman.pdf}
 
+\includepdf[pages=-,
+	    pagecommand={\thispagestyle{empty}},
+            width=\textwidth,
+            height=\textheight, 
+	    noautoscale,   
+	    fitpaper=true,
+            %offset=0pt 0pt,     %letter, oneside    => misaligned by .x pt
+           % offset=70pt 0pt,  %letter, twoside    => misaligned by .x pt
+            %offset=0pt 0pt,    %a4paper, oneside   => misaligned by 1.x pt
+            %offset=-25pt 0pt,  %a4paper, twoside   => misaligned by 1.x pt
+            ]{/Users/cj/Desktop/MastersProject/Quartz2DPaint/Quartz2DPaint/code.pdf}

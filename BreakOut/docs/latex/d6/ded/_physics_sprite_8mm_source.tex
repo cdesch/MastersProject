@@ -1,0 +1,162 @@
+\hypertarget{_physics_sprite_8mm}{\section{Physics\-Sprite.\-mm}
+\label{d6/ded/_physics_sprite_8mm}\index{Break\-Out/\-Physics\-Sprite.\-mm@{Break\-Out/\-Physics\-Sprite.\-mm}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  PhysicsSprite.m}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/8/13.}
+00006 \textcolor{comment}{//}
+00007 \textcolor{comment}{//}
+00008 
+00009 \textcolor{preprocessor}{#import "PhysicsSprite.h"}
+00010 \textcolor{preprocessor}{#define PTM\_RATIO 32}
+00011 \textcolor{preprocessor}{}
+00012 \textcolor{keyword}{enum} \{
+00013     kTagParentNode = 1,
+00014 \};
+00015 
+00016 \textcolor{keyword}{@implementation }\hyperlink{interface_physics_sprite}{PhysicsSprite}
+00017 -(void) setPhysicsBody:(b2Body *)body
+00018 \{
+00019     \textcolor{comment}{//[[CCEventDispatcher sharedDispatcher] addMouseDelegate:self priority:0];}
+00020     \textcolor{comment}{//[[[CCDirector sharedDirector] eventDispatcher] addMouseDelegate:self priority:-1];}
+00021     hasTarget = NO;
+00022     \textcolor{comment}{//[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:50 swallowsTouches:YES];}
+00023     body\_ = body;
+00024 \}
+00025 
+00026 \textcolor{comment}{// this method will only get called if the sprite is batched.}
+00027 \textcolor{comment}{// return YES if the physics values (angles, position ) changed}
+00028 \textcolor{comment}{// If you return NO, then nodeToParentTransform won't be called.}
+00029 -(BOOL) dirty
+00030 \{
+00031     \textcolor{keywordflow}{return} YES;
+00032 \}
+00033 
+00034 -(void) setTarget:(CGPoint)p
+00035 \{
+00036     hasTarget = YES;
+00037     target = p;
+00038 \}
+00039 
+00040 -(void) delTarget
+00041 \{
+00042     hasTarget = NO;
+00043 \}
+00044 
+00045 
+00046 
+00047 
+00048 - (BOOL)ccMouseDragged:(NSEvent *)event\{
+00049     
+00050     \textcolor{comment}{//NSLog(@"Mouse dragged in Sprite");}
+00051     \textcolor{keywordflow}{if} (hasTarget)\{
+00052         NSLog(\textcolor{stringliteral}{@"Mouse dragged in Sprite"});
+00053         CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00054         \textcolor{comment}{//CGPoint mouseLocation = [self convertToNodeSpace:point];}
+00055         CGPoint translation = (point);
+00056         
+00057         \textcolor{comment}{//NSLog(@"Dragged %0.0f , %0.0f ", translation.x, translation.y);}
+00058         \textcolor{comment}{//self.position = translation;}
+00059         \textcolor{comment}{//body\_->Get}
+00060         \textcolor{keyword}{self}.position = ccp(translation.x, translation.y);
+00061     \}
+00062     
+00063     \textcolor{keywordflow}{return} YES;
+00064     
+00065 \}
+00066 
+00067 - (BOOL)ccMouseDown:(NSEvent *)event\{
+00068     
+00069     \textcolor{comment}{//NSLog(@"Mouse Down");}
+00070     
+00071     
+00072     CGPoint point = [[CCDirector sharedDirector] convertEventToGL:event];
+00073     \textcolor{comment}{//CGPoint mouseLocation = [self convertToNodeSpace:point];}
+00074     CGPoint translation = (point);
+00075     \textcolor{comment}{//NSLog(@"Dragged %0.0f , %0.0f ", translation.x, translation.y);}
+00076     \textcolor{comment}{//NSLog(@"Bouding Box %0.0f %0.0f %0.0f %0.0f", self.boundingBox.origin.x, self.boundingBox.origin.y,
+       self.boundingBox.size.height,self.boundingBox.size.width );}
+00077     
+00078     \textcolor{keywordflow}{if} (CGRectContainsPoint([\textcolor{keyword}{self} boundingBox], translation))\{
+00079         NSLog(\textcolor{stringliteral}{@"Sprite inside Touched"});
+00080         [\textcolor{keyword}{self} setTarget:translation];
+00081         \textcolor{keywordflow}{return} YES;
+00082         
+00083     \}
+00084     \textcolor{comment}{/*}
+00085 \textcolor{comment}{     CCNode *parent = [self getChildByTag:kTagParentNode];}
+00086 \textcolor{comment}{     for (PhysicsSprite *sprite in parent.children)\{}
+00087 \textcolor{comment}{     }
+00088 \textcolor{comment}{     }
+00089 \textcolor{comment}{     if (CGRectContainsPoint([sprite boundingBox], translation))\{}
+00090 \textcolor{comment}{     NSLog(@"Sprite Touched");}
+00091 \textcolor{comment}{     }
+00092 \textcolor{comment}{     [self setTarget:translation ];}
+00093 \textcolor{comment}{     }
+00094 \textcolor{comment}{     //Move Sprite with}
+00095 \textcolor{comment}{     }
+00096 \textcolor{comment}{     //sprite.position = translation;}
+00097 \textcolor{comment}{     }
+00098 \textcolor{comment}{     \}}
+00099 \textcolor{comment}{     }
+00100 \textcolor{comment}{     \}}
+00101 \textcolor{comment}{     */}
+00102     
+00103     \textcolor{keywordflow}{return} NO;
+00104 \}
+00105 
+00106 - (BOOL)ccMouseMoved:(NSEvent *)event\{
+00107     
+00108     
+00109     NSLog(\textcolor{stringliteral}{@"Mouse Moved in Sprite"});
+00110     
+00111     \textcolor{keywordflow}{return} YES;
+00112 \}
+00113 
+00114 - (BOOL)ccMouseUp:(NSEvent *)event\{
+00115     
+00116     [\textcolor{keyword}{self} delTarget];
+00117     
+00118     \textcolor{keywordflow}{return} YES;
+00119     
+00120 \}
+00121 
+00122 \textcolor{comment}{// returns the transform matrix according the Chipmunk Body values}
+00123 -(CGAffineTransform) nodeToParentTransform
+00124 \{
+00125     b2Vec2 pos  = body\_->GetPosition();
+00126     
+00127     \textcolor{keywordtype}{float} x = pos.x * PTM\_RATIO;
+00128     \textcolor{keywordtype}{float} y = pos.y * PTM\_RATIO;
+00129     
+00130     \textcolor{keywordflow}{if} ( ignoreAnchorPointForPosition\_ ) \{
+00131         x += anchorPointInPoints\_.x;
+00132         y += anchorPointInPoints\_.y;
+00133     \}
+00134     
+00135     \textcolor{comment}{// Make matrix}
+00136     \textcolor{keywordtype}{float} radians = body\_->GetAngle();
+00137     \textcolor{keywordtype}{float} c = cosf(radians);
+00138     \textcolor{keywordtype}{float} s = sinf(radians);
+00139     
+00140     \textcolor{keywordflow}{if}( ! CGPointEqualToPoint(anchorPointInPoints\_, CGPointZero) )\{
+00141         x += c*-anchorPointInPoints\_.x + -s*-anchorPointInPoints\_.y;
+00142         y += s*-anchorPointInPoints\_.x + c*-anchorPointInPoints\_.y;
+00143     \}
+00144     
+00145     \textcolor{comment}{// Rot, Translate Matrix}
+00146     transform\_ = CGAffineTransformMake( c,  s,
+00147                                        -s,  c,
+00148                                        x,   y );
+00149     
+00150     \textcolor{keywordflow}{return} transform\_;
+00151 \}
+00152 
+00153 
+00154 
+00155 \textcolor{keyword}{@end}
+\end{DoxyCode}

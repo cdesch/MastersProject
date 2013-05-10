@@ -1,0 +1,43 @@
+\hypertarget{_hello_world_layer_8h}{\section{Hello\-World\-Layer.\-h}
+\label{d2/d4b/_hello_world_layer_8h}\index{Break\-Out/\-Hello\-World\-Layer.\-h@{Break\-Out/\-Hello\-World\-Layer.\-h}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{//}
+00002 \textcolor{comment}{//  HelloWorldLayer.h}
+00003 \textcolor{comment}{//  LeapPuzz}
+00004 \textcolor{comment}{//}
+00005 \textcolor{comment}{//  Created by cj on 2/3/13.}
+00006 \textcolor{comment}{//  Copyright \_\_MyCompanyName\_\_ 2013. All rights reserved.}
+00007 \textcolor{comment}{//}
+00008 
+00009 
+00010 \textcolor{comment}{// When you import this file, you import all the cocos2d classes}
+00011 \textcolor{preprocessor}{#import "cocos2d.h"}
+00012 \textcolor{preprocessor}{#import "Box2D.h"}
+00013 \textcolor{preprocessor}{#import "GLES-Render.h"}
+00014 \textcolor{preprocessor}{#import "LeapObjectiveC.h"}
+00015 \textcolor{preprocessor}{#import "RedDot.h"}
+00016 
+00017 \textcolor{comment}{// HelloWorldLayer}
+\hypertarget{_hello_world_layer_8h_source_l00018}{}\hyperlink{interface_hello_world_layer}{00018} \textcolor{keyword}{@interface }\hyperlink{interface_hello_world_layer}{HelloWorldLayer} : CCLayer <LeapDelegate>
+00019 \{
+00020     
+00021     LeapController *controller;
+00022     
+00023     CCTexture2D *spriteTexture\_;    \textcolor{comment}{// weak ref}
+00024     b2World* world;                 \textcolor{comment}{// strong ref}
+00025     \hyperlink{class_g_l_e_s_debug_draw}{GLESDebugDraw} *m\_debugDraw;        \textcolor{comment}{// strong ref}
+00026     
+00027     CCSprite* targetSprite;
+00028     b2MouseJoint *\_mouseJoint;
+00029     b2World* \_world;
+00030     b2Body *\_groundBody;
+00031     
+00032        
+00033     NSMutableDictionary* trackableList;
+00034     
+00035 \}
+00036 \textcolor{keyword}{@end}
+00037 
+\end{DoxyCode}

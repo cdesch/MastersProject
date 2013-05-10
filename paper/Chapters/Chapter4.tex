@@ -7,7 +7,7 @@
 \lhead{Chapter 4. \emph{Application Architecture}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
-The changing requirements caused architecure to change several times over the course of the project as components were first prototyped then tested. 
+The changing requirements caused architecture to change several times over the course of the project as components were first prototyped then tested. 
 
 \section{Prototyping}
 
@@ -40,7 +40,7 @@ This prototype also showed through observation with the children how different m
 \end{figure}
 
 \subsection{Unity}\label{unity_prototype}
-One of the main gestures in the requirements used fingers to indicate beginning and ending actions as part of the gesture. Attempting to model these gestures required a 3D environment that could show multiple pointer interactions with game objects which was not possible with Cocos2d. The LeapMotion SDK provided a API with Unity 3D Game Engine which could perform the modeling required to begin recognizing the gestures. It was through this prototype that it was found that the LeapMotion would not be able to detect fingers touching each other\footnote{A later released visualizer in the LeapMotion SDK would show the same resulut.}. \cite{unity}
+One of the main gestures in the requirements used fingers to indicate beginning and ending actions as part of the gesture. Attempting to model these gestures required a 3D environment that could show multiple pointer interactions with game objects which was not possible with Cocos2d. The LeapMotion SDK provided a API with Unity 3D Game Engine which could perform the modeling required to begin recognizing the gestures. It was through this prototype that it was found that the LeapMotion would not be able to detect fingers touching each other\footnote{A later released visualizer in the LeapMotion SDK would show the same result.}. \cite{unity}
 
 \subsection{Quartz 2D}\label{quartz2d_prototype}
 
@@ -48,7 +48,7 @@ The Cocos2d engine is not designed particularly for drawing and rendering textur
 
 %%TODO Name for this interface
 
-This prototype worked well in testing in Session 4~\ref{session4} and was generally well recieved by childeren although they had one major requirement of adding a cursor in addition to some minor features. The cursor would show where the pointer was on the screen at any given time so they could position it prior to painting. The minor features included selecting brushes, erasing, changing the brush size, changing the brush type and opacity.  
+This prototype worked well in testing in Session 4~\ref{session4} and was generally well received by children although they had one major requirement of adding a cursor in addition to some minor features. The cursor would show where the pointer was on the screen at any given time so they could position it prior to painting. The minor features included selecting brushes, erasing, changing the brush size, changing the brush type and opacity.  
 
 \subsubsection{Challenges}
 The cursor was very difficult to implement using the Quartz 2D and Cocoa because the libraries do not natively support layering and drawing simultaneously due to the way the rendering context functions as a single context. Creating independent views and transparent windows did not render correctly when attempting to simultaneously update each view. An alternative might be to put each functionality into separate applications running on different process threads although this was not possible because the LeapMotion can only be accessible from one process at a time. To create a cursor in  HUD layer the application needed to access the LeapMotion, HUD and Drawing objects simultaneously. This was the defining factor in returning to the Cocos2d Game Library because it support independent layering of views. \cite{appleapi}
@@ -57,7 +57,7 @@ The cursor was very difficult to implement using the Quartz 2D and Cocoa because
 
 The prototype dubbed "LeapPaint" by the children consisted of a combination components from the earlier Helloworld~\ref{HelloWorld_prototype} and Breakout~\ref{breakout_prototype} prototypes managing input on a standard interface and output into different visible for drawing and the HUD. The layers were connected via a GameManager \footnote{GameManager takes the role of the ApplicationDelegate} passing the delegate actions between layers and interfaces. 
 
-This prototype recieved the best reviews by the children in testing Session 6~\ref{session6} despite lacking some of the features of available in the Quartz 2D~\ref{quartz2d_prototype}. This architecture could be used going forward in adding features.
+This prototype received the best reviews by the children in testing Session 6~\ref{session6} despite lacking some of the features of available in the Quartz 2D~\ref{quartz2d_prototype}. This architecture could be used going forward in adding features.
 
 %despite the tradeoffs between libraries 
 

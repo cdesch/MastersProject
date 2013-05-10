@@ -14,11 +14,9 @@ Inheritance diagram for Simple\-Point\-Object\-:\begin{figure}[H]
 \subsubsection*{Instance Methods}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_simple_point_object_aa5ee92b5c2b007401904a3faefefcd76}{(id) -\/ {\bfseries init\-With\-Position\-:}}\label{d8/d8e/interface_simple_point_object_aa5ee92b5c2b007401904a3faefefcd76}
-
+(id) -\/ \hyperlink{interface_simple_point_object_aa5ee92b5c2b007401904a3faefefcd76}{init\-With\-Position\-:}
 \item 
-\hypertarget{interface_simple_point_object_ac92f127e890c45727110d3d5dd23b2a6}{(id) -\/ {\bfseries init\-With\-X\-:with\-Y\-:}}\label{d8/d8e/interface_simple_point_object_ac92f127e890c45727110d3d5dd23b2a6}
-
+(id) -\/ \hyperlink{interface_simple_point_object_ac92f127e890c45727110d3d5dd23b2a6}{init\-With\-X\-:with\-Y\-:}
 \end{DoxyCompactItemize}
 \subsubsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -30,11 +28,51 @@ C\-G\-Point \hyperlink{interface_simple_point_object_a9796a8e6a00e61bb255f59a80a
 \subsubsection{Detailed Description}
 2\-D space coordinate for temporarily maniulapting points 
 
+\subsubsection{Method Documentation}
+\hypertarget{interface_simple_point_object_aa5ee92b5c2b007401904a3faefefcd76}{\index{Simple\-Point\-Object@{Simple\-Point\-Object}!init\-With\-Position\-:@{init\-With\-Position\-:}}
+\index{init\-With\-Position\-:@{init\-With\-Position\-:}!SimplePointObject@{Simple\-Point\-Object}}
+\paragraph[{init\-With\-Position\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Position\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{p}
+\end{DoxyParamCaption}
+}}\label{d8/d8e/interface_simple_point_object_aa5ee92b5c2b007401904a3faefefcd76}
+Init constructor with existing point to create a 2d Point 
+\begin{DoxyParams}{Parameters}
+{\em p} & an point consisting of (x,y) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance 
+\end{DoxyReturn}
+\hypertarget{interface_simple_point_object_ac92f127e890c45727110d3d5dd23b2a6}{\index{Simple\-Point\-Object@{Simple\-Point\-Object}!init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}}
+\index{init\-With\-X\-:with\-Y\-:@{init\-With\-X\-:with\-Y\-:}!SimplePointObject@{Simple\-Point\-Object}}
+\paragraph[{init\-With\-X\-:with\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x}
+\item[{withY:(float)}]{y}
+\end{DoxyParamCaption}
+}}\label{d8/d8e/interface_simple_point_object_ac92f127e890c45727110d3d5dd23b2a6}
+Init constructor with existing point to create a 2d Point 
+\begin{DoxyParams}{Parameters}
+{\em x} & is x axis coordinate \\
+\hline
+{\em y} & is y axis coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object instance 
+\end{DoxyReturn}
+
+
 \subsubsection{Property Documentation}
 \hypertarget{interface_simple_point_object_a9796a8e6a00e61bb255f59a80aef77d4}{\index{Simple\-Point\-Object@{Simple\-Point\-Object}!point@{point}}
 \index{point@{point}!SimplePointObject@{Simple\-Point\-Object}}
 \paragraph[{point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) point\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{d8/d8e/interface_simple_point_object_a9796a8e6a00e61bb255f59a80aef77d4}
 point is the X and Y coordinates 
+
+Referenced by init\-With\-Position\-:.
+
+
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

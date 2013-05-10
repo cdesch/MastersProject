@@ -96,27 +96,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;cocos2d.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html">   18</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d9/dc7/interface_simple_point.html">SimplePoint</a> : NSObject {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#abb16aaf6215e9e946606b30199b1c3af">   22</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> x; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ae10ba2c5156e6061258a0720443cd1c8">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> y; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ad74ae8e5d653579e791c040155e7d4d6">   24</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> z; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ad56fae41f389d3c12b4023c3e797f452">   25</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) BOOL is3d; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;- (id)initWithPosition:(CGPoint)p;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (id)initWithPosition:(CGPoint)p withZ:(<span class="keywordtype">float</span>)zVal;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal withZ:(<span class="keywordtype">float</span>)zVal;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;- (CGPoint)point;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="../../d9/dc7/interface_simple_point.html">SimplePoint</a> : NSObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#abb16aaf6215e9e946606b30199b1c3af">   16</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d9/dc7/interface_simple_point.html#abb16aaf6215e9e946606b30199b1c3af">x</a>; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ae10ba2c5156e6061258a0720443cd1c8">   17</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d9/dc7/interface_simple_point.html#ae10ba2c5156e6061258a0720443cd1c8">y</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ad74ae8e5d653579e791c040155e7d4d6">   18</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) <span class="keywordtype">float</span> <a class="code" href="../../d9/dc7/interface_simple_point.html#ad74ae8e5d653579e791c040155e7d4d6">z</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="../../d9/dc7/interface_simple_point.html#ad56fae41f389d3c12b4023c3e797f452">   19</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readwrite) BOOL <a class="code" href="../../d9/dc7/interface_simple_point.html#ad56fae41f389d3c12b4023c3e797f452">is3d</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (id)initWithPosition:(CGPoint)p;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (id)initWithPosition:(CGPoint)p withZ:(<span class="keywordtype">float</span>)zVal;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (id)initWithX:(<span class="keywordtype">float</span>)xVal withY:(<span class="keywordtype">float</span>)yVal withZ:(<span class="keywordtype">float</span>)zVal;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (CGPoint)<a class="code" href="../../d9/dc7/interface_simple_point.html#a2f2ec1990349aa281ea9003c2d7e320b">point</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 8 2013 15:12:16 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 10 2013 00:11:00 for LeapPaint by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
