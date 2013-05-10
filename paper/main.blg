@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+Warning--entry type for "unity" isn't style-file defined
+--line 20 of file Bibliography.bib
+Warning--entry type for "theverge" isn't style-file defined
+--line 30 of file Bibliography.bib
+Warning--entry type for "GRT" isn't style-file defined
+--line 87 of file Bibliography.bib
+Warning--entry type for "cccontrolextension" isn't style-file defined
+--line 96 of file Bibliography.bib
+Warning--entry type for "cocos2d" isn't style-file defined
+--line 106 of file Bibliography.bib
+Warning--entry type for "appleapi" isn't style-file defined
+--line 117 of file Bibliography.bib
+Warning--entry type for "breakout" isn't style-file defined
+--line 133 of file Bibliography.bib
+Warning--entry type for "corelfreestyle" isn't style-file defined
+--line 145 of file Bibliography.bib
+Warning--entry type for "LeapMotion" isn't style-file defined
+--line 461 of file Bibliography.bib
+Warning--empty year in cocos2d
+Warning--empty year in breakout
+Warning--empty year in cccontrolextension
+Warning--empty year in GRT
+Warning--empty year in corelfreestyle
+You've used 15 entries,
+            2481 wiz_defined-function locations,
+            645 strings with 6861 characters,
+and the built_in function-call counts, 4658 in all, are:
+= -- 418
+> -- 141
+< -- 14
++ -- 70
+- -- 40
+* -- 267
+:= -- 716
+add.period$ -- 55
+call.type$ -- 15
+change.case$ -- 29
+chr.to.int$ -- 15
+cite$ -- 20
+duplicate$ -- 255
+empty$ -- 495
+format.name$ -- 57
+if$ -- 1017
+int.to.chr$ -- 1
+int.to.str$ -- 16
+missing$ -- 7
+newline$ -- 92
+num.names$ -- 45
+pop$ -- 154
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 187
+stack$ -- 0
+substring$ -- 119
+swap$ -- 43
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 102
+warning$ -- 5
+while$ -- 39
+width$ -- 0
+write$ -- 207
+(There were 14 warnings)
