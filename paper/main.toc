@@ -1,10 +1,10 @@
-\contentsline {chapter}{Abstract}{i}{dummy.1}
+\contentsline {chapter}{Abstract}{ii}{dummy.1}
 \vspace {1em}
-\contentsline {chapter}{Acknowledgements}{ii}{dummy.2}
+\contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
-\contentsline {chapter}{List of Figures}{v}{dummy.4}
-\contentsline {chapter}{List of Tables}{vi}{dummy.6}
-\contentsline {chapter}{Abbreviations}{vii}{dummy.8}
+\contentsline {chapter}{List of Figures}{vi}{dummy.4}
+\contentsline {chapter}{List of Tables}{vii}{dummy.6}
+\contentsline {chapter}{Abbreviations}{viii}{dummy.8}
 \contentsline {chapter}{\numberline {1}Overview}{1}{chapter.11}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.12}
 \contentsline {section}{\numberline {1.2}LeapMotion}{2}{section.14}
@@ -16,23 +16,23 @@
 \contentsline {subsection}{\numberline {2.2.2}Bags of Stuff}{7}{subsection.25}
 \contentsline {subsection}{\numberline {2.2.3}Storyboarding}{7}{subsection.26}
 \contentsline {section}{\numberline {2.3}Development Model}{8}{section.27}
-\contentsline {subsection}{\numberline {2.3.1}Specification}{9}{subsection.31}
+\contentsline {subsection}{\numberline {2.3.1}Specification}{8}{subsection.31}
 \contentsline {subsection}{\numberline {2.3.2}Design}{9}{subsection.32}
 \contentsline {subsection}{\numberline {2.3.3}Code}{9}{subsection.33}
 \contentsline {subsection}{\numberline {2.3.4}Test}{9}{subsection.34}
-\contentsline {subsection}{\numberline {2.3.5}Review}{9}{subsection.35}
+\contentsline {subsection}{\numberline {2.3.5}Review}{10}{subsection.35}
 \contentsline {section}{\numberline {2.4}Progress Updates}{10}{section.36}
 \contentsline {chapter}{\numberline {3}Design and Development}{11}{chapter.38}
 \contentsline {section}{\numberline {3.1}Session 1: Introduction and Brainstorm}{11}{section.39}
 \contentsline {section}{\numberline {3.2}Session 2: Testing Breakout and Designing a Paint Application}{12}{section.41}
 \contentsline {section}{\numberline {3.3}Gesture Design Challenges}{12}{section.43}
 \contentsline {subsection}{\numberline {3.3.1}Implementation Challenges}{14}{subsection.48}
-\contentsline {subsection}{\numberline {3.3.2}Unity 3D Engine Testing}{14}{subsection.51}
+\contentsline {subsection}{\numberline {3.3.2}Unity 3D Engine Testing}{15}{subsection.51}
 \contentsline {section}{\numberline {3.4}Session 3: Interface Controls}{15}{section.52}
 \contentsline {section}{\numberline {3.5}Session 4: Testing a drawing application}{16}{section.56}
-\contentsline {section}{\numberline {3.6}Session 5: Designing Gestures }{16}{section.57}
+\contentsline {section}{\numberline {3.6}Session 5: Designing Gestures }{17}{section.57}
 \contentsline {section}{\numberline {3.7}Session 6: Testing}{17}{section.59}
-\contentsline {section}{\numberline {3.8}Session 7: Testing}{17}{section.60}
+\contentsline {section}{\numberline {3.8}Session 7: Testing}{18}{section.60}
 \contentsline {section}{\numberline {3.9}Session 8: Testing}{18}{section.61}
 \contentsline {section}{\numberline {3.10}Session 9: Usability Comparison}{19}{section.65}
 \contentsline {chapter}{\numberline {4}Application Architecture}{20}{chapter.66}
